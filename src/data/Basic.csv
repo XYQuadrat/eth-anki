@@ -1,0 +1,15 @@
+guid,front,back,tags
+MVtb[B2Wo},What makes a Java exception&nbsp;<b>checked</b>?,If it has to be added with the&nbsp;<b>throws</b>&nbsp;keyword and is checked at compile time.,ETH::sem6::RSE
+IwHG!:%Fh3,What are the 3 elements in a <b>documentation</b>&nbsp;<b>contract</b>?,<ul><li>Precondition (<code>//requires</code>)</li><li>Postcondition (<code>//ensures</code>)</li><li>Invariant (<code>//invariant</code>)</li></ul>,ETH::sem6::RSE
+CLxk$$tu>G,Documentation contract: What is in the <b>preconditions</b>?,"The conditions the caller of a method must fullfill.<br><br>Example: ""To call getRoot(x), the caller has to provide a value x &gt;= 0""",ETH::sem6::RSE
+Bvk(o/$M:?,Documentation contract: What is in the <b>postconditions</b>?,"The guarantees provided to the caller after executing the method, given the caller satisfied the precondition.",ETH::sem6::RSE
+"GK=-x;q~,=",Documentation: What 2 arguments can be used in the postcondition?,<ul><li>old(...): refers to the previous state</li><li>result: return value</li></ul>,ETH::sem6::RSE
+"pZ/XsR,sgT",<b>Step 1</b> of proving an assertion,"<img src=""paste-db1b5d120a685054395f3bc087b70846da437d5c.jpg"">",ETH::sem6::RSE
+Dq5@|.#@9W,<b>Step 2</b>&nbsp;of proving an assertion<br>(after abstraction),"<img src=""paste-c84fafc48a0d1bb11bcbfef690d281dfb87a47d1.jpg""><br><img src=""paste-615ba6ef6072a1dc13391f80f8ac2d9094a1d03f.jpg"">",ETH::sem6::RSE
+nEkIW?=w#x,<b>Step 3</b>&nbsp;of proving an assertion<br>(after transformation),"<img src=""paste-1793e63e5d1784d095cd692abf42ffcb9452a2b2.jpg"">",ETH::sem6::RSE
+juXEdz.}w>,<b>Step 4</b>&nbsp;of proving an assertion<br>(after iterating to a fixed point),"<img src=""paste-8eb3e3a8ebe34dfd14f253af2a555c2b1569eb0c.jpg"">",ETH::sem6::RSE
+"d7U:_O,.eB","What is the solution to using sequentially computed <span style=""color: rgb(255, 0, 0);"">abstract states</span> for parallel programs?","Cartesian States<br><img src=""paste-cad6b8d912e75035083cfb918d2b29243fe29927.jpg"">",ETH::sem6::RSE
+q%86.s`V=W,"<span style=""color: rgb(255, 0, 0);"">When may&nbsp;</span>\(\text{ALoc}(st_1):=(a,i)\)&nbsp;<span style=""color: rgb(255, 0, 0);"">equal&nbsp;</span>\(\text{ALoc}(st_2):=(b,k)\)&nbsp;in abstract state&nbsp;\(A\)?","<img src=""paste-ddebe004fd2c01d31c3108f88e8938759841bce0.jpg"">",ETH::sem6::RSE
+n;GV2+y?RO,"<img src=""paste-065043d9f5230de73636ad302c55dae66ac6f002.jpg"">","<img src=""paste-5d2a037da08c0fff583447aaaa78522dedc48908.jpg"">",ETH::sem6::RSE
+rx%`cbe3h?,"<img src=""paste-411e9def31aa702646c15e88ced7211c4c369a8f.jpg""><br>Which type of Polymorphism is shown here?",Parametric Polymorphism (generic types),ETH::COOP
+P$HSM:@ZM(,"<img src=""paste-ef4155eb70beff91d5a2a159e9d78246c46a1257.jpg""><br>Which type of Polymorphism is shown here?",Ad-hoc Polymorphism (method overloading),ETH::COOP

@@ -1,0 +1,92 @@
+- generate_guids_in_csvs:
+    source:
+    - src/data/Einfach.csv
+    - src/data/Lückentext.csv
+    - src/data/Abbreviation + Explanation.csv
+    - src/data/Image Occlusion Enhanced.csv
+    - src/data/Cloze.csv
+    - src/data/Basic.csv
+    - src/data/Image Occlusion Enhanced+.csv
+    - src/data/Cloze (overlapping).csv
+    columns:
+    - guid
+- build_parts:
+  - note_models_from_yaml_part:
+      part_id: Einfach
+      file: src/note_models/Einfach/Einfach.yaml
+  - note_models_from_yaml_part:
+      part_id: Lückentext
+      file: src/note_models/Lückentext/Lückentext.yaml
+  - note_models_from_yaml_part:
+      part_id: Abbreviation + Explanation
+      file: src/note_models/Abbreviation + Explanation/Abbreviation + Explanation.yaml
+  - note_models_from_yaml_part:
+      part_id: Image Occlusion Enhanced
+      file: src/note_models/Image Occlusion Enhanced/Image Occlusion Enhanced.yaml
+  - note_models_from_yaml_part:
+      part_id: Cloze
+      file: src/note_models/Cloze/Cloze.yaml
+  - note_models_from_yaml_part:
+      part_id: Basic
+      file: src/note_models/Basic/Basic.yaml
+  - note_models_from_yaml_part:
+      part_id: Image Occlusion Enhanced+
+      file: src/note_models/Image Occlusion Enhanced+/Image Occlusion Enhanced+.yaml
+  - note_models_from_yaml_part:
+      part_id: Cloze (overlapping)
+      file: src/note_models/Cloze (overlapping)/Cloze (overlapping).yaml
+  - headers_from_yaml_part:
+      part_id: deck_headers
+      file: src/headers/header1.yaml
+  - notes_from_csvs:
+      part_id: deck_notes
+      save_to_file: null
+      file_mappings:
+      - file: src/data/Einfach.csv
+        note_model: Einfach
+      - file: src/data/Lückentext.csv
+        note_model: Lückentext
+      - file: src/data/Abbreviation + Explanation.csv
+        note_model: Abbreviation + Explanation
+      - file: src/data/Image Occlusion Enhanced.csv
+        note_model: Image Occlusion Enhanced
+      - file: src/data/Cloze.csv
+        note_model: Cloze
+      - file: src/data/Basic.csv
+        note_model: Basic
+      - file: src/data/Image Occlusion Enhanced+.csv
+        note_model: Image Occlusion Enhanced+
+      - file: src/data/Cloze (overlapping).csv
+        note_model: Cloze (overlapping)
+      note_model_mappings:
+      - note_models:
+        - Einfach
+        - Lückentext
+        - Abbreviation + Explanation
+        - Image Occlusion Enhanced
+        - Cloze
+        - Basic
+        - Image Occlusion Enhanced+
+        - Cloze (overlapping)
+  - media_group_from_folder:
+      part_id: deck_media
+      source: src/media/
+      recursive: true
+- generate_crowd_anki:
+    folder: build/ETH_D-INFK/
+    notes:
+      part_id: deck_notes
+    note_models:
+      parts:
+      - part_id: Einfach
+      - part_id: Lückentext
+      - part_id: Abbreviation + Explanation
+      - part_id: Image Occlusion Enhanced
+      - part_id: Cloze
+      - part_id: Basic
+      - part_id: Image Occlusion Enhanced+
+      - part_id: Cloze (overlapping)
+    headers: deck_headers
+    media:
+      parts:
+      - deck_media

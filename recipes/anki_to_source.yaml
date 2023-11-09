@@ -1,0 +1,48 @@
+- build_parts:
+  - headers_from_crowd_anki:
+      part_id: deck_headers
+      source: build/ETH_D-INFK/
+  - notes_from_crowd_anki:
+      part_id: deck_notes
+      source: build/ETH_D-INFK/
+  - note_models_all_from_crowd_anki:
+      source: build/ETH_D-INFK/
+  - media_group_from_crowd_anki:
+      part_id: deck_media
+      source: build/ETH_D-INFK/
+      recursive: true
+- save_media_groups_to_folder:
+    parts:
+    - deck_media
+    folder: src/media/
+    clear_folder: true
+    recursive: true
+- generate_csvs:
+    notes: deck_notes
+    file_mappings:
+    - file: src/data/Einfach.csv
+      note_model: Einfach
+    - file: src/data/Lückentext.csv
+      note_model: Lückentext
+    - file: src/data/Abbreviation + Explanation.csv
+      note_model: Abbreviation + Explanation
+    - file: src/data/Image Occlusion Enhanced.csv
+      note_model: Image Occlusion Enhanced
+    - file: src/data/Cloze.csv
+      note_model: Cloze
+    - file: src/data/Basic.csv
+      note_model: Basic
+    - file: src/data/Image Occlusion Enhanced+.csv
+      note_model: Image Occlusion Enhanced+
+    - file: src/data/Cloze (overlapping).csv
+      note_model: Cloze (overlapping)
+    note_model_mappings:
+    - note_models:
+      - Einfach
+      - Lückentext
+      - Abbreviation + Explanation
+      - Image Occlusion Enhanced
+      - Cloze
+      - Basic
+      - Image Occlusion Enhanced+
+      - Cloze (overlapping)

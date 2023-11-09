@@ -1,0 +1,112 @@
+name: Cloze (overlapping)
+id: 2ae7be8c-7e39-11ee-bdad-3d2d00994e04
+css_file: src/note_models/Cloze (overlapping)/style.css
+sort_field_num: 1
+is_cloze: true
+latex_pre: "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\
+  \\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\
+  \\begin{document}\n"
+fields:
+- name: Original
+  font: Arial
+- name: Title
+  font: Arial
+- name: Remarks
+  font: Arial
+- name: Sources
+  font: Arial
+- name: Settings
+  font: Arial
+  is_sticky: true
+- name: Text1
+  font: Arial
+  font_size: 12
+- name: Text2
+  font: Arial
+  font_size: 12
+- name: Text3
+  font: Arial
+  font_size: 12
+- name: Text4
+  font: Arial
+  font_size: 12
+- name: Text5
+  font: Arial
+  font_size: 12
+- name: Text6
+  font: Arial
+  font_size: 12
+- name: Text7
+  font: Arial
+  font_size: 12
+- name: Text8
+  font: Arial
+  font_size: 12
+- name: Text9
+  font: Arial
+  font_size: 12
+- name: Text10
+  font: Arial
+  font_size: 12
+- name: Text11
+  font: Arial
+  font_size: 12
+- name: Text12
+  font: Arial
+  font_size: 12
+- name: Text13
+  font: Arial
+  font_size: 12
+- name: Text14
+  font: Arial
+  font_size: 12
+- name: Text15
+  font: Arial
+  font_size: 12
+- name: Text16
+  font: Arial
+  font_size: 12
+- name: Text17
+  font: Arial
+  font_size: 12
+- name: Text18
+  font: Arial
+  font_size: 12
+- name: Text19
+  font: Arial
+  font_size: 12
+- name: Text20
+  font: Arial
+  font_size: 12
+- name: Full
+  font: Arial
+  font_size: 12
+templates:
+- name: cloze-ol
+  html_file: src/note_models/Cloze (overlapping)/cloze-ol.html
+required_fields_per_template:
+- - 0
+  - any
+  - - 0
+    - 1
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
