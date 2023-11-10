@@ -20,10 +20,6 @@
 - generate_csvs:
     notes: deck_notes
     file_mappings:
-    - file: src/data/Einfach.csv
-      note_model: Einfach
-    - file: src/data/Lückentext.csv
-      note_model: Lückentext
     - file: src/data/Abbreviation + Explanation.csv
       note_model: Abbreviation + Explanation
     - file: src/data/Image Occlusion Enhanced.csv
@@ -38,8 +34,6 @@
       note_model: Cloze (overlapping)
     note_model_mappings:
     - note_models:
-      - Einfach
-      - Lückentext
       - Abbreviation + Explanation
       - Image Occlusion Enhanced
       - Cloze
