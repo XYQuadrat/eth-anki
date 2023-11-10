@@ -1,131 +1,131 @@
 guid,text,back extra,tags
-E=:2Wv-cl/,"Documentation should focus on&nbsp;{{c1::what}} the essential properties are, not&nbsp;{{c1::how}} these are implemented<br>","- “Whenever a ListRep object’s shared-field is false, it is used as representation of at most one List object”<br>Rather than:<br>- “When creating a new List object with an existing ListRep object, the shared-field is set to true”",ETH::sem6::RSE
-Lb$9SF|p._,Documentation contracts of&nbsp;{{c1::public methods}} should not refer to&nbsp;{{c2::private fields}},(as clients may not have direct access to these fields),ETH::sem6::RSE
-qHQ?3b9n#8,{{c1::Coupling}} measures&nbsp;{{c2::interdependence}} between different&nbsp;{{c3::modules}},"<img src=""paste-6725aff76c37882399c37da8a1351b8542d9f7d8.jpg"">",ETH::sem6::RSE
-PN|p^wy`+r,Modules that&nbsp;{{c1::expose}} their&nbsp;{{c2::internal}} data representation become&nbsp;{{c3::tightly-coupled}} to their clients,,ETH::sem6::RSE
-"q^)l,&K}Eu",{{c1::Information hiding}} is when we&nbsp;{{c2::hide implementation details behind the interface}},,ETH::sem6::RSE
-C6pcL?!}7f,"With ""No leaking"" we mean that we&nbsp;{{c1::do not return references to sub-objects}}",,ETH::sem6::RSE
-z[5cW&xLye,"Design patterns are&nbsp;{{c1::general, reusable solutions}} to commonly occuring design problems",,ETH::sem6::RSE
-wL$U].vhYS,2 Approaches for making code modular:<div>- {{c1::Restricting access to data fields}}</div><div>- {{c2::Making shared data immutable}}</div>,,ETH::sem6::RSE
-s#h<bFT:$S,The&nbsp;{{c1::flyweight}} pattern maximizes {{c2::sharing of immutable objects}},,ETH::sem6::RSE
-"uf5n?WE,d$",In the {{c1::observer}} pattern components may&nbsp;{{c2::generate events}} or&nbsp;{{c3::register for events}} of other components using {{c4::a callback}},,ETH::sem6::RSE
-wFlN54|NsF,"Main strengths of Event-Based Style:<br>-&nbsp;{{c1::Reuse: plug in new components by registering them for events}}<br>-&nbsp;{{c2::Adaptation: add, remove, replace components with minimum effect on other components in the system}}",,ETH::sem6::RSE
-AI$34=Pl-!,"Weaknesses of event-based-style:<br><ul><li>{{c1::Loss of control: In which order will the components be invoked?}}</li><li>{{c2::Ensuring correctness is difficult, because it depends on the context}}</li></ul>",,ETH::sem6::RSE
-uvYecvWsii,{{c1::Inheritance}} couples the&nbsp;{{c2::sub}}-class to the&nbsp;{{c2::super}}-class,,ETH::sem6::RSE
-exqNcTD~^q,{{c1::Allocations}} couple the&nbsp;{{c2::clients}} to the&nbsp;{{c3::instantiated class}},,ETH::sem6::RSE
-z1pY`-jH4Y,Modules can be made parametric by using&nbsp;{{c1::interfaces}} and&nbsp;{{c1::factories}} instead of {{c2::concrete classes}},,ETH::sem6::RSE
-"tW7AHJ,L`J",Modules can be made parametric by using&nbsp;{{c1::variable values}} instead of constant values,,ETH::sem6::RSE
-D0u4{mBGHt,"In Unit Testing we are testing {{c1::individual subsystems (collection of classes, or a single class)}}",,ETH::sem6::RSE
-nzkJu|rCi,{{c2::Exhaustive}} testing is when a unit is tested for&nbsp;{{c1::every possible input}},,ETH::sem6::RSE
-u41B9imTVk,{{c1::Random}} testing is when a unit is tested&nbsp;{{c2::with random inputs}},,ETH::sem6::RSE
-Hb#v9j|Ffq,What is the main disadvantage of random testing?<br>-&nbsp;{{c1::Treats all inputs as equally valuable}},,ETH::sem6::RSE
-L[1$v]wr$I,{{c1::Functional}} testing&nbsp;tests units by&nbsp;{{c2::using requirements knowledge to derive test cases}},,ETH::sem6::RSE
-ht%}>4U?im,What is a limitation of functional testing?<br>-&nbsp;{{c1::Does not reveal errors in the specification (missing cases)}},,ETH::sem6::RSE
-gK>:g@46}n,"{{c1::Structural}} testing&nbsp;uses&nbsp;{{c2::design knowledge about the system structure, algorithms}} to&nbsp;{{c3::derive test cases that exercise a large portion of the code}}","<img src=""paste-e87f2d290398114b64a91247adf2baee01fd5c4d.jpg"">",ETH::sem6::RSE
-DYp*ax]L{4,What is a limitation for structural testing?<br>-&nbsp;{{c1::It requires design knowledge of the algorithm.}},,ETH::sem6::RSE
-qKi6AEUtUh,In&nbsp;{{c1::partition}} testing inputs are divided into&nbsp;{{c2::equivalence classes}}.,"<img src=""paste-5fe060e70f819572e68ca9ef0f78d2d5bccf4c89.jpg"">",ETH::sem6::RSE
-eoK{q9uGmh,In&nbsp;{{c1::combinatorial}} testing we combine {{c2::equivalence classes}} and&nbsp;{{c3::boundary testing}},,ETH::sem6::RSE
-duva[q!ps:,CI stands for&nbsp;{{c1::continuous integration}},,ETH::sem6::RSE
-OXs57+IG3>,CFG stands for&nbsp;{{c1::Control Flow Graph}},,ETH::sem6::RSE
-"i^<X,%0sPr","An <b>intraprocedural </b>CFG of a procedure&nbsp;\(p\)&nbsp;is a graph (\(N\),\(E\)) where:<br><ul><li>N is the set of {{c2::basic blocks in&nbsp;\(p\) plus designated entry and exit blocks}}</li><li>E contains</li><ul><li>an edge from&nbsp;\(a\)&nbsp;to&nbsp;\(b\)&nbsp;with condition&nbsp;\(c\)&nbsp;iff {{c1::the execution of the basic block&nbsp;\(a\)&nbsp;is succeeded by the execution of&nbsp;\(b\)&nbsp;if the condition&nbsp;\(c\)&nbsp;holds}}</li><li>an edge (entry,&nbsp;\(a\), true) if {{c3::\(a\)&nbsp;is the first basic block of&nbsp;\(p\)}}</li><li>edges (\(b\), exit, true) {{c4::for each basic block&nbsp;\(b\)&nbsp;that ends with a return statement}}</li></ul></ul>",,ETH::sem6::RSE
-w0I3y6[k!2,Statement coverage is {{c1::how many of the statements were executed}},"<img src=""paste-d179af7f24cde56feec56201e8f2ee4fa0a3812a.jpg"">",ETH::sem6::RSE
-f3c^U*Cu<K,Branch coverage tests {{c1::all the possible branches in the control flow}},"<img src=""paste-89f5462098516e5b4526a8847e7a17fc022efcd3.jpg"">",ETH::sem6::RSE
-"E=,-:(D2hT",Branch coverage =&nbsp;{{c1::\(\frac{\text{Number of executed branches} }{\text{Total number of branches} }\)}},,ETH::sem6::RSE
-"bDIEBR7Bg,",Statement coverage =&nbsp;{{c1::\(\frac{\text{Number of executed statements} }{\text{Total number of statements} }\)}},,ETH::sem6::RSE
-o+s{V}k&WV,Branch coverage leads to&nbsp;{{c1::more}} thorough testing than statement coverage,,ETH::sem6::RSE
-QKgYYEk0e*,Path coverage tests&nbsp;{{c1::all possible paths through the CFG}},"<img src=""paste-73ec765fe2842f3ad6e18c35769888542745d24f.jpg"">",ETH::sem6::RSE
-"CO0jjb|r,s",Path coverage =&nbsp;{{c1::\(\frac{\text{Number of executed paths} }{\text{Total number of paths} }\)}},,ETH::sem6::RSE
-HU1f9eoB{X,Path coverage leads to&nbsp;{{c1::more}}&nbsp;thorough testing&nbsp;than both statement and branch coverage,,ETH::sem6::RSE
-k&+-G-#4Yx,"Loop coverage =&nbsp;{{c1::\(\frac{\binom{\text{Number of executed loops} }{\text{with 0,1 and more than 1 iterations} } }{\text{Total number of loops * 3} }\)}}",,ETH::sem6::RSE
-w[GPqNkK+f,"In <b>loop coverage</b>, for each loop, test&nbsp;{{c1::zero, one and more than one consecutive iterations}}","<img src=""paste-7edbf0e01c6293c344cc63b00901549adde7273e.jpg"">",ETH::sem6::RSE
-e&u81Mhltk,Statement coverage leads to&nbsp;{{c1::less}} thorough testing than branch coverage,,ETH::sem6::RSE
-zQup>b%|WT,Statement and branch coverage&nbsp;lead to&nbsp;{{c1::less}}&nbsp;thorough testing&nbsp;than path coverage&nbsp;,,ETH::sem6::RSE
-mp@Z?01%6_,A {{c2::join}} between A and B is denoted as&nbsp;{{c1::\(A \sqcup B\)}},,ETH::sem6::RSE
-"h.W,AkHKnQ","A&nbsp;{{c1::<span style=""color: rgb(255, 0, 0);"">complete lattice</span>}} (L,&nbsp;\(\sqsubseteq\),&nbsp;\(\sqcup\)) is a {{c2::poset}} where {{c3::\(\sqcup Y\)&nbsp;and&nbsp;\(\sqcap Y\)}} exist for any&nbsp;\(Y\subseteq L\)","(For example, for a set&nbsp;\(L\), \((\mathcal{P}(L),\subseteq, \cup, \cap)\)&nbsp;is a complete<br>lattice.)<br><img src=""paste-e3e2228747b18747d291f49eff9b24c97f545256.jpg"">",ETH::sem6::RSE
-ekl?NLMcrS,"A&nbsp;{{c1::function f}}:&nbsp;\(A \to B\)&nbsp;between two posets (A,&nbsp;\(\sqsubseteq\)) and (B,&nbsp;\(\leq\)) is {{c2::<span style=""color: rgb(255, 0, 0);"">increasing (monotone)</span>}}:&nbsp;\(\forall a,b\in A:\)&nbsp;{{c3::\(a\sqsubseteq b\Rightarrow f(a)\leq f(b)\)}}",,ETH::sem6::RSE
-DkKd1ZguM=,"For a poset (L,&nbsp;\(\sqsubseteq\)), function f:&nbsp;\(L\to L\), and element&nbsp;\(x\in L\):<br>- x is a {{c1::fixed point}} iff f(x) = x",,ETH::sem6::RSE
-o!)HPR@]=|,{{c2::Fix(f)}} denotes the set of all {{c1::fixed points}},,ETH::sem6::RSE
-j;{O$^.NF6,{{c2::Red(f)}} denotes the set of all {{c1::post-fixedpoints}},,ETH::sem6::RSE
-c+aGa7;*sj,"For a poset (L,&nbsp;\(\sqsubseteq\)), function&nbsp;\(f:L\to L\), we say that&nbsp;{{c2::\(lfp^\sqsubseteq f\)}}&nbsp;\(\in L\)&nbsp;is a {{c1::least fixed point}} of&nbsp;\(f\)",,ETH::sem6::RSE
-"mJY<O]P0P,","For a poset (L,&nbsp;\(\sqsubseteq\)), function&nbsp;\(f:L\to L\), we say that&nbsp;{{c2::\(\text{lfp}^\sqsubseteq f\)}}&nbsp;\(\in L\)&nbsp;is a {{c1::least fixed point}} of&nbsp;\(f\)&nbsp;if:<br><ul><li>{{c3::\(\text{lfp}^\sqsubseteq f\)&nbsp;is a fixed point.}}</li><li>{{c4::It is the least fixed point:&nbsp;\(\forall a\in L: a = f(a) \Rightarrow lfp^\sqsubseteq f\sqsubseteq a\)}}<br></li></ul>","<img src=""paste-428c02a526438244adf3e2e04adb2bd973e8619a.jpg"">",ETH::sem6::RSE
-f-{gPNFq/[,"{{c1::Tarski's fixed point}}<b>&nbsp;theorem</b>:&nbsp;<br>If&nbsp;\((L,\sqsubseteq,\sqcup,\sqcap,\bot,\top)\)&nbsp;is a {{c4::complete lattice}} and&nbsp;\(f:L\to L\)&nbsp;is a {{c5::monotone function}}, then:<br>{{c2::\(\text{lfp}^\sqsubseteq f\)&nbsp;exists}}, and<br>\({{c2::\text{lfp}^\sqsubseteq f}} = {{c3::\sqcap \text{ Red}(f)\in \text{Fix}(f)}}\)",,ETH::sem6::RSE
-O?cQ(E8U5},"{{c1::Tarski}}'s theorem tells us that a fixed point exists, but {{c2::does not actually suggest an algorithm for computing it}}.",,ETH::sem6::RSE
-q(^eHmv!UM,\(f^{{{c2::n+1}}}(a)=f({{c1::f^n(a)}})\),,ETH::sem6::RSE
-Mm[`BkomRg,"Given a poset of {{c1::finite height}}, a {{c1::least element}}&nbsp;\(\bot\), a {{c1::<span style=""color: rgb(255, 0, 0);"">monotone</span>}}&nbsp;\(f\).<br><br>Then the iterates&nbsp;\(f^0(\bot), f^1(\bot), f^2(\bot), \ldots\)&nbsp;eventually stabilize for some&nbsp;\(n\in N\), that is:<br>\(f^{{{c2::n}} }(\bot)=f^{{{c2::n+1}}}(\bot)\)&nbsp;and:<br>\({{c3::lfp^\sqsubseteq f}}={{c4::f^n(\bot)}}\)",,ETH::sem6::RSE
-KS3h[c3}0`,{{c2::\([\![P]\!]\)}} is the&nbsp;{{c1::set of reachable states of a program&nbsp;\(P\)}},,ETH::sem6::RSE
-q?{}!t5>f6,Given functions:<br>\(F:C\to C\)<br>\(F^\#:A\to A\)<br>what does it mean for&nbsp;\(F^\#\)&nbsp;to approximate&nbsp;\(F\)?<br>\(\forall x\in C: {{c1::F(x)\sqsubseteq_C F^\#(x)}}\),,ETH::sem6::RSE
-C8T_Os`?hA,How to approximate a function given:<br>\(F:X\to X\)<br>\(F^\#:Y\to Y\)<br>{{c2::\(Y\)}}&nbsp;is the {{c1::abstract}} and&nbsp;{{c2::\(X\)}}&nbsp;is the {{c1::concrete}},,ETH::sem6::RSE
-unkEEcc=h2,How to approximate a function given:<br>\(F:C\to C\)<br>\(F^\#:A\to A\)<br>We need to connect the {{c1::concrete&nbsp;\(C\)}}&nbsp;and the {{c1::abstract&nbsp;\(A\)}},,ETH::sem6::RSE
-NIxXv;mXHM,"How to approximate a function given:<br>\(F:C\to C\)<br>\(F^\#:A\to A\)<br><br>{{c2::\(\alpha:C\to A\)}}&nbsp;is called the {{c1::<span style=""color: rgb(255, 0, 0);"">abstraction</span>}} function<br>{{c2:: \(\gamma:A\to C\)}}&nbsp;is called the {{c1::<span style=""color: rgb(255, 0, 0);"">concretization</span>}} function","<img src=""paste-375d775a9b1bc0b9c8fe04f548f5deb82eb83ed3.jpg"">",ETH::sem6::RSE
-kQlM=_H)ma,"The {{c2::<span style=""color: rgb(255, 0, 0);"">least precise</span>}} approximation&nbsp;for&nbsp;\(F\)&nbsp;is simply {{c1::\(F^\#(z)=\top\)}}","(However, it is not practically useful as it is too imprecise. It is always <b><span style=""color: rgb(255, 0, 0);"">sound</span></b>.)",ETH::sem6::RSE
-Ml3N0Eo_=;,"The {{c2::<span style=""color: rgb(255, 0, 0);"">most precise</span>}}&nbsp;approximation&nbsp;for&nbsp;\(F\)&nbsp;is {{c1::\(F^\#(z)=\alpha(F(\gamma(z)))\)}}","<img src=""paste-d4b3f7a5e2a953c75298bdcbb23c0c56e7715914.jpg"">",ETH::sem6::RSE
-u]&8K>C>AF,"{{c2::\([\![action]\!]\)}} is often referred to as the&nbsp;{{c1::<span style=""color: rgb(255, 0, 0);"">abstract transformer</span>}}",,ETH::sem6::RSE
-qr.G8lnJS,\([\![action]\!]\)captures the {{c1::abstract semantics of the language}},,ETH::sem6::RSE
-DC~kXK)5#c,Mathematical Concept:<br>{{c2::Bottom&nbsp;\((\bot)\)}}<br><br>Use in Static Analysis:<br>{{c1::Used for initialization of all but initial elements}},,ETH::sem6::RSE
-b`U7~PQp;g,Mathematical Concept:<br>{{c2::Joins&nbsp;\((\sqcup)\)}}<br><br>Use in Static Analysis:<br>{{c1::Combines facts arriving at a program point}},,ETH::sem6::RSE
-e#L{TF:M]K,Mathematical Concept:<br>{{c2::Complete Lattice}}<br><br>Use in Static Analysis:<br>{{c1::Defines Abstract Domain and ensure joins exist}},,ETH::sem6::RSE
-t=:#D.4iqK,Mathematical Concept:<br>{{c2::Widening&nbsp;\((\triangledown)\)}}<br><br>Use in Static Analysis:<br>{{c1::Used to guarantee analysis termination}},,ETH::sem6::RSE
-uv!~&yr~lo,Mathematical Concept:<br>{{c2::Tarski's Theorem}}<br><br>Use in Static Analysis:<br>{{c1::Ensures fixed points exist}},,ETH::sem6::RSE
-B-q:n_8+h3,"<b>Example of lifting</b>:<br>We have x, y, and we lift to&nbsp;\(\text{Var}\to L^i\):<br><br>Let map1 be:&nbsp;\(\{x\to[1,5], y\to[7,10]\}\)<br>Let map2 be:&nbsp;\(\{x\to[2,6], y\to[6,9]\}\)<br><br>Then<br><ul><li>map3 = (map1&nbsp;\(\sqcap\)&nbsp;map2) =&nbsp;{{c2::\(\{x\to[2,5], y\to[7,9]\}\)}}</li><li>map4 = (map1&nbsp;\(\sqcup\)&nbsp;map2) =&nbsp;{{c2::\(\{x\to[1,6], y\to[6,10]\}\)}}</li><li>(map3&nbsp;\(\sqsubseteq\)&nbsp;map4) is {{c1::true}}</li></ul>",,ETH::sem6::RSE
-w`j<(P0<pH,"If we add&nbsp;\(\bot_i\)&nbsp;to any other element, we get&nbsp;{{c1::\(\bot_i\)}}",,ETH::sem6::RSE
-jfI3Kd._PP,"If both operands are not&nbsp;\(\bot_i\), we get:<br>\([x,y] + [p,q] = {{c1::[x+p, y+q]}}\)",(Same for&nbsp;\(*\)),ETH::sem6::RSE
-x>HaVGa#9I,"The operator {{c1::\(\triangledown: L\times L\to L\)}}&nbsp;is called a {{c2::<span style=""color: rgb(255, 0, 0);"">widening</span>}}&nbsp;operator",,ETH::sem6::RSE
-s_xfj%k<}(,"The operator \(\triangledown: L\times L\to L\)&nbsp;is called a <span style=""color: rgb(255, 0, 0);"">widening</span>&nbsp;operator if:<br><ul><li>{{c2::\(\forall a,b\in L: a\sqcup b\sqsubseteq a\triangledown b\)&nbsp;(widening <span style=""color: rgb(255, 0, 0);"">approximates</span> the join)}}<br></li><li>if&nbsp;\(x^0\sqsubseteq x^1\sqsubseteq x^2 \sqsubseteq\ldots\sqsubseteq x^n\)&nbsp;is {{c3::an increasing sequence}},<br>then&nbsp;\(y^0\sqsubseteq y^1\sqsubseteq y^2 \sqsubseteq\ldots\sqsubseteq y^n\)&nbsp;{{c4::<span style=""color: rgb(255, 0, 0);"">stabilizes</span> after a <span style=""color: rgb(255, 0, 0);"">finite number of steps</span>}}<br>where&nbsp;\(y^0=x^0\)&nbsp;and&nbsp;\(\forall i\geq 0: y^{i+1}={{c1::y^i\triangledown x^{i+1} }}\)<br></li></ul>",,ETH::sem6::RSE
-J}g-qJ6cXQ,"The <span style=""color: rgb(255, 0, 0);"">fixed point</span> is the&nbsp;{{c1::over-approximation}} of the program",,ETH::sem6::RSE
-l{ym$xRM:t,"We select/define an abstract domain based on the&nbsp;{{c1::type of <span style=""color: rgb(255, 0, 0);"">properties</span> we want to prove}}",,ETH::sem6::RSE
-mE~kfAC@ES,"Interval Domain:<br>\([a,b]\sqsubseteq_i [c,d]\)&nbsp;if&nbsp;{{c1::\(a\geq c, b \leq d\)}}",,ETH::sem6::RSE
-w0Wq[iANd},"Interval Domain:<br>\([a,b]\sqcup_i [c,d] = {{c1::[\min(\{a,c\}), \;\max(\{b,d\})] }}\)",,ETH::sem6::RSE
-x)|a{GHY$Z,"{{c2::\(\text{wdi}(a,b)\)}} is the&nbsp;{{c1::well-defined interval}}",,ETH::sem6::RSE
-"D(+~q,c=ca",\(L^i\)&nbsp;domain defines&nbsp;{{c1::intervals}},"<img src=""paste-d3c832516e4c6fba578d627a1673fd102c9299b0.jpg"">",ETH::sem6::RSE
-bd]yVrl02u,\(\text{Var}\)&nbsp;defines the&nbsp;{{c1::variables}} in a program,,ETH::sem6::RSE
-dlv_A71uGN,"\(\text{Lab} \to (\text{Var} \to \text{L}^i)\)&nbsp;means that&nbsp;{{c1::at each label}} and {{c1::for each variable}}, we will {{c2::keep the interval for that variable}}",,ETH::sem6::RSE
-Pg;hYwGSpO,Generic Template:<br>\(F^\#: {{c1::(Lab \to A)}} \to {{c1::(Lab \to A)}}\),,ETH::sem6::RSE
-fw2p->/<04,"What is&nbsp;\((\ell',\text{action},\ell)\)?<br><br>({{c1::program counter}}, {{c1::action that will be executed}}, {{c1::next program counter}})","<img src=""paste-3715dace1d8462a21e74b3b7c524a70adfc6cb15.jpg"">",ETH::sem6::RSE
-JgrFXSiE)o,"\((\ell',\text{action},\ell)\)&nbsp;is an&nbsp;{{c1::edge}} in the control-flow graph",,ETH::sem6::RSE
-Es<YWVZtg>,"If there exists a transition&nbsp;\(t=\langle\ell',\sigma'\rangle\to\langle\ell,\sigma\rangle\)&nbsp;in a program trace in&nbsp;\(P\), then {{c1::\((\ell',\text{action},\ell)\)}} must exist.<br>This says that we are&nbsp;{{c2::sound}}:&nbsp;{{c2::we never miss a flow}}","<img src=""paste-dff51e4848feb8bc0024b48f3bd8f6e27d2b8e94.jpg"">",ETH::sem6::RSE
-z)mE*$4N/-,Iterate abstract transformers over the {{c2::abstract domain}} until&nbsp;{{c1::we reach a fixed point}},,ETH::sem6::RSE
-JIv4*@!T)Z,The solution to {{c1::a function that keeps iterating}} is to use the&nbsp;{{c2::widening}} operator,,ETH::sem6::RSE
-cQ]X?l+j^a,Widening approximates the&nbsp;{{c1::join}},,ETH::sem6::RSE
-DQ5]V<R%kT,"\([a,b]\triangledown[c,d] = [e,f]\)&nbsp;where:<br><ul><li>if&nbsp;{{c1::\(a&gt;c\)}}, then {{c1::\(e=-\infty\)}}, else {{c1::\(e=a\)}}<br></li><li>if&nbsp;{{c1::\(b&lt;d\)}}, then {{c1::\(f=\infty\)}}, else {{c1::\(f=b\)}}<br></li></ul>",,ETH::sem6::RSE
-b-YuJ/5GF2,"For&nbsp;\([a,b]\triangledown[c,d] = [e,f]\), if one of the operands is&nbsp;\(\bot\)&nbsp;the result is&nbsp;{{c1::the other operand}}.",,ETH::sem6::RSE
-F_2t0+hlgN,When using the widening operator we are able to reach a&nbsp;{{c1::fixed point}} in a program where there is a variable that keeps increasing,"Notice the&nbsp;\([7,\infty]\)&nbsp;that happen because&nbsp;\(y\)&nbsp;is at least 7 at those points and always increases with each iteration<br><img src=""paste-900a0d10aecea56a5ca890654592b4d95691d29d.jpg"">",ETH::sem6::RSE
-OwDF^@tj#d,Looking at the concrete store:<br><ul><li>\(\text{Objs}\)&nbsp;is the&nbsp;{{c1::set of all possible objects}}<br></li><li>\(\text{PtrVal} = {{c2::\text{Objs}\cup\{\text{null}\} }}\)<br></li></ul>,,ETH::sem6::RSE
-bFa/unFJMe,Two pointers are {{c1::aliases}} if {{c2::they point to the same object}},,ETH::sem6::RSE
-pn8Y)d]$/(,"{{c2::Points-to pair (p,A)}} means {{c1::p holds the address of object A}}",,ETH::sem6::RSE
-h>+[#iI+EK,"Using <span style=""color: rgb(255, 0, 0);"">allocation sites</span> (labels), abstract objects are defined as:<br>\(\text{AbsObj}={{c1::\{\ell\;|\;\text{statement is }p:=\text{alloc}^\ell\} }}\)",,ETH::sem6::RSE
-qC/$[u$~[R,Two kinds of pointer analysis:<br><ul><li>{{c1::Flow sensitive}}</li><li>{{c1::Flow insensitive}}<br></li></ul>,,ETH::sem6::RSE
-hb^K`J0/)_,Flow {{c2::sensitive}} pointer analysis {{c1::respects the program control flow}},,ETH::sem6::RSE
-ncLwF:n2dd,Flow {{c2::insensitive}} pointer analysis {{c1::assumes all execution orders are possible (abstracts away order between statements)}},,ETH::sem6::RSE
-7fiYeT>!9,Flow {{c2::insensitive}} pointer analysis is good for&nbsp;{{c1::concurrency (if not too imprecise)}},,ETH::sem6::RSE
-F`yV^x4}P},"Two pointers a and b&nbsp;<span style=""color: rgb(255, 0, 0);"">may alias</span> if:<br>{{c1::points-to (a)&nbsp;\(\cap\)&nbsp;points-to (b)&nbsp;\(\neq \emptyset\)}}",,ETH::sem6::RSE
-GfOk&$7JJe,"A function <span style=""color: rgb(255, 0, 0);"">points-to (p)</span> returns the {{c1::set of all abstract objects that a pointer <span style=""color: rgb(255, 0, 0);"">p</span> can point to}}",,ETH::sem6::RSE
-"w~|,vKL,bq",Sources of <b>unboundedness</b>:<br><ul><li>Unbounded {{c1::heap}}</li><li>Unbounded&nbsp;{{c1::range of array indices}}</li><li>Unbounded {{c1::number of threads}}<br></li></ul>,,ETH::sem6::RSE
-m.:^HgFKSQ,ALoc stands for&nbsp;{{c1::abstract location}},,ETH::sem6::RSE
-m$D[=6VH^2,Widening (\(\triangledown\)) operator jumps&nbsp;{{c1::upwards (above least fixedpoint)}},,ETH::sem6::RSE
-q?g$1kQ@qF,Widening (\(\triangledown\)) ensures&nbsp;{{c1::termination}},,ETH::sem6::RSE
-b#.C0Pz!tW,Widening (\(\triangledown\)) operator&nbsp;{{c1::costs/reduces}} precision,,ETH::sem6::RSE
-fAL#ZC-rWK,Narrowing (\(\triangle\)) operator jumps&nbsp;{{c1::downwards (but stays above least fixedpoint)}},,ETH::sem6::RSE
-K^Ao728gF~,Narrowing (\(\triangle\)) operator&nbsp;{{c1::improves}} precision,,ETH::sem6::RSE
-Eu%leaUU!u,{{c2::Forwards}} analysis overapproximates {{c1::output}} state from {{c1::input}} state,,ETH::sem6::RSE
-C!KCSMuXQN,{{c2::Backwards}} analysis overapproximates {{c1::input}} state from {{c1::output}} state,,ETH::sem6::RSE
-h8}A$xdmmb,{{c1::Forwards}} analysis computes {{c2::postcondition <b>from</b> given precondition}},,ETH::sem6::RSE
-#Iv3!tdQn,"{{c1::Backwards}} analysis computes {{c2::precondition <span style=""color: rgb(255, 0, 0);"">avoiding</span> given postcondition}}",,ETH::sem6::RSE
-g!=g4+ya1B,"<span style=""color: rgb(0, 0, 0);"">How do we combine facts in m</span><span style=""color: rgb(0, 170, 0);"">ay-analysis</span> vs <span style=""color: rgb(0, 170, 255);"">must-analysis?</span><br><ul><li>May:&nbsp;{{c1::overapprox. via join}}</li><li>Must:&nbsp;{{c1::underapprox. via meet}}</li></ul>","<img src=""paste-8d4dfc8b0c60ef1b6d3de1425ecc33fe18cf8c53.jpg"">",ETH::sem6::RSE
-"l&n,&Ex1tA",What are the main limitations of SMT solvers?<br><ul><li>{{c1::Many theories aren't decidable (e.g. non-linear integers)}}<br></li><li>{{c1::Constraint solving may take too long}}<br></li></ul>,,ETH::sem6::RSE
-G[k^:-*-Z|,"{{c2::<span style=""color: rgb(255, 0, 0);"">Concolic execution</span>}} combines {{c1::<span style=""color: rgb(255, 0, 0);"">conc</span>rete}} and {{c1::symb<span style=""color: rgb(255, 0, 0);"">olic</span>}} execution",,ETH::sem6::RSE
-ua$dS|W73K,The high-level idea in the concolic execution is that the {{c1::concrete execution drives the symbolic one}},"<img src=""paste-711b5f5b921db7220d3afec3e49602b616bd0c1f.jpg"">",ETH::sem6::RSE
-u#~UN@e{Hf,Concolic execution uses a solver to {{c1::query legal values to go down the other branch}},"<img src=""paste-e26dba5ae8ded8dd8da77576353a3a48dd2faecb.jpg""><br><img src=""paste-a88a665c2e146d2fc3cf947cb5bd19723908a713.jpg""><img src=""paste-f8f300330e7541209ad27ddf66c73d9fa72f123b.jpg""><br>And then all the paths have been explored",ETH::sem6::RSE
-O!2Kcye;pc,Symbolically executing native code is difficult/impossible because {{c1::sources may not be available}} or&nbsp;{{c1::written in an unsupported language}},,ETH::sem6::RSE
-j6(.@K<>Px,Static analysis is the&nbsp;{{c1::over}}-approximation,,ETH::sem6::RSE
-O`8_iWH_Wz,Dynamic analysis is the {{c1::under}}-approximation,,ETH::sem6::RSE
-f`O~3D1cVu,Symbolic execution is the&nbsp;{{c1::over- &amp; under}}-approximation,,ETH::sem6::RSE
-t5uBTdj0cI,"Core idea of symbolic execution is to {{c1::compute the symbolic constraints per path, and then solve these constraints to have inputs that explore all paths}}",,ETH::sem6::RSE
-Ho^?o[b1e&,Path conditions&nbsp;\(\pi\)&nbsp;are the {{c1::conditions under which a path is taken}},"<img src=""paste-895ace1b661f4db5c33b8ca798be3c89f5e8e0de.jpg"">",ETH::sem6::RSE
-Q_$@!|w>Q|,We have a symbolic state per&nbsp;{{c1::program point}},"<img src=""paste-895ace1b661f4db5c33b8ca798be3c89f5e8e0de.jpg"">",ETH::sem6::RSE
-Ae6=).x8!=,Facts add&nbsp;{{c1::constraints that always hold}},"<img src=""paste-e0e2442850efef9b3668af82dd522d6b00735d90.jpg"">",ETH::sem6::RSE
-f*Sez^$9eb,"The Alloy Analyzer is <b>decidable</b>, because&nbsp;{{c1::it searches for structures <b>up to a given size</b> making the problem become <b>finite</b>}}",,ETH::sem6::RSE
-Ch}Kuqg|/N,In linear temporal logic the&nbsp;\(\phi\)&nbsp;symbol denotes&nbsp;{{c1::what holds now}},,ETH::sem6::RSE
-e.eq(T@u/6,In linear temporal logic&nbsp;\(X\phi\)&nbsp;or&nbsp;\(\circ\phi\)&nbsp;denotes&nbsp;{{c1::that&nbsp;\(\phi\)&nbsp;holds in the next step}},,ETH::sem6::RSE
-f_-$S0s{@[,In linear temporal logic&nbsp;\(\phi U \psi\)&nbsp;denotes&nbsp;{{c1::that&nbsp;\(\phi\)&nbsp;holds until&nbsp;\(\psi\)&nbsp;holds}},,ETH::sem6::RSE
-NA%+S9sSi],In linear temporal logic&nbsp;\(F\phi\)&nbsp;or&nbsp;\(\diamond\phi\)&nbsp;denotes&nbsp;{{c1::that&nbsp;\(\phi\)&nbsp;holds eventually}},(F = finally),ETH::sem6::RSE
-"k{D:|@W,PW",In linear temporal logic&nbsp;\(G\phi\)&nbsp;or&nbsp;\(\square\phi\)&nbsp;denotes&nbsp;{{c1::that&nbsp;\(\phi\)&nbsp;always&nbsp;holds}},(G = globally),ETH::sem6::RSE
+E=:2Wv-cl/,"Documentation should focus on&nbsp;{{c1::what}} the essential properties are, not&nbsp;{{c1::how}} these are implemented<br>","- “Whenever a ListRep object’s shared-field is false, it is used as representation of at most one List object”<br>Rather than:<br>- “When creating a new List object with an existing ListRep object, the shared-field is set to true”",eth::sem6::rse
+Lb$9SF|p._,Documentation contracts of&nbsp;{{c1::public methods}} should not refer to&nbsp;{{c2::private fields}},(as clients may not have direct access to these fields),eth::sem6::rse
+qHQ?3b9n#8,{{c1::Coupling}} measures&nbsp;{{c2::interdependence}} between different&nbsp;{{c3::modules}},"<img src=""paste-6725aff76c37882399c37da8a1351b8542d9f7d8.jpg"">",eth::sem6::rse
+PN|p^wy`+r,Modules that&nbsp;{{c1::expose}} their&nbsp;{{c2::internal}} data representation become&nbsp;{{c3::tightly-coupled}} to their clients,,eth::sem6::rse
+"q^)l,&K}Eu",{{c1::Information hiding}} is when we&nbsp;{{c2::hide implementation details behind the interface}},,eth::sem6::rse
+C6pcL?!}7f,"With ""No leaking"" we mean that we&nbsp;{{c1::do not return references to sub-objects}}",,eth::sem6::rse
+z[5cW&xLye,"Design patterns are&nbsp;{{c1::general, reusable solutions}} to commonly occuring design problems",,eth::sem6::rse
+wL$U].vhYS,2 Approaches for making code modular:<div>- {{c1::Restricting access to data fields}}</div><div>- {{c2::Making shared data immutable}}</div>,,eth::sem6::rse
+s#h<bFT:$S,The&nbsp;{{c1::flyweight}} pattern maximizes {{c2::sharing of immutable objects}},,eth::sem6::rse
+"uf5n?WE,d$",In the {{c1::observer}} pattern components may&nbsp;{{c2::generate events}} or&nbsp;{{c3::register for events}} of other components using {{c4::a callback}},,eth::sem6::rse
+wFlN54|NsF,"Main strengths of Event-Based Style:<br>-&nbsp;{{c1::Reuse: plug in new components by registering them for events}}<br>-&nbsp;{{c2::Adaptation: add, remove, replace components with minimum effect on other components in the system}}",,eth::sem6::rse
+AI$34=Pl-!,"Weaknesses of event-based-style:<br><ul><li>{{c1::Loss of control: In which order will the components be invoked?}}</li><li>{{c2::Ensuring correctness is difficult, because it depends on the context}}</li></ul>",,eth::sem6::rse
+uvYecvWsii,{{c1::Inheritance}} couples the&nbsp;{{c2::sub}}-class to the&nbsp;{{c2::super}}-class,,eth::sem6::rse
+exqNcTD~^q,{{c1::Allocations}} couple the&nbsp;{{c2::clients}} to the&nbsp;{{c3::instantiated class}},,eth::sem6::rse
+z1pY`-jH4Y,Modules can be made parametric by using&nbsp;{{c1::interfaces}} and&nbsp;{{c1::factories}} instead of {{c2::concrete classes}},,eth::sem6::rse
+"tW7AHJ,L`J",Modules can be made parametric by using&nbsp;{{c1::variable values}} instead of constant values,,eth::sem6::rse
+D0u4{mBGHt,"In Unit Testing we are testing {{c1::individual subsystems (collection of classes, or a single class)}}",,eth::sem6::rse
+nzkJu|rCi,{{c2::Exhaustive}} testing is when a unit is tested for&nbsp;{{c1::every possible input}},,eth::sem6::rse
+u41B9imTVk,{{c1::Random}} testing is when a unit is tested&nbsp;{{c2::with random inputs}},,eth::sem6::rse
+Hb#v9j|Ffq,What is the main disadvantage of random testing?<br>-&nbsp;{{c1::Treats all inputs as equally valuable}},,eth::sem6::rse
+L[1$v]wr$I,{{c1::Functional}} testing&nbsp;tests units by&nbsp;{{c2::using requirements knowledge to derive test cases}},,eth::sem6::rse
+ht%}>4U?im,What is a limitation of functional testing?<br>-&nbsp;{{c1::Does not reveal errors in the specification (missing cases)}},,eth::sem6::rse
+gK>:g@46}n,"{{c1::Structural}} testing&nbsp;uses&nbsp;{{c2::design knowledge about the system structure, algorithms}} to&nbsp;{{c3::derive test cases that exercise a large portion of the code}}","<img src=""paste-e87f2d290398114b64a91247adf2baee01fd5c4d.jpg"">",eth::sem6::rse
+DYp*ax]L{4,What is a limitation for structural testing?<br>-&nbsp;{{c1::It requires design knowledge of the algorithm.}},,eth::sem6::rse
+qKi6AEUtUh,In&nbsp;{{c1::partition}} testing inputs are divided into&nbsp;{{c2::equivalence classes}}.,"<img src=""paste-5fe060e70f819572e68ca9ef0f78d2d5bccf4c89.jpg"">",eth::sem6::rse
+eoK{q9uGmh,In&nbsp;{{c1::combinatorial}} testing we combine {{c2::equivalence classes}} and&nbsp;{{c3::boundary testing}},,eth::sem6::rse
+duva[q!ps:,CI stands for&nbsp;{{c1::continuous integration}},,eth::sem6::rse
+OXs57+IG3>,CFG stands for&nbsp;{{c1::Control Flow Graph}},,eth::sem6::rse
+"i^<X,%0sPr","An <b>intraprocedural </b>CFG of a procedure&nbsp;\(p\)&nbsp;is a graph (\(N\),\(E\)) where:<br><ul><li>N is the set of {{c2::basic blocks in&nbsp;\(p\) plus designated entry and exit blocks}}</li><li>E contains</li><ul><li>an edge from&nbsp;\(a\)&nbsp;to&nbsp;\(b\)&nbsp;with condition&nbsp;\(c\)&nbsp;iff {{c1::the execution of the basic block&nbsp;\(a\)&nbsp;is succeeded by the execution of&nbsp;\(b\)&nbsp;if the condition&nbsp;\(c\)&nbsp;holds}}</li><li>an edge (entry,&nbsp;\(a\), true) if {{c3::\(a\)&nbsp;is the first basic block of&nbsp;\(p\)}}</li><li>edges (\(b\), exit, true) {{c4::for each basic block&nbsp;\(b\)&nbsp;that ends with a return statement}}</li></ul></ul>",,eth::sem6::rse
+w0I3y6[k!2,Statement coverage is {{c1::how many of the statements were executed}},"<img src=""paste-d179af7f24cde56feec56201e8f2ee4fa0a3812a.jpg"">",eth::sem6::rse
+f3c^U*Cu<K,Branch coverage tests {{c1::all the possible branches in the control flow}},"<img src=""paste-89f5462098516e5b4526a8847e7a17fc022efcd3.jpg"">",eth::sem6::rse
+"E=,-:(D2hT",Branch coverage =&nbsp;{{c1::\(\frac{\text{Number of executed branches} }{\text{Total number of branches} }\)}},,eth::sem6::rse
+"bDIEBR7Bg,",Statement coverage =&nbsp;{{c1::\(\frac{\text{Number of executed statements} }{\text{Total number of statements} }\)}},,eth::sem6::rse
+o+s{V}k&WV,Branch coverage leads to&nbsp;{{c1::more}} thorough testing than statement coverage,,eth::sem6::rse
+QKgYYEk0e*,Path coverage tests&nbsp;{{c1::all possible paths through the CFG}},"<img src=""paste-73ec765fe2842f3ad6e18c35769888542745d24f.jpg"">",eth::sem6::rse
+"CO0jjb|r,s",Path coverage =&nbsp;{{c1::\(\frac{\text{Number of executed paths} }{\text{Total number of paths} }\)}},,eth::sem6::rse
+HU1f9eoB{X,Path coverage leads to&nbsp;{{c1::more}}&nbsp;thorough testing&nbsp;than both statement and branch coverage,,eth::sem6::rse
+k&+-G-#4Yx,"Loop coverage =&nbsp;{{c1::\(\frac{\binom{\text{Number of executed loops} }{\text{with 0,1 and more than 1 iterations} } }{\text{Total number of loops * 3} }\)}}",,eth::sem6::rse
+w[GPqNkK+f,"In <b>loop coverage</b>, for each loop, test&nbsp;{{c1::zero, one and more than one consecutive iterations}}","<img src=""paste-7edbf0e01c6293c344cc63b00901549adde7273e.jpg"">",eth::sem6::rse
+e&u81Mhltk,Statement coverage leads to&nbsp;{{c1::less}} thorough testing than branch coverage,,eth::sem6::rse
+zQup>b%|WT,Statement and branch coverage&nbsp;lead to&nbsp;{{c1::less}}&nbsp;thorough testing&nbsp;than path coverage&nbsp;,,eth::sem6::rse
+mp@Z?01%6_,A {{c2::join}} between A and B is denoted as&nbsp;{{c1::\(A \sqcup B\)}},,eth::sem6::rse
+"h.W,AkHKnQ","A&nbsp;{{c1::<span style=""color: rgb(255, 0, 0);"">complete lattice</span>}} (L,&nbsp;\(\sqsubseteq\),&nbsp;\(\sqcup\)) is a {{c2::poset}} where {{c3::\(\sqcup Y\)&nbsp;and&nbsp;\(\sqcap Y\)}} exist for any&nbsp;\(Y\subseteq L\)","(For example, for a set&nbsp;\(L\), \((\mathcal{P}(L),\subseteq, \cup, \cap)\)&nbsp;is a complete<br>lattice.)<br><img src=""paste-e3e2228747b18747d291f49eff9b24c97f545256.jpg"">",eth::sem6::rse
+ekl?NLMcrS,"A&nbsp;{{c1::function f}}:&nbsp;\(A \to B\)&nbsp;between two posets (A,&nbsp;\(\sqsubseteq\)) and (B,&nbsp;\(\leq\)) is {{c2::<span style=""color: rgb(255, 0, 0);"">increasing (monotone)</span>}}:&nbsp;\(\forall a,b\in A:\)&nbsp;{{c3::\(a\sqsubseteq b\Rightarrow f(a)\leq f(b)\)}}",,eth::sem6::rse
+DkKd1ZguM=,"For a poset (L,&nbsp;\(\sqsubseteq\)), function f:&nbsp;\(L\to L\), and element&nbsp;\(x\in L\):<br>- x is a {{c1::fixed point}} iff f(x) = x",,eth::sem6::rse
+o!)HPR@]=|,{{c2::Fix(f)}} denotes the set of all {{c1::fixed points}},,eth::sem6::rse
+j;{O$^.NF6,{{c2::Red(f)}} denotes the set of all {{c1::post-fixedpoints}},,eth::sem6::rse
+c+aGa7;*sj,"For a poset (L,&nbsp;\(\sqsubseteq\)), function&nbsp;\(f:L\to L\), we say that&nbsp;{{c2::\(lfp^\sqsubseteq f\)}}&nbsp;\(\in L\)&nbsp;is a {{c1::least fixed point}} of&nbsp;\(f\)",,eth::sem6::rse
+"mJY<O]P0P,","For a poset (L,&nbsp;\(\sqsubseteq\)), function&nbsp;\(f:L\to L\), we say that&nbsp;{{c2::\(\text{lfp}^\sqsubseteq f\)}}&nbsp;\(\in L\)&nbsp;is a {{c1::least fixed point}} of&nbsp;\(f\)&nbsp;if:<br><ul><li>{{c3::\(\text{lfp}^\sqsubseteq f\)&nbsp;is a fixed point.}}</li><li>{{c4::It is the least fixed point:&nbsp;\(\forall a\in L: a = f(a) \Rightarrow lfp^\sqsubseteq f\sqsubseteq a\)}}<br></li></ul>","<img src=""paste-428c02a526438244adf3e2e04adb2bd973e8619a.jpg"">",eth::sem6::rse
+f-{gPNFq/[,"{{c1::Tarski's fixed point}}<b>&nbsp;theorem</b>:&nbsp;<br>If&nbsp;\((L,\sqsubseteq,\sqcup,\sqcap,\bot,\top)\)&nbsp;is a {{c4::complete lattice}} and&nbsp;\(f:L\to L\)&nbsp;is a {{c5::monotone function}}, then:<br>{{c2::\(\text{lfp}^\sqsubseteq f\)&nbsp;exists}}, and<br>\({{c2::\text{lfp}^\sqsubseteq f}} = {{c3::\sqcap \text{ Red}(f)\in \text{Fix}(f)}}\)",,eth::sem6::rse
+O?cQ(E8U5},"{{c1::Tarski}}'s theorem tells us that a fixed point exists, but {{c2::does not actually suggest an algorithm for computing it}}.",,eth::sem6::rse
+q(^eHmv!UM,\(f^{{{c2::n+1}}}(a)=f({{c1::f^n(a)}})\),,eth::sem6::rse
+Mm[`BkomRg,"Given a poset of {{c1::finite height}}, a {{c1::least element}}&nbsp;\(\bot\), a {{c1::<span style=""color: rgb(255, 0, 0);"">monotone</span>}}&nbsp;\(f\).<br><br>Then the iterates&nbsp;\(f^0(\bot), f^1(\bot), f^2(\bot), \ldots\)&nbsp;eventually stabilize for some&nbsp;\(n\in N\), that is:<br>\(f^{{{c2::n}} }(\bot)=f^{{{c2::n+1}}}(\bot)\)&nbsp;and:<br>\({{c3::lfp^\sqsubseteq f}}={{c4::f^n(\bot)}}\)",,eth::sem6::rse
+KS3h[c3}0`,{{c2::\([\![P]\!]\)}} is the&nbsp;{{c1::set of reachable states of a program&nbsp;\(P\)}},,eth::sem6::rse
+q?{}!t5>f6,Given functions:<br>\(F:C\to C\)<br>\(F^\#:A\to A\)<br>what does it mean for&nbsp;\(F^\#\)&nbsp;to approximate&nbsp;\(F\)?<br>\(\forall x\in C: {{c1::F(x)\sqsubseteq_C F^\#(x)}}\),,eth::sem6::rse
+C8T_Os`?hA,How to approximate a function given:<br>\(F:X\to X\)<br>\(F^\#:Y\to Y\)<br>{{c2::\(Y\)}}&nbsp;is the {{c1::abstract}} and&nbsp;{{c2::\(X\)}}&nbsp;is the {{c1::concrete}},,eth::sem6::rse
+unkEEcc=h2,How to approximate a function given:<br>\(F:C\to C\)<br>\(F^\#:A\to A\)<br>We need to connect the {{c1::concrete&nbsp;\(C\)}}&nbsp;and the {{c1::abstract&nbsp;\(A\)}},,eth::sem6::rse
+NIxXv;mXHM,"How to approximate a function given:<br>\(F:C\to C\)<br>\(F^\#:A\to A\)<br><br>{{c2::\(\alpha:C\to A\)}}&nbsp;is called the {{c1::<span style=""color: rgb(255, 0, 0);"">abstraction</span>}} function<br>{{c2:: \(\gamma:A\to C\)}}&nbsp;is called the {{c1::<span style=""color: rgb(255, 0, 0);"">concretization</span>}} function","<img src=""paste-375d775a9b1bc0b9c8fe04f548f5deb82eb83ed3.jpg"">",eth::sem6::rse
+kQlM=_H)ma,"The {{c2::<span style=""color: rgb(255, 0, 0);"">least precise</span>}} approximation&nbsp;for&nbsp;\(F\)&nbsp;is simply {{c1::\(F^\#(z)=\top\)}}","(However, it is not practically useful as it is too imprecise. It is always <b><span style=""color: rgb(255, 0, 0);"">sound</span></b>.)",eth::sem6::rse
+Ml3N0Eo_=;,"The {{c2::<span style=""color: rgb(255, 0, 0);"">most precise</span>}}&nbsp;approximation&nbsp;for&nbsp;\(F\)&nbsp;is {{c1::\(F^\#(z)=\alpha(F(\gamma(z)))\)}}","<img src=""paste-d4b3f7a5e2a953c75298bdcbb23c0c56e7715914.jpg"">",eth::sem6::rse
+u]&8K>C>AF,"{{c2::\([\![action]\!]\)}} is often referred to as the&nbsp;{{c1::<span style=""color: rgb(255, 0, 0);"">abstract transformer</span>}}",,eth::sem6::rse
+qr.G8lnJS,\([\![action]\!]\)captures the {{c1::abstract semantics of the language}},,eth::sem6::rse
+DC~kXK)5#c,Mathematical Concept:<br>{{c2::Bottom&nbsp;\((\bot)\)}}<br><br>Use in Static Analysis:<br>{{c1::Used for initialization of all but initial elements}},,eth::sem6::rse
+b`U7~PQp;g,Mathematical Concept:<br>{{c2::Joins&nbsp;\((\sqcup)\)}}<br><br>Use in Static Analysis:<br>{{c1::Combines facts arriving at a program point}},,eth::sem6::rse
+e#L{TF:M]K,Mathematical Concept:<br>{{c2::Complete Lattice}}<br><br>Use in Static Analysis:<br>{{c1::Defines Abstract Domain and ensure joins exist}},,eth::sem6::rse
+t=:#D.4iqK,Mathematical Concept:<br>{{c2::Widening&nbsp;\((\triangledown)\)}}<br><br>Use in Static Analysis:<br>{{c1::Used to guarantee analysis termination}},,eth::sem6::rse
+uv!~&yr~lo,Mathematical Concept:<br>{{c2::Tarski's Theorem}}<br><br>Use in Static Analysis:<br>{{c1::Ensures fixed points exist}},,eth::sem6::rse
+B-q:n_8+h3,"<b>Example of lifting</b>:<br>We have x, y, and we lift to&nbsp;\(\text{Var}\to L^i\):<br><br>Let map1 be:&nbsp;\(\{x\to[1,5], y\to[7,10]\}\)<br>Let map2 be:&nbsp;\(\{x\to[2,6], y\to[6,9]\}\)<br><br>Then<br><ul><li>map3 = (map1&nbsp;\(\sqcap\)&nbsp;map2) =&nbsp;{{c2::\(\{x\to[2,5], y\to[7,9]\}\)}}</li><li>map4 = (map1&nbsp;\(\sqcup\)&nbsp;map2) =&nbsp;{{c2::\(\{x\to[1,6], y\to[6,10]\}\)}}</li><li>(map3&nbsp;\(\sqsubseteq\)&nbsp;map4) is {{c1::true}}</li></ul>",,eth::sem6::rse
+w`j<(P0<pH,"If we add&nbsp;\(\bot_i\)&nbsp;to any other element, we get&nbsp;{{c1::\(\bot_i\)}}",,eth::sem6::rse
+jfI3Kd._PP,"If both operands are not&nbsp;\(\bot_i\), we get:<br>\([x,y] + [p,q] = {{c1::[x+p, y+q]}}\)",(Same for&nbsp;\(*\)),eth::sem6::rse
+x>HaVGa#9I,"The operator {{c1::\(\triangledown: L\times L\to L\)}}&nbsp;is called a {{c2::<span style=""color: rgb(255, 0, 0);"">widening</span>}}&nbsp;operator",,eth::sem6::rse
+s_xfj%k<}(,"The operator \(\triangledown: L\times L\to L\)&nbsp;is called a <span style=""color: rgb(255, 0, 0);"">widening</span>&nbsp;operator if:<br><ul><li>{{c2::\(\forall a,b\in L: a\sqcup b\sqsubseteq a\triangledown b\)&nbsp;(widening <span style=""color: rgb(255, 0, 0);"">approximates</span> the join)}}<br></li><li>if&nbsp;\(x^0\sqsubseteq x^1\sqsubseteq x^2 \sqsubseteq\ldots\sqsubseteq x^n\)&nbsp;is {{c3::an increasing sequence}},<br>then&nbsp;\(y^0\sqsubseteq y^1\sqsubseteq y^2 \sqsubseteq\ldots\sqsubseteq y^n\)&nbsp;{{c4::<span style=""color: rgb(255, 0, 0);"">stabilizes</span> after a <span style=""color: rgb(255, 0, 0);"">finite number of steps</span>}}<br>where&nbsp;\(y^0=x^0\)&nbsp;and&nbsp;\(\forall i\geq 0: y^{i+1}={{c1::y^i\triangledown x^{i+1} }}\)<br></li></ul>",,eth::sem6::rse
+J}g-qJ6cXQ,"The <span style=""color: rgb(255, 0, 0);"">fixed point</span> is the&nbsp;{{c1::over-approximation}} of the program",,eth::sem6::rse
+l{ym$xRM:t,"We select/define an abstract domain based on the&nbsp;{{c1::type of <span style=""color: rgb(255, 0, 0);"">properties</span> we want to prove}}",,eth::sem6::rse
+mE~kfAC@ES,"Interval Domain:<br>\([a,b]\sqsubseteq_i [c,d]\)&nbsp;if&nbsp;{{c1::\(a\geq c, b \leq d\)}}",,eth::sem6::rse
+w0Wq[iANd},"Interval Domain:<br>\([a,b]\sqcup_i [c,d] = {{c1::[\min(\{a,c\}), \;\max(\{b,d\})] }}\)",,eth::sem6::rse
+x)|a{GHY$Z,"{{c2::\(\text{wdi}(a,b)\)}} is the&nbsp;{{c1::well-defined interval}}",,eth::sem6::rse
+"D(+~q,c=ca",\(L^i\)&nbsp;domain defines&nbsp;{{c1::intervals}},"<img src=""paste-d3c832516e4c6fba578d627a1673fd102c9299b0.jpg"">",eth::sem6::rse
+bd]yVrl02u,\(\text{Var}\)&nbsp;defines the&nbsp;{{c1::variables}} in a program,,eth::sem6::rse
+dlv_A71uGN,"\(\text{Lab} \to (\text{Var} \to \text{L}^i)\)&nbsp;means that&nbsp;{{c1::at each label}} and {{c1::for each variable}}, we will {{c2::keep the interval for that variable}}",,eth::sem6::rse
+Pg;hYwGSpO,Generic Template:<br>\(F^\#: {{c1::(Lab \to A)}} \to {{c1::(Lab \to A)}}\),,eth::sem6::rse
+fw2p->/<04,"What is&nbsp;\((\ell',\text{action},\ell)\)?<br><br>({{c1::program counter}}, {{c1::action that will be executed}}, {{c1::next program counter}})","<img src=""paste-3715dace1d8462a21e74b3b7c524a70adfc6cb15.jpg"">",eth::sem6::rse
+JgrFXSiE)o,"\((\ell',\text{action},\ell)\)&nbsp;is an&nbsp;{{c1::edge}} in the control-flow graph",,eth::sem6::rse
+Es<YWVZtg>,"If there exists a transition&nbsp;\(t=\langle\ell',\sigma'\rangle\to\langle\ell,\sigma\rangle\)&nbsp;in a program trace in&nbsp;\(P\), then {{c1::\((\ell',\text{action},\ell)\)}} must exist.<br>This says that we are&nbsp;{{c2::sound}}:&nbsp;{{c2::we never miss a flow}}","<img src=""paste-dff51e4848feb8bc0024b48f3bd8f6e27d2b8e94.jpg"">",eth::sem6::rse
+z)mE*$4N/-,Iterate abstract transformers over the {{c2::abstract domain}} until&nbsp;{{c1::we reach a fixed point}},,eth::sem6::rse
+JIv4*@!T)Z,The solution to {{c1::a function that keeps iterating}} is to use the&nbsp;{{c2::widening}} operator,,eth::sem6::rse
+cQ]X?l+j^a,Widening approximates the&nbsp;{{c1::join}},,eth::sem6::rse
+DQ5]V<R%kT,"\([a,b]\triangledown[c,d] = [e,f]\)&nbsp;where:<br><ul><li>if&nbsp;{{c1::\(a&gt;c\)}}, then {{c1::\(e=-\infty\)}}, else {{c1::\(e=a\)}}<br></li><li>if&nbsp;{{c1::\(b&lt;d\)}}, then {{c1::\(f=\infty\)}}, else {{c1::\(f=b\)}}<br></li></ul>",,eth::sem6::rse
+b-YuJ/5GF2,"For&nbsp;\([a,b]\triangledown[c,d] = [e,f]\), if one of the operands is&nbsp;\(\bot\)&nbsp;the result is&nbsp;{{c1::the other operand}}.",,eth::sem6::rse
+F_2t0+hlgN,When using the widening operator we are able to reach a&nbsp;{{c1::fixed point}} in a program where there is a variable that keeps increasing,"Notice the&nbsp;\([7,\infty]\)&nbsp;that happen because&nbsp;\(y\)&nbsp;is at least 7 at those points and always increases with each iteration<br><img src=""paste-900a0d10aecea56a5ca890654592b4d95691d29d.jpg"">",eth::sem6::rse
+OwDF^@tj#d,Looking at the concrete store:<br><ul><li>\(\text{Objs}\)&nbsp;is the&nbsp;{{c1::set of all possible objects}}<br></li><li>\(\text{PtrVal} = {{c2::\text{Objs}\cup\{\text{null}\} }}\)<br></li></ul>,,eth::sem6::rse
+bFa/unFJMe,Two pointers are {{c1::aliases}} if {{c2::they point to the same object}},,eth::sem6::rse
+pn8Y)d]$/(,"{{c2::Points-to pair (p,A)}} means {{c1::p holds the address of object A}}",,eth::sem6::rse
+h>+[#iI+EK,"Using <span style=""color: rgb(255, 0, 0);"">allocation sites</span> (labels), abstract objects are defined as:<br>\(\text{AbsObj}={{c1::\{\ell\;|\;\text{statement is }p:=\text{alloc}^\ell\} }}\)",,eth::sem6::rse
+qC/$[u$~[R,Two kinds of pointer analysis:<br><ul><li>{{c1::Flow sensitive}}</li><li>{{c1::Flow insensitive}}<br></li></ul>,,eth::sem6::rse
+hb^K`J0/)_,Flow {{c2::sensitive}} pointer analysis {{c1::respects the program control flow}},,eth::sem6::rse
+ncLwF:n2dd,Flow {{c2::insensitive}} pointer analysis {{c1::assumes all execution orders are possible (abstracts away order between statements)}},,eth::sem6::rse
+7fiYeT>!9,Flow {{c2::insensitive}} pointer analysis is good for&nbsp;{{c1::concurrency (if not too imprecise)}},,eth::sem6::rse
+F`yV^x4}P},"Two pointers a and b&nbsp;<span style=""color: rgb(255, 0, 0);"">may alias</span> if:<br>{{c1::points-to (a)&nbsp;\(\cap\)&nbsp;points-to (b)&nbsp;\(\neq \emptyset\)}}",,eth::sem6::rse
+GfOk&$7JJe,"A function <span style=""color: rgb(255, 0, 0);"">points-to (p)</span> returns the {{c1::set of all abstract objects that a pointer <span style=""color: rgb(255, 0, 0);"">p</span> can point to}}",,eth::sem6::rse
+"w~|,vKL,bq",Sources of <b>unboundedness</b>:<br><ul><li>Unbounded {{c1::heap}}</li><li>Unbounded&nbsp;{{c1::range of array indices}}</li><li>Unbounded {{c1::number of threads}}<br></li></ul>,,eth::sem6::rse
+m.:^HgFKSQ,ALoc stands for&nbsp;{{c1::abstract location}},,eth::sem6::rse
+m$D[=6VH^2,Widening (\(\triangledown\)) operator jumps&nbsp;{{c1::upwards (above least fixedpoint)}},,eth::sem6::rse
+q?g$1kQ@qF,Widening (\(\triangledown\)) ensures&nbsp;{{c1::termination}},,eth::sem6::rse
+b#.C0Pz!tW,Widening (\(\triangledown\)) operator&nbsp;{{c1::costs/reduces}} precision,,eth::sem6::rse
+fAL#ZC-rWK,Narrowing (\(\triangle\)) operator jumps&nbsp;{{c1::downwards (but stays above least fixedpoint)}},,eth::sem6::rse
+K^Ao728gF~,Narrowing (\(\triangle\)) operator&nbsp;{{c1::improves}} precision,,eth::sem6::rse
+Eu%leaUU!u,{{c2::Forwards}} analysis overapproximates {{c1::output}} state from {{c1::input}} state,,eth::sem6::rse
+C!KCSMuXQN,{{c2::Backwards}} analysis overapproximates {{c1::input}} state from {{c1::output}} state,,eth::sem6::rse
+h8}A$xdmmb,{{c1::Forwards}} analysis computes {{c2::postcondition <b>from</b> given precondition}},,eth::sem6::rse
+#Iv3!tdQn,"{{c1::Backwards}} analysis computes {{c2::precondition <span style=""color: rgb(255, 0, 0);"">avoiding</span> given postcondition}}",,eth::sem6::rse
+g!=g4+ya1B,"<span style=""color: rgb(0, 0, 0);"">How do we combine facts in m</span><span style=""color: rgb(0, 170, 0);"">ay-analysis</span> vs <span style=""color: rgb(0, 170, 255);"">must-analysis?</span><br><ul><li>May:&nbsp;{{c1::overapprox. via join}}</li><li>Must:&nbsp;{{c1::underapprox. via meet}}</li></ul>","<img src=""paste-8d4dfc8b0c60ef1b6d3de1425ecc33fe18cf8c53.jpg"">",eth::sem6::rse
+"l&n,&Ex1tA",What are the main limitations of SMT solvers?<br><ul><li>{{c1::Many theories aren't decidable (e.g. non-linear integers)}}<br></li><li>{{c1::Constraint solving may take too long}}<br></li></ul>,,eth::sem6::rse
+G[k^:-*-Z|,"{{c2::<span style=""color: rgb(255, 0, 0);"">Concolic execution</span>}} combines {{c1::<span style=""color: rgb(255, 0, 0);"">conc</span>rete}} and {{c1::symb<span style=""color: rgb(255, 0, 0);"">olic</span>}} execution",,eth::sem6::rse
+ua$dS|W73K,The high-level idea in the concolic execution is that the {{c1::concrete execution drives the symbolic one}},"<img src=""paste-711b5f5b921db7220d3afec3e49602b616bd0c1f.jpg"">",eth::sem6::rse
+u#~UN@e{Hf,Concolic execution uses a solver to {{c1::query legal values to go down the other branch}},"<img src=""paste-e26dba5ae8ded8dd8da77576353a3a48dd2faecb.jpg""><br><img src=""paste-a88a665c2e146d2fc3cf947cb5bd19723908a713.jpg""><img src=""paste-f8f300330e7541209ad27ddf66c73d9fa72f123b.jpg""><br>And then all the paths have been explored",eth::sem6::rse
+O!2Kcye;pc,Symbolically executing native code is difficult/impossible because {{c1::sources may not be available}} or&nbsp;{{c1::written in an unsupported language}},,eth::sem6::rse
+j6(.@K<>Px,Static analysis is the&nbsp;{{c1::over}}-approximation,,eth::sem6::rse
+O`8_iWH_Wz,Dynamic analysis is the {{c1::under}}-approximation,,eth::sem6::rse
+f`O~3D1cVu,Symbolic execution is the&nbsp;{{c1::over- &amp; under}}-approximation,,eth::sem6::rse
+t5uBTdj0cI,"Core idea of symbolic execution is to {{c1::compute the symbolic constraints per path, and then solve these constraints to have inputs that explore all paths}}",,eth::sem6::rse
+Ho^?o[b1e&,Path conditions&nbsp;\(\pi\)&nbsp;are the {{c1::conditions under which a path is taken}},"<img src=""paste-895ace1b661f4db5c33b8ca798be3c89f5e8e0de.jpg"">",eth::sem6::rse
+Q_$@!|w>Q|,We have a symbolic state per&nbsp;{{c1::program point}},"<img src=""paste-895ace1b661f4db5c33b8ca798be3c89f5e8e0de.jpg"">",eth::sem6::rse
+Ae6=).x8!=,Facts add&nbsp;{{c1::constraints that always hold}},"<img src=""paste-e0e2442850efef9b3668af82dd522d6b00735d90.jpg"">",eth::sem6::rse
+f*Sez^$9eb,"The Alloy Analyzer is <b>decidable</b>, because&nbsp;{{c1::it searches for structures <b>up to a given size</b> making the problem become <b>finite</b>}}",,eth::sem6::rse
+Ch}Kuqg|/N,In linear temporal logic the&nbsp;\(\phi\)&nbsp;symbol denotes&nbsp;{{c1::what holds now}},,eth::sem6::rse
+e.eq(T@u/6,In linear temporal logic&nbsp;\(X\phi\)&nbsp;or&nbsp;\(\circ\phi\)&nbsp;denotes&nbsp;{{c1::that&nbsp;\(\phi\)&nbsp;holds in the next step}},,eth::sem6::rse
+f_-$S0s{@[,In linear temporal logic&nbsp;\(\phi U \psi\)&nbsp;denotes&nbsp;{{c1::that&nbsp;\(\phi\)&nbsp;holds until&nbsp;\(\psi\)&nbsp;holds}},,eth::sem6::rse
+NA%+S9sSi],In linear temporal logic&nbsp;\(F\phi\)&nbsp;or&nbsp;\(\diamond\phi\)&nbsp;denotes&nbsp;{{c1::that&nbsp;\(\phi\)&nbsp;holds eventually}},(F = finally),eth::sem6::rse
+"k{D:|@W,PW",In linear temporal logic&nbsp;\(G\phi\)&nbsp;or&nbsp;\(\square\phi\)&nbsp;denotes&nbsp;{{c1::that&nbsp;\(\phi\)&nbsp;always&nbsp;holds}},(G = globally),eth::sem6::rse

@@ -1,70 +1,70 @@
 guid,abbreviation,expanded abbreviation,explanation,tags
-sWxgNPT{ee,ACK,acknowledgment,used in many network protocols to confirm the receipt of data,ETH::sem4::CN
-sn(YVPAp|;,AIMD,"additive increase, multiplicative decrease",algorithm used by congestion-control algorithms to reach an efficient and fair bandwidth allocation,ETH::sem4::CN
-vUI3=bE7tN,AP,access point,device to provide WiFi connectivity,ETH::sem4::CN
-Fx+)=.T_@],API,application programming interface,interface that defines the interactions between different applications,ETH::sem4::CN
-ikOi!tXsrX,ARP,Address Resolution Protocol,translates between IP and MAC addresses,ETH::sem4::CN
-vQ#fYfZiv$,ARQ,automatic repeat request,strategy to handle errors in data transmission,ETH::sem4::CN
-DVM!A*Q%4,AS,autonomous system,independent network that interconnects with others to form the Internet,ETH::sem4::CN
-L(R7:@ekm.,BCP,best current practice,rules and recommendations for the application of protocols,ETH::sem4::CN
-M.a/<o+#yA,BEB,binary exponential backoff,approach to double waiting time after each consecutive collision,ETH::sem4::CN
-f3#@+Yk8+0,BGP,Border Gateway Protocol,today's de-facto standard inter-domain routing protocol (path-vector protocol),ETH::sem4::CN
-NG[[Ew}S;?,CDN,content distribution (or delivery) network,distributed network of data centers and caches to deliver content to users with low latency,ETH::sem4::CN
-QPPdK!*fjV,CRC,cyclic redundancy check,error-detection mechanism,ETH::sem4::CN
-A4_R}Lj?3w,CSMA,carrier-sense multiple access,protocol that listens for other transmissions before sending data,ETH::sem4::CN
-DNM<L.7{D.,CSMA/CD,CSMA with collision detection,additionally to CSMA check for collisions while sending,ETH::sem4::CN
-F?=76r|7kr,CTS,clear to send,confirmation to send data in MACA,ETH::sem4::CN
-jG#8V+uriO,CWND,congestion window,maximum amount of data in flight to not overload the network,ETH::sem4::CN
-J^U0r(MjH8,DHCP,Dynamic Host Configuration Protocol,protocol for automatically configuring IP hosts,ETH::sem4::CN
-dFHi@msiZ@,DNS,Domain Name System,hierarchical system mapping names to IP addresses and other data,ETH::sem4::CN
-Ai]Ouo7(*!,DoS,denial of service,type of attack where an attacker deteriorates service for legitimate users,ETH::sem4::CN
-OpC3RTFGe>,DSL,digital subscriber line,technology to transmit digital data over telephone lines,ETH::sem4::CN
-bKdA<2|)8i,DV,distance vector,one of two main approaches to intra-domain routing based on distributed Bellman-Ford,ETH::sem4::CN
-"tR>MyA,t`2",ECMP,equal-cost multi path,approach to use multiple paths simultaneously when they have equal cost,ETH::sem4::CN
-i|OR%`>_bD,FDM,frequency-division multiplexing,one of two main types of sharing bandwidth,ETH::sem4::CN
-d1LPO+_-oh,Gbps,gigabit per second,"unit to measure network bandwidth (see also bps, kbps, Mbps)",ETH::sem4::CN
-zDd}5STT96,HTML,HyperText Markup Language,"markup language for documents, primarily used for websites",ETH::sem4::CN
-lon?cYS5jT,HTTP,Hypertext Transfer Protocol,application-layer protocol used (among others) for web browsing,ETH::sem4::CN
-g}JO~p3BH@,ICMP,Internet Control Message Protocol,protocol to provide error and diagnostic information for IP,ETH::sem4::CN
-DBeU2$w&hX,IETF,Internet Engineering Task Force,standards organization which develops and Internet standards,ETH::sem4::CN
-u_N^IbqK.8,IGP,interior gateway protocol,intra-domain routing protocol,ETH::sem4::CN
-JKF^G_oGn9,IP,Internet Protocol,today's de-facto standard network-layer protocol,ETH::sem4::CN
-L/2ULvwp&b,ISM,"industrial, scientific, and medical",unlicensed part of the wireless frequency spectrum,ETH::sem4::CN
-"JWx;W#H&@,",ISP,Internet service provider,company that provides internet connectivity,ETH::sem4::CN
-v:[m!Xehq$,IS-IS,Intermediate System to Intermediate System,one of the two most common intra-domain routing protocols (link-state protocol),ETH::sem4::CN
-"OZ|]CUm>f,",IXP,Internet exchange point,location where many ASes interconnect,ETH::sem4::CN
-uhTje%}K(i,LAN,local area network,small network within a household or organization,ETH::sem4::CN
-IgI9$:yTxq,LDPC,low-density parity-check,type of error-correcting code,ETH::sem4::CN
-ndOZD!=q{L,LP,linear program(ming),approach for optimization problems with linear constraints and objectives,ETH::sem4::CN
-zKL}k=o6F:,LS,link state,one of two main approaches to intra-domain routing based on flooding and Dijkstra,ETH::sem4::CN
-t#/y5~aC$1,LSP,link-state packet,local topology information flooded in a LS routing protocol,ETH::sem4::CN
-"g#a=TtF;,y",MACA,Multiple Access with Collision Avoidance,protocol for wireless communication to mitigate issues with exposed and hidden terminals,ETH::sem4::CN
-o=@((uIr6e,MitM,man in the middle,type of attack where an attacker inserts themselves into the communication of two parties,ETH::sem4::CN
-emnv=UhSvh,MPLS,Multiprotocol Label Switching,virtual-circuit protocol between link and network layer,ETH::sem4::CN
-qJX3WM/L*S,MSS,maximum segment size,maximum size of a transport-layer payload,ETH::sem4::CN
-cOPs4M5u]m,MTU,maximum transmission unit,maximum size of a network-layer packet (for Ethernet: 1500 bytes),ETH::sem4::CN
-Qc=JMeO|K%,NAT,network address translation,system to replace IP address and port of packets at the network layer,ETH::sem4::CN
-"Hb(XXgadf,",NDP,Neighbor Discovery Protocol,protocol that provides ARP and DHCP functionality for IPv6,ETH::sem4::CN
-"N^,a_s~8KS",NIC,network interface card,hardware component that connects a computer to the network,ETH::sem4::CN
-PzEuiNqDFw,OFDM,orthogonal frequency-division multiplexing,type of FDM to carry data in parallel,ETH::sem4::CN
-qQR9)!gkaN,OSPF,Open Shortest Path First,one of the two most common intra-domain routing protocols (link-state protocol),ETH::sem4::CN
-Owv5]cIjEm,PPP,Point-to-Point Protocol,link-layer framing protocol,ETH::sem4::CN
-yo/ACo_uh;,RFC,request for comment,"standards document, mainly published by IETF",ETH::sem4::CN
-"F{dSqot,k4",RIP,Routing Information Protocol,routing protocol in the early Internet,ETH::sem4::CN
-B1XTu2h{U3,ROA,route origin authorization,certificate within RPKI to originate a certain IP prefix,ETH::sem4::CN
-PwL}hnzKF+,RPKI,Resource Public Key Infrastructure,hierarchy of resource certificates to mitigate BGP hijacks,ETH::sem4::CN
-PbW0T$hdpc,RTS,request to send,request to send data in MACA,ETH::sem4::CN
-oKN]CK~4T>,RTT,round-trip time,two-way latency of a connection,ETH::sem4::CN
-jpzUaLb}T?,RWND,receiving window,maximum amount of data in flight to not overload the receiver,ETH::sem4::CN
-l?=(![se8d,TCAM,ternary content-addressable memory,specialized hardware for longest-prefix matching,ETH::sem4::CN
-3[{XeItrg,TCP,Transmission Control Protocol,transport-layer protocol providing reliable stream transport,ETH::sem4::CN
-yP7=KZ_y}I,TDM,time-division multiplexing,one of two main types of sharing bandwidth,ETH::sem4::CN
-7w@C$+K70,TLD,top level domain,highest DNS hierarchy,ETH::sem4::CN
-xF~%Bvn&sg,TLS,transport-layer security,security protocol building on TCP (*not relevant for this lecture*),ETH::sem4::CN
-"uY/+=~X,/|",TTL,time to live,used in several protocols to define the validity of data or packets,ETH::sem4::CN
-G6?>]4H3t],UDP,User Datagram Protocol,transport-layer protocol providing *un*reliable datagram transport,ETH::sem4::CN
-m{4KX{G|9$,URL,Uniform Resource Locator,reference to a web resource,ETH::sem4::CN
-p<vUxNt.Jf,VC,virtual circuit,one of two main networking models,ETH::sem4::CN
-cM@CoeVf5?,VoIP,voice over IP,technologies for voice communication over the Internet,ETH::sem4::CN
-O`-A?+3?/,"MAC (in the context of ""MAC address"")",media access control,"part of the link layer; often used in ""MAC address"" for link-layer addresses",ETH::sem4::CN
-u~2Z0+jA>Z,BDP,bandwidth-delay product,product of bandwidth and delay; measures amount of data in flight,ETH::sem4::CN
+sWxgNPT{ee,ACK,acknowledgment,used in many network protocols to confirm the receipt of data,eth::sem4::cn
+sn(YVPAp|;,AIMD,"additive increase, multiplicative decrease",algorithm used by congestion-control algorithms to reach an efficient and fair bandwidth allocation,eth::sem4::cn
+vUI3=bE7tN,AP,access point,device to provide WiFi connectivity,eth::sem4::cn
+Fx+)=.T_@],API,application programming interface,interface that defines the interactions between different applications,eth::sem4::cn
+ikOi!tXsrX,ARP,Address Resolution Protocol,translates between IP and MAC addresses,eth::sem4::cn
+vQ#fYfZiv$,ARQ,automatic repeat request,strategy to handle errors in data transmission,eth::sem4::cn
+DVM!A*Q%4,AS,autonomous system,independent network that interconnects with others to form the Internet,eth::sem4::cn
+L(R7:@ekm.,BCP,best current practice,rules and recommendations for the application of protocols,eth::sem4::cn
+M.a/<o+#yA,BEB,binary exponential backoff,approach to double waiting time after each consecutive collision,eth::sem4::cn
+f3#@+Yk8+0,BGP,Border Gateway Protocol,today's de-facto standard inter-domain routing protocol (path-vector protocol),eth::sem4::cn
+NG[[Ew}S;?,CDN,content distribution (or delivery) network,distributed network of data centers and caches to deliver content to users with low latency,eth::sem4::cn
+QPPdK!*fjV,CRC,cyclic redundancy check,error-detection mechanism,eth::sem4::cn
+A4_R}Lj?3w,CSMA,carrier-sense multiple access,protocol that listens for other transmissions before sending data,eth::sem4::cn
+DNM<L.7{D.,CSMA/CD,CSMA with collision detection,additionally to CSMA check for collisions while sending,eth::sem4::cn
+F?=76r|7kr,CTS,clear to send,confirmation to send data in MACA,eth::sem4::cn
+jG#8V+uriO,CWND,congestion window,maximum amount of data in flight to not overload the network,eth::sem4::cn
+J^U0r(MjH8,DHCP,Dynamic Host Configuration Protocol,protocol for automatically configuring IP hosts,eth::sem4::cn
+dFHi@msiZ@,DNS,Domain Name System,hierarchical system mapping names to IP addresses and other data,eth::sem4::cn
+Ai]Ouo7(*!,DoS,denial of service,type of attack where an attacker deteriorates service for legitimate users,eth::sem4::cn
+OpC3RTFGe>,DSL,digital subscriber line,technology to transmit digital data over telephone lines,eth::sem4::cn
+bKdA<2|)8i,DV,distance vector,one of two main approaches to intra-domain routing based on distributed Bellman-Ford,eth::sem4::cn
+"tR>MyA,t`2",ECMP,equal-cost multi path,approach to use multiple paths simultaneously when they have equal cost,eth::sem4::cn
+i|OR%`>_bD,FDM,frequency-division multiplexing,one of two main types of sharing bandwidth,eth::sem4::cn
+d1LPO+_-oh,Gbps,gigabit per second,"unit to measure network bandwidth (see also bps, kbps, Mbps)",eth::sem4::cn
+zDd}5STT96,HTML,HyperText Markup Language,"markup language for documents, primarily used for websites",eth::sem4::cn
+lon?cYS5jT,HTTP,Hypertext Transfer Protocol,application-layer protocol used (among others) for web browsing,eth::sem4::cn
+g}JO~p3BH@,ICMP,Internet Control Message Protocol,protocol to provide error and diagnostic information for IP,eth::sem4::cn
+DBeU2$w&hX,IETF,Internet Engineering Task Force,standards organization which develops and Internet standards,eth::sem4::cn
+u_N^IbqK.8,IGP,interior gateway protocol,intra-domain routing protocol,eth::sem4::cn
+JKF^G_oGn9,IP,Internet Protocol,today's de-facto standard network-layer protocol,eth::sem4::cn
+L/2ULvwp&b,ISM,"industrial, scientific, and medical",unlicensed part of the wireless frequency spectrum,eth::sem4::cn
+"JWx;W#H&@,",ISP,Internet service provider,company that provides internet connectivity,eth::sem4::cn
+v:[m!Xehq$,IS-IS,Intermediate System to Intermediate System,one of the two most common intra-domain routing protocols (link-state protocol),eth::sem4::cn
+"OZ|]CUm>f,",IXP,Internet exchange point,location where many ASes interconnect,eth::sem4::cn
+uhTje%}K(i,LAN,local area network,small network within a household or organization,eth::sem4::cn
+IgI9$:yTxq,LDPC,low-density parity-check,type of error-correcting code,eth::sem4::cn
+ndOZD!=q{L,LP,linear program(ming),approach for optimization problems with linear constraints and objectives,eth::sem4::cn
+zKL}k=o6F:,LS,link state,one of two main approaches to intra-domain routing based on flooding and Dijkstra,eth::sem4::cn
+t#/y5~aC$1,LSP,link-state packet,local topology information flooded in a LS routing protocol,eth::sem4::cn
+"g#a=TtF;,y",MACA,Multiple Access with Collision Avoidance,protocol for wireless communication to mitigate issues with exposed and hidden terminals,eth::sem4::cn
+o=@((uIr6e,MitM,man in the middle,type of attack where an attacker inserts themselves into the communication of two parties,eth::sem4::cn
+emnv=UhSvh,MPLS,Multiprotocol Label Switching,virtual-circuit protocol between link and network layer,eth::sem4::cn
+qJX3WM/L*S,MSS,maximum segment size,maximum size of a transport-layer payload,eth::sem4::cn
+cOPs4M5u]m,MTU,maximum transmission unit,maximum size of a network-layer packet (for Ethernet: 1500 bytes),eth::sem4::cn
+Qc=JMeO|K%,NAT,network address translation,system to replace IP address and port of packets at the network layer,eth::sem4::cn
+"Hb(XXgadf,",NDP,Neighbor Discovery Protocol,protocol that provides ARP and DHCP functionality for IPv6,eth::sem4::cn
+"N^,a_s~8KS",NIC,network interface card,hardware component that connects a computer to the network,eth::sem4::cn
+PzEuiNqDFw,OFDM,orthogonal frequency-division multiplexing,type of FDM to carry data in parallel,eth::sem4::cn
+qQR9)!gkaN,OSPF,Open Shortest Path First,one of the two most common intra-domain routing protocols (link-state protocol),eth::sem4::cn
+Owv5]cIjEm,PPP,Point-to-Point Protocol,link-layer framing protocol,eth::sem4::cn
+yo/ACo_uh;,RFC,request for comment,"standards document, mainly published by IETF",eth::sem4::cn
+"F{dSqot,k4",RIP,Routing Information Protocol,routing protocol in the early Internet,eth::sem4::cn
+B1XTu2h{U3,ROA,route origin authorization,certificate within RPKI to originate a certain IP prefix,eth::sem4::cn
+PwL}hnzKF+,RPKI,Resource Public Key Infrastructure,hierarchy of resource certificates to mitigate BGP hijacks,eth::sem4::cn
+PbW0T$hdpc,RTS,request to send,request to send data in MACA,eth::sem4::cn
+oKN]CK~4T>,RTT,round-trip time,two-way latency of a connection,eth::sem4::cn
+jpzUaLb}T?,RWND,receiving window,maximum amount of data in flight to not overload the receiver,eth::sem4::cn
+l?=(![se8d,TCAM,ternary content-addressable memory,specialized hardware for longest-prefix matching,eth::sem4::cn
+3[{XeItrg,TCP,Transmission Control Protocol,transport-layer protocol providing reliable stream transport,eth::sem4::cn
+yP7=KZ_y}I,TDM,time-division multiplexing,one of two main types of sharing bandwidth,eth::sem4::cn
+7w@C$+K70,TLD,top level domain,highest DNS hierarchy,eth::sem4::cn
+xF~%Bvn&sg,TLS,transport-layer security,security protocol building on TCP (*not relevant for this lecture*),eth::sem4::cn
+"uY/+=~X,/|",TTL,time to live,used in several protocols to define the validity of data or packets,eth::sem4::cn
+G6?>]4H3t],UDP,User Datagram Protocol,transport-layer protocol providing *un*reliable datagram transport,eth::sem4::cn
+m{4KX{G|9$,URL,Uniform Resource Locator,reference to a web resource,eth::sem4::cn
+p<vUxNt.Jf,VC,virtual circuit,one of two main networking models,eth::sem4::cn
+cM@CoeVf5?,VoIP,voice over IP,technologies for voice communication over the Internet,eth::sem4::cn
+O`-A?+3?/,"MAC (in the context of ""MAC address"")",media access control,"part of the link layer; often used in ""MAC address"" for link-layer addresses",eth::sem4::cn
+u~2Z0+jA>Z,BDP,bandwidth-delay product,product of bandwidth and delay; measures amount of data in flight,eth::sem4::cn

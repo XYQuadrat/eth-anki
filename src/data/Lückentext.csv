@@ -1,379 +1,379 @@
 guid,text,extra,tags
-kfsN#[8n@),{{c1::\( \neg (A \land B) \)}} \( \equiv \)&nbsp;{{c2::\( \neg A \lor \neg B \)}}<br>,de Morgan rules,ETH::sem1::DiskMath
-%-v5b-!x=,{{c1::\( \neg (A \lor B) \)&nbsp;}} \( \equiv \)&nbsp;{{c2::\( \neg A \land \neg B\)}}<br>,De Morgan rules,ETH::sem1::DiskMath
-PK*1xpYhw8,Komplexer Kehrwert: {{c1::\( \frac{1}{z} \)}}&nbsp;\( = \)&nbsp;{{c2::\( \frac{x - iy}{x^2 + y^2}\)}}<br>,,ETH::sem1::LinAlg
-u65pI6|_4#,{{c1:: Inverse eines Produkts: \((\mathbf{AB})^{-1}\)}} = {{c2::\(\mathbf{B}^{-1} \mathbf{A}^{-1}\)}}&nbsp;<br>,,ETH::sem1::LinAlg
-f?mV5JRdT{,"A relation&nbsp;ρ on a set A is called {{c1::reflexive}} if&nbsp;{{c2::\( a \ \rho \ a\) is true for all&nbsp;\( a \in A\), i.e. if&nbsp;\( \text{id} \subseteq \rho\).}}","Example:&nbsp;\( \ge, \le \) are reflexive, while&nbsp;\( &lt;, &gt; \) are not.",ETH::sem1::DiskMath
-yJ}kX&Y9Od,"A relation&nbsp;ρ on a set A is called {{c1::symmetric}} if&nbsp;{{c2::\( a \ \rho \ b \iff b \ \rho \ a\) is true, i.e. if&nbsp;\( \rho = \hat{\rho}\)}}","Examples:&nbsp;\( \equiv_m\), marriage",ETH::sem1::DiskMath
-s[dJ]w<?0N,"A relation&nbsp;ρ on a set A is called {{c2::antisymmetric}} if&nbsp;{{c1::\( a \ \rho \ b \wedge b \ \rho \ a \implies a = b\) is true, i.e. if&nbsp;\( \rho \cap \hat{\rho} \subseteq \text{id}\)}}","Example:&nbsp;\( \le, \ge\) and the division relation:&nbsp;\( a \mid b \wedge b \mid a \implies a = b\)",ETH::sem1::DiskMath
-H!j|tU4T~6,A relation is {{c1::transitive}} if&nbsp;{{c2::\((a \ \rho \ b \wedge b \ \rho \ c) \implies a \ \rho \ c \) is true.}},"Examples:&nbsp;\( \le, \ge, &lt;, |, \equiv_m\)",ETH::sem1::DiskMath
-C;65zxNGcG,The {{c2::inverse relation}} is&nbsp;{{c1::\( a \ \rho \ b \iff b \ \hat{\rho} \ a\)}}.,Example: Inverse of parent relation is childhood relation. Also written as&nbsp;\( \rho^{-1}\),ETH::sem1::DiskMath
-Oc<qX9GKUZ,"Gilt für zwei Matrizen&nbsp;\( \mathbf{A}\) und&nbsp;\( \mathbf{B}\), dass&nbsp;{{c2::\( \mathbf{AB} = \mathbf{BA}\)}}, dann {{c1::kommutieren}} diese Matrizen.&nbsp;",,ETH::sem1::LinAlg
-xn@gm`7I_o,"Eine {{c1::Linearkombination (LK)}} der Vektoren&nbsp;\( a_1, \ldots, a_n\) ist {{c2::ein Ausdruck der Form&nbsp;\( \alpha_1 a_1 + \cdots + \alpha_n a_n\) wobei&nbsp;\( \alpha_1, \ldots, \alpha_n \in \mathbb{R}\)}}",,ETH::sem1::LinAlg
-uo#Gn+y8bD,"Für alle Vektorpaare&nbsp;\( \mathbf{x,y} \in \mathbb{E}^n \) gilt die Schwarzsche Ungleichung:&nbsp;{{c1::\( | \langle \mathbf{x, y} \rangle | \le ||\mathbf{x}|| \ ||\mathbf{y}||\)}}",(auch Cauchy-Schwarz-Ungleichung genannt),ETH::sem1::LinAlg
-v#FTBh.m{S,"Ein LGS heisst {{c1::homogen}}, wenn {{c2::die rechte Seite Null ist}}.",Besitzt immer triviale Lösung (alles 0).,ETH::sem1::LinAlg
-y`5($Q$d37,{{c1::Eine Gruppe}} ist eine Menge {{c1::G mit Operation&nbsp;\( * \)}} mit folgenden Eigenschaften:<div>{{c2::<div>- Assoziotivität:&nbsp;\((a * b) * c = a * (b*c)\)</div><div>- Neutrales Element existiert:&nbsp;\( a * e = e * a = e \)</div><div>- Inverse existiert:&nbsp;\( a * a^{-1} = a^{-1} * a = e\)</div>}}<br></div>,,"ETH::sem1::DiskMath, ETH::sem1::LinAlg"
-EuJL{:A/EO,"Eine Gruppe&nbsp;\( (G, *) \) heisst {{c1::abelsch (auch: kommutativ)}}, falls&nbsp;\( * \) ausserdem&nbsp;{{c2::\(a * b = b * a\), also das Kommutativitätgesetz erfüllt}}.","Beispiel:&nbsp;\( (\mathbb{K}^{m\times n}, + ) \)",ETH::sem1::LinAlg
-"BG+yKyLb,^","{{c1::Ein Körper}} ist eine Menge&nbsp;{{c1::\( \mathbb{K}\) mit Operationen&nbsp;\(+ , *\)}} mit folgenden Eigenschaften:<div>{{c2::<div>-&nbsp;\( (\mathbb{K}, +)\) ist eine abelsche Gruppe</div><div>-&nbsp;\( (\mathbb{K} \backslash \{0\}, *)\) ist eine abelsche Gruppe</div><div>- Distributivität:&nbsp;\( a * (b+c) = a*b + a*c\)</div>}}<br></div>","Beispiel:&nbsp;\( \mathbb{Q}, \mathbb{R}\)","ETH::sem1::DiskMath, ETH::sem1::LinAlg"
-BK[{yp^]zj,"{{c1::Ein Vektorraum}} ist eine Menge \( \mathbb{V}\) über \( \mathbb{K}\), auf der {{c2::eine Addition und eine Skalarmultiplikation definiert ist.}}","Beispiele:&nbsp;\(\mathbb{R}^n, \mathbb{K}^{m\times n}, P_d(\mathbb{K})\) (Polynome von Grad&nbsp;\( \le d\))",ETH::sem1::LinAlg
-fd?4%T(3|z,"A function is {{c1::injective (or one-to-one)}} if {{c2::for&nbsp;\(a \ne b\) we have&nbsp;\(f(a) \ne f(b)\), i.e. no ""collisions""}}","Example:&nbsp;\(f(x) = x\), counterexample:&nbsp;\(f(x) = x^2, x \in \mathbb{R}\)",ETH::sem1::DiskMath
-l];xKGd{%I,"A function&nbsp;\( f: A \rightarrow B\) is {{c1::surjective (or onto)}} if&nbsp;{{c2::\( \forall b \ \exists a \ , b = f(a)\), i.e. every value is taken}}",,ETH::sem1::DiskMath
-dt/TXCWYbv,A function is {{c1::bijective (one-to-one correspondence)}} if it is {{c2::both injective and surjective.}},,ETH::sem1::DiskMath
-u3RL+}XGYF,"The {{c2::power set of a set&nbsp;\(A\), denoted&nbsp;\(\mathcal{P}(A)\)}}, is {{c1::the set of all subsets of&nbsp;\(A\)}}.",,ETH::sem1::DiskMath
-vnO<ZlO~=m,{{c1::Equivalence relation}} is a relation on a set&nbsp;\(A\) that is<div>{{c2::<div>* reflexive</div><div>* symmetric</div><div>* transitive</div>}}<br></div>,Example:&nbsp;\(\equiv_m \),ETH::sem1::DiskMath
-s(DE`)q*(T,{{c1::A partial order}} on a set&nbsp;\(A\) is a relation that is<div>{{c2::<div>* reflexive</div><div>* antisymmetric</div><div>* transitive</div>}}<br></div>,"Examples:&nbsp;\(\leq, \geq\)",ETH::sem1::DiskMath
-IL3~+k+|$5,A set together with a partial order&nbsp;\(\preceq\) is called {{c1::a partially ordered set or simply poset.}},Denoted&nbsp;\((A; \preceq)\),ETH::sem1::DiskMath
-x/&wX)sTYn,"{{c1::An algebra (also: algebraic structure,&nbsp;\( \Omega\)-algebra)}} is a pair&nbsp;\(\langle S, \Omega \rangle\) {{c2::where S is a set and&nbsp;\(\Omega = (\omega_1, \ldots, \omega_n)\) is a list of operations on S.}}",,ETH::sem1::DiskMath
-N$(b/mcC}},"{{c1::A <b>monoid</b>}}<b>&nbsp;</b>is an algebra&nbsp;{{c2::\( \langle M; *, e \rangle\) where&nbsp;\(*\) is associative and&nbsp;\(e\) is the neutral element.}}",Difference to group: Inverse missing,ETH::sem1::DiskMath
-Fa&qY%lL0q,"In a poset&nbsp;\( ( A; \preceq )\),&nbsp;\(b\) <b>covers</b>&nbsp;\(a\) if&nbsp;{{c1::\(a \prec b\) and there does not exist a&nbsp;\(c\) with&nbsp;\(a \prec c \land c \prec b \), so no elements are between&nbsp;\(a\) and&nbsp;\(b\).}}",Example: direct superior in a company,ETH::sem1::DiskMath
-s4qU[:Rl0m,A poset&nbsp;\((A; \preceq)\) is called {{c2::<b>totally ordered</b>&nbsp;(also: linearly ordered) by&nbsp;\(\preceq\)}}&nbsp;if {{c1::any two elements of the poset are comparable.}},Example:&nbsp;\((\mathbb{Z}; \ge)\),ETH::sem1::DiskMath
-F:9iVjG>$B,"Special elements in posets:&nbsp;\((A; \preceq)\) is a poset, \( S \subseteq A\).<div>\(a \in A\) is a {{c1::<b>minimal (maximal) element</b> of&nbsp;\(A\)}}&nbsp;if {{c2::there exists no&nbsp;\(b \in A\) with&nbsp;\(b \prec a\) (\(b \succ a \) )}}<br></div>",,ETH::sem1::DiskMath
-y4s0XCy@A,"Special elements in posets:&nbsp;\((A; \preceq)\) is a poset, \( S \subseteq A\).<div>\(a \in A\) is the {{c1::<b>least (greatest)&nbsp;element</b>&nbsp;of&nbsp;\(A\)}}&nbsp;if {{c2::\(a \preceq b\) (\(a \succeq b) \) for all&nbsp;\(b \in A\)}}</div>",,ETH::sem1::DiskMath
-D`/l5%ja#*,"Special elements in posets:&nbsp;\((A; \preceq)\) is a poset, \( S \subseteq A\).<div>\(a \in A\) is a {{c1::<b>lower (upper) bound</b>&nbsp;of&nbsp;\(S\)}}&nbsp;if {{c2::\(b \preceq a\) (\(b \succeq a) \) for all&nbsp;\(b \in S\)}}</div>",,ETH::sem1::DiskMath
-yF7brLJQxE,"Special elements in posets:&nbsp;\((A; \preceq)\) is a poset, \( S \subseteq A\).<div>\(a \in A\) is the {{c1::<b>greatest&nbsp;lower (least upper) bound</b>&nbsp;of&nbsp;\(S\)}}&nbsp;if {{c2::\(a\) is the greatest (least) element of the set of all lower (upper) bounds of&nbsp;\(S\). }}</div>",,ETH::sem1::DiskMath
-B/hV<WXGve,A poset&nbsp;\((A;\preceq)\) is <b>well-ordered </b>if {{c1::it is totally ordered and every non-empty subset has a least element.}},Every totally ordered finite poset&nbsp;\(\rightarrow\) well-ordered<div>Infinite example: \((N; \le)\)<br>Infinite counterexample&nbsp;\((\mathbb{Z}; \le)\)</div>,ETH::sem1::DiskMath
-Gw~6}3;R1[,"\((A;\preceq)\) is a poset. If&nbsp;\(\{a,b\}\) have a {{c2::greatest lower bound}}, then it is called the {{c1::<b>meet </b>of&nbsp;\(a\) and&nbsp;\(b\) (also denoted&nbsp;\(a \land b\)).}}<br>",,ETH::sem1::DiskMath
-otWm4$@-u8,"\((A;\preceq)\) is a poset. If&nbsp;\(\{a,b\}\) have a {{c2::least upper bound}}, then it is called the {{c1::<b>join&nbsp;</b>of&nbsp;\(a\) and&nbsp;\(b\) (also denoted&nbsp;\(a \lor b\)).}}",,ETH::sem1::DiskMath
-I+oWgzW/bK,A poset in which {{c2::every pair of elements has a meet and a join}} is called a {{c1::lattice}}.,"Examples:&nbsp;\((\mathbb{N}; \le), \ (\mathcal{P}(S); \subseteq)\)",ETH::sem1::DiskMath
-udpmH`a[=Y,The {{c2::subset&nbsp;\(f(A)\) of&nbsp;\(B\)}} is called the {{c1::<b>image</b> (also: range) of&nbsp;\(f\)}}&nbsp;and is also denoted&nbsp;\(Im(f)\).,"Example:&nbsp;\(f(x) = x^2\), the range of&nbsp;\(f\) is&nbsp;\(\mathbb{R}^{\ge 0}\)",ETH::sem1::DiskMath
-E6{tZ_2cBJ,"For a subset&nbsp;\(T\) of&nbsp;\(B\), the {{c1::<b>preimage </b>(in Linalg: Urbild) of&nbsp;\(T\), denoted&nbsp;\(f^{-1}(T)\)}}, is {{c2::the set of values in&nbsp;\(A\) that map into&nbsp;\(T\).}}","Example:&nbsp;\(f(x) = x^2\), the preimage of&nbsp;\([4,9]\) is&nbsp;\([-3,-2] \cup [2,3]\)",ETH::sem1::DiskMath
-Lfk_~v/e2Q,"Two sets&nbsp;\(A, B\) are {{c1::<b>equinumerous </b>(denoted&nbsp;\(A \sim B\))}}&nbsp;if {{c2::there exists a bijection&nbsp;\(A \rightarrow B\).}}",Example:&nbsp;\(f: \mathbb{N} \rightarrow \mathbb{Z} = (-1)^n \lceil n/2 \rceil\),ETH::sem1::DiskMath
-IhW:&11Iid,The set&nbsp;\(B\) {{c1::<b>dominates</b> (denoted&nbsp;\(A \preceq B\))}} if {{c2::there exists an injective function&nbsp;\(A \rightarrow B\).}},Example:&nbsp;\(f(x): \mathbb{N} \rightarrow \mathbb{R} = x\),ETH::sem1::DiskMath
-"L,+=h7*qew","A set&nbsp;\(A\) is called <b>countable </b>if {{c1::\(A \preceq \mathbb{N}\)}}, and <b>uncountable</b> otherwise.",,ETH::sem1::DiskMath
-Am`UxH.Oyx,"\(a \mid b\) means that {{c1::\(a\) divides \(b\), that is, there exists a&nbsp;\(c \in \mathbb{Z}\) such that&nbsp;\(b = ac\)}}<br>",\(\forall a \ne 0 \rightarrow a \mid 0\) and&nbsp;\(\forall a \quad 1 \mid a \land -1 \mid a\)<br>,ETH::sem1::DiskMath
-AFt:;I:*/e,{{c1::\(a \mod m\)}} is the same as&nbsp;{{c2::\(R_m(a)\)}}<br>,,ETH::sem1::DiskMath
-K4Ll=rR|5+,\(a&nbsp; \equiv_m b \stackrel{\text{def}}{\iff}\)&nbsp;{{c1::\(m \mid (a-b)\)}}<br>,,ETH::sem1::DiskMath
-Fh4R-ccO%^,"The equation&nbsp;\(ax \equiv_m 1\) has a unique solution&nbsp;\(x \in \mathbb{Z}_m\) if and only if&nbsp;{{c1::\(\gcd(a,m) = 1\).}} This \(x\) is then called the multiplicative inverse of&nbsp;\(a \mod m\).",,ETH::sem1::DiskMath
-gyJPNg>H@A,"The direct product of&nbsp;\(n\) groups&nbsp;\(\langle G_1; *_1 \rangle, \ldots, \langle G_n; *_n \rangle\) is {{c1::the algebra&nbsp;\(\langle G_1 \times \cdots \times G_n; \star\rangle\)}}. The operation&nbsp;\(\star\) is component-wise.",,ETH::sem1::DiskMath
-vt:Wqzxx@@,A subgroup \(H\) of a group&nbsp;\(G\) is {{c1::a subset&nbsp;\(H \subseteq G\) which is a group in itself (closed with respect to all operations).}},"Trivial subgroups:&nbsp;\(\{e\}, G\)",ETH::sem1::DiskMath
-l]y7c-.I]L,"The order of an element&nbsp;\(a\) in a group (denoted&nbsp;\(\text{ord}(a)\)) is {{c1::the smallest&nbsp;\(m \ge 1\) such that&nbsp;\(a^m = e\). If such an&nbsp;\(m\) does not exist,&nbsp;\(\text{ord}(a) = \infty\)}}",\(\text{ord}(e) = 1\) in any group<br>,ETH::sem1::DiskMath
-o1a(R_.1]i,"For a finite group&nbsp;\(G\), we call&nbsp;\(|G|\) the {{c1::order of&nbsp;\(G\)}}.",,ETH::sem1::DiskMath
-LFnfauD_]7,"A group&nbsp;\(G = \langle g \rangle\) generated by an element&nbsp;\(g \in G\) is called {{c1::cyclic}}, and&nbsp;\(g\) is called {{c1::a <b>generator</b> of&nbsp;\(G\)}}.",,ETH::sem1::DiskMath
-PLw>#T/cN`,"If&nbsp;\(G\) is a finite group and&nbsp;\(H\) is a subgroup, then {{c1::the order of&nbsp;\(H\) divides the order of&nbsp;\(G\), i.e.&nbsp;\(|H|\) divides&nbsp;\(|G|\).}}",,ETH::sem1::DiskMath
-j5a}0B}`Qc,"The group&nbsp;\(\mathbb{Z}^*_m\) contains all numbers&nbsp;\(a \in \mathbb{Z}_m\) that are {{c1::coprime to&nbsp;\(m\), that is,&nbsp;\(\gcd(a,m) = 1\).}}",,ETH::sem1::DiskMath
-hU:-C(Wl{v,The Euler function&nbsp;\(\varphi: \mathbb{Z}^+ \rightarrow \mathbb{Z}^+\) is defined as {{c1::the cardinality of&nbsp;\(\mathbb{Z}^*_m\).}},"Example:&nbsp;\(\mathbb{Z}_{18}^* = \{1,5,7,11,13,17\}\), so&nbsp;\(\varphi(18) = 6\)",ETH::sem1::DiskMath
-mBd+!cdp:/,"In graph theory, a {{c1::walk}} is a {{c2::series of connected vertices}}.",,ETH::sem1::AnD
-z4Nw/I#?J^,"In graph theory, a {{c2::path}} is a {{c1::walk without repeated vertices}}.",,ETH::sem1::AnD
-oSKGiZq$<Q,"In graph theory, a {{c2::closed walk}} is a {{c1::walk where&nbsp;\(v_0 = v_n\) (start = end)}}.",,ETH::sem1::AnD
-rzX#2=8CU?,"In graph theory, a {{c2::cycle}} is a {{c1::closed walk without repeated vertices}}.",,ETH::sem1::AnD
-mhrX@w|*.`,"In graph theory, an {{c2::Euler path}} is a {{c1::path that visits each edge of the graph once}}.",,ETH::sem1::AnD
-Gt4c53(i;/,"In graph theory, a {{c2::Hamilton path}} is a {{c1::path that visits each vertex of the graph once}}.",,ETH::sem1::AnD
-s[Y-0E4#sz,"{{c1::A ring&nbsp;\(\langle R, +, -, 0, \cdot, 1 \rangle\)}} is an algebra with the properties that<br>{{c2::* \(\langle R, +, -, 0 \rangle\) is a commutative group}}<div>{{c3::*&nbsp;\(\langle R, \cdot, 1 \rangle\) is a monoid}}<div>{{c4::*&nbsp;\( a(b+c) = (ab) + (ac), (b+c)a = (ba) + (ca)\) (left and right distributive laws)}}</div></div>","Examples:&nbsp;\(\mathbb{Z}, \mathbb{R}\)",ETH::sem1::DiskMath
-Pq[u}J3gBK,A ring is called {{c1::commutative}} if&nbsp;{{c2::\(ab = ba\).}},,ETH::sem1::DiskMath
-QS$4YdV.SM,"An element \(u\) of a ring is called a {{c1::unit}} if&nbsp;\(u\) {{c2::is invertible, so&nbsp;\(uu^{-1} = u^{-1}u = 1\).}}","Example: Units of&nbsp;\(\mathbb{Z}\) are&nbsp;\(-1, 1\)",ETH::sem1::DiskMath
-H+<9!8uj.@,The set of units of \(R\) is denoted by&nbsp;{{c1::\(R^*\)}},,ETH::sem1::DiskMath
-"I1&*hbv&c,",An {{c1::integral domain}} is a {{c2::commutative ring without zerodivisors (\( \forall a \ \forall b \quad ab = 0 \rightarrow a = 0 \lor b = 0\) ).}},"Examples:&nbsp;\(\mathbb{Z}, \mathbb{R}\)<div>Counterexample:&nbsp;\(\mathbb{Z}_m, m\) not prime</div>",ETH::sem1::DiskMath
-"J!)tsK,]3<","A {{c1::field (<i>Körper</i>)}}&nbsp;is {{c2::a nontrivial commutative ring&nbsp;\(F\) in which every nonzero element is a unit, so&nbsp;\(F^* = F \backslash \{0\}\)}}","Example:&nbsp;\(\mathbb{R}\), but not&nbsp;\(\mathbb{Z}\)",ETH::sem1::DiskMath
-l.<t])5Z&B,\(\mathbb{Z}_p\) is a field if and only if&nbsp;{{c1::\(p\) is prime.}}<br>,,ETH::sem1::DiskMath
-m?%j+<a6[I,A {{c1::root (also: zero)}} of&nbsp;\(a(x) \in \mathbb{R}[x]\) is {{c2::an element&nbsp;\(y \in \mathbb{R}\) for which&nbsp;\(a(y) = 0\).}},Example: \(x^4 + x^3 + x + 1\) in GF(2)\([x]\) has root 1.,ETH::sem1::DiskMath
-v[{@yotn>*,"In a field F,&nbsp;\(y \in F\) is a root of&nbsp;\(a(x)\) if and only if&nbsp;{{c1::\(x - y\) divides&nbsp;\(a(x)\).}}",,ETH::sem1::DiskMath
-G)?a@}6F-&,"The idea of {{c2::Universal Instantiation}} is that {{c1::if a statement is true for all elements, it is also true for a particular element, so&nbsp;\(\forall x F \models F[x/t]\).}}","Example: All elements in&nbsp;\(\mathbb{R}\) are invertible. Thus, 2 is also invertible.",ETH::sem1::DiskMath
-E8|8/h)Gv3,Predicate logic: A formula in {{c2::prenex form}} has {{c1::all quantifiers in front and none afterwards.&nbsp;}},,ETH::sem1::DiskMath
-BRmyi3>lm%,"<u><b>DFS</b></u><div><u><br></u></div><div><b>Runtime</b>: {{c1::\( \mathcal{O}(|E| + |V|) \)}}</div><div><br></div><div><b>Approach</b>: {{c1::We first go through the depth of each node. We might keep track of pre / post numbers to make edge classifications.}}</div><div><br></div><div><b>Uses</b>: {{c1::Detect cycles (if backward edge), path finding, topological sorting, test if bipartite, mazes, ...}}</div>",,ETH::sem1::AnD
-u%cN;v|jjQ,"<u><b>BFS</b></u><div><u><br></u></div><div><b>Runtime</b>: {{c1::\( \mathcal{O}(|E| + |V|) \)}}</div><div><br></div><div><b>Approach</b>: {{c1::We first go through all direct successors of an edge, then move to a level deeper.}}</div><div><br></div><div><b>Uses</b>: {{c1::Shortest path in unweighted graphs, cycle detection, test if graph is bipartite, path finding}}</div>",,ETH::sem1::AnD
-eGQw>urFaH,"<u><b>Dijkstra</b></u><div><u><br></u></div><div><b>Runtime</b>: {{c1::\( \mathcal{O}((|E| + |V|) \cdot log(|V|)) \)}}</div><div><br></div><div><b>Approach</b>: {{c1::We put the starting node into the queue, take it out, and set the distance for all adjacent nodes and put them into the queue. We repeat, update distances and only put nodes into the queue if they weren't visited before.}}</div><div><br></div><div><b>Uses</b>: {{c1::Minimal-cost paths in non-negative weighted directed graphs}}</div>",,ETH::sem1::AnD
-j#w5w>dS6,"<u><b>Bellman-Ford</b></u><div><u><br></u></div><div><b>Runtime</b>: {{c1::\( \mathcal{O}(|E| \cdot |V|)\)}}</div><div><br></div><div><b>Approach</b>: {{c1::We initiate all distances with ∞. Then we go |V| - 1 times through every edge, and test for all (u,v) in E if dist[v] &gt; dist[u] + w(u,v). If yes, we update the distance. If after [V] - 1 iterations we can still relax an edge (in a last iteration), then there exists a negative cycle.}}</div><div><br></div><div><b>Uses</b>: {{c1::Detect negative cycles, find minimal-cost paths in weighted graphs with negative weights}}</div>",,ETH::sem1::AnD
-F^nhYx>fXl,"<u><b>Boruvka</b></u><div><u><br></u></div><div><b>Runtime</b>: {{c1::\( \mathcal{O}((|E| + |V|) \cdot log(|V|))\)}}</div><div><br></div><div><b>Approach</b>: {{c1::We first add all vertices to the set of components (so every vertices has its own component). Then as long as the size of the components-set is greater than 1, we connect each component to the one with the cheapest edge.}}</div><div><br></div><div><b>Uses</b>: {{c1::Find MST in weighted, undirected graph}}</div>",,ETH::sem1::AnD
-jcougdQ#0G,"<u><b>Kruskal</b></u><div><u><br></u></div><div><b>Runtime</b>: {{c1::\( \mathcal{O}(|E| \cdot log(|E|) + |E| \cdot log(|V|))\)}}</div><div><br></div><div><b>Approach</b>: {{c1::We sort the edges by weight and add them one-by-one as long as they are in different components.}}</div><div><br></div><div><b>Uses</b>: {{c1::Find MST in weighted, undirected graph}}</div>",,ETH::sem1::AnD
-cKo%p6:M08,"<b><u>Prim</u></b><br><div><u><br></u></div><div><b>Runtime</b>: {{c1::\( \mathcal{O}((|E| + |V|) \cdot log(|V|))\)}}</div><div><br></div><div><b>Approach</b>: {{c1::We start at a given vertex. To this subtree we add one-by-one the cheapest edge connecting the subtree to another component until all vertices are connected. The implementation is very similar to Dijkstra.}}</div><div><br></div><div><b>Uses</b>: {{c1::Find MST in weighted, undirected graph}}</div>",,ETH::sem1::AnD
-nfdJ7OmBdJ,"<u><b>Floyd-Warshall</b></u><div><u><br></u></div><div><b>Runtime</b>: {{c1::\( \mathcal{O}(|V|^3)\)}}</div><div><br></div><div><b>Approach</b>: {{c1::3D DP: It is based on a triple-nested for loop with the following recursion: d[u][v] = min(d[u][v], d[u][i] + d[i][v]).}}</div><div><br></div><div><b>Uses</b>: {{c1::All-to-all shortest path in directed graph without negative cycles.}}</div>",,ETH::sem1::AnD
-"KD23pBO,?%","<u><b>Johnson</b></u><div><u><br></u></div><div><b>Runtime</b>: {{c1::\( \mathcal{O}(|E| \cdot |V| + |V|^2 \cdot log(|V|)\)}}</div><div><br></div><div><b>Approach</b>: {{c1::We make all edges positive and then perform n-times Dijkstra. To do this we create an additional node that is linked to each node with edge weight 0 and store for each node a height h(x), where h(x) is equal to the shortest path from the new node n to the node x. The new weights are calculated with w'(u,v) = w(u,v) + h(u) - h(v).}}</div><div><br></div><div><b>Uses</b>: {{c1::All-to-all shortest paths in directed graphs without negative cycles.}}</div>",,ETH::sem1::AnD
-I+_KFb>Q>~,"A graph&nbsp;\(G = (V,E)\) is k-connected (k-zusammenhängend) if<span style=""color: var(--text-fg);"">&nbsp;</span>{{c1::you need to remove at least \(k\) vertices from the graph such that it becomes disconnected.}}","<div><img src=""Screenshot_20210223_144154.png""></div><div>This graph is 2-connected. We need to remove 2 vertices to make the graph disconnected.</div>",ETH::sem2::AnW
-i02xT{m[u@,"A graph&nbsp;\(G=(V,E)\) is&nbsp;\(k\)<i>-edge-connected</i> (k-kanten-zusammenhängend) if {{c1::we need to remove at least&nbsp;\(k\) edges from&nbsp;\(G\) such that it becomes disconnected.}}","<img src=""Screenshot_20210223_144154.png""><div>This graph is 2-edge-connected, we must remove 2 edges to make it disconnected.</div>",ETH::sem2::AnW
-otRi.YaJGs,"A \(u\)-\(v\)-separator is {{c1::a set&nbsp;\(X\) of vertices such that&nbsp;\(u, v\) are in different components after we remove these edges from&nbsp;\(G\), so in&nbsp;\(G[V \ \backslash \ X]\).}}",,ETH::sem2::AnW
-HQJNl-v7.],"\(G = (V,E)\) is&nbsp;\(k\)-connected iff&nbsp;\(|V| \ge k + 1\) (otherwise not sensible) and every&nbsp;\(u\)-\(v\)-separator has {{c1::size&nbsp;\(|X| \ge k\).}}&nbsp;",,ETH::sem2::AnW
-I5[Jb@Xj@A,"(Menger's theorem)<div>{{c2::Every&nbsp;\(u\)-\(v\)-separator \(X\) has size&nbsp;\(|X| \ge k\)&nbsp;}} \(\iff\) {{c1::There exist&nbsp;\(k\) internally vertex-disjoint paths (i.e. they share no vertices) between&nbsp;\(u, v\).}}</div>",(generalized by the max-flow min-cut theorem),ETH::sem2::AnW
-x.1xQeEkwI,A lock is reentrant if {{c1::it can be acquired / released multiple times by the same thread.}},"If a lock is non-reentrant, when trying to acquire it again exceptions or other problems might occur.",ETH::sem2::PProg
-p~(sx=d6fm,A thread <b>starves</b> if {{c1::it can never enter a critical section}}.,,ETH::sem2::PProg
-OAs;P;T5($,{{c3::Die geometrische Reihe}} konvergiert für&nbsp;\(|q| &lt; 1\):<br><br>{{c1::\(\sum_{k=0}^\infty q^k\)}}&nbsp;\(=\)&nbsp;{{c2::\(\frac{1}{1-q}\)}},,ETH::sem2::Ana1
-jrE@caEJjB,Die harmonische Reihe&nbsp;\(\sum_{n=1}^\infty \frac{1}{n}\) {{c1::divergiert.}},,ETH::sem2::Ana1
-jyA.%y9m|t,"In a one-hot encoding, all {{c1::values are low (0) except one (1)}}.",Advantage: reduces next-state logic,ETH::sem2::DDCA
-F%=1XZ8Sft,"In a binary encoding, {{c1::each state is represented as a binary number.}}","Advantage: very compact, reduces amount of Flip-Flops used for state<br>Disadvantage: other logic more complicated",ETH::sem2::DDCA
-J1p>lcN.5J,"In an Output encoding, {{c1::outputs are directly accessible in state encoding.}}","Example: 001, 010, 100, 110 for a (green, yellow, red) traffic light<br>Advantage: minimizes output logic",ETH::sem2::DDCA
-q$(ZtVs!sX,R-type instructions operate on {{c1::three registers}},"Examples: add, and, slt",ETH::sem2::DDCA
-JH$r/N4_i*,I-type instructions operate on {{c1::two registers and a 16-bit immediate.}},"Examples: addi, lw, beq",ETH::sem2::DDCA
-LI$<DaWL.L,J-type instructions operate on {{c1::one 26-bit immediate.}},"Examples: j, jal",ETH::sem2::DDCA
-dOUJuy3CA[,"In Boolean algebra, \(\bullet\) means {{c1::AND}}.",,ETH::sem2::DDCA
-B}Rj(zK0.6,"In Boolean algebra,&nbsp;\(+\) means {{c1::OR}}.",,ETH::sem2::DDCA
-m.z>*Vj;0`,"Ein Graph ist \(k\)-zusammenhängend, wenn {{c1::wir mindestens&nbsp;\(k\) Knoten löschen müssen, damit er nicht mehr zusammenhängend ist.}}",,ETH::sem2::AnW
-wYNIl$6{KE,"Wenn ein Graph&nbsp;\(k\)-zusammenhängend ist, ist er auch&nbsp;{{c1::\(k-1\)-zusammenhängend.}}",,ETH::sem2::AnW
-x$+[>$U=Wl,"Es gibt&nbsp;{{c1::\(n^k\)}} Möglichkeiten,&nbsp;\(k\) Elemente <b>geordnet mit Zurücklegen</b> aus einer Menge mit \(n\) zu ziehen.",,ETH::sem2::AnW
-o+>y]EAyv&,"Es gibt&nbsp;{{c1::\(\frac{n!}{(n-k)!}\)}} Möglichkeiten,&nbsp;\(k\) Elemente&nbsp;<b>geordnet ohne Zurücklegen</b>&nbsp;aus einer Menge mit \(n\) Elementen zu ziehen.",,ETH::sem2::AnW
-HTQOog++F3,"Es gibt&nbsp;{{c1::\(\binom{n+k-1}{k}\)}} Möglichkeiten,&nbsp;\(k\) Elemente <b>ungeordnet mit Zurücklegen</b>&nbsp;aus einer Menge mit \(n\) Elementen zu ziehen.",,ETH::sem2::AnW
-L@~[[nY^&#,"Es gibt&nbsp;{{c1::\(\binom{n}{k}\)}} Möglichkeiten,&nbsp;\(k\) Elemente&nbsp;<b>ungeordnet&nbsp;ohne Zurücklegen</b>&nbsp;aus einer Menge mit \(n\) Elementen zu ziehen.",,ETH::sem2::AnW
-NK^)ecusK7,"Ein induzierter Teilgraph entsteht, wenn man aus einem Graph {{c1::nur Knoten &amp; dessen verbundene Kanten entfernt.&nbsp;}} Man darf also nicht {{c1::nur Kanten entfernen}}.",,ETH::sem2::AnW
-maqkZ_mRL^,"Eine {{c2::endliche, nichtleere Menge&nbsp;\(\Sigma\)}} heisst {{c1::Alphabet}}.",,ETH::sem3::TI
-gXd7.Yb9Uo,Das leere Wort in einem Alphabet&nbsp;\(\Sigma\) wird mit {{c1::\(\lambda\)}} bezeichnet.,,ETH::sem3::TI
-j$!`:5QFF1,The order of the differential equation is {{c1::the order of the highest derivative in the equation}}.,,ETH::sem3::Ana2
-b4S$^<QF#/,A differential equation is called <i>homogenous</i>&nbsp;if {{c1::its right hand side is 0}}.,,ETH::sem3::Ana2
-"O]s3MO,?Y_","Ein deterministischer endlicher Automat (EA) ist ein Tupel&nbsp;\(M = (Q, \Sigma, \delta, q_0, F)\) wobei<br><ul><li>Q {{c1::eine endliche Menge von Zuständen}}</li><li>\(\Sigma\) {{c2::ein Eingabealphabet}}<br></li><li>\(q_0 \in Q\) {{c3::der Anfangszustand}}<br></li><li>\(\delta : Q \times \Sigma \to Q\) {{c4::die Übergangsfunktion}}</li><li>\(F \subseteq Q\) {{c5::die Menge der akzeptierenden Zustände}}</li></ul>ist.",,ETH::sem3::TI
-xeSD2qTh6x,"\(\delta(q,a) = p\) bedeutet, {{c1::dass&nbsp;\(M\) in den Zustand&nbsp;\(p\) übergeht, falls&nbsp;\(M\) im Zustand&nbsp;\(q\) das Symbol&nbsp;\(a\) gelesen hat}}",,ETH::sem3::TI
-(1/Qvg]Xr,"Die Klasse der <b>regulären</b> Sprachen&nbsp;\(\mathcal{L}_{EA}\) ist die Klasse der Sprachen, {{c1::welche von einem endlichen Automaten akzeptiert werden.}}",Jede Sprache&nbsp;\(L \in \mathcal{L}_{EA}\) wird <b>regulär</b> genannt.,ETH::sem3::TI
-FCP0iDPrPM,A useful equation for avoiding cancellation is&nbsp;\(a - b = \)&nbsp;{{c1::\(\frac{a^2 - b^2}{a+b}\)}},,ETH::sem3::NumCS
-J|7tI:*3X~,A useful equation for avoiding cancellation is&nbsp;\(\log a - \log b = \)&nbsp;{{c1::\(\log \frac{a}{b}\)}},,ETH::sem3::NumCS
-bkd.wM:Z2),A trap is {{c1::an intentional synchronous exception}}.,"Examples: syscalls, special instructions",ETH::sem3::SPCA
-bU`YK(6JD3,A fault is an {{c1::unintential but potentially recoverable synchronous}} exception.,"Examples: page faults, floating point exceptions",ETH::sem3::SPCA
-EG0;aXhy.p,An abort is an {{c1::unintentional and unrecoverable}} exception.,"Example: division by 0, machine check",ETH::sem3::SPCA
-nC7Np_X*?[,An interrupt is an {{c1::asychronous signal from an I/O device}}.,,ETH::sem3::SPCA
-Ec9<`O#pu`,A page fault happens when {{c1::a user accesses a location in memory that is not in physical memory}}.,Afterwards: returns to faulting instruction,ETH::sem3::SPCA
-",5u*`n3pb","If an interrupt is maskable, we can {{c1::choose to ignore or delay it}}.",,ETH::sem3::SPCA
-c*)gXQM;/x,IOMMU stands for {{c1::I/O Memory Management Unit}}.,,ETH::sem3::SPCA
-ma``5@}g5!,SAT =&nbsp;{{c1::\(\{\Phi \mid \Phi \) ist eine erfüllbare Formel in KNF\(\}\) }},== Satisfiability,ETH::sem3::TI
-N}5$B~v>B`,"CLIQUE =&nbsp;{{c1::\(\{(G,k) \mid G \) ist ein ungerichteter Graph, der eine&nbsp;\(k\)-Clique enthält&nbsp;\(\}\)}}",,ETH::sem3::TI
-"hBv?,]U<hO","Eine&nbsp;\(k\)-Clique in einem Graphen ist {{c1::ein Subset an Knoten der Grösse \(k\), welche alle paarweise verbunden sind.}}",,ETH::sem3::TI
-HdT~;:=bS>,"VC =&nbsp;{{c1::\(\{(G,k) \mid G\) ist ein Graph mit Knotenüberdeckung der Grösse höchstens&nbsp;\(k \}\)}}",,ETH::sem3::TI
-lemIxrNw-J,The TLB ({{c1::Translation Lookaside Buffer}}) is a {{c1::cache for mapping virtual page numbers to physical page numbers.}},,ETH::sem3::SPCA
-iu+k%(lt#L,PTE stands for {{c1::Page Table Entry.}},,ETH::sem3::SPCA
-C%bj;|h7KI,"\(L_U = \)&nbsp;{{c1::\(\{\text{Kod}(M)\#w \mid w \in \{0,1\}^* \text{ und M akzeptiert } w\}\)}}",,ETH::sem3::TI
-E7o[D?o[Rp,"\(L_H = \) {{c1::\(\{\text{Kod}(M)\# x \mid x \in \{0,1\}^*\)&nbsp; und M hält auf \(x\}\)}}",,ETH::sem3::TI
-nw`V)k:X;(,\(L_{\text{empty}} =\) {{c1::\(\{\text{Kod}(M) \mid L(M) = \varnothing \}\)}},,ETH::sem3::TI
-Gy&l~&[T$h,\(L_{EQ} =\)&nbsp;{{c1::\(\{\text{Kod}(M)\#\text{Kod}(\bar{M}) \mid L(M) = L(\bar{M})\}\)}},,ETH::sem3::TI
-x@yx*7fr{},"\(L_{H,\lambda} =\)&nbsp;{{c1::\(\{\text{Kod}(M) \mid M \text{ hält auf } \lambda \}\)}}",,ETH::sem3::TI
+kfsN#[8n@),{{c1::\( \neg (A \land B) \)}} \( \equiv \)&nbsp;{{c2::\( \neg A \lor \neg B \)}}<br>,de Morgan rules,eth::sem1::diskmat
+%-v5b-!x=,{{c1::\( \neg (A \lor B) \)&nbsp;}} \( \equiv \)&nbsp;{{c2::\( \neg A \land \neg B\)}}<br>,De Morgan rules,eth::sem1::diskmat
+PK*1xpYhw8,Komplexer Kehrwert: {{c1::\( \frac{1}{z} \)}}&nbsp;\( = \)&nbsp;{{c2::\( \frac{x - iy}{x^2 + y^2}\)}}<br>,,eth::sem1::linalg
+u65pI6|_4#,{{c1:: Inverse eines Produkts: \((\mathbf{AB})^{-1}\)}} = {{c2::\(\mathbf{B}^{-1} \mathbf{A}^{-1}\)}}&nbsp;<br>,,eth::sem1::linalg
+f?mV5JRdT{,"A relation&nbsp;ρ on a set A is called {{c1::reflexive}} if&nbsp;{{c2::\( a \ \rho \ a\) is true for all&nbsp;\( a \in A\), i.e. if&nbsp;\( \text{id} \subseteq \rho\).}}","Example:&nbsp;\( \ge, \le \) are reflexive, while&nbsp;\( &lt;, &gt; \) are not.",eth::sem1::diskmat
+yJ}kX&Y9Od,"A relation&nbsp;ρ on a set A is called {{c1::symmetric}} if&nbsp;{{c2::\( a \ \rho \ b \iff b \ \rho \ a\) is true, i.e. if&nbsp;\( \rho = \hat{\rho}\)}}","Examples:&nbsp;\( \equiv_m\), marriage",eth::sem1::diskmat
+s[dJ]w<?0N,"A relation&nbsp;ρ on a set A is called {{c2::antisymmetric}} if&nbsp;{{c1::\( a \ \rho \ b \wedge b \ \rho \ a \implies a = b\) is true, i.e. if&nbsp;\( \rho \cap \hat{\rho} \subseteq \text{id}\)}}","Example:&nbsp;\( \le, \ge\) and the division relation:&nbsp;\( a \mid b \wedge b \mid a \implies a = b\)",eth::sem1::diskmat
+H!j|tU4T~6,A relation is {{c1::transitive}} if&nbsp;{{c2::\((a \ \rho \ b \wedge b \ \rho \ c) \implies a \ \rho \ c \) is true.}},"Examples:&nbsp;\( \le, \ge, &lt;, |, \equiv_m\)",eth::sem1::diskmat
+C;65zxNGcG,The {{c2::inverse relation}} is&nbsp;{{c1::\( a \ \rho \ b \iff b \ \hat{\rho} \ a\)}}.,Example: Inverse of parent relation is childhood relation. Also written as&nbsp;\( \rho^{-1}\),eth::sem1::diskmat
+Oc<qX9GKUZ,"Gilt für zwei Matrizen&nbsp;\( \mathbf{A}\) und&nbsp;\( \mathbf{B}\), dass&nbsp;{{c2::\( \mathbf{AB} = \mathbf{BA}\)}}, dann {{c1::kommutieren}} diese Matrizen.&nbsp;",,eth::sem1::linalg
+xn@gm`7I_o,"Eine {{c1::Linearkombination (LK)}} der Vektoren&nbsp;\( a_1, \ldots, a_n\) ist {{c2::ein Ausdruck der Form&nbsp;\( \alpha_1 a_1 + \cdots + \alpha_n a_n\) wobei&nbsp;\( \alpha_1, \ldots, \alpha_n \in \mathbb{R}\)}}",,eth::sem1::linalg
+uo#Gn+y8bD,"Für alle Vektorpaare&nbsp;\( \mathbf{x,y} \in \mathbb{E}^n \) gilt die Schwarzsche Ungleichung:&nbsp;{{c1::\( | \langle \mathbf{x, y} \rangle | \le ||\mathbf{x}|| \ ||\mathbf{y}||\)}}",(auch Cauchy-Schwarz-Ungleichung genannt),eth::sem1::linalg
+v#FTBh.m{S,"Ein LGS heisst {{c1::homogen}}, wenn {{c2::die rechte Seite Null ist}}.",Besitzt immer triviale Lösung (alles 0).,eth::sem1::linalg
+y`5($Q$d37,{{c1::Eine Gruppe}} ist eine Menge {{c1::G mit Operation&nbsp;\( * \)}} mit folgenden Eigenschaften:<div>{{c2::<div>- Assoziotivität:&nbsp;\((a * b) * c = a * (b*c)\)</div><div>- Neutrales Element existiert:&nbsp;\( a * e = e * a = e \)</div><div>- Inverse existiert:&nbsp;\( a * a^{-1} = a^{-1} * a = e\)</div>}}<br></div>,,"eth::sem1::diskmat, eth::sem1::linalg"
+EuJL{:A/EO,"Eine Gruppe&nbsp;\( (G, *) \) heisst {{c1::abelsch (auch: kommutativ)}}, falls&nbsp;\( * \) ausserdem&nbsp;{{c2::\(a * b = b * a\), also das Kommutativitätgesetz erfüllt}}.","Beispiel:&nbsp;\( (\mathbb{K}^{m\times n}, + ) \)",eth::sem1::linalg
+"BG+yKyLb,^","{{c1::Ein Körper}} ist eine Menge&nbsp;{{c1::\( \mathbb{K}\) mit Operationen&nbsp;\(+ , *\)}} mit folgenden Eigenschaften:<div>{{c2::<div>-&nbsp;\( (\mathbb{K}, +)\) ist eine abelsche Gruppe</div><div>-&nbsp;\( (\mathbb{K} \backslash \{0\}, *)\) ist eine abelsche Gruppe</div><div>- Distributivität:&nbsp;\( a * (b+c) = a*b + a*c\)</div>}}<br></div>","Beispiel:&nbsp;\( \mathbb{Q}, \mathbb{R}\)","eth::sem1::diskmat, eth::sem1::linalg"
+BK[{yp^]zj,"{{c1::Ein Vektorraum}} ist eine Menge \( \mathbb{V}\) über \( \mathbb{K}\), auf der {{c2::eine Addition und eine Skalarmultiplikation definiert ist.}}","Beispiele:&nbsp;\(\mathbb{R}^n, \mathbb{K}^{m\times n}, P_d(\mathbb{K})\) (Polynome von Grad&nbsp;\( \le d\))",eth::sem1::linalg
+fd?4%T(3|z,"A function is {{c1::injective (or one-to-one)}} if {{c2::for&nbsp;\(a \ne b\) we have&nbsp;\(f(a) \ne f(b)\), i.e. no ""collisions""}}","Example:&nbsp;\(f(x) = x\), counterexample:&nbsp;\(f(x) = x^2, x \in \mathbb{R}\)",eth::sem1::diskmat
+l];xKGd{%I,"A function&nbsp;\( f: A \rightarrow B\) is {{c1::surjective (or onto)}} if&nbsp;{{c2::\( \forall b \ \exists a \ , b = f(a)\), i.e. every value is taken}}",,eth::sem1::diskmat
+dt/TXCWYbv,A function is {{c1::bijective (one-to-one correspondence)}} if it is {{c2::both injective and surjective.}},,eth::sem1::diskmat
+u3RL+}XGYF,"The {{c2::power set of a set&nbsp;\(A\), denoted&nbsp;\(\mathcal{P}(A)\)}}, is {{c1::the set of all subsets of&nbsp;\(A\)}}.",,eth::sem1::diskmat
+vnO<ZlO~=m,{{c1::Equivalence relation}} is a relation on a set&nbsp;\(A\) that is<div>{{c2::<div>* reflexive</div><div>* symmetric</div><div>* transitive</div>}}<br></div>,Example:&nbsp;\(\equiv_m \),eth::sem1::diskmat
+s(DE`)q*(T,{{c1::A partial order}} on a set&nbsp;\(A\) is a relation that is<div>{{c2::<div>* reflexive</div><div>* antisymmetric</div><div>* transitive</div>}}<br></div>,"Examples:&nbsp;\(\leq, \geq\)",eth::sem1::diskmat
+IL3~+k+|$5,A set together with a partial order&nbsp;\(\preceq\) is called {{c1::a partially ordered set or simply poset.}},Denoted&nbsp;\((A; \preceq)\),eth::sem1::diskmat
+x/&wX)sTYn,"{{c1::An algebra (also: algebraic structure,&nbsp;\( \Omega\)-algebra)}} is a pair&nbsp;\(\langle S, \Omega \rangle\) {{c2::where S is a set and&nbsp;\(\Omega = (\omega_1, \ldots, \omega_n)\) is a list of operations on S.}}",,eth::sem1::diskmat
+N$(b/mcC}},"{{c1::A <b>monoid</b>}}<b>&nbsp;</b>is an algebra&nbsp;{{c2::\( \langle M; *, e \rangle\) where&nbsp;\(*\) is associative and&nbsp;\(e\) is the neutral element.}}",Difference to group: Inverse missing,eth::sem1::diskmat
+Fa&qY%lL0q,"In a poset&nbsp;\( ( A; \preceq )\),&nbsp;\(b\) <b>covers</b>&nbsp;\(a\) if&nbsp;{{c1::\(a \prec b\) and there does not exist a&nbsp;\(c\) with&nbsp;\(a \prec c \land c \prec b \), so no elements are between&nbsp;\(a\) and&nbsp;\(b\).}}",Example: direct superior in a company,eth::sem1::diskmat
+s4qU[:Rl0m,A poset&nbsp;\((A; \preceq)\) is called {{c2::<b>totally ordered</b>&nbsp;(also: linearly ordered) by&nbsp;\(\preceq\)}}&nbsp;if {{c1::any two elements of the poset are comparable.}},Example:&nbsp;\((\mathbb{Z}; \ge)\),eth::sem1::diskmat
+F:9iVjG>$B,"Special elements in posets:&nbsp;\((A; \preceq)\) is a poset, \( S \subseteq A\).<div>\(a \in A\) is a {{c1::<b>minimal (maximal) element</b> of&nbsp;\(A\)}}&nbsp;if {{c2::there exists no&nbsp;\(b \in A\) with&nbsp;\(b \prec a\) (\(b \succ a \) )}}<br></div>",,eth::sem1::diskmat
+y4s0XCy@A,"Special elements in posets:&nbsp;\((A; \preceq)\) is a poset, \( S \subseteq A\).<div>\(a \in A\) is the {{c1::<b>least (greatest)&nbsp;element</b>&nbsp;of&nbsp;\(A\)}}&nbsp;if {{c2::\(a \preceq b\) (\(a \succeq b) \) for all&nbsp;\(b \in A\)}}</div>",,eth::sem1::diskmat
+D`/l5%ja#*,"Special elements in posets:&nbsp;\((A; \preceq)\) is a poset, \( S \subseteq A\).<div>\(a \in A\) is a {{c1::<b>lower (upper) bound</b>&nbsp;of&nbsp;\(S\)}}&nbsp;if {{c2::\(b \preceq a\) (\(b \succeq a) \) for all&nbsp;\(b \in S\)}}</div>",,eth::sem1::diskmat
+yF7brLJQxE,"Special elements in posets:&nbsp;\((A; \preceq)\) is a poset, \( S \subseteq A\).<div>\(a \in A\) is the {{c1::<b>greatest&nbsp;lower (least upper) bound</b>&nbsp;of&nbsp;\(S\)}}&nbsp;if {{c2::\(a\) is the greatest (least) element of the set of all lower (upper) bounds of&nbsp;\(S\). }}</div>",,eth::sem1::diskmat
+B/hV<WXGve,A poset&nbsp;\((A;\preceq)\) is <b>well-ordered </b>if {{c1::it is totally ordered and every non-empty subset has a least element.}},Every totally ordered finite poset&nbsp;\(\rightarrow\) well-ordered<div>Infinite example: \((N; \le)\)<br>Infinite counterexample&nbsp;\((\mathbb{Z}; \le)\)</div>,eth::sem1::diskmat
+Gw~6}3;R1[,"\((A;\preceq)\) is a poset. If&nbsp;\(\{a,b\}\) have a {{c2::greatest lower bound}}, then it is called the {{c1::<b>meet </b>of&nbsp;\(a\) and&nbsp;\(b\) (also denoted&nbsp;\(a \land b\)).}}<br>",,eth::sem1::diskmat
+otWm4$@-u8,"\((A;\preceq)\) is a poset. If&nbsp;\(\{a,b\}\) have a {{c2::least upper bound}}, then it is called the {{c1::<b>join&nbsp;</b>of&nbsp;\(a\) and&nbsp;\(b\) (also denoted&nbsp;\(a \lor b\)).}}",,eth::sem1::diskmat
+I+oWgzW/bK,A poset in which {{c2::every pair of elements has a meet and a join}} is called a {{c1::lattice}}.,"Examples:&nbsp;\((\mathbb{N}; \le), \ (\mathcal{P}(S); \subseteq)\)",eth::sem1::diskmat
+udpmH`a[=Y,The {{c2::subset&nbsp;\(f(A)\) of&nbsp;\(B\)}} is called the {{c1::<b>image</b> (also: range) of&nbsp;\(f\)}}&nbsp;and is also denoted&nbsp;\(Im(f)\).,"Example:&nbsp;\(f(x) = x^2\), the range of&nbsp;\(f\) is&nbsp;\(\mathbb{R}^{\ge 0}\)",eth::sem1::diskmat
+E6{tZ_2cBJ,"For a subset&nbsp;\(T\) of&nbsp;\(B\), the {{c1::<b>preimage </b>(in Linalg: Urbild) of&nbsp;\(T\), denoted&nbsp;\(f^{-1}(T)\)}}, is {{c2::the set of values in&nbsp;\(A\) that map into&nbsp;\(T\).}}","Example:&nbsp;\(f(x) = x^2\), the preimage of&nbsp;\([4,9]\) is&nbsp;\([-3,-2] \cup [2,3]\)",eth::sem1::diskmat
+Lfk_~v/e2Q,"Two sets&nbsp;\(A, B\) are {{c1::<b>equinumerous </b>(denoted&nbsp;\(A \sim B\))}}&nbsp;if {{c2::there exists a bijection&nbsp;\(A \rightarrow B\).}}",Example:&nbsp;\(f: \mathbb{N} \rightarrow \mathbb{Z} = (-1)^n \lceil n/2 \rceil\),eth::sem1::diskmat
+IhW:&11Iid,The set&nbsp;\(B\) {{c1::<b>dominates</b> (denoted&nbsp;\(A \preceq B\))}} if {{c2::there exists an injective function&nbsp;\(A \rightarrow B\).}},Example:&nbsp;\(f(x): \mathbb{N} \rightarrow \mathbb{R} = x\),eth::sem1::diskmat
+"L,+=h7*qew","A set&nbsp;\(A\) is called <b>countable </b>if {{c1::\(A \preceq \mathbb{N}\)}}, and <b>uncountable</b> otherwise.",,eth::sem1::diskmat
+Am`UxH.Oyx,"\(a \mid b\) means that {{c1::\(a\) divides \(b\), that is, there exists a&nbsp;\(c \in \mathbb{Z}\) such that&nbsp;\(b = ac\)}}<br>",\(\forall a \ne 0 \rightarrow a \mid 0\) and&nbsp;\(\forall a \quad 1 \mid a \land -1 \mid a\)<br>,eth::sem1::diskmat
+AFt:;I:*/e,{{c1::\(a \mod m\)}} is the same as&nbsp;{{c2::\(R_m(a)\)}}<br>,,eth::sem1::diskmat
+K4Ll=rR|5+,\(a&nbsp; \equiv_m b \stackrel{\text{def}}{\iff}\)&nbsp;{{c1::\(m \mid (a-b)\)}}<br>,,eth::sem1::diskmat
+Fh4R-ccO%^,"The equation&nbsp;\(ax \equiv_m 1\) has a unique solution&nbsp;\(x \in \mathbb{Z}_m\) if and only if&nbsp;{{c1::\(\gcd(a,m) = 1\).}} This \(x\) is then called the multiplicative inverse of&nbsp;\(a \mod m\).",,eth::sem1::diskmat
+gyJPNg>H@A,"The direct product of&nbsp;\(n\) groups&nbsp;\(\langle G_1; *_1 \rangle, \ldots, \langle G_n; *_n \rangle\) is {{c1::the algebra&nbsp;\(\langle G_1 \times \cdots \times G_n; \star\rangle\)}}. The operation&nbsp;\(\star\) is component-wise.",,eth::sem1::diskmat
+vt:Wqzxx@@,A subgroup \(H\) of a group&nbsp;\(G\) is {{c1::a subset&nbsp;\(H \subseteq G\) which is a group in itself (closed with respect to all operations).}},"Trivial subgroups:&nbsp;\(\{e\}, G\)",eth::sem1::diskmat
+l]y7c-.I]L,"The order of an element&nbsp;\(a\) in a group (denoted&nbsp;\(\text{ord}(a)\)) is {{c1::the smallest&nbsp;\(m \ge 1\) such that&nbsp;\(a^m = e\). If such an&nbsp;\(m\) does not exist,&nbsp;\(\text{ord}(a) = \infty\)}}",\(\text{ord}(e) = 1\) in any group<br>,eth::sem1::diskmat
+o1a(R_.1]i,"For a finite group&nbsp;\(G\), we call&nbsp;\(|G|\) the {{c1::order of&nbsp;\(G\)}}.",,eth::sem1::diskmat
+LFnfauD_]7,"A group&nbsp;\(G = \langle g \rangle\) generated by an element&nbsp;\(g \in G\) is called {{c1::cyclic}}, and&nbsp;\(g\) is called {{c1::a <b>generator</b> of&nbsp;\(G\)}}.",,eth::sem1::diskmat
+PLw>#T/cN`,"If&nbsp;\(G\) is a finite group and&nbsp;\(H\) is a subgroup, then {{c1::the order of&nbsp;\(H\) divides the order of&nbsp;\(G\), i.e.&nbsp;\(|H|\) divides&nbsp;\(|G|\).}}",,eth::sem1::diskmat
+j5a}0B}`Qc,"The group&nbsp;\(\mathbb{Z}^*_m\) contains all numbers&nbsp;\(a \in \mathbb{Z}_m\) that are {{c1::coprime to&nbsp;\(m\), that is,&nbsp;\(\gcd(a,m) = 1\).}}",,eth::sem1::diskmat
+hU:-C(Wl{v,The Euler function&nbsp;\(\varphi: \mathbb{Z}^+ \rightarrow \mathbb{Z}^+\) is defined as {{c1::the cardinality of&nbsp;\(\mathbb{Z}^*_m\).}},"Example:&nbsp;\(\mathbb{Z}_{18}^* = \{1,5,7,11,13,17\}\), so&nbsp;\(\varphi(18) = 6\)",eth::sem1::diskmat
+mBd+!cdp:/,"In graph theory, a {{c1::walk}} is a {{c2::series of connected vertices}}.",,eth::sem1::and
+z4Nw/I#?J^,"In graph theory, a {{c2::path}} is a {{c1::walk without repeated vertices}}.",,eth::sem1::and
+oSKGiZq$<Q,"In graph theory, a {{c2::closed walk}} is a {{c1::walk where&nbsp;\(v_0 = v_n\) (start = end)}}.",,eth::sem1::and
+rzX#2=8CU?,"In graph theory, a {{c2::cycle}} is a {{c1::closed walk without repeated vertices}}.",,eth::sem1::and
+mhrX@w|*.`,"In graph theory, an {{c2::Euler path}} is a {{c1::path that visits each edge of the graph once}}.",,eth::sem1::and
+Gt4c53(i;/,"In graph theory, a {{c2::Hamilton path}} is a {{c1::path that visits each vertex of the graph once}}.",,eth::sem1::and
+s[Y-0E4#sz,"{{c1::A ring&nbsp;\(\langle R, +, -, 0, \cdot, 1 \rangle\)}} is an algebra with the properties that<br>{{c2::* \(\langle R, +, -, 0 \rangle\) is a commutative group}}<div>{{c3::*&nbsp;\(\langle R, \cdot, 1 \rangle\) is a monoid}}<div>{{c4::*&nbsp;\( a(b+c) = (ab) + (ac), (b+c)a = (ba) + (ca)\) (left and right distributive laws)}}</div></div>","Examples:&nbsp;\(\mathbb{Z}, \mathbb{R}\)",eth::sem1::diskmat
+Pq[u}J3gBK,A ring is called {{c1::commutative}} if&nbsp;{{c2::\(ab = ba\).}},,eth::sem1::diskmat
+QS$4YdV.SM,"An element \(u\) of a ring is called a {{c1::unit}} if&nbsp;\(u\) {{c2::is invertible, so&nbsp;\(uu^{-1} = u^{-1}u = 1\).}}","Example: Units of&nbsp;\(\mathbb{Z}\) are&nbsp;\(-1, 1\)",eth::sem1::diskmat
+H+<9!8uj.@,The set of units of \(R\) is denoted by&nbsp;{{c1::\(R^*\)}},,eth::sem1::diskmat
+"I1&*hbv&c,",An {{c1::integral domain}} is a {{c2::commutative ring without zerodivisors (\( \forall a \ \forall b \quad ab = 0 \rightarrow a = 0 \lor b = 0\) ).}},"Examples:&nbsp;\(\mathbb{Z}, \mathbb{R}\)<div>Counterexample:&nbsp;\(\mathbb{Z}_m, m\) not prime</div>",eth::sem1::diskmat
+"J!)tsK,]3<","A {{c1::field (<i>Körper</i>)}}&nbsp;is {{c2::a nontrivial commutative ring&nbsp;\(F\) in which every nonzero element is a unit, so&nbsp;\(F^* = F \backslash \{0\}\)}}","Example:&nbsp;\(\mathbb{R}\), but not&nbsp;\(\mathbb{Z}\)",eth::sem1::diskmat
+l.<t])5Z&B,\(\mathbb{Z}_p\) is a field if and only if&nbsp;{{c1::\(p\) is prime.}}<br>,,eth::sem1::diskmat
+m?%j+<a6[I,A {{c1::root (also: zero)}} of&nbsp;\(a(x) \in \mathbb{R}[x]\) is {{c2::an element&nbsp;\(y \in \mathbb{R}\) for which&nbsp;\(a(y) = 0\).}},Example: \(x^4 + x^3 + x + 1\) in GF(2)\([x]\) has root 1.,eth::sem1::diskmat
+v[{@yotn>*,"In a field F,&nbsp;\(y \in F\) is a root of&nbsp;\(a(x)\) if and only if&nbsp;{{c1::\(x - y\) divides&nbsp;\(a(x)\).}}",,eth::sem1::diskmat
+G)?a@}6F-&,"The idea of {{c2::Universal Instantiation}} is that {{c1::if a statement is true for all elements, it is also true for a particular element, so&nbsp;\(\forall x F \models F[x/t]\).}}","Example: All elements in&nbsp;\(\mathbb{R}\) are invertible. Thus, 2 is also invertible.",eth::sem1::diskmat
+E8|8/h)Gv3,Predicate logic: A formula in {{c2::prenex form}} has {{c1::all quantifiers in front and none afterwards.&nbsp;}},,eth::sem1::diskmat
+BRmyi3>lm%,"<u><b>DFS</b></u><div><u><br></u></div><div><b>Runtime</b>: {{c1::\( \mathcal{O}(|E| + |V|) \)}}</div><div><br></div><div><b>Approach</b>: {{c1::We first go through the depth of each node. We might keep track of pre / post numbers to make edge classifications.}}</div><div><br></div><div><b>Uses</b>: {{c1::Detect cycles (if backward edge), path finding, topological sorting, test if bipartite, mazes, ...}}</div>",,eth::sem1::and
+u%cN;v|jjQ,"<u><b>BFS</b></u><div><u><br></u></div><div><b>Runtime</b>: {{c1::\( \mathcal{O}(|E| + |V|) \)}}</div><div><br></div><div><b>Approach</b>: {{c1::We first go through all direct successors of an edge, then move to a level deeper.}}</div><div><br></div><div><b>Uses</b>: {{c1::Shortest path in unweighted graphs, cycle detection, test if graph is bipartite, path finding}}</div>",,eth::sem1::and
+eGQw>urFaH,"<u><b>Dijkstra</b></u><div><u><br></u></div><div><b>Runtime</b>: {{c1::\( \mathcal{O}((|E| + |V|) \cdot log(|V|)) \)}}</div><div><br></div><div><b>Approach</b>: {{c1::We put the starting node into the queue, take it out, and set the distance for all adjacent nodes and put them into the queue. We repeat, update distances and only put nodes into the queue if they weren't visited before.}}</div><div><br></div><div><b>Uses</b>: {{c1::Minimal-cost paths in non-negative weighted directed graphs}}</div>",,eth::sem1::and
+j#w5w>dS6,"<u><b>Bellman-Ford</b></u><div><u><br></u></div><div><b>Runtime</b>: {{c1::\( \mathcal{O}(|E| \cdot |V|)\)}}</div><div><br></div><div><b>Approach</b>: {{c1::We initiate all distances with ∞. Then we go |V| - 1 times through every edge, and test for all (u,v) in E if dist[v] &gt; dist[u] + w(u,v). If yes, we update the distance. If after [V] - 1 iterations we can still relax an edge (in a last iteration), then there exists a negative cycle.}}</div><div><br></div><div><b>Uses</b>: {{c1::Detect negative cycles, find minimal-cost paths in weighted graphs with negative weights}}</div>",,eth::sem1::and
+F^nhYx>fXl,"<u><b>Boruvka</b></u><div><u><br></u></div><div><b>Runtime</b>: {{c1::\( \mathcal{O}((|E| + |V|) \cdot log(|V|))\)}}</div><div><br></div><div><b>Approach</b>: {{c1::We first add all vertices to the set of components (so every vertices has its own component). Then as long as the size of the components-set is greater than 1, we connect each component to the one with the cheapest edge.}}</div><div><br></div><div><b>Uses</b>: {{c1::Find MST in weighted, undirected graph}}</div>",,eth::sem1::and
+jcougdQ#0G,"<u><b>Kruskal</b></u><div><u><br></u></div><div><b>Runtime</b>: {{c1::\( \mathcal{O}(|E| \cdot log(|E|) + |E| \cdot log(|V|))\)}}</div><div><br></div><div><b>Approach</b>: {{c1::We sort the edges by weight and add them one-by-one as long as they are in different components.}}</div><div><br></div><div><b>Uses</b>: {{c1::Find MST in weighted, undirected graph}}</div>",,eth::sem1::and
+cKo%p6:M08,"<b><u>Prim</u></b><br><div><u><br></u></div><div><b>Runtime</b>: {{c1::\( \mathcal{O}((|E| + |V|) \cdot log(|V|))\)}}</div><div><br></div><div><b>Approach</b>: {{c1::We start at a given vertex. To this subtree we add one-by-one the cheapest edge connecting the subtree to another component until all vertices are connected. The implementation is very similar to Dijkstra.}}</div><div><br></div><div><b>Uses</b>: {{c1::Find MST in weighted, undirected graph}}</div>",,eth::sem1::and
+nfdJ7OmBdJ,"<u><b>Floyd-Warshall</b></u><div><u><br></u></div><div><b>Runtime</b>: {{c1::\( \mathcal{O}(|V|^3)\)}}</div><div><br></div><div><b>Approach</b>: {{c1::3D DP: It is based on a triple-nested for loop with the following recursion: d[u][v] = min(d[u][v], d[u][i] + d[i][v]).}}</div><div><br></div><div><b>Uses</b>: {{c1::All-to-all shortest path in directed graph without negative cycles.}}</div>",,eth::sem1::and
+"KD23pBO,?%","<u><b>Johnson</b></u><div><u><br></u></div><div><b>Runtime</b>: {{c1::\( \mathcal{O}(|E| \cdot |V| + |V|^2 \cdot log(|V|)\)}}</div><div><br></div><div><b>Approach</b>: {{c1::We make all edges positive and then perform n-times Dijkstra. To do this we create an additional node that is linked to each node with edge weight 0 and store for each node a height h(x), where h(x) is equal to the shortest path from the new node n to the node x. The new weights are calculated with w'(u,v) = w(u,v) + h(u) - h(v).}}</div><div><br></div><div><b>Uses</b>: {{c1::All-to-all shortest paths in directed graphs without negative cycles.}}</div>",,eth::sem1::and
+I+_KFb>Q>~,"A graph&nbsp;\(G = (V,E)\) is k-connected (k-zusammenhängend) if<span style=""color: var(--text-fg);"">&nbsp;</span>{{c1::you need to remove at least \(k\) vertices from the graph such that it becomes disconnected.}}","<div><img src=""Screenshot_20210223_144154.png""></div><div>This graph is 2-connected. We need to remove 2 vertices to make the graph disconnected.</div>",eth::sem2::anw
+i02xT{m[u@,"A graph&nbsp;\(G=(V,E)\) is&nbsp;\(k\)<i>-edge-connected</i> (k-kanten-zusammenhängend) if {{c1::we need to remove at least&nbsp;\(k\) edges from&nbsp;\(G\) such that it becomes disconnected.}}","<img src=""Screenshot_20210223_144154.png""><div>This graph is 2-edge-connected, we must remove 2 edges to make it disconnected.</div>",eth::sem2::anw
+otRi.YaJGs,"A \(u\)-\(v\)-separator is {{c1::a set&nbsp;\(X\) of vertices such that&nbsp;\(u, v\) are in different components after we remove these edges from&nbsp;\(G\), so in&nbsp;\(G[V \ \backslash \ X]\).}}",,eth::sem2::anw
+HQJNl-v7.],"\(G = (V,E)\) is&nbsp;\(k\)-connected iff&nbsp;\(|V| \ge k + 1\) (otherwise not sensible) and every&nbsp;\(u\)-\(v\)-separator has {{c1::size&nbsp;\(|X| \ge k\).}}&nbsp;",,eth::sem2::anw
+I5[Jb@Xj@A,"(Menger's theorem)<div>{{c2::Every&nbsp;\(u\)-\(v\)-separator \(X\) has size&nbsp;\(|X| \ge k\)&nbsp;}} \(\iff\) {{c1::There exist&nbsp;\(k\) internally vertex-disjoint paths (i.e. they share no vertices) between&nbsp;\(u, v\).}}</div>",(generalized by the max-flow min-cut theorem),eth::sem2::anw
+x.1xQeEkwI,A lock is reentrant if {{c1::it can be acquired / released multiple times by the same thread.}},"If a lock is non-reentrant, when trying to acquire it again exceptions or other problems might occur.",eth::sem2::pprog
+p~(sx=d6fm,A thread <b>starves</b> if {{c1::it can never enter a critical section}}.,,eth::sem2::pprog
+OAs;P;T5($,{{c3::Die geometrische Reihe}} konvergiert für&nbsp;\(|q| &lt; 1\):<br><br>{{c1::\(\sum_{k=0}^\infty q^k\)}}&nbsp;\(=\)&nbsp;{{c2::\(\frac{1}{1-q}\)}},,eth::sem2::ana1
+jrE@caEJjB,Die harmonische Reihe&nbsp;\(\sum_{n=1}^\infty \frac{1}{n}\) {{c1::divergiert.}},,eth::sem2::ana1
+jyA.%y9m|t,"In a one-hot encoding, all {{c1::values are low (0) except one (1)}}.",Advantage: reduces next-state logic,eth::sem2::ddca
+F%=1XZ8Sft,"In a binary encoding, {{c1::each state is represented as a binary number.}}","Advantage: very compact, reduces amount of Flip-Flops used for state<br>Disadvantage: other logic more complicated",eth::sem2::ddca
+J1p>lcN.5J,"In an Output encoding, {{c1::outputs are directly accessible in state encoding.}}","Example: 001, 010, 100, 110 for a (green, yellow, red) traffic light<br>Advantage: minimizes output logic",eth::sem2::ddca
+q$(ZtVs!sX,R-type instructions operate on {{c1::three registers}},"Examples: add, and, slt",eth::sem2::ddca
+JH$r/N4_i*,I-type instructions operate on {{c1::two registers and a 16-bit immediate.}},"Examples: addi, lw, beq",eth::sem2::ddca
+LI$<DaWL.L,J-type instructions operate on {{c1::one 26-bit immediate.}},"Examples: j, jal",eth::sem2::ddca
+dOUJuy3CA[,"In Boolean algebra, \(\bullet\) means {{c1::AND}}.",,eth::sem2::ddca
+B}Rj(zK0.6,"In Boolean algebra,&nbsp;\(+\) means {{c1::OR}}.",,eth::sem2::ddca
+m.z>*Vj;0`,"Ein Graph ist \(k\)-zusammenhängend, wenn {{c1::wir mindestens&nbsp;\(k\) Knoten löschen müssen, damit er nicht mehr zusammenhängend ist.}}",,eth::sem2::anw
+wYNIl$6{KE,"Wenn ein Graph&nbsp;\(k\)-zusammenhängend ist, ist er auch&nbsp;{{c1::\(k-1\)-zusammenhängend.}}",,eth::sem2::anw
+x$+[>$U=Wl,"Es gibt&nbsp;{{c1::\(n^k\)}} Möglichkeiten,&nbsp;\(k\) Elemente <b>geordnet mit Zurücklegen</b> aus einer Menge mit \(n\) zu ziehen.",,eth::sem2::anw
+o+>y]EAyv&,"Es gibt&nbsp;{{c1::\(\frac{n!}{(n-k)!}\)}} Möglichkeiten,&nbsp;\(k\) Elemente&nbsp;<b>geordnet ohne Zurücklegen</b>&nbsp;aus einer Menge mit \(n\) Elementen zu ziehen.",,eth::sem2::anw
+HTQOog++F3,"Es gibt&nbsp;{{c1::\(\binom{n+k-1}{k}\)}} Möglichkeiten,&nbsp;\(k\) Elemente <b>ungeordnet mit Zurücklegen</b>&nbsp;aus einer Menge mit \(n\) Elementen zu ziehen.",,eth::sem2::anw
+L@~[[nY^&#,"Es gibt&nbsp;{{c1::\(\binom{n}{k}\)}} Möglichkeiten,&nbsp;\(k\) Elemente&nbsp;<b>ungeordnet&nbsp;ohne Zurücklegen</b>&nbsp;aus einer Menge mit \(n\) Elementen zu ziehen.",,eth::sem2::anw
+NK^)ecusK7,"Ein induzierter Teilgraph entsteht, wenn man aus einem Graph {{c1::nur Knoten &amp; dessen verbundene Kanten entfernt.&nbsp;}} Man darf also nicht {{c1::nur Kanten entfernen}}.",,eth::sem2::anw
+maqkZ_mRL^,"Eine {{c2::endliche, nichtleere Menge&nbsp;\(\Sigma\)}} heisst {{c1::Alphabet}}.",,eth::sem3::ti
+gXd7.Yb9Uo,Das leere Wort in einem Alphabet&nbsp;\(\Sigma\) wird mit {{c1::\(\lambda\)}} bezeichnet.,,eth::sem3::ti
+j$!`:5QFF1,The order of the differential equation is {{c1::the order of the highest derivative in the equation}}.,,eth::sem3::ana2
+b4S$^<QF#/,A differential equation is called <i>homogenous</i>&nbsp;if {{c1::its right hand side is 0}}.,,eth::sem3::ana2
+"O]s3MO,?Y_","Ein deterministischer endlicher Automat (EA) ist ein Tupel&nbsp;\(M = (Q, \Sigma, \delta, q_0, F)\) wobei<br><ul><li>Q {{c1::eine endliche Menge von Zuständen}}</li><li>\(\Sigma\) {{c2::ein Eingabealphabet}}<br></li><li>\(q_0 \in Q\) {{c3::der Anfangszustand}}<br></li><li>\(\delta : Q \times \Sigma \to Q\) {{c4::die Übergangsfunktion}}</li><li>\(F \subseteq Q\) {{c5::die Menge der akzeptierenden Zustände}}</li></ul>ist.",,eth::sem3::ti
+xeSD2qTh6x,"\(\delta(q,a) = p\) bedeutet, {{c1::dass&nbsp;\(M\) in den Zustand&nbsp;\(p\) übergeht, falls&nbsp;\(M\) im Zustand&nbsp;\(q\) das Symbol&nbsp;\(a\) gelesen hat}}",,eth::sem3::ti
+(1/Qvg]Xr,"Die Klasse der <b>regulären</b> Sprachen&nbsp;\(\mathcal{L}_{EA}\) ist die Klasse der Sprachen, {{c1::welche von einem endlichen Automaten akzeptiert werden.}}",Jede Sprache&nbsp;\(L \in \mathcal{L}_{EA}\) wird <b>regulär</b> genannt.,eth::sem3::ti
+FCP0iDPrPM,A useful equation for avoiding cancellation is&nbsp;\(a - b = \)&nbsp;{{c1::\(\frac{a^2 - b^2}{a+b}\)}},,eth::sem3::numcs
+J|7tI:*3X~,A useful equation for avoiding cancellation is&nbsp;\(\log a - \log b = \)&nbsp;{{c1::\(\log \frac{a}{b}\)}},,eth::sem3::numcs
+bkd.wM:Z2),A trap is {{c1::an intentional synchronous exception}}.,"Examples: syscalls, special instructions",eth::sem3::spca
+bU`YK(6JD3,A fault is an {{c1::unintential but potentially recoverable synchronous}} exception.,"Examples: page faults, floating point exceptions",eth::sem3::spca
+EG0;aXhy.p,An abort is an {{c1::unintentional and unrecoverable}} exception.,"Example: division by 0, machine check",eth::sem3::spca
+nC7Np_X*?[,An interrupt is an {{c1::asychronous signal from an I/O device}}.,,eth::sem3::spca
+Ec9<`O#pu`,A page fault happens when {{c1::a user accesses a location in memory that is not in physical memory}}.,Afterwards: returns to faulting instruction,eth::sem3::spca
+",5u*`n3pb","If an interrupt is maskable, we can {{c1::choose to ignore or delay it}}.",,eth::sem3::spca
+c*)gXQM;/x,IOMMU stands for {{c1::I/O Memory Management Unit}}.,,eth::sem3::spca
+ma``5@}g5!,SAT =&nbsp;{{c1::\(\{\Phi \mid \Phi \) ist eine erfüllbare Formel in KNF\(\}\) }},== Satisfiability,eth::sem3::ti
+N}5$B~v>B`,"CLIQUE =&nbsp;{{c1::\(\{(G,k) \mid G \) ist ein ungerichteter Graph, der eine&nbsp;\(k\)-Clique enthält&nbsp;\(\}\)}}",,eth::sem3::ti
+"hBv?,]U<hO","Eine&nbsp;\(k\)-Clique in einem Graphen ist {{c1::ein Subset an Knoten der Grösse \(k\), welche alle paarweise verbunden sind.}}",,eth::sem3::ti
+HdT~;:=bS>,"VC =&nbsp;{{c1::\(\{(G,k) \mid G\) ist ein Graph mit Knotenüberdeckung der Grösse höchstens&nbsp;\(k \}\)}}",,eth::sem3::ti
+lemIxrNw-J,The TLB ({{c1::Translation Lookaside Buffer}}) is a {{c1::cache for mapping virtual page numbers to physical page numbers.}},,eth::sem3::spca
+iu+k%(lt#L,PTE stands for {{c1::Page Table Entry.}},,eth::sem3::spca
+C%bj;|h7KI,"\(L_U = \)&nbsp;{{c1::\(\{\text{Kod}(M)\#w \mid w \in \{0,1\}^* \text{ und M akzeptiert } w\}\)}}",,eth::sem3::ti
+E7o[D?o[Rp,"\(L_H = \) {{c1::\(\{\text{Kod}(M)\# x \mid x \in \{0,1\}^*\)&nbsp; und M hält auf \(x\}\)}}",,eth::sem3::ti
+nw`V)k:X;(,\(L_{\text{empty}} =\) {{c1::\(\{\text{Kod}(M) \mid L(M) = \varnothing \}\)}},,eth::sem3::ti
+Gy&l~&[T$h,\(L_{EQ} =\)&nbsp;{{c1::\(\{\text{Kod}(M)\#\text{Kod}(\bar{M}) \mid L(M) = L(\bar{M})\}\)}},,eth::sem3::ti
+x@yx*7fr{},"\(L_{H,\lambda} =\)&nbsp;{{c1::\(\{\text{Kod}(M) \mid M \text{ hält auf } \lambda \}\)}}",,eth::sem3::ti
 rb>u/2<`S],"Der Satz von Cook besagt, dass {{c1::SAT NP-vollständig ist.}}",,
-"sY00nMVq,]","Eine Grammatik ist eine Typ-3-Grammatik (<b>regulär</b>), falls {{c1::\(\forall (\alpha,\beta) \in P: \alpha \in \Sigma_N, \beta \in \Sigma_T^* \times \Sigma_N \cup \Sigma_T^*\).}}",d.h. nur ein Nichtterminal und Terminale nur als Prefix,ETH::sem3::TI
-t/ki)fCFZ`,"Eine Grammatik ist eine Typ-2-Grammatik (<b>kontextfrei</b>), falls&nbsp;{{c1::\(\forall (\alpha, \beta) \in P: \alpha \in \Sigma_N, \beta \in (\Sigma_N \cup \Sigma_T)^*\).}}",,ETH::sem3::TI
-st8gpJ{6.5,"Eine Grammatik ist eine Typ-1-Grammatik (<b>kontextsensitiv</b>), falls&nbsp;{{c1::\(\forall (\alpha, \beta) \in P: |\alpha| \le |\beta|\).}}","d.h. kann nicht ""schrumpfen""",ETH::sem3::TI
-F<DaUVTC>X,"Der Satz von Rice besagt, dass {{c1::jedes semantisch nichttriviale Entscheidungsproblem über Turingmaschinen unentscheidbar ist.}}",semantisch: unabhängig von Struktur der TM<br>nichttrivial: mindestens 1 aber nicht alle TM sind in der Sprache,ETH::sem3::TI
+"sY00nMVq,]","Eine Grammatik ist eine Typ-3-Grammatik (<b>regulär</b>), falls {{c1::\(\forall (\alpha,\beta) \in P: \alpha \in \Sigma_N, \beta \in \Sigma_T^* \times \Sigma_N \cup \Sigma_T^*\).}}",d.h. nur ein Nichtterminal und Terminale nur als Prefix,eth::sem3::ti
+t/ki)fCFZ`,"Eine Grammatik ist eine Typ-2-Grammatik (<b>kontextfrei</b>), falls&nbsp;{{c1::\(\forall (\alpha, \beta) \in P: \alpha \in \Sigma_N, \beta \in (\Sigma_N \cup \Sigma_T)^*\).}}",,eth::sem3::ti
+st8gpJ{6.5,"Eine Grammatik ist eine Typ-1-Grammatik (<b>kontextsensitiv</b>), falls&nbsp;{{c1::\(\forall (\alpha, \beta) \in P: |\alpha| \le |\beta|\).}}","d.h. kann nicht ""schrumpfen""",eth::sem3::ti
+F<DaUVTC>X,"Der Satz von Rice besagt, dass {{c1::jedes semantisch nichttriviale Entscheidungsproblem über Turingmaschinen unentscheidbar ist.}}",semantisch: unabhängig von Struktur der TM<br>nichttrivial: mindestens 1 aber nicht alle TM sind in der Sprache,eth::sem3::ti
 dX|8rH#t|C,"Eine Sprache&nbsp;\(L\) ist NP-schwer, wenn {{c1::alle Sprachen in NP in polynomieller Zeit&nbsp;auf&nbsp;\(L\) reduziert werden können.}}",,
 AmB39:CR8:,"Eine Sprache&nbsp;\(L\) ist NP-vollständig, falls&nbsp;{{c1::\(L \in\) NP und&nbsp;\(L\) NP-schwer ist.}}",z.B. SAT,
-Oot<diX(:.,A compilation unit in C is roughly {{c1::a source file plus all of its includes.}},,ETH::sem3::SPCA
-k(/Gu0354D,<i>Referential transparency </i>means that {{c1::an expression always evaluates to the same value in every context}}.,,ETH::sem4::FMFP
-C[BU|b<B5v,A Candidate Key is {{c1::the minimal set of fields that identifies each tuple in a relation uniquely.}},,ETH::sem4::DMDB
-sXbQ&Fe48.,A Primary Key is {{c1::a chosen candidate key.}}<br>,intutitively: unique identifier for data row,ETH::sem4::DMDB
-"oPdA>lNf,k","In Relational Algebra, the&nbsp;\(\sigma\) operator means {{c1::Selection, so basically WHERE.}}",e.g.&nbsp;\(\sigma_{price&gt;100}\),ETH::sem4::DMDB
-JRBc]Z)OTu,"In Relational Algebra, the&nbsp;\(\prod\) operator means {{c1::Projection, so we select a subset of columns.}}","e.g.&nbsp;\(\prod_{name,price}\langle table \rangle\)",ETH::sem4::DMDB
-Hm!T4~r(8#,"In Relational Algebra, the&nbsp;\(\rho\) operator means {{c1::Renaming, so we change the name of the attributes.}}",,ETH::sem4::DMDB
-K?9tQE7Tz8,"In Relational Algebra, the&nbsp;\(\bowtie\) operator means {{c1::Natural Join, so join on all common attributes.}}",e.g. Customer&nbsp;\(\bowtie\) Purchase,ETH::sem4::DMDB
-"kH>F},njo;","In TCP congestion control, <i>slow start</i> is {{c1::a phase in which we enlarge the CWND by 1 per received ACK.}}","If all packets make it, this leads to a doubling of the CWND per RTT!",ETH::sem4::CN
-i|#OK[j/MH,"In TCP congestion control, a <i>timeout</i> causes the CWND to {{c1::be reset to 1.}}",,ETH::sem4::CN
-pZf]x$+2:S,"In TCP congestion control, fast recovery causes CWND {{c1::to be halved.}}",,ETH::sem4::CN
-Jy(nh2@i+B,The Karn/Partridge-Algorithm estimates {{c1::Round Trip Times for setting good timeouts}}.,,ETH::sem4::CN
-"s4OE}22i?,",The Jacobson/Karels algorithm is an improvement over the {{c1::Karn/Partridge}} algorithm.,,ETH::sem4::CN
-L3C~r!;%H#,The loopback address in IPv6 is {{c1::⠶1/128.}},,ETH::sem4::CN
-FC?_@*D~T3,"""Happy Eyeballs"" is a networking algorithm that says that {{c1::clients should try both IPv4 and IPv6, but prefer an IPv6 connection to a server if available.}}",,ETH::sem4::CN
-n&?@7Mh9T>,The 4 goals of reliable transfer are:<br><ul><li>{{c1::Correctness}}</li><li>{{c2::Timeliness}}</li><li>{{c3::Efficiency}}</li><li>{{c4::Fairness}}</li></ul>,,ETH::sem4::CN
-de5mYAM@HC,A reliable transport design is correct if&nbsp;{{c1::a packet is always resent if the previous packet was lost/corrupted.}},,ETH::sem4::CN
+Oot<diX(:.,A compilation unit in C is roughly {{c1::a source file plus all of its includes.}},,eth::sem3::spca
+k(/Gu0354D,<i>Referential transparency </i>means that {{c1::an expression always evaluates to the same value in every context}}.,,eth::sem4::fmfp
+C[BU|b<B5v,A Candidate Key is {{c1::the minimal set of fields that identifies each tuple in a relation uniquely.}},,eth::sem4::dmdb
+sXbQ&Fe48.,A Primary Key is {{c1::a chosen candidate key.}}<br>,intutitively: unique identifier for data row,eth::sem4::dmdb
+"oPdA>lNf,k","In Relational Algebra, the&nbsp;\(\sigma\) operator means {{c1::Selection, so basically WHERE.}}",e.g.&nbsp;\(\sigma_{price&gt;100}\),eth::sem4::dmdb
+JRBc]Z)OTu,"In Relational Algebra, the&nbsp;\(\prod\) operator means {{c1::Projection, so we select a subset of columns.}}","e.g.&nbsp;\(\prod_{name,price}\langle table \rangle\)",eth::sem4::dmdb
+Hm!T4~r(8#,"In Relational Algebra, the&nbsp;\(\rho\) operator means {{c1::Renaming, so we change the name of the attributes.}}",,eth::sem4::dmdb
+K?9tQE7Tz8,"In Relational Algebra, the&nbsp;\(\bowtie\) operator means {{c1::Natural Join, so join on all common attributes.}}",e.g. Customer&nbsp;\(\bowtie\) Purchase,eth::sem4::dmdb
+"kH>F},njo;","In TCP congestion control, <i>slow start</i> is {{c1::a phase in which we enlarge the CWND by 1 per received ACK.}}","If all packets make it, this leads to a doubling of the CWND per RTT!",eth::sem4::cn
+i|#OK[j/MH,"In TCP congestion control, a <i>timeout</i> causes the CWND to {{c1::be reset to 1.}}",,eth::sem4::cn
+pZf]x$+2:S,"In TCP congestion control, fast recovery causes CWND {{c1::to be halved.}}",,eth::sem4::cn
+Jy(nh2@i+B,The Karn/Partridge-Algorithm estimates {{c1::Round Trip Times for setting good timeouts}}.,,eth::sem4::cn
+"s4OE}22i?,",The Jacobson/Karels algorithm is an improvement over the {{c1::Karn/Partridge}} algorithm.,,eth::sem4::cn
+L3C~r!;%H#,The loopback address in IPv6 is {{c1::⠶1/128.}},,eth::sem4::cn
+FC?_@*D~T3,"""Happy Eyeballs"" is a networking algorithm that says that {{c1::clients should try both IPv4 and IPv6, but prefer an IPv6 connection to a server if available.}}",,eth::sem4::cn
+n&?@7Mh9T>,The 4 goals of reliable transfer are:<br><ul><li>{{c1::Correctness}}</li><li>{{c2::Timeliness}}</li><li>{{c3::Efficiency}}</li><li>{{c4::Fairness}}</li></ul>,,eth::sem4::cn
+de5mYAM@HC,A reliable transport design is correct if&nbsp;{{c1::a packet is always resent if the previous packet was lost/corrupted.}},,eth::sem4::cn
 u^R$XY$~W?,"To download a file with curl, use {{c1::<pre>curl -O</pre>}}",,
 F2[du1bMu;,"In an OS, a trampoline is a {{c1::part of the memory that is at the same address in both the user and kernel page tables.}}",,
-AReK9,The Operating System is defined as the body of software that<br><ul><li>{{c1::Multiplexes hardware resources}}</li><li>{{c2::Abstracts the hardware away}}</li><li>{{c3::Protects programs from each other}}</li></ul>,,ETH::sem5::CompSys
-EsKaK,The three roles of an OS are to be {{c1::<ul><li>Referee</li><li>Illusionist</li><li>Glue</li>}}<br></ul>,,ETH::sem5::CompSys
-l6y93,A<b> name&nbsp;</b>is an {{c1::identifier for an object in a system}}.,,ETH::sem5::CompSys
-_3dwF,A&nbsp;<b>binding</b>&nbsp;is an {{c1::association of a name to an object}}.,,ETH::sem5::CompSys
-Gj]cE,A&nbsp;<b>context</b>&nbsp;is a {{c1::set of bindings}}. Also known as {{c1::<b>namespace</b> or <b>name scope</b>}}.,,ETH::sem5::CompSys
-{IP/B,<b>Resolution </b>is {{c1::the process of taking a name + context and finding the object bound to the name in that context}}.,The bound object could also be a new context.,ETH::sem5::CompSys
-gMD>H,"A <b>naming network&nbsp;</b>is a {{c1::directed graph where nodes are either contexts or objects, and the edges are bindings}}.",,ETH::sem5::CompSys
-9CO?E,A <b>pathname&nbsp;</b>is a {{c1::ordered list of names (called&nbsp;<i>path components</i>)&nbsp;that specify a path in a naming network}}.,A UNIX filename is&nbsp;a pathname.,ETH::sem5::CompSys
-rR1E|Rtd{i,The central nervous system (CNS) is made up of {{c1::the brain and the spinal cord.}},,ETH::electives::NeuroInf
-5lzrcfSCS,The cerebral cortex is the {{c1::superficial gray matter of the brain hemispheres.}},,ETH::electives::NeuroInf
-P?oxC{*aqn,The <i>corpus callosum&nbsp;</i>is {{c1::the large midline fiber bundle connecting the two brain hemispheres.}},In German sometimes: <i>Balken</i>,ETH::electives::NeuroInf
-he%>mSIN1U,"<i>Gray matter</i>&nbsp;is a term describing {{c1::regions of the CNS with many neuronal cell bodies, dendrites and synapses.}}","It's gray because there isn't much myelin in the gray matter, and the myelin is white.",ETH::electives::NeuroInf
-j67EjJ[Ps6,The&nbsp;<i>gyrus</i>&nbsp;are {{c1::the ridges of the infolded cerebral cortex.}},,ETH::electives::NeuroInf
-ET#5&q4pOP,The <i>limbic system&nbsp;</i>is {{c1::the part of the brain concerned with emotions.}},e.g. hippocampus and amygdala,ETH::electives::NeuroInf
-IvNXmK(`|=,The&nbsp;<i>neocortex</i>&nbsp;is the {{c1::six-layered cortex that makes up about 90% of the&nbsp;<i>cerebral cortex</i>.}},The other 10% is&nbsp;<i>allocortex</i>.,ETH::electives::NeuroInf
-H`/#Ge6^rC,The&nbsp;<i>peripheral nervous system (PNS)</i>&nbsp;includes {{c1::all nerves and neurons outside the brain &amp; spinal cord.}},,ETH::electives::NeuroInf
-AM8Z[6%a%S,The&nbsp;<i>soma</i>&nbsp;is {{c1::the cell body of a neuron.}},,ETH::electives::NeuroInf
-K|11=(4kV3,"In scheduling, <i>priority inversion</i>&nbsp;is {{c1::a problem where a low-priority task holds a lock that a high-priority task needs. Then a middle-priority task gets scheduled instead, and the high-priority task is unable to run.}}",This happened on the Mars Pathfinder rover.,ETH::sem5::CompSys
-er_[@a/x|/,A <i>preemptive</i>&nbsp;scheduler may {{c1::interrupt and suspend a task before it is completed.}},,ETH::sem5::CompSys
-"Hy)8GV2.,x","In scheduling,&nbsp;<i>priority inheritance</i>&nbsp;is {{c1::a solution to the priority inversion problem. If a task holds a lock, it temporarily has the priority of the highest process waiting for the lock.}}",This requires the scheduler to be involved in lock operations.,ETH::sem5::CompSys
-qNO2x;^G`%,"In scheduling,&nbsp;<i>priority ceiling</i>&nbsp;is {{c1::a solution to the priority inversion problem. If a task holds a lock, it temporarily has the priority of the highest process which can ever hold the lock.}}",This can require static analysis of the entire system.,ETH::sem5::CompSys
-Jt}2U{<M18,The <i>Goldman-Hodgkin-Katz equation</i> is used to determine the&nbsp;{{c1::reversal potential across a membrane including all permeable ions.}},,ETH::electives::NeuroInf
-Kg1]+B+yKs,An&nbsp;<i>afferent</i>&nbsp;neuron/axon conducts action potentials&nbsp;{{c1::from the periphery&nbsp;<b>towards</b>&nbsp;the CNS}}.,,ETH::electives::NeuroInf
-H:fht}fv0p,An&nbsp;<i>efferent</i>&nbsp;neuron/axon conducts action potentials {{c1::<b>away</b>&nbsp;from the CNS to the periphery.}},,ETH::electives::NeuroInf
-fsw>C@#+MB,The presynaptic terminal is also called&nbsp;{{c1::axon terminal or bouton}}.,,ETH::electives::NeuroInf
-tVYOj@8P3{,The <i>Nodes of Ranvier </i>are<i>&nbsp;</i>{{c1::myelin-sheath gaps along the axon where the action potential is regenerated}}.,,ETH::electives::NeuroInf
-HXUCFYhchr,The <i>meninges</i>&nbsp;are {{c1::the three membranes that surround and protect the brain / spinal cord}}.,"(mammals have three, others not)",ETH::electives::NeuroInf
-Ln!A!2^MYs,The&nbsp;<i>dura mater&nbsp;</i>is {{c1::the thick inelastic outermost layer of the&nbsp;<i>meninges</i>}}.,,ETH::electives::NeuroInf
-Kfxefl7akn,The&nbsp;<i>arachnoid mater</i>&nbsp;is {{c1::the thin middle layer of the <i>meninges</i>}}.,"Among other things, it keeps blood from getting into the cerebrospinal fluid.",ETH::electives::NeuroInf
-b?Q>c_!^r`,The&nbsp;<i>pia mater</i>&nbsp;is {{c1::the thin innermost layer of the&nbsp;<i>meninges</i>}}.,"Among other things, it prevents cerebrospinal fluid from reaching the brain.",ETH::electives::NeuroInf
-A}wlY_JWE`,The CAP theorem says that any distributed system {{c1::can only have two of the three properties:<br><ul><li>Consistency</li><li>Availability</li><li>Partition tolerance}}</li></ul>,,ETH::sem5::CompSys
-KeXb5qzp`K,The shared state in Bitcoin is&nbsp;{{c1::the set of <i>unspent transaction outputs (UTXOs)&nbsp;</i>and some additional global parameters.}},,ETH::sem5::CompSys
-unMRZ`+L=q,"The Bitcoin PoW function is given by {{c1::\[\mathcal{F}_d(c,x) \to \text{SHA256}(\text{SHA256}(c|x)) &lt; \frac{2^{224} }{d}\]}}",,ETH::sem5::CompSys
-NKH]x`l+`D,"On success, <tt>fork()</tt> returns&nbsp;{{c1::the child PID}} to the parent and&nbsp;{{c1::0}} to the child.",,ETH::sem5::CompSys
-Kvf>{OSF=r,"On failure, <tt>fork()</tt> returns&nbsp;{{c1::-1}} to the parent and the child {{c1::is not created}}.",,ETH::sem5::CompSys
-Hje6w~wY=U,The drift&nbsp;\(\delta\)&nbsp;is {{c1::the predictable clock error}}.,,ETH::sem5::CompSys
-h2#T5DY.KD,TAI is a {{c1::time standard without leap seconds}}.,,ETH::sem5::CompSys
+AReK9,The Operating System is defined as the body of software that<br><ul><li>{{c1::Multiplexes hardware resources}}</li><li>{{c2::Abstracts the hardware away}}</li><li>{{c3::Protects programs from each other}}</li></ul>,,eth::sem5::compsys
+EsKaK,The three roles of an OS are to be {{c1::<ul><li>Referee</li><li>Illusionist</li><li>Glue</li>}}<br></ul>,,eth::sem5::compsys
+l6y93,A<b> name&nbsp;</b>is an {{c1::identifier for an object in a system}}.,,eth::sem5::compsys
+_3dwF,A&nbsp;<b>binding</b>&nbsp;is an {{c1::association of a name to an object}}.,,eth::sem5::compsys
+Gj]cE,A&nbsp;<b>context</b>&nbsp;is a {{c1::set of bindings}}. Also known as {{c1::<b>namespace</b> or <b>name scope</b>}}.,,eth::sem5::compsys
+{IP/B,<b>Resolution </b>is {{c1::the process of taking a name + context and finding the object bound to the name in that context}}.,The bound object could also be a new context.,eth::sem5::compsys
+gMD>H,"A <b>naming network&nbsp;</b>is a {{c1::directed graph where nodes are either contexts or objects, and the edges are bindings}}.",,eth::sem5::compsys
+9CO?E,A <b>pathname&nbsp;</b>is a {{c1::ordered list of names (called&nbsp;<i>path components</i>)&nbsp;that specify a path in a naming network}}.,A UNIX filename is&nbsp;a pathname.,eth::sem5::compsys
+rR1E|Rtd{i,The central nervous system (CNS) is made up of {{c1::the brain and the spinal cord.}},,eth::electives::neuroinf
+5lzrcfSCS,The cerebral cortex is the {{c1::superficial gray matter of the brain hemispheres.}},,eth::electives::neuroinf
+P?oxC{*aqn,The <i>corpus callosum&nbsp;</i>is {{c1::the large midline fiber bundle connecting the two brain hemispheres.}},In German sometimes: <i>Balken</i>,eth::electives::neuroinf
+he%>mSIN1U,"<i>Gray matter</i>&nbsp;is a term describing {{c1::regions of the CNS with many neuronal cell bodies, dendrites and synapses.}}","It's gray because there isn't much myelin in the gray matter, and the myelin is white.",eth::electives::neuroinf
+j67EjJ[Ps6,The&nbsp;<i>gyrus</i>&nbsp;are {{c1::the ridges of the infolded cerebral cortex.}},,eth::electives::neuroinf
+ET#5&q4pOP,The <i>limbic system&nbsp;</i>is {{c1::the part of the brain concerned with emotions.}},e.g. hippocampus and amygdala,eth::electives::neuroinf
+IvNXmK(`|=,The&nbsp;<i>neocortex</i>&nbsp;is the {{c1::six-layered cortex that makes up about 90% of the&nbsp;<i>cerebral cortex</i>.}},The other 10% is&nbsp;<i>allocortex</i>.,eth::electives::neuroinf
+H`/#Ge6^rC,The&nbsp;<i>peripheral nervous system (PNS)</i>&nbsp;includes {{c1::all nerves and neurons outside the brain &amp; spinal cord.}},,eth::electives::neuroinf
+AM8Z[6%a%S,The&nbsp;<i>soma</i>&nbsp;is {{c1::the cell body of a neuron.}},,eth::electives::neuroinf
+K|11=(4kV3,"In scheduling, <i>priority inversion</i>&nbsp;is {{c1::a problem where a low-priority task holds a lock that a high-priority task needs. Then a middle-priority task gets scheduled instead, and the high-priority task is unable to run.}}",This happened on the Mars Pathfinder rover.,eth::sem5::compsys
+er_[@a/x|/,A <i>preemptive</i>&nbsp;scheduler may {{c1::interrupt and suspend a task before it is completed.}},,eth::sem5::compsys
+"Hy)8GV2.,x","In scheduling,&nbsp;<i>priority inheritance</i>&nbsp;is {{c1::a solution to the priority inversion problem. If a task holds a lock, it temporarily has the priority of the highest process waiting for the lock.}}",This requires the scheduler to be involved in lock operations.,eth::sem5::compsys
+qNO2x;^G`%,"In scheduling,&nbsp;<i>priority ceiling</i>&nbsp;is {{c1::a solution to the priority inversion problem. If a task holds a lock, it temporarily has the priority of the highest process which can ever hold the lock.}}",This can require static analysis of the entire system.,eth::sem5::compsys
+Jt}2U{<M18,The <i>Goldman-Hodgkin-Katz equation</i> is used to determine the&nbsp;{{c1::reversal potential across a membrane including all permeable ions.}},,eth::electives::neuroinf
+Kg1]+B+yKs,An&nbsp;<i>afferent</i>&nbsp;neuron/axon conducts action potentials&nbsp;{{c1::from the periphery&nbsp;<b>towards</b>&nbsp;the CNS}}.,,eth::electives::neuroinf
+H:fht}fv0p,An&nbsp;<i>efferent</i>&nbsp;neuron/axon conducts action potentials {{c1::<b>away</b>&nbsp;from the CNS to the periphery.}},,eth::electives::neuroinf
+fsw>C@#+MB,The presynaptic terminal is also called&nbsp;{{c1::axon terminal or bouton}}.,,eth::electives::neuroinf
+tVYOj@8P3{,The <i>Nodes of Ranvier </i>are<i>&nbsp;</i>{{c1::myelin-sheath gaps along the axon where the action potential is regenerated}}.,,eth::electives::neuroinf
+HXUCFYhchr,The <i>meninges</i>&nbsp;are {{c1::the three membranes that surround and protect the brain / spinal cord}}.,"(mammals have three, others not)",eth::electives::neuroinf
+Ln!A!2^MYs,The&nbsp;<i>dura mater&nbsp;</i>is {{c1::the thick inelastic outermost layer of the&nbsp;<i>meninges</i>}}.,,eth::electives::neuroinf
+Kfxefl7akn,The&nbsp;<i>arachnoid mater</i>&nbsp;is {{c1::the thin middle layer of the <i>meninges</i>}}.,"Among other things, it keeps blood from getting into the cerebrospinal fluid.",eth::electives::neuroinf
+b?Q>c_!^r`,The&nbsp;<i>pia mater</i>&nbsp;is {{c1::the thin innermost layer of the&nbsp;<i>meninges</i>}}.,"Among other things, it prevents cerebrospinal fluid from reaching the brain.",eth::electives::neuroinf
+A}wlY_JWE`,The CAP theorem says that any distributed system {{c1::can only have two of the three properties:<br><ul><li>Consistency</li><li>Availability</li><li>Partition tolerance}}</li></ul>,,eth::sem5::compsys
+KeXb5qzp`K,The shared state in Bitcoin is&nbsp;{{c1::the set of <i>unspent transaction outputs (UTXOs)&nbsp;</i>and some additional global parameters.}},,eth::sem5::compsys
+unMRZ`+L=q,"The Bitcoin PoW function is given by {{c1::\[\mathcal{F}_d(c,x) \to \text{SHA256}(\text{SHA256}(c|x)) &lt; \frac{2^{224} }{d}\]}}",,eth::sem5::compsys
+NKH]x`l+`D,"On success, <tt>fork()</tt> returns&nbsp;{{c1::the child PID}} to the parent and&nbsp;{{c1::0}} to the child.",,eth::sem5::compsys
+Kvf>{OSF=r,"On failure, <tt>fork()</tt> returns&nbsp;{{c1::-1}} to the parent and the child {{c1::is not created}}.",,eth::sem5::compsys
+Hje6w~wY=U,The drift&nbsp;\(\delta\)&nbsp;is {{c1::the predictable clock error}}.,,eth::sem5::compsys
+h2#T5DY.KD,TAI is a {{c1::time standard without leap seconds}}.,,eth::sem5::compsys
 nEd$&|E5Cc,"Caller-save registers are {{c1::""volatile"" across a call - the caller must save them}}. In constrast, callee-save registers are {{c1::""non-volatile"" across a call - the called function must restore them}}.",,
-HO>.af]C*u,A <b>naming hierarchy</b>&nbsp;is a {{c1::naming network that is a tree}}.,,ETH::sem5::CompSys
-sfQf2o.KJK,An&nbsp;<b>indirect entry</b>&nbsp;is a {{c1::name bound to another path name}}.,The other path name is resolved in the same context as the indirect entry.,ETH::sem5::CompSys
-N#Em7vCe!k,A&nbsp;<b>pure name</b>&nbsp;tells us {{c1::nothing useful about the object it refers to}}.,,ETH::sem5::CompSys
-dhRXG*2Ox0,An&nbsp;<b>address</b>&nbsp;is a name that {{c1::also encodes information about the object it refers to}}.,Example: IPv4 address,ETH::sem5::CompSys
-gy)-6Sy4zf,A&nbsp;<b>search path&nbsp;</b>is an {{c1::ordered list of contexts that are treated like a single context}}.,e.g. the $PATH variable on Linux. We go through all the contexts until we find a binding for the given name.,ETH::sem5::CompSys
-gtAy<SsMZJ,<b>Synonyms&nbsp;</b>are {{c1::different names bound to the same object}}.<b>&nbsp;</b>,,ETH::sem5::CompSys
-r2X~V-BV.K,<b>Bootstrapping</b> (also called <b>booting</b>) is the process {{c1::of starting the operating system when the machine is powered on / reset}}. It ends when {{c1::the operating system is running regular processes}}.,,ETH::sem5::CompSys
-sKrZ!q+:vZ,"A computer boots by doing four steps:<br><ol><li>{{c1::CPU starts executing code at a fixed address, where the <i>Boot ROM</i> is.}}</li><li>{{c2::The Boot ROM code loads the second stage boot loader into RAM.}}</li><li>{{c3::The second stage boot loader loads the kernel and (sometimes) an initial file system into RAM.}}</li><li>{{c4::Jump to the kernel entry point.}}</li></ol>",,ETH::sem5::CompSys
-h|Cu&fMJ5M,"In user mode, we have&nbsp;{{c1::limited}} privileges.",e.g. we cannot write to any memory,ETH::sem5::CompSys
-kvhm6kMx2(,We switch from user mode to kernel mode when {{c1::a processor exception happens (e.g. a syscall trap or a page fault)}}.,,ETH::sem5::CompSys
-ESJF/V;MUl,"When an exception occurs, we<br><ol><li>{{c1::Finish executing the current instruction}}.</li><li>{{c2::Switch to kernel mode}}</li><li>{{c3::Look up exception cause in the exception vector table}}</li><li>{{c4::Jump to the address from the table}}</li></ol>",,ETH::sem5::CompSys
-x:F^pDT698,A <b>synchronous </b>exception happens because {{c1::we execute an instruction}}.,,ETH::sem5::CompSys
-Hj-pfrl1qp,The <b>kernel</b>&nbsp;is {{c1::the code that runs in kernel mode}}.,,ETH::sem5::CompSys
-i){xWs32PO,A&nbsp;<b>system library</b>&nbsp;is {{c1::a convenient interface to the kernel}}.,,ETH::sem5::CompSys
-"q]>i*4P],A",A&nbsp;<b>daemon</b>&nbsp;is {{c1::a user-space process which provides OS services}}.,Example: crond for repeating tasks,ETH::sem5::CompSys
-"P,:Q<gG]rt",IPC stands for {{c1::Inter-Process Communication}}.,,ETH::sem5::CompSys
-"Lbp)Eg,*A2",A <b>hardware timer&nbsp;</b>regularly {{c1::causes an interrupt that returns control to the kernel handler}}.,,ETH::sem5::CompSys
-Qqh<YKX71n,<b>Homonyms</b>&nbsp;are {{c1::the same name being bound to different objects}}.&nbsp;,,ETH::sem5::CompSys
-l3u2Q*]s1Y,"While the interrupt handler runs, interrupts {{c1::are turned off}}.",Useful for implementing atomic operations,ETH::sem5::CompSys
-M?Z7<gsL1f,A&nbsp;<b>process</b>&nbsp;is {{c1::the execution of a program with restricted rights}}.,,ETH::sem5::CompSys
-"l,T%K.3/Vx",A&nbsp;<b>thread</b>&nbsp;is {{c1::a sequence of instructions within a process}}.,,ETH::sem5::CompSys
-"F:-OGW,!D{",The name of a process is {{c1::its PID}}.,,ETH::sem5::CompSys
-L^/Vqd~l3P,The Process Control Block (PCB) is a {{c1::data structure holding information about a process}}.,,ETH::sem5::CompSys
-JC@Kw3[u0$,There are two main approaches for creating a process:&nbsp;{{c1::spawn}} and&nbsp;{{c2::fork/exec}}.,,ETH::sem5::CompSys
-n5fV]Uya3&,The <b>trap frame</b> contains {{c1::values of certain registers saved there before a syscall is handled}}.,,ETH::sem5::CompSys
-e;}MfYGPp},The kernel switches processes when either {{c1::a timer interrupts it}} or when {{c1::a process blocks}}.,,ETH::sem5::CompSys
-N~>1j^pxGg,One of the main purposes of the <code>init</code> process is to {{c1::wait for any child to <code>exit()</code> so that there are no orphans}}.,,ETH::sem5::CompSys
-~5$:%)t|),The two ways for processes to communicate are through {{c1::message passing}} or through {{c2::shared memory}}.,,ETH::sem5::CompSys
-"c5zl!6P.,2",<b>Marshalling</b> is {{c1::the process of converting data into a format suitable for transmission}}.,e.g. arguments in a RPC are marshalled.,ETH::sem5::CompSys
-wscm2:ZzpT,"A <b>zombie&nbsp;</b>is a {{c1::process that has died, but is still around because its parent hasn't called <code>wait()</code>.}}",,ETH::sem5::CompSys
-b>!vbB%tin,A zombie process has to continue to exist because {{c1::the exit status must be preserved}}.,,ETH::sem5::CompSys
-LaMG.yz?Ow,We need only three concepts to build all OS structures:<br><ul><li>{{c1::Mode switch}}<br></li><li>{{c2::Page tables}}<br></li><li>{{c3::Timer interrupts}}<br></li></ul>,,ETH::sem5::CompSys
-v>sN<J--du,<b>Uniprocessor scheduling</b>&nbsp;is {{c1::the problem of scheduling tasks on a single processor core}}.,,ETH::sem5::CompSys
-wB1/]TBw+a,<b>Batch scheduling</b>&nbsp;is {{c1::the problem of scheduling a (potentially unbounded) set of finite tasks}}.,,ETH::sem5::CompSys
-P)MPQj)WGN,The&nbsp;<b>execution time&nbsp;</b>(or&nbsp;<b>run time</b>) of a job is {{c1::the time it takes for the job to execute once started}}.,,ETH::sem5::CompSys
-L];d#pl8K],The&nbsp;<b>hold time</b>&nbsp;of a job is {{c1::the time it takes for the job from arriving at the scheduler to start executing}}.,,ETH::sem5::CompSys
-ECA36ueMh5,The&nbsp;<b>wait time</b>&nbsp;of a job is {{c1::the total time it takes from arriving to finishing the job}}.,hold time + execution time,ETH::sem5::CompSys
-IVW>~8oRKC,The&nbsp;<b>arrival time&nbsp;</b>(or&nbsp;<b>release time</b>) of a job is {{c1::the time where it arrives at the scheduler}}.&nbsp;,,ETH::sem5::CompSys
-v{)Jt{3I9X,"In scheduling, <b>First Come First Served</b> (FCFS) works by always dispatching the job&nbsp;{{c1::with the earliest arrival time.}}&nbsp;",,ETH::sem5::CompSys
-"j1,7?fguK=","The <b>convoy phenomenon</b>&nbsp;is a problem in scheduling where {{c1::many short jobs are stalled because of a long-running job, which inflates mean wait times}}.",,ETH::sem5::CompSys
-ra7X;b:QSF,<b>Multi-level feedback queues</b>&nbsp;is a class of scheduling algorithms that {{c1::penalize CPU-bound tasks in favor of I/O-bound tasks}}.,,ETH::sem5::CompSys
-C$y3%bGS<E,The aim of <b>multi-level feedback queue&nbsp;</b>algorithms is to {{c1::get good response times for interactive jobs and good throughput for background jobs}}.,,ETH::sem5::CompSys
-o9V/e-c~vk,"In scheduling,&nbsp;<b>Earliest Deadline First</b>&nbsp;works by dispatching the job that {{c1::has the earliest deadline}}.",Would be implemented with a Priority Queue to work in&nbsp;\(\mathcal{O}(\log n)\),ETH::sem5::CompSys
-k?8h]~A9$U,<b>Reservation-based scheduling&nbsp;</b>guarantees {{c1::a minimum amount of CPU time to each job.}},,ETH::sem5::CompSys
-q:Zx:vTIk},A scheduler is <b>work conserving</b> if {{c1::no processor is ever idle when there is a runnable task.}},,ETH::sem5::CompSys
-F2%x-aHHFi,The <b>First-level Interrupt Service Routine</b> (FLISR) is {{c1::the code that executes immediately as a result of a (device) interrupt}}.,,ETH::sem5::CompSys
-fbVLg]V0@7,A&nbsp;<b>character device</b>&nbsp;is used for&nbsp;{{c1::unstructured}} IO and we access&nbsp;{{c1::single bytes in a byte-stream}}.,,ETH::sem5::CompSys
-j^-RT?@Xbv,"A&nbsp;<b>block device</b>&nbsp;is used for&nbsp;{{c1::structured}} IO and we access {{c1::whole blocks, e.g. disk blocks}}.",,ETH::sem5::CompSys
-p@f#]O^4D<,"The Process Control Block must contain at least {{c1::the page table, trap frame, kernel stack, open files, program name, scheduling state, PID}}.",Very bad card. Improve ASAP,"ETH::sem5::CompSys, marked"
-v*nRJY[3+n,<b>Affinity scheduling</b>&nbsp;is the idea that {{c1::we should schedule jobs on the same core as much as possible}}.,,ETH::sem5::CompSys
-LvH3t1!`I),"A&nbsp;<b>deferred procedure call&nbsp;</b>(DPC, also known as&nbsp;<b>soft interrupt handler</b>) is {{c1::a program created by the first-level interrupt handler to handle a device interrupt}}.",,ETH::sem5::CompSys
-codoKAyp{;,"With&nbsp;<b>base and limit registers</b>, programs had to be compiled to {{c1::position-independent code}} because {{c1::the base address is not known at compile time}}.",(unless relocation registers were used),ETH::sem5::CompSys
-P2k0n@Bjx@,A disadvantage of relocation registers is that they do not allow {{c1::sharing code / data}}.,,ETH::sem5::CompSys
-f|.u17fg{G,"With segmentation, each process has a {{c1::segment table containing segments (offset + size)}}.",,ETH::sem5::CompSys
-OVPFg=!XX~,An advantage of segmentation for MMU is that we can {{c1::share code/data between processes}}.,,ETH::sem5::CompSys
-xLQi$?H9Vf,A disadvantage of segmentation for MMU is {{c1::external fragmentation - wasted space}}.,,ETH::sem5::CompSys
-HAv2G}T=9L,"With&nbsp;<b>zero-on-reference</b>, we {{c1::zero the memory when allocated}} to avoid {{c2::leaking information}}.",,ETH::sem5::CompSys
-A7*k587ot%,"With&nbsp;<b>fill-on-demand</b>, we can {{c2::start a program before its code is in physical memory}} by {{c1::bringing in pages from disk when needed}}.",,ETH::sem5::CompSys
-A?e}V|<vEC,<b>Copy-on-write&nbsp;</b>(COW) optimizes {{c1::copying large regions of virtual memory}}.,,ETH::sem5::CompSys
-yj]E)FK%VO,"When calling <code>fork()</code> with <b>Copy-on-write</b>, we {{c1::copy the page table and set all mappings to read-only in both address spaces}}.",,ETH::sem5::CompSys
-l4o5?`X2P@,"When we write to a read-only page with&nbsp;<b>copy-on-write</b>, we {{c1::allocate a new page, copy the contents, and change the mapping to the new page}}.",,ETH::sem5::CompSys
-ER<FIPEC?;,<b>Bélády's Anomaly</b>&nbsp;is the anomaly that {{c1::for some replacement algorithms <i>increasing</i> cache size can <i>reduce</i> the hit rate for certain access patterns}}.,e.g. FIFO has this anomaly,ETH::sem5::CompSys
-bi]7]PTX5U,"The <b>clock&nbsp;</b>(or <b>second chance</b>) replacement policy approximates {{c1::LRU}}, but {{c2::is much cheaper}}.",,ETH::sem5::CompSys
-B@BErQ%/*Y,A security&nbsp;<b>principal</b>&nbsp;or&nbsp;<b>subject</b>&nbsp;is {{c1::an entity to which we give access rights}}.,,ETH::sem5::CompSys
-D%)RCGuH3$,The&nbsp;<b>protection domain</b>&nbsp;of a principal is {{c1::the set of objects for which the principal has some rights}}.,,ETH::sem5::CompSys
-"LGJQ3`r,?2",The&nbsp;<b>access control matrix</b>&nbsp;is a table where {{c2::the rows are principals and the columns are objects}}. A cell is {{c1::a list of the rights the principal has over the object}}.,,ETH::sem5::CompSys
-"CWy*s$#F,R","An&nbsp;<b>access control list&nbsp;</b>(<b>ACL</b>) is a {{c1::list for a column of the access control list, so a set of the rights principals have over an object}}.",,ETH::sem5::CompSys
-"sDjsI.g!,|",Cranial nerves are the nerves {{c1::emerging directly from the brain}} and connect to {{c2::our primary senses (vision / taste / smell / hearing)}}.,,ETH::electives::NeuroInf
-ju>g#H;:h],The <b>ventricular system </b>is {{c1::a set of four holes (<i>cerebral ventricles)</i>&nbsp;in the brain}}. In there {{c2::the cerebrospinal fluid (CSF)}} is produced.,,ETH::electives::NeuroInf
-bjUw*%v0~f,The <b>basal ganglia</b>&nbsp;is a {{c1::part of the brain that is (among other things) involved in voluntary movement}}.,,ETH::electives::NeuroInf
-h3olXpK^6Y,The&nbsp;<b>thalamus</b>&nbsp;is a {{c1::large mass of gray matter that also acts as a relay for sensory signals}}.,,ETH::electives::NeuroInf
-BIlN1.JV2>,The&nbsp;<b>hypothalamus</b>&nbsp;is {{c1::a part of the brain that connects the nervous system to the hormone system}}.,,ETH::electives::NeuroInf
-kt&]kaMV%t,"The&nbsp;<b>cerebellum&nbsp;</b>(""little brain"") is a {{c1::part of the brain that is important for motor control}}.",,ETH::electives::NeuroInf
-bJiAU2H)~j,Camillo Golgi discovered a {{c1::technique to stain neurons in nervous tissue}}.,,ETH::electives::NeuroInf
-kX)cVyJuw+,Hodgkin and Huxley were able to {{c1::describe how ionic currents caused the action potential}}.,,ETH::electives::NeuroInf
-F9]ZUtLJ~&,"When neurotransmitter vesicles undergo&nbsp;<b>priming</b>, {{c2::they become ready to be released}}. This corresponds to {{c1::the assembly of the SNARE complex}}.",,ETH::electives::NeuroInf
-tBu|bk=f;>,SNARE complexes are {{c1::protein structures which help with vesicle priming &amp; fusion}}.&nbsp;,,ETH::electives::NeuroInf
-NJ*dyw++I?,"<b>Hebb's law</b>&nbsp;says that {{c1::neurons that fire together, wire together}}.",,ETH::electives::NeuroInf
-CL+F<]eW(z,The&nbsp;<b>axon hillock</b>&nbsp;is the {{c1::part of the soma that connects to the axon}}.,,ETH::electives::NeuroInf
-F(W+6cp|O|,"In the axon hillock, {{c1::potentials are summed and if a threshold is exceeded, an action potential propagates through the axon}}.",,ETH::electives::NeuroInf
-A?.Syey&Bz,"When the action potential arrives at the presynaptic terminal, {{c2::voltage-gated&nbsp;\(Ca^{2+}\)&nbsp;channels are opened}}, which cause {{c1::neurotransmitter to be released}}.",,ETH::electives::NeuroInf
-koU>}z6#%8,<b>Long-term potentiation&nbsp;</b>(<b>LTP</b>) is {{c1::a strengthening of synapses}} and happens {{c2::after short but high-frequency stimulation}}.,,ETH::electives::NeuroInf
-Px[p|VUH3,<b>Long Term Depression&nbsp;</b>(<b>LTD</b>) is {{c2::a weakening of synapses}} and happens after {{c1::long but low frequency stimulation}}.,,ETH::electives::NeuroInf
-Itnn>r2wqH,A <b>Hopfield network</b>&nbsp;consists of {{c1::multiple McCulloch-Pitts neurons that are fully connected}}.,,ETH::electives::NeuroInf
-M++ZgS-YUk,The receptor {{c1::NMDA}} is critically involved in Long-Term Potentiation.,,ETH::electives::NeuroInf
-LLxTD2CGz6,<b>Population codes</b> are {{c1::neural representations at the level of groups of cells}}.,,ETH::electives::NeuroInf
-vq^:lBS9xZ,The&nbsp;<b>association cortex</b>&nbsp;is the part of the cerebral cortex that is {{c1::not involved in sensory / motor processing}}.,,ETH::electives::NeuroInf
+HO>.af]C*u,A <b>naming hierarchy</b>&nbsp;is a {{c1::naming network that is a tree}}.,,eth::sem5::compsys
+sfQf2o.KJK,An&nbsp;<b>indirect entry</b>&nbsp;is a {{c1::name bound to another path name}}.,The other path name is resolved in the same context as the indirect entry.,eth::sem5::compsys
+N#Em7vCe!k,A&nbsp;<b>pure name</b>&nbsp;tells us {{c1::nothing useful about the object it refers to}}.,,eth::sem5::compsys
+dhRXG*2Ox0,An&nbsp;<b>address</b>&nbsp;is a name that {{c1::also encodes information about the object it refers to}}.,Example: IPv4 address,eth::sem5::compsys
+gy)-6Sy4zf,A&nbsp;<b>search path&nbsp;</b>is an {{c1::ordered list of contexts that are treated like a single context}}.,e.g. the $PATH variable on Linux. We go through all the contexts until we find a binding for the given name.,eth::sem5::compsys
+gtAy<SsMZJ,<b>Synonyms&nbsp;</b>are {{c1::different names bound to the same object}}.<b>&nbsp;</b>,,eth::sem5::compsys
+r2X~V-BV.K,<b>Bootstrapping</b> (also called <b>booting</b>) is the process {{c1::of starting the operating system when the machine is powered on / reset}}. It ends when {{c1::the operating system is running regular processes}}.,,eth::sem5::compsys
+sKrZ!q+:vZ,"A computer boots by doing four steps:<br><ol><li>{{c1::CPU starts executing code at a fixed address, where the <i>Boot ROM</i> is.}}</li><li>{{c2::The Boot ROM code loads the second stage boot loader into RAM.}}</li><li>{{c3::The second stage boot loader loads the kernel and (sometimes) an initial file system into RAM.}}</li><li>{{c4::Jump to the kernel entry point.}}</li></ol>",,eth::sem5::compsys
+h|Cu&fMJ5M,"In user mode, we have&nbsp;{{c1::limited}} privileges.",e.g. we cannot write to any memory,eth::sem5::compsys
+kvhm6kMx2(,We switch from user mode to kernel mode when {{c1::a processor exception happens (e.g. a syscall trap or a page fault)}}.,,eth::sem5::compsys
+ESJF/V;MUl,"When an exception occurs, we<br><ol><li>{{c1::Finish executing the current instruction}}.</li><li>{{c2::Switch to kernel mode}}</li><li>{{c3::Look up exception cause in the exception vector table}}</li><li>{{c4::Jump to the address from the table}}</li></ol>",,eth::sem5::compsys
+x:F^pDT698,A <b>synchronous </b>exception happens because {{c1::we execute an instruction}}.,,eth::sem5::compsys
+Hj-pfrl1qp,The <b>kernel</b>&nbsp;is {{c1::the code that runs in kernel mode}}.,,eth::sem5::compsys
+i){xWs32PO,A&nbsp;<b>system library</b>&nbsp;is {{c1::a convenient interface to the kernel}}.,,eth::sem5::compsys
+"q]>i*4P],A",A&nbsp;<b>daemon</b>&nbsp;is {{c1::a user-space process which provides OS services}}.,Example: crond for repeating tasks,eth::sem5::compsys
+"P,:Q<gG]rt",IPC stands for {{c1::Inter-Process Communication}}.,,eth::sem5::compsys
+"Lbp)Eg,*A2",A <b>hardware timer&nbsp;</b>regularly {{c1::causes an interrupt that returns control to the kernel handler}}.,,eth::sem5::compsys
+Qqh<YKX71n,<b>Homonyms</b>&nbsp;are {{c1::the same name being bound to different objects}}.&nbsp;,,eth::sem5::compsys
+l3u2Q*]s1Y,"While the interrupt handler runs, interrupts {{c1::are turned off}}.",Useful for implementing atomic operations,eth::sem5::compsys
+M?Z7<gsL1f,A&nbsp;<b>process</b>&nbsp;is {{c1::the execution of a program with restricted rights}}.,,eth::sem5::compsys
+"l,T%K.3/Vx",A&nbsp;<b>thread</b>&nbsp;is {{c1::a sequence of instructions within a process}}.,,eth::sem5::compsys
+"F:-OGW,!D{",The name of a process is {{c1::its PID}}.,,eth::sem5::compsys
+L^/Vqd~l3P,The Process Control Block (PCB) is a {{c1::data structure holding information about a process}}.,,eth::sem5::compsys
+JC@Kw3[u0$,There are two main approaches for creating a process:&nbsp;{{c1::spawn}} and&nbsp;{{c2::fork/exec}}.,,eth::sem5::compsys
+n5fV]Uya3&,The <b>trap frame</b> contains {{c1::values of certain registers saved there before a syscall is handled}}.,,eth::sem5::compsys
+e;}MfYGPp},The kernel switches processes when either {{c1::a timer interrupts it}} or when {{c1::a process blocks}}.,,eth::sem5::compsys
+N~>1j^pxGg,One of the main purposes of the <code>init</code> process is to {{c1::wait for any child to <code>exit()</code> so that there are no orphans}}.,,eth::sem5::compsys
+~5$:%)t|),The two ways for processes to communicate are through {{c1::message passing}} or through {{c2::shared memory}}.,,eth::sem5::compsys
+"c5zl!6P.,2",<b>Marshalling</b> is {{c1::the process of converting data into a format suitable for transmission}}.,e.g. arguments in a RPC are marshalled.,eth::sem5::compsys
+wscm2:ZzpT,"A <b>zombie&nbsp;</b>is a {{c1::process that has died, but is still around because its parent hasn't called <code>wait()</code>.}}",,eth::sem5::compsys
+b>!vbB%tin,A zombie process has to continue to exist because {{c1::the exit status must be preserved}}.,,eth::sem5::compsys
+LaMG.yz?Ow,We need only three concepts to build all OS structures:<br><ul><li>{{c1::Mode switch}}<br></li><li>{{c2::Page tables}}<br></li><li>{{c3::Timer interrupts}}<br></li></ul>,,eth::sem5::compsys
+v>sN<J--du,<b>Uniprocessor scheduling</b>&nbsp;is {{c1::the problem of scheduling tasks on a single processor core}}.,,eth::sem5::compsys
+wB1/]TBw+a,<b>Batch scheduling</b>&nbsp;is {{c1::the problem of scheduling a (potentially unbounded) set of finite tasks}}.,,eth::sem5::compsys
+P)MPQj)WGN,The&nbsp;<b>execution time&nbsp;</b>(or&nbsp;<b>run time</b>) of a job is {{c1::the time it takes for the job to execute once started}}.,,eth::sem5::compsys
+L];d#pl8K],The&nbsp;<b>hold time</b>&nbsp;of a job is {{c1::the time it takes for the job from arriving at the scheduler to start executing}}.,,eth::sem5::compsys
+ECA36ueMh5,The&nbsp;<b>wait time</b>&nbsp;of a job is {{c1::the total time it takes from arriving to finishing the job}}.,hold time + execution time,eth::sem5::compsys
+IVW>~8oRKC,The&nbsp;<b>arrival time&nbsp;</b>(or&nbsp;<b>release time</b>) of a job is {{c1::the time where it arrives at the scheduler}}.&nbsp;,,eth::sem5::compsys
+v{)Jt{3I9X,"In scheduling, <b>First Come First Served</b> (FCFS) works by always dispatching the job&nbsp;{{c1::with the earliest arrival time.}}&nbsp;",,eth::sem5::compsys
+"j1,7?fguK=","The <b>convoy phenomenon</b>&nbsp;is a problem in scheduling where {{c1::many short jobs are stalled because of a long-running job, which inflates mean wait times}}.",,eth::sem5::compsys
+ra7X;b:QSF,<b>Multi-level feedback queues</b>&nbsp;is a class of scheduling algorithms that {{c1::penalize CPU-bound tasks in favor of I/O-bound tasks}}.,,eth::sem5::compsys
+C$y3%bGS<E,The aim of <b>multi-level feedback queue&nbsp;</b>algorithms is to {{c1::get good response times for interactive jobs and good throughput for background jobs}}.,,eth::sem5::compsys
+o9V/e-c~vk,"In scheduling,&nbsp;<b>Earliest Deadline First</b>&nbsp;works by dispatching the job that {{c1::has the earliest deadline}}.",Would be implemented with a Priority Queue to work in&nbsp;\(\mathcal{O}(\log n)\),eth::sem5::compsys
+k?8h]~A9$U,<b>Reservation-based scheduling&nbsp;</b>guarantees {{c1::a minimum amount of CPU time to each job.}},,eth::sem5::compsys
+q:Zx:vTIk},A scheduler is <b>work conserving</b> if {{c1::no processor is ever idle when there is a runnable task.}},,eth::sem5::compsys
+F2%x-aHHFi,The <b>First-level Interrupt Service Routine</b> (FLISR) is {{c1::the code that executes immediately as a result of a (device) interrupt}}.,,eth::sem5::compsys
+fbVLg]V0@7,A&nbsp;<b>character device</b>&nbsp;is used for&nbsp;{{c1::unstructured}} IO and we access&nbsp;{{c1::single bytes in a byte-stream}}.,,eth::sem5::compsys
+j^-RT?@Xbv,"A&nbsp;<b>block device</b>&nbsp;is used for&nbsp;{{c1::structured}} IO and we access {{c1::whole blocks, e.g. disk blocks}}.",,eth::sem5::compsys
+p@f#]O^4D<,"The Process Control Block must contain at least {{c1::the page table, trap frame, kernel stack, open files, program name, scheduling state, PID}}.",Very bad card. Improve ASAP,"eth::sem5::compsys, marked"
+v*nRJY[3+n,<b>Affinity scheduling</b>&nbsp;is the idea that {{c1::we should schedule jobs on the same core as much as possible}}.,,eth::sem5::compsys
+LvH3t1!`I),"A&nbsp;<b>deferred procedure call&nbsp;</b>(DPC, also known as&nbsp;<b>soft interrupt handler</b>) is {{c1::a program created by the first-level interrupt handler to handle a device interrupt}}.",,eth::sem5::compsys
+codoKAyp{;,"With&nbsp;<b>base and limit registers</b>, programs had to be compiled to {{c1::position-independent code}} because {{c1::the base address is not known at compile time}}.",(unless relocation registers were used),eth::sem5::compsys
+P2k0n@Bjx@,A disadvantage of relocation registers is that they do not allow {{c1::sharing code / data}}.,,eth::sem5::compsys
+f|.u17fg{G,"With segmentation, each process has a {{c1::segment table containing segments (offset + size)}}.",,eth::sem5::compsys
+OVPFg=!XX~,An advantage of segmentation for MMU is that we can {{c1::share code/data between processes}}.,,eth::sem5::compsys
+xLQi$?H9Vf,A disadvantage of segmentation for MMU is {{c1::external fragmentation - wasted space}}.,,eth::sem5::compsys
+HAv2G}T=9L,"With&nbsp;<b>zero-on-reference</b>, we {{c1::zero the memory when allocated}} to avoid {{c2::leaking information}}.",,eth::sem5::compsys
+A7*k587ot%,"With&nbsp;<b>fill-on-demand</b>, we can {{c2::start a program before its code is in physical memory}} by {{c1::bringing in pages from disk when needed}}.",,eth::sem5::compsys
+A?e}V|<vEC,<b>Copy-on-write&nbsp;</b>(COW) optimizes {{c1::copying large regions of virtual memory}}.,,eth::sem5::compsys
+yj]E)FK%VO,"When calling <code>fork()</code> with <b>Copy-on-write</b>, we {{c1::copy the page table and set all mappings to read-only in both address spaces}}.",,eth::sem5::compsys
+l4o5?`X2P@,"When we write to a read-only page with&nbsp;<b>copy-on-write</b>, we {{c1::allocate a new page, copy the contents, and change the mapping to the new page}}.",,eth::sem5::compsys
+ER<FIPEC?;,<b>Bélády's Anomaly</b>&nbsp;is the anomaly that {{c1::for some replacement algorithms <i>increasing</i> cache size can <i>reduce</i> the hit rate for certain access patterns}}.,e.g. FIFO has this anomaly,eth::sem5::compsys
+bi]7]PTX5U,"The <b>clock&nbsp;</b>(or <b>second chance</b>) replacement policy approximates {{c1::LRU}}, but {{c2::is much cheaper}}.",,eth::sem5::compsys
+B@BErQ%/*Y,A security&nbsp;<b>principal</b>&nbsp;or&nbsp;<b>subject</b>&nbsp;is {{c1::an entity to which we give access rights}}.,,eth::sem5::compsys
+D%)RCGuH3$,The&nbsp;<b>protection domain</b>&nbsp;of a principal is {{c1::the set of objects for which the principal has some rights}}.,,eth::sem5::compsys
+"LGJQ3`r,?2",The&nbsp;<b>access control matrix</b>&nbsp;is a table where {{c2::the rows are principals and the columns are objects}}. A cell is {{c1::a list of the rights the principal has over the object}}.,,eth::sem5::compsys
+"CWy*s$#F,R","An&nbsp;<b>access control list&nbsp;</b>(<b>ACL</b>) is a {{c1::list for a column of the access control list, so a set of the rights principals have over an object}}.",,eth::sem5::compsys
+"sDjsI.g!,|",Cranial nerves are the nerves {{c1::emerging directly from the brain}} and connect to {{c2::our primary senses (vision / taste / smell / hearing)}}.,,eth::electives::neuroinf
+ju>g#H;:h],The <b>ventricular system </b>is {{c1::a set of four holes (<i>cerebral ventricles)</i>&nbsp;in the brain}}. In there {{c2::the cerebrospinal fluid (CSF)}} is produced.,,eth::electives::neuroinf
+bjUw*%v0~f,The <b>basal ganglia</b>&nbsp;is a {{c1::part of the brain that is (among other things) involved in voluntary movement}}.,,eth::electives::neuroinf
+h3olXpK^6Y,The&nbsp;<b>thalamus</b>&nbsp;is a {{c1::large mass of gray matter that also acts as a relay for sensory signals}}.,,eth::electives::neuroinf
+BIlN1.JV2>,The&nbsp;<b>hypothalamus</b>&nbsp;is {{c1::a part of the brain that connects the nervous system to the hormone system}}.,,eth::electives::neuroinf
+kt&]kaMV%t,"The&nbsp;<b>cerebellum&nbsp;</b>(""little brain"") is a {{c1::part of the brain that is important for motor control}}.",,eth::electives::neuroinf
+bJiAU2H)~j,Camillo Golgi discovered a {{c1::technique to stain neurons in nervous tissue}}.,,eth::electives::neuroinf
+kX)cVyJuw+,Hodgkin and Huxley were able to {{c1::describe how ionic currents caused the action potential}}.,,eth::electives::neuroinf
+F9]ZUtLJ~&,"When neurotransmitter vesicles undergo&nbsp;<b>priming</b>, {{c2::they become ready to be released}}. This corresponds to {{c1::the assembly of the SNARE complex}}.",,eth::electives::neuroinf
+tBu|bk=f;>,SNARE complexes are {{c1::protein structures which help with vesicle priming &amp; fusion}}.&nbsp;,,eth::electives::neuroinf
+NJ*dyw++I?,"<b>Hebb's law</b>&nbsp;says that {{c1::neurons that fire together, wire together}}.",,eth::electives::neuroinf
+CL+F<]eW(z,The&nbsp;<b>axon hillock</b>&nbsp;is the {{c1::part of the soma that connects to the axon}}.,,eth::electives::neuroinf
+F(W+6cp|O|,"In the axon hillock, {{c1::potentials are summed and if a threshold is exceeded, an action potential propagates through the axon}}.",,eth::electives::neuroinf
+A?.Syey&Bz,"When the action potential arrives at the presynaptic terminal, {{c2::voltage-gated&nbsp;\(Ca^{2+}\)&nbsp;channels are opened}}, which cause {{c1::neurotransmitter to be released}}.",,eth::electives::neuroinf
+koU>}z6#%8,<b>Long-term potentiation&nbsp;</b>(<b>LTP</b>) is {{c1::a strengthening of synapses}} and happens {{c2::after short but high-frequency stimulation}}.,,eth::electives::neuroinf
+Px[p|VUH3,<b>Long Term Depression&nbsp;</b>(<b>LTD</b>) is {{c2::a weakening of synapses}} and happens after {{c1::long but low frequency stimulation}}.,,eth::electives::neuroinf
+Itnn>r2wqH,A <b>Hopfield network</b>&nbsp;consists of {{c1::multiple McCulloch-Pitts neurons that are fully connected}}.,,eth::electives::neuroinf
+M++ZgS-YUk,The receptor {{c1::NMDA}} is critically involved in Long-Term Potentiation.,,eth::electives::neuroinf
+LLxTD2CGz6,<b>Population codes</b> are {{c1::neural representations at the level of groups of cells}}.,,eth::electives::neuroinf
+vq^:lBS9xZ,The&nbsp;<b>association cortex</b>&nbsp;is the part of the cerebral cortex that is {{c1::not involved in sensory / motor processing}}.,,eth::electives::neuroinf
 oL82K.iqM},Potassium is a chemical element called {{c1::Kalium}} in German.,,
 D%n:xT4NsA,Sodium is a chemical element called {{c1::Natrium}} in German.,,
-"s?,>Bm1om[","In an asynchronous environment, a message will {{c1::arrive in a finite but unbounded time}}.",,ETH::sem5::CompSys
-hb*O9R!dzI,Any-Input validity says that {{c1::the decision value must be the input of <b>any</b> node}}.,,ETH::sem5::CompSys
-Bs#TY+1BK,"All-Same Validity says that {{c1::if&nbsp;<b>all</b>&nbsp;nodes start with the same input, that must be the decision value}}.",,ETH::sem5::CompSys
-z&&CL8ndFC,A network with&nbsp;\(n\)&nbsp;nodes cannot reach byzantine agreement with {{c1::&nbsp;\(f \ge \frac{n}{3}\)}}&nbsp;byzantine nodes.,,ETH::sem5::CompSys
-f>;WqcK&;S,"The King algorithm has three phases:{{c1::<br><ol><li>Vote (broadcast value)</li><li>Propose (if a value is received often, propose it)</li><li>King (if few proposals, follow the king)</li></ol>}}",,ETH::sem5::CompSys
-wG?*pt$)Rv,"In a distributed system,&nbsp;<b>churn&nbsp;</b>is {{c1::how much nodes are joining and leaving the system}}.",,ETH::sem5::CompSys
-cjL90/.XaW,A <b>quorum&nbsp;</b>is a {{c1::subset of nodes of a system}}.,,ETH::sem5::CompSys
-j<s9~<6yd),A&nbsp;<b>quorum system</b>&nbsp;is a {{c1::set of quorums such that every two quorums intersect}}.,,ETH::sem5::CompSys
-OPET[/g@ia,"In the&nbsp;<b>Majority</b>&nbsp;quorum system, {{c1::every quorum has&nbsp;\(\lfloor\frac{n}{2}\rfloor +1\)&nbsp; nodes}}.",,ETH::sem5::CompSys
-m(1lxss1wc,An&nbsp;<b>access strategy</b>&nbsp;\(Z\) defines {{c1::the probability&nbsp;\(P_Z(Q)\)&nbsp; of accessing a quorum&nbsp;\(Q \in S\)&nbsp; such that&nbsp;\(\sum_{Q\in S}P_Z(Q) = 1\)&nbsp;.}},,ETH::sem5::CompSys
-y_pY&S5HO_,The&nbsp;<b>work&nbsp;</b>of a&nbsp;<b>quorum</b>&nbsp;is {{c1::the number of nodes in it}}.,,ETH::sem5::CompSys
-m#2Ws$gx<^,The&nbsp;<b>resilience</b>&nbsp;of a quorum system is {{c1::the largest number of nodes that can fail such that there's always a quorum without failed nodes}}.,,ETH::sem5::CompSys
-P<79Ac2]?k,Every quorum system has a load of at least&nbsp;{{c1::\(\frac{1}{\sqrt{n} }\)}}.,,ETH::sem5::CompSys
-oZ_F.r}X_n,A&nbsp;<b>uniform</b>&nbsp;quorum system is one in which {{c1::all quorums have the same number of nodes}}.,,ETH::sem5::CompSys
-gyBHHll*`s,"The load in a (B-)grid quorum system is&nbsp;{{c1::\(\Theta(\frac{1}{\sqrt{n} })\), which is optimal}}.",,ETH::sem5::CompSys
-"Ip,B$&2mQS","The <b>Precise Time Protocol</b> (PTP) is similar to NTP, but {{c1::uses MAC layer timestamps}}.",This removes software delay.,ETH::sem5::CompSys
-IaVx}BG;GX,A <b>logical volume&nbsp;</b>can {{c1::merge multiple physical devices into a single volume}}.,,ETH::sem5::CompSys
-"ye;Mj!,B7W","The <b>superblock</b>&nbsp;is the {{c1::area of a disk which holds information about the layout of the file system (how large, where inode tables are, etc.)}}.",In FAT: the Master Boot Record,ETH::sem5::CompSys
-eQtj[(^2Gp,A <b>virtual machine monitor</b>&nbsp;does {{c1::virtualize an entire machine}}.,,ETH::sem5::CompSys
-"M2`Ujt9I`,",A <b>Type-1</b> hypervisor runs {{c1::directly on the hardware}}.,,ETH::sem5::CompSys
-fBDorDp;.;,A&nbsp;<b>Type-2</b>&nbsp;hypervisor runs {{c1::on a conventional OS like normal software}}.,,ETH::sem5::CompSys
-M@E3{pU|8[,A&nbsp;<b>paravirtualized</b>&nbsp;guest OS is one that {{c1::has been modified for running inside a VM}}.,"Fast, but cannot run arbitrary OS binaries",ETH::sem5::CompSys
-no.}289bF9,Virtualization with <b>binary rewriting</b>&nbsp;{{c1::patches the kernel on the fly to remove unvirtualizable instructions}}.,,ETH::sem5::CompSys
-"oHa$AhOy#,","With&nbsp;<b>directly writable tables</b>, a guest OS can {{c1::create page tables the hardware uses to directly translate virtual adresses to machine addresses}}.",,ETH::sem5::CompSys
-c?6X(`YqDk,"With&nbsp;<b>directly writable tables</b>, the VMM has to {{c1::check all writes to page table entries, such that the guest cannot escape the VM}}.",Bad for performance,ETH::sem5::CompSys
-KIcd~.{OLn,A strategy profile is a&nbsp;<b>social optimum</b>&nbsp;if it {{c1::minimizes the sum of all costs (or maximizes payoff)}}.,,ETH::sem5::CompSys
-bgH!EUFW|p,A <b>Nash Equilibrirum</b>&nbsp;is a {{c1::strategy profile where nobody can improve their strategy alone (without others changing)}}.,,ETH::sem5::CompSys
-m&(Dpj@skK,The&nbsp;<b>Price of Anarchy</b>&nbsp;is {{c1::the ratio between the Nash Equilibrium with the highest cost (smallest payoff) and the social optimum}}.,,ETH::sem5::CompSys
-cafEI$y4F>,The <b>Optimistic</b>&nbsp;<b>Price of Anarchy</b>&nbsp;is {{c1::the ratio between the Nash Equilibrium with the smallest cost (highest payoff) and the social optimum}}.,,ETH::sem5::CompSys
-Jr|[;FW0:J,<b>Braess's paradox</b>&nbsp;says that {{c1::adding one or more roads to a road network can slow down overall traffic flow}}.,,ETH::sem5::CompSys
-"b%T,*)s}y$","A&nbsp;<b>ticket</b>&nbsp;is a weaker form of a lock that {{c1::can be reissued and that expires (if a new ticket was issued since by a server, the old one is no longer accepted)}}.",,ETH::sem5::CompSys
-G13bJGzCCl,Paxos cannot make progress anymore if {{c1::half or more of the servers crash}}.,,ETH::sem5::CompSys
-C^Jc)5rzai,There is no deterministic algorithm that achieves consensus in {{c1::the asynchronous model for&nbsp;\(f &gt; 0\).}},,ETH::sem5::CompSys
-J$3IJ4uMC-,A transaction with a&nbsp;<b>timelock</b>&nbsp;is {{c1::not released into the network until the timelock expires}}.,,ETH::sem5::CompSys
-gmL3-FGTW$,The diameter of a graph is the {{c1::longest shortest path}}.,,ETH::sem5::CompSys
-"oVmXrU@C,D",The&nbsp;<i>span</i>&nbsp;of a set of vectors is {{c1::the set of all possible linear combinations of them}}.,The span is a linear subspace.,ETH::sem1::LinAlg
-H3<#NN+ZEG,The&nbsp;<i>p</i>-norm of a vector&nbsp;\(x \in \mathbb{R}^n\)&nbsp;is defined as&nbsp;{{c1::\(||x||_p=\left(\sum_{i=1}^n |x_i|^p\right)^{1/p}\)}}.,,ETH::sem1::LinAlg
-hIZBW%wW@-,"The&nbsp;<i>loss function</i>&nbsp;\(l(f(x),y)\)&nbsp;tells us {{c1::how good the predicted value&nbsp;\(f(x)\)&nbsp;is compared to the true value&nbsp;\(y\)}}.",e.g. squared loss,ETH::sem6::IML
-d4:]NJ>Tt4,The&nbsp;<i>training loss&nbsp;</i>\(L(f)\)&nbsp;is {{c1::the average loss over the training set for a predictor&nbsp;\(f\).}},,ETH::sem6::IML
+"s?,>Bm1om[","In an asynchronous environment, a message will {{c1::arrive in a finite but unbounded time}}.",,eth::sem5::compsys
+hb*O9R!dzI,Any-Input validity says that {{c1::the decision value must be the input of <b>any</b> node}}.,,eth::sem5::compsys
+Bs#TY+1BK,"All-Same Validity says that {{c1::if&nbsp;<b>all</b>&nbsp;nodes start with the same input, that must be the decision value}}.",,eth::sem5::compsys
+z&&CL8ndFC,A network with&nbsp;\(n\)&nbsp;nodes cannot reach byzantine agreement with {{c1::&nbsp;\(f \ge \frac{n}{3}\)}}&nbsp;byzantine nodes.,,eth::sem5::compsys
+f>;WqcK&;S,"The King algorithm has three phases:{{c1::<br><ol><li>Vote (broadcast value)</li><li>Propose (if a value is received often, propose it)</li><li>King (if few proposals, follow the king)</li></ol>}}",,eth::sem5::compsys
+wG?*pt$)Rv,"In a distributed system,&nbsp;<b>churn&nbsp;</b>is {{c1::how much nodes are joining and leaving the system}}.",,eth::sem5::compsys
+cjL90/.XaW,A <b>quorum&nbsp;</b>is a {{c1::subset of nodes of a system}}.,,eth::sem5::compsys
+j<s9~<6yd),A&nbsp;<b>quorum system</b>&nbsp;is a {{c1::set of quorums such that every two quorums intersect}}.,,eth::sem5::compsys
+OPET[/g@ia,"In the&nbsp;<b>Majority</b>&nbsp;quorum system, {{c1::every quorum has&nbsp;\(\lfloor\frac{n}{2}\rfloor +1\)&nbsp; nodes}}.",,eth::sem5::compsys
+m(1lxss1wc,An&nbsp;<b>access strategy</b>&nbsp;\(Z\) defines {{c1::the probability&nbsp;\(P_Z(Q)\)&nbsp; of accessing a quorum&nbsp;\(Q \in S\)&nbsp; such that&nbsp;\(\sum_{Q\in S}P_Z(Q) = 1\)&nbsp;.}},,eth::sem5::compsys
+y_pY&S5HO_,The&nbsp;<b>work&nbsp;</b>of a&nbsp;<b>quorum</b>&nbsp;is {{c1::the number of nodes in it}}.,,eth::sem5::compsys
+m#2Ws$gx<^,The&nbsp;<b>resilience</b>&nbsp;of a quorum system is {{c1::the largest number of nodes that can fail such that there's always a quorum without failed nodes}}.,,eth::sem5::compsys
+P<79Ac2]?k,Every quorum system has a load of at least&nbsp;{{c1::\(\frac{1}{\sqrt{n} }\)}}.,,eth::sem5::compsys
+oZ_F.r}X_n,A&nbsp;<b>uniform</b>&nbsp;quorum system is one in which {{c1::all quorums have the same number of nodes}}.,,eth::sem5::compsys
+gyBHHll*`s,"The load in a (B-)grid quorum system is&nbsp;{{c1::\(\Theta(\frac{1}{\sqrt{n} })\), which is optimal}}.",,eth::sem5::compsys
+"Ip,B$&2mQS","The <b>Precise Time Protocol</b> (PTP) is similar to NTP, but {{c1::uses MAC layer timestamps}}.",This removes software delay.,eth::sem5::compsys
+IaVx}BG;GX,A <b>logical volume&nbsp;</b>can {{c1::merge multiple physical devices into a single volume}}.,,eth::sem5::compsys
+"ye;Mj!,B7W","The <b>superblock</b>&nbsp;is the {{c1::area of a disk which holds information about the layout of the file system (how large, where inode tables are, etc.)}}.",In FAT: the Master Boot Record,eth::sem5::compsys
+eQtj[(^2Gp,A <b>virtual machine monitor</b>&nbsp;does {{c1::virtualize an entire machine}}.,,eth::sem5::compsys
+"M2`Ujt9I`,",A <b>Type-1</b> hypervisor runs {{c1::directly on the hardware}}.,,eth::sem5::compsys
+fBDorDp;.;,A&nbsp;<b>Type-2</b>&nbsp;hypervisor runs {{c1::on a conventional OS like normal software}}.,,eth::sem5::compsys
+M@E3{pU|8[,A&nbsp;<b>paravirtualized</b>&nbsp;guest OS is one that {{c1::has been modified for running inside a VM}}.,"Fast, but cannot run arbitrary OS binaries",eth::sem5::compsys
+no.}289bF9,Virtualization with <b>binary rewriting</b>&nbsp;{{c1::patches the kernel on the fly to remove unvirtualizable instructions}}.,,eth::sem5::compsys
+"oHa$AhOy#,","With&nbsp;<b>directly writable tables</b>, a guest OS can {{c1::create page tables the hardware uses to directly translate virtual adresses to machine addresses}}.",,eth::sem5::compsys
+c?6X(`YqDk,"With&nbsp;<b>directly writable tables</b>, the VMM has to {{c1::check all writes to page table entries, such that the guest cannot escape the VM}}.",Bad for performance,eth::sem5::compsys
+KIcd~.{OLn,A strategy profile is a&nbsp;<b>social optimum</b>&nbsp;if it {{c1::minimizes the sum of all costs (or maximizes payoff)}}.,,eth::sem5::compsys
+bgH!EUFW|p,A <b>Nash Equilibrirum</b>&nbsp;is a {{c1::strategy profile where nobody can improve their strategy alone (without others changing)}}.,,eth::sem5::compsys
+m&(Dpj@skK,The&nbsp;<b>Price of Anarchy</b>&nbsp;is {{c1::the ratio between the Nash Equilibrium with the highest cost (smallest payoff) and the social optimum}}.,,eth::sem5::compsys
+cafEI$y4F>,The <b>Optimistic</b>&nbsp;<b>Price of Anarchy</b>&nbsp;is {{c1::the ratio between the Nash Equilibrium with the smallest cost (highest payoff) and the social optimum}}.,,eth::sem5::compsys
+Jr|[;FW0:J,<b>Braess's paradox</b>&nbsp;says that {{c1::adding one or more roads to a road network can slow down overall traffic flow}}.,,eth::sem5::compsys
+"b%T,*)s}y$","A&nbsp;<b>ticket</b>&nbsp;is a weaker form of a lock that {{c1::can be reissued and that expires (if a new ticket was issued since by a server, the old one is no longer accepted)}}.",,eth::sem5::compsys
+G13bJGzCCl,Paxos cannot make progress anymore if {{c1::half or more of the servers crash}}.,,eth::sem5::compsys
+C^Jc)5rzai,There is no deterministic algorithm that achieves consensus in {{c1::the asynchronous model for&nbsp;\(f &gt; 0\).}},,eth::sem5::compsys
+J$3IJ4uMC-,A transaction with a&nbsp;<b>timelock</b>&nbsp;is {{c1::not released into the network until the timelock expires}}.,,eth::sem5::compsys
+gmL3-FGTW$,The diameter of a graph is the {{c1::longest shortest path}}.,,eth::sem5::compsys
+"oVmXrU@C,D",The&nbsp;<i>span</i>&nbsp;of a set of vectors is {{c1::the set of all possible linear combinations of them}}.,The span is a linear subspace.,eth::sem1::linalg
+H3<#NN+ZEG,The&nbsp;<i>p</i>-norm of a vector&nbsp;\(x \in \mathbb{R}^n\)&nbsp;is defined as&nbsp;{{c1::\(||x||_p=\left(\sum_{i=1}^n |x_i|^p\right)^{1/p}\)}}.,,eth::sem1::linalg
+hIZBW%wW@-,"The&nbsp;<i>loss function</i>&nbsp;\(l(f(x),y)\)&nbsp;tells us {{c1::how good the predicted value&nbsp;\(f(x)\)&nbsp;is compared to the true value&nbsp;\(y\)}}.",e.g. squared loss,eth::sem6::iml
+d4:]NJ>Tt4,The&nbsp;<i>training loss&nbsp;</i>\(L(f)\)&nbsp;is {{c1::the average loss over the training set for a predictor&nbsp;\(f\).}},,eth::sem6::iml
 z4LU850Knr,The&nbsp;<i>flyweight pattern&nbsp;</i>{{c1::minimizes memory usage and coupling}} by {{c2::sharing data of (often immutable) objects.}},,
-Ci>!E>7&JJ,"In the&nbsp;<b>Observer Pattern</b>, the&nbsp;<i>subject</i>&nbsp;has {{c1::a list of dependents (observers) and notifies them of state changes through calling a method.}}",,ETH::sem6::RSE
-k1fk*C<rL0,"In the <b>Model-View-Controller</b>&nbsp;architecture,&nbsp;<br><ul><li>the model {{c1::contains core functionality &amp; data}}</li><li>the views {{c2::display information to the user}}</li><li>the controllers {{c3::handle user input}}</li></ul>",,ETH::sem6::RSE
-!ZrKZ;Af;,"A disadvantage of event-based architectures is that we {{c1::lose control (who responds, in what order, etc.)}}.",,ETH::sem6::RSE
-Eu_*si.M)P,The <b>Strategy Pattern</b>&nbsp;allows {{c1::selecting an algorithm / option at runtime}}.,e.g. different filters depending on type,ETH::sem6::RSE
-s~L^mS%.Jj,An advantage of holding out less data (smaller test set) is that we are {{c1::more likely to get a better model}}.,,ETH::sem6::IML
-Ph$)qEq~M],An advantage of holding out more data (larger test set) is that we are {{c1::able to better estimate the generalization error}}.,,ETH::sem6::IML
-ct!1<E>7Ok,The training set is used to {{c1::find the best parameters of a given method}}.,,ETH::sem6::IML
-deEOh9$*%),The validation set is used to {{c1::find the best method}}.,,ETH::sem6::IML
-P^c[xpcuo-,The test set is used to {{c1::check how good our model performs}}.,,ETH::sem6::IML
-w@Gz>T$yfx,Underfitting is driven by the {{c1::bias}}.,,ETH::sem6::IML
-EDF!D_MATb,Overfitting is driven by the {{c1::variance}}.,,ETH::sem6::IML
-EN=(HA};&h,Lasso regression limits the&nbsp;{{c1::\(l_1\)-norm}}.,,ETH::sem6::IML
-qPR^$NQVU1,Ridge regression limits the&nbsp;{{c1::\(l_2\)-norm}}.,,ETH::sem6::IML
-jD{x4[R;Q2,"In classification,&nbsp;<b>precision</b>&nbsp;is {{c1::the number of true positives over the number of elements labelled as positive}}.",,ETH::sem6::IML
-GslpMQ%i4D,"In classification,&nbsp;<b>recall</b>&nbsp;is the {{c1::number of true positives divided by the number of actually positive elements}}.",,ETH::sem6::IML
-dnJ=^oKkX+,A complete lattice is a poset where {{c1::every subset has a least upper and greatest lower bound.}}&nbsp;,,ETH::sem6::RSE
-m<EZOz;g9.,Coupling measures {{c1::how much modules depend on each other}}.,"<img src=""Screenshot_20230509_085330.jpeg"">",ETH::sem6::RSE
-"mm7Zv0,o?8",Procedural Coupling: Modules are coupled to other modules {{c1::whose methods they call}}.,,ETH::sem6::RSE
-sT57ik6&l.,An event-based style (e.g. MVC) helps with {{c1::procedural}} coupling.,,ETH::sem6::RSE
-"J[%<|JIFB,",Class Coupling: {{c1::Inheritance}} couples a class to another class.,,ETH::sem6::RSE
-Q;3J;IavU*,"The ""Fragile base class problem"" is an OOP problem where {{c1::seemingly safe modifications to a base class may break subclasses}}.",,ETH::sem6::RSE
-v0TOi]x`nA,"By using interfaces, we can often reduce {{c1::class}} coupling.",,ETH::sem6::RSE
-oO?xg8a/!a,We can reduce class coupling from allocations by delegating these to a so-called {{c1::<i>abstract factory</i>}}.,,ETH::sem6::RSE
-vG*8Z<uBg{,We can prepare modules for future change by {{c1::parametrizing}} them.,,ETH::sem6::RSE
-CbI&TbkZzP,"The <i>vanishing gradient problem</i>&nbsp;is a problem in machine learning where {{c1::during training the gradient becomes very small, which prevents our weights from changing &amp; further training}}.",,ETH::sem6::IML
-Gtf}}jL&I;,The <b>softmax</b>&nbsp;function is often used in the {{c2::final}} layer of a {{c1::neural network-based classifier}}.,,ETH::sem6::IML
-JIG(]z]OI`,A&nbsp;<b>gradient descent</b>&nbsp;iteration updates&nbsp;\(w^{next}\)&nbsp;to be {{c1::\(w^{now} -\eta\cdot\nabla L(w^{now})\).}},,ETH::sem6::IML
-KGqQ``lr&],"In&nbsp;<b>gradient descent</b>,&nbsp;\(\eta\)&nbsp;is the {{c1::learning rate}}.",,ETH::sem6::IML
-HLknPr2Z/U,The closed form solution of <b>d-dim linear regression</b>&nbsp;for&nbsp;\(w_{min}\)&nbsp;is&nbsp;{{c1::\((X^TX)^{-1}X^Ty\).}},,ETH::sem6::IML
-O=NEFB;h6E,"In gradient descent,&nbsp;<b>momentum</b>&nbsp;incorporates {{c2::the gradient of the previous step}} to {{c1::remove oscillations and speed up convergence}}.",,ETH::sem6::IML
-AuTV*PszQf,"Minibatch SGD uses {{c2::a subset of points}}, whereas normal SGD uses {{c1::just one point}}.&nbsp;",,ETH::sem6::IML
-"mL3UC,AJNu",The&nbsp;<b>logistic loss</b>&nbsp;is defined as&nbsp;\(g_{log}(y\hat{f}(x)) =\){{c1::\(\log(1+e^{-y\hat{f}(x)})\)}}.,,ETH::sem6::IML
-LfcJJx/%n&,"In&nbsp;<b>one-vs-rest</b>, we try to learn classes by {{c1::relabeling points from all classes except one as&nbsp;\(-1\) and the one from that class as&nbsp;\(1\).}}",,ETH::sem6::IML
-6+*XPUsf,The ROC curve plots the {{c1::TPR (True Positive Rate)}} against the {{c2::FPR (False Positive Rate)}}.,,ETH::sem6::IML
-Opx|X)ie?z,AUROC stands for {{c1::Area Under the Receiver Operating Characteristic (curve)}}.,,ETH::sem6::IML
-o/+IipWh-D,"Ideally, the AUROC is equal to&nbsp;{{c1::\(1\)}}.",,ETH::sem6::IML
-s3TE=|@|*j,A&nbsp;<b>pooling layer</b>&nbsp;helps by {{c1::reducing the width of the network / number of parameters}}.,,ETH::sem6::IML
-El*X&$}Qu-,A&nbsp;<b>prior</b>&nbsp;(distribution) is an {{c1::assumed probability distribution before some evidence is taken into account}}.,,ETH::sem6::IML
-t$}W>t9!-8,We call <b>Gaussian Naive Bayes</b> naive because it assumes that {{c1::every pair of features is conditionally independent}}.,,ETH::sem6::IML
-N9w!CC-Z]C,"Weakly-typed languages do {{c1::classify values into types}}, but do not {{c1::enforce additional restrictions}}.",,ETH::COOP
-dQh^IW/k)x,Strongly-typed languages enforce that {{c1::all arguments to an operation have the correct types}}.&nbsp;,,ETH::COOP
-k27S$rV~n|,A type is a {{c1::set of values sharing some properties}}.,,ETH::COOP
-qoA|R*5Az>,"In static type checking, we determine {{c1::at compile time}} if a program is correctly typed.",,ETH::COOP
-bN]A1Bv?:F,"In dynamic type checking, we determine {{c1::at run time}} if the arguments to an operation are of the expected type.",,ETH::COOP
-Q]rekwf&t#,"The type invariant for statically type-safe OOP language is ""{{c1::In every program state, the value of the variable <b>v</b> is an element of the declared type of <b>v</b>.}}""",,ETH::COOP
-f>Ch=D*lsn,Gradual Typing is {{c1::optional static type checking}} for dynamically-typed languages.,,ETH::COOP
-HS&*pcBK}*,Two examples for gradual typing are {{c1::TypeScript for JavaScript and mypy for Python}}.&nbsp;,,ETH::COOP
-t)Da)2xZ_j,Duck typing is an informal name for {{c1::structural dynamic type systems}}.,,ETH::COOP
-p)B-LoXd2^,A&nbsp;<b>persona&nbsp;</b>is&nbsp;{{c1::a precise description of a user as a stand-in for a real user}}.,,ETH::sem5::HCI
-yQ^3mS7^Bk,"With the&nbsp;<b>analytical&nbsp;</b>method, we look at {{c1::<i>inherent attributes</i> of the design rather than seeing the design in use}}.",,ETH::sem5::HCI
-c!YxySw+r),"With the&nbsp;<b>empirical</b>&nbsp;method, we look at {{c1::how a design (change) affects&nbsp;<i>observable usage</i>}}.",,ETH::sem5::HCI
-eRvt6)zVlf,There are five principal components to Usability:<br><ul><li>{{c1::Learnability}}</li><li>{{c1::Efficiency}}</li><li>{{c1::Memorability}}</li><li>{{c1::Errors}}</li><li>{{c1::Satisfaction}}</li></ul>,,ETH::sem5::HCI
-oIA6UabC=c,An&nbsp;<b>affordance</b>&nbsp;is an {{c1::action that the design of an object suggests to a user}}.,A button&nbsp;<i>affords</i>&nbsp;pushing.,ETH::sem5::HCI
-D[%5/M72xV,<b>KLM</b>&nbsp;stands for {{c1::Keystroke Level Model}}.,,ETH::sem5::HCI
-rYI)(<NN92,<b>Priming&nbsp;</b>means that {{c1::we ask questions that already imply a certain answer}}.,,ETH::sem5::HCI
+Ci>!E>7&JJ,"In the&nbsp;<b>Observer Pattern</b>, the&nbsp;<i>subject</i>&nbsp;has {{c1::a list of dependents (observers) and notifies them of state changes through calling a method.}}",,eth::sem6::rse
+k1fk*C<rL0,"In the <b>Model-View-Controller</b>&nbsp;architecture,&nbsp;<br><ul><li>the model {{c1::contains core functionality &amp; data}}</li><li>the views {{c2::display information to the user}}</li><li>the controllers {{c3::handle user input}}</li></ul>",,eth::sem6::rse
+!ZrKZ;Af;,"A disadvantage of event-based architectures is that we {{c1::lose control (who responds, in what order, etc.)}}.",,eth::sem6::rse
+Eu_*si.M)P,The <b>Strategy Pattern</b>&nbsp;allows {{c1::selecting an algorithm / option at runtime}}.,e.g. different filters depending on type,eth::sem6::rse
+s~L^mS%.Jj,An advantage of holding out less data (smaller test set) is that we are {{c1::more likely to get a better model}}.,,eth::sem6::iml
+Ph$)qEq~M],An advantage of holding out more data (larger test set) is that we are {{c1::able to better estimate the generalization error}}.,,eth::sem6::iml
+ct!1<E>7Ok,The training set is used to {{c1::find the best parameters of a given method}}.,,eth::sem6::iml
+deEOh9$*%),The validation set is used to {{c1::find the best method}}.,,eth::sem6::iml
+P^c[xpcuo-,The test set is used to {{c1::check how good our model performs}}.,,eth::sem6::iml
+w@Gz>T$yfx,Underfitting is driven by the {{c1::bias}}.,,eth::sem6::iml
+EDF!D_MATb,Overfitting is driven by the {{c1::variance}}.,,eth::sem6::iml
+EN=(HA};&h,Lasso regression limits the&nbsp;{{c1::\(l_1\)-norm}}.,,eth::sem6::iml
+qPR^$NQVU1,Ridge regression limits the&nbsp;{{c1::\(l_2\)-norm}}.,,eth::sem6::iml
+jD{x4[R;Q2,"In classification,&nbsp;<b>precision</b>&nbsp;is {{c1::the number of true positives over the number of elements labelled as positive}}.",,eth::sem6::iml
+GslpMQ%i4D,"In classification,&nbsp;<b>recall</b>&nbsp;is the {{c1::number of true positives divided by the number of actually positive elements}}.",,eth::sem6::iml
+dnJ=^oKkX+,A complete lattice is a poset where {{c1::every subset has a least upper and greatest lower bound.}}&nbsp;,,eth::sem6::rse
+m<EZOz;g9.,Coupling measures {{c1::how much modules depend on each other}}.,"<img src=""Screenshot_20230509_085330.jpeg"">",eth::sem6::rse
+"mm7Zv0,o?8",Procedural Coupling: Modules are coupled to other modules {{c1::whose methods they call}}.,,eth::sem6::rse
+sT57ik6&l.,An event-based style (e.g. MVC) helps with {{c1::procedural}} coupling.,,eth::sem6::rse
+"J[%<|JIFB,",Class Coupling: {{c1::Inheritance}} couples a class to another class.,,eth::sem6::rse
+Q;3J;IavU*,"The ""Fragile base class problem"" is an OOP problem where {{c1::seemingly safe modifications to a base class may break subclasses}}.",,eth::sem6::rse
+v0TOi]x`nA,"By using interfaces, we can often reduce {{c1::class}} coupling.",,eth::sem6::rse
+oO?xg8a/!a,We can reduce class coupling from allocations by delegating these to a so-called {{c1::<i>abstract factory</i>}}.,,eth::sem6::rse
+vG*8Z<uBg{,We can prepare modules for future change by {{c1::parametrizing}} them.,,eth::sem6::rse
+CbI&TbkZzP,"The <i>vanishing gradient problem</i>&nbsp;is a problem in machine learning where {{c1::during training the gradient becomes very small, which prevents our weights from changing &amp; further training}}.",,eth::sem6::iml
+Gtf}}jL&I;,The <b>softmax</b>&nbsp;function is often used in the {{c2::final}} layer of a {{c1::neural network-based classifier}}.,,eth::sem6::iml
+JIG(]z]OI`,A&nbsp;<b>gradient descent</b>&nbsp;iteration updates&nbsp;\(w^{next}\)&nbsp;to be {{c1::\(w^{now} -\eta\cdot\nabla L(w^{now})\).}},,eth::sem6::iml
+KGqQ``lr&],"In&nbsp;<b>gradient descent</b>,&nbsp;\(\eta\)&nbsp;is the {{c1::learning rate}}.",,eth::sem6::iml
+HLknPr2Z/U,The closed form solution of <b>d-dim linear regression</b>&nbsp;for&nbsp;\(w_{min}\)&nbsp;is&nbsp;{{c1::\((X^TX)^{-1}X^Ty\).}},,eth::sem6::iml
+O=NEFB;h6E,"In gradient descent,&nbsp;<b>momentum</b>&nbsp;incorporates {{c2::the gradient of the previous step}} to {{c1::remove oscillations and speed up convergence}}.",,eth::sem6::iml
+AuTV*PszQf,"Minibatch SGD uses {{c2::a subset of points}}, whereas normal SGD uses {{c1::just one point}}.&nbsp;",,eth::sem6::iml
+"mL3UC,AJNu",The&nbsp;<b>logistic loss</b>&nbsp;is defined as&nbsp;\(g_{log}(y\hat{f}(x)) =\){{c1::\(\log(1+e^{-y\hat{f}(x)})\)}}.,,eth::sem6::iml
+LfcJJx/%n&,"In&nbsp;<b>one-vs-rest</b>, we try to learn classes by {{c1::relabeling points from all classes except one as&nbsp;\(-1\) and the one from that class as&nbsp;\(1\).}}",,eth::sem6::iml
+6+*XPUsf,The ROC curve plots the {{c1::TPR (True Positive Rate)}} against the {{c2::FPR (False Positive Rate)}}.,,eth::sem6::iml
+Opx|X)ie?z,AUROC stands for {{c1::Area Under the Receiver Operating Characteristic (curve)}}.,,eth::sem6::iml
+o/+IipWh-D,"Ideally, the AUROC is equal to&nbsp;{{c1::\(1\)}}.",,eth::sem6::iml
+s3TE=|@|*j,A&nbsp;<b>pooling layer</b>&nbsp;helps by {{c1::reducing the width of the network / number of parameters}}.,,eth::sem6::iml
+El*X&$}Qu-,A&nbsp;<b>prior</b>&nbsp;(distribution) is an {{c1::assumed probability distribution before some evidence is taken into account}}.,,eth::sem6::iml
+t$}W>t9!-8,We call <b>Gaussian Naive Bayes</b> naive because it assumes that {{c1::every pair of features is conditionally independent}}.,,eth::sem6::iml
+N9w!CC-Z]C,"Weakly-typed languages do {{c1::classify values into types}}, but do not {{c1::enforce additional restrictions}}.",,eth::coop
+dQh^IW/k)x,Strongly-typed languages enforce that {{c1::all arguments to an operation have the correct types}}.&nbsp;,,eth::coop
+k27S$rV~n|,A type is a {{c1::set of values sharing some properties}}.,,eth::coop
+qoA|R*5Az>,"In static type checking, we determine {{c1::at compile time}} if a program is correctly typed.",,eth::coop
+bN]A1Bv?:F,"In dynamic type checking, we determine {{c1::at run time}} if the arguments to an operation are of the expected type.",,eth::coop
+Q]rekwf&t#,"The type invariant for statically type-safe OOP language is ""{{c1::In every program state, the value of the variable <b>v</b> is an element of the declared type of <b>v</b>.}}""",,eth::coop
+f>Ch=D*lsn,Gradual Typing is {{c1::optional static type checking}} for dynamically-typed languages.,,eth::coop
+HS&*pcBK}*,Two examples for gradual typing are {{c1::TypeScript for JavaScript and mypy for Python}}.&nbsp;,,eth::coop
+t)Da)2xZ_j,Duck typing is an informal name for {{c1::structural dynamic type systems}}.,,eth::coop
+p)B-LoXd2^,A&nbsp;<b>persona&nbsp;</b>is&nbsp;{{c1::a precise description of a user as a stand-in for a real user}}.,,eth::sem5::hci
+yQ^3mS7^Bk,"With the&nbsp;<b>analytical&nbsp;</b>method, we look at {{c1::<i>inherent attributes</i> of the design rather than seeing the design in use}}.",,eth::sem5::hci
+c!YxySw+r),"With the&nbsp;<b>empirical</b>&nbsp;method, we look at {{c1::how a design (change) affects&nbsp;<i>observable usage</i>}}.",,eth::sem5::hci
+eRvt6)zVlf,There are five principal components to Usability:<br><ul><li>{{c1::Learnability}}</li><li>{{c1::Efficiency}}</li><li>{{c1::Memorability}}</li><li>{{c1::Errors}}</li><li>{{c1::Satisfaction}}</li></ul>,,eth::sem5::hci
+oIA6UabC=c,An&nbsp;<b>affordance</b>&nbsp;is an {{c1::action that the design of an object suggests to a user}}.,A button&nbsp;<i>affords</i>&nbsp;pushing.,eth::sem5::hci
+D[%5/M72xV,<b>KLM</b>&nbsp;stands for {{c1::Keystroke Level Model}}.,,eth::sem5::hci
+rYI)(<NN92,<b>Priming&nbsp;</b>means that {{c1::we ask questions that already imply a certain answer}}.,,eth::sem5::hci
