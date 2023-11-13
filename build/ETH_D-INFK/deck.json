@@ -2495,7 +2495,7 @@
         {
             "__type__": "Note",
             "fields": [
-                "<div style=\"text-align: center;\"><b>DFS</b></div><div><br></div><div><b>Runtime</b>: {{c1::\\( \\mathcal{O}(|E| + |V|) \\)}}</div><div><br></div><div><b>Approach</b>: {{c2::We first go through the depth of each node. We might keep track of pre / post numbers to make edge classifications.}}</div><div><br></div><div><b>Uses</b>: {{c3::Detect cycles (if backward edge), path finding, topological sorting, test if bipartite, mazes, ...}}</div>",
+                "<div style=\"text-align: center;\"><b>DFS</b></div><div><br></div><div><b>Runtime</b>: {{c1::\\( \\mathcal{O}(|E| + |V|) \\)}}</div><div><br></div><div><b>Approach</b>: {{c2::Explore as far as possible along each branch before backtracking. Potentially keep track of pre- / post-numbers to make edge classifications.}}</div><div><br></div><div><b>Uses</b>: {{c3::Detect cycles (if backward edge), path finding, topological sorting, test if bipartite, mazes, ...}}</div>",
                 ""
             ],
             "guid": "BRmyi3>lm%",
@@ -2507,7 +2507,7 @@
         {
             "__type__": "Note",
             "fields": [
-                "<div style=\"text-align: center;\"><b>BFS</b></div><div><br></div><div><b>Runtime</b>: {{c1::\\( \\mathcal{O}(|E| + |V|) \\)}}</div><div><br></div><div><b>Approach</b>: {{c2::We first go through all direct successors of an edge, then move to a level deeper.}}</div><div><br></div><div><b>Uses</b>: {{c3::Shortest path in unweighted graphs, cycle detection, test if graph is bipartite, path finding}}</div>",
+                "<div style=\"text-align: center;\"><b>BFS</b></div><div><br></div><div><b>Runtime</b>: {{c1::\\( \\mathcal{O}(|E| + |V|) \\)}}</div><div><br></div><div><b>Approach</b>: {{c2::First go through all direct successors of an edge, then move to a level deeper.}}</div><div><br></div><div><b>Uses</b>: {{c3::Shortest path in unweighted graphs, cycle detection, test if graph is bipartite, path finding}}</div>",
                 ""
             ],
             "guid": "u%cN;v|jjQ",
@@ -2519,7 +2519,7 @@
         {
             "__type__": "Note",
             "fields": [
-                "<div style=\"text-align: center;\"><b>Dijkstra</b></div><div><br></div><div><b>Runtime</b>: {{c1::\\( \\mathcal{O}((|E| + |V|) \\cdot \\log(|V|)) \\)}}</div><div><br></div><div><b>Approach</b>: {{c2::We put the starting node into the queue, take it out, and set the distance for all adjacent nodes and put them into the queue. We repeat, update distances and only put nodes into the queue if they weren't visited before.}}</div><div><br></div><div><b>Uses</b>: {{c3::Minimal-cost paths in non-negative weighted directed graphs}}</div>",
+                "<div style=\"text-align: center;\"><b>Dijkstra</b></div><div><br></div><div><b>Runtime</b>: {{c1::\\( \\mathcal{O}((|E| + |V|) \\cdot \\log|V|) \\)}}</div><div><br></div><div><b>Approach</b>: {{c2::Put the starting node into the queue, take it out, and set the distance for all adjacent nodes and put them into the queue. Repeat, update distances and only put nodes into the queue if they weren't visited before.}}</div><div><br></div><div><b>Uses</b>: {{c3::Minimal-cost paths in non-negative weighted directed graphs}}</div>",
                 ""
             ],
             "guid": "eGQw>urFaH",
@@ -2531,7 +2531,7 @@
         {
             "__type__": "Note",
             "fields": [
-                "<div style=\"text-align: center;\"><b>Bellman-Ford</b></div><div style=\"text-align: center; \"><br></div><div><b>Runtime</b>: {{c1::\\( \\mathcal{O}(|E| \\cdot |V|)\\)}}</div><div><br></div><div><b>Approach</b>: {{c2::We initiate all distances with ∞. Then we go |V| - 1 times through every edge, and test for all (u,v) in E if dist[v] &gt; dist[u] + w(u,v). If yes, we update the distance. If after [V] - 1 iterations we can still relax an edge (in a last iteration), then there exists a negative cycle.}}</div><div><br></div><div><b>Uses</b>: {{c3::Detect negative cycles, find minimal-cost paths in weighted graphs with negative weights}}</div>",
+                "<div style=\"text-align: center;\"><b>Bellman-Ford</b></div><div style=\"text-align: center; \"><br></div><div><b>Runtime</b>: {{c1::\\( \\mathcal{O}(|E| \\cdot |V|)\\)}}</div><div><br></div><div><b>Approach</b>: {{c2::Initiate all distances with  \\(\\infty\\) . Then go&nbsp;\\(|V| - 1\\)&nbsp;times through every edge, and test for all (u,v) in E if&nbsp;\\(\\text{dist}[v] &gt; \\text{dist}[u] + w(u,v)\\). If yes, update the distance. If after&nbsp;\\(|V| - 1\\)&nbsp;iterations an edge can still be relaxed (in a last iteration), then there exists a negative cycle.}}</div><div><br></div><div><b>Uses</b>: {{c3::Detect negative cycles, find minimal-cost paths in weighted graphs with negative weights}}</div>",
                 ""
             ],
             "guid": "j#w5w>dS6",
@@ -2543,7 +2543,7 @@
         {
             "__type__": "Note",
             "fields": [
-                "<div style=\"text-align: center;\"><b>Boruvka</b></div><div><br></div><div><b>Runtime</b>: {{c1::\\( \\mathcal{O}((|E| + |V|) \\cdot log(|V|))\\)}}</div><div><br></div><div><b>Approach</b>: {{c2::We first add all vertices to the set of components (so every vertices has its own component). Then as long as the size of the components-set is greater than 1, we connect each component to the one with the cheapest edge.}}</div><div><br></div><div><b>Uses</b>: {{c3::Find MST in weighted, undirected graph}}</div>",
+                "<div style=\"text-align: center;\"><b>Boruvka</b></div><div><br></div><div><b>Runtime</b>: {{c1::\\( \\mathcal{O}((|E| + |V|) \\cdot \\log |V|)\\)}}</div><div><br></div><div><b>Approach</b>: {{c2::Add all vertices to the set of components (so every vertex has its own component). As long as the size of the components set is greater than 1, connect each component to the one with the cheapest edge.}}</div><div><br></div><div><b>Uses</b>: {{c3::Find MST in weighted, undirected graph}}</div>",
                 ""
             ],
             "guid": "F^nhYx>fXl",
@@ -2555,7 +2555,7 @@
         {
             "__type__": "Note",
             "fields": [
-                "<div style=\"text-align: center;\"><b>Kruskal</b></div><div><br></div><div><b>Runtime</b>: {{c1::\\( \\mathcal{O}(|E| \\cdot log(|E|) + |E| \\cdot log(|V|))\\)}}</div><div><br></div><div><b>Approach</b>: {{c2::We sort the edges by weight and add them one-by-one as long as they are in different components.}}</div><div><br></div><div><b>Uses</b>: {{c3::Find MST in weighted, undirected graph}}</div>",
+                "<div style=\"text-align: center;\"><b>Kruskal</b></div><div><br></div><div><b>Runtime</b>: {{c1::\\( \\mathcal{O}(|E| \\log |E| + |E|  \\log|V|)\\)}}</div><div><br></div><div><b>Approach</b>: {{c2::Sort the edges by weight and add them one-by-one as long as they are in different components (which can be checked efficiently with Union Find).}}</div><div><br></div><div><b>Uses</b>: {{c3::Find MST in weighted, undirected graph}}</div>",
                 ""
             ],
             "guid": "jcougdQ#0G",
@@ -2567,7 +2567,7 @@
         {
             "__type__": "Note",
             "fields": [
-                "<div style=\"text-align: center;\"><b>Prim</b></div><div><br></div><div><b>Runtime</b>: {{c1::\\( \\mathcal{O}((|E| + |V|) \\cdot log(|V|))\\)}}</div><div><br></div><div><b>Approach</b>: {{c2::We start at a given vertex. To this subtree we add one-by-one the cheapest edge connecting the subtree to another component until all vertices are connected. The implementation is very similar to Dijkstra.}}</div><div><br></div><div><b>Uses</b>: {{c3::Find MST in weighted, undirected graph}}</div>",
+                "<div style=\"text-align: center;\"><b>Prim</b></div><div><br></div><div><b>Runtime</b>: {{c1::\\( \\mathcal{O}((|E| + |V|) \\cdot \\log|V|)\\)}}</div><div><br></div><div><b>Approach</b>: {{c2::We start at a given vertex. To this subtree we add one-by-one the cheapest edge connecting the subtree to another component until all vertices are connected. The implementation is very similar to Dijkstra.}}</div><div><br></div><div><b>Uses</b>: {{c3::Find MST in weighted, undirected graph}}</div>",
                 ""
             ],
             "guid": "cKo%p6:M08",
@@ -2579,7 +2579,7 @@
         {
             "__type__": "Note",
             "fields": [
-                "<div style=\"text-align: center;\"><b>Floyd-Warshall</b></div><div style=\"text-align: center; \"><br></div><div><b>Runtime</b>: {{c1::\\( \\mathcal{O}(|V|^3)\\)}}</div><div><br></div><div><b>Approach</b>: {{c2::3D DP: It is based on a triple-nested for loop with the following recursion: d[u][v] = min(d[u][v], d[u][i] + d[i][v]).}}</div><div><br></div><div><b>Uses</b>: {{c3::All-to-all shortest path in directed graph without negative cycles.}}</div>",
+                "<div style=\"text-align: center;\"><b>Floyd-Warshall</b></div><div style=\"text-align: center; \"><br></div><div><b>Runtime</b>: {{c1::\\( \\mathcal{O}(|V|^3)\\)}}</div><div><br></div><div><b>Approach</b>: {{c2::3D DP: It is based on a triple-nested <code>for</code>-loop with the following recursion:&nbsp;\\(d[u][v] = \\min(d[u][v], d[u][i] + d[i][v])\\).}}</div><div><br></div><div><b>Uses</b>: {{c3::All-to-all shortest path in directed graph without negative cycles.}}</div>",
                 ""
             ],
             "guid": "nfdJ7OmBdJ",
@@ -2591,7 +2591,7 @@
         {
             "__type__": "Note",
             "fields": [
-                "<div style=\"text-align: center;\"><b>Johnson</b></div><div><br></div><div><b>Runtime</b>: {{c1::\\( \\mathcal{O}(|E| \\cdot |V| + |V|^2 \\cdot log(|V|)\\)}}</div><div><br></div><div><b>Approach</b>: {{c2::We make all edges positive and then perform n-times Dijkstra. To do this we create an additional node that is linked to each node with edge weight 0 and store for each node a height h(x), where h(x) is equal to the shortest path from the new node n to the node x. The new weights are calculated with w'(u,v) = w(u,v) + h(u) - h(v).}}</div><div><br></div><div><b>Uses</b>: {{c3::All-to-all shortest paths in directed graphs without negative cycles.}}</div>",
+                "<div style=\"text-align: center;\"><b>Johnson</b></div><div><br></div><div><b>Runtime</b>: {{c1::\\( \\mathcal{O}(|E| \\cdot |V| + |V|^2 \\cdot \\log|V|)\\)}}</div><div><br></div><div><b>Approach</b>: {{c2::Idea: Make all edges positive and then perform Dijkstra  \\(n\\)&nbsp;times. To do this, create an additional node that is linked to each node with edge weight 0 and store for each node a height&nbsp;\\(h(x)\\), where&nbsp;\\(h(x)\\)&nbsp;is equal to the shortest path from the new node n to the node x (might be negative). The new weights are calculated with&nbsp;\\(w'(u,v) = w(u,v) + h(u) - h(v)\\).}}</div><div><br></div><div><b>Uses</b>: {{c3::All-to-all shortest paths in directed graphs without negative cycles.}}</div>",
                 ""
             ],
             "guid": "KD23pBO,?%",
@@ -10174,6 +10174,78 @@
             "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
             "tags": [
                 "eth::sem1::and"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Subtypes may {{c1::add, but not remove}} methods and fields.",
+                ""
+            ],
+            "guid": "w~N~H+#Z!d",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::coop"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "An overriding method must {{c1::not be less accessible::accessibility}} than the method it overrides.",
+                ""
+            ],
+            "guid": "N5Trjz5oUD",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::coop"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "An overriding method must {{c1::not require more specific}} parameter types than the method it overrides.",
+                "i.e. parameters are contravariant"
+            ],
+            "guid": "J+A{d($|yq",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::coop"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "An overriding method must {{c1::not have a more general}} result type than the method it overrides.",
+                "i.e. results are covariant"
+            ],
+            "guid": "m(:M)ZozO4",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::coop"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Subtypes must not {{c1::change the types}} of fields.",
+                "(since fields are bound statically)"
+            ],
+            "guid": "KSS+ZWiNYb",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::coop"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The disadvantage of arrays being covariant in Java and C# is that {{c1::each array write requires a run-time type check}}.",
+                ""
+            ],
+            "guid": "u6E,dcMHRH",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::coop"
             ]
         }
     ],
