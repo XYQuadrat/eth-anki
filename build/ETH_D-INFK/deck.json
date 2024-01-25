@@ -134,13 +134,18 @@
         "d730da8d1307491e857e43889d325dc5-oa-3-A.svg",
         "d730da8d1307491e857e43889d325dc5-oa-3-Q.svg",
         "d730da8d1307491e857e43889d325dc5-oa-O.svg",
+        "heuristic-example-1-rbg-73.png",
+        "heuristic-example-74.png",
         "paste-065043d9f5230de73636ad302c55dae66ac6f002.jpg",
         "paste-1793e63e5d1784d095cd692abf42ffcb9452a2b2.jpg",
         "paste-3715dace1d8462a21e74b3b7c524a70adfc6cb15.jpg",
         "paste-375d775a9b1bc0b9c8fe04f548f5deb82eb83ed3.jpg",
         "paste-411e9def31aa702646c15e88ced7211c4c369a8f.jpg",
         "paste-428c02a526438244adf3e2e04adb2bd973e8619a.jpg",
+        "paste-4929fb767cde9eb10f341d82c26eadffa96dc234.jpg",
+        "paste-4d67941934ceb67f56fed41b8ebce86a75177654.jpg",
         "paste-5d2a037da08c0fff583447aaaa78522dedc48908.jpg",
+        "paste-5d75a92e45bc74d5752235efab88e31ac3660367.jpg",
         "paste-5fe060e70f819572e68ca9ef0f78d2d5bccf4c89.jpg",
         "paste-615ba6ef6072a1dc13391f80f8ac2d9094a1d03f.jpg",
         "paste-6725aff76c37882399c37da8a1351b8542d9f7d8.jpg",
@@ -153,7 +158,9 @@
         "paste-8eb3e3a8ebe34dfd14f253af2a555c2b1569eb0c.jpg",
         "paste-900a0d10aecea56a5ca890654592b4d95691d29d.jpg",
         "paste-9fcb15b1676491fded7238f27ff970ab7304de3c.jpg",
+        "paste-a1a71b055b490cb8010dcb22d4f3df6add579e4c.jpg",
         "paste-a88a665c2e146d2fc3cf947cb5bd19723908a713.jpg",
+        "paste-b06f97cb8fbf51fafc628585ff803682a1775ddc.jpg",
         "paste-c84fafc48a0d1bb11bcbfef690d281dfb87a47d1.jpg",
         "paste-cad6b8d912e75035083cfb918d2b29243fe29927.jpg",
         "paste-d179af7f24cde56feec56201e8f2ee4fa0a3812a.jpg",
@@ -165,9 +172,12 @@
         "paste-dff51e4848feb8bc0024b48f3bd8f6e27d2b8e94.jpg",
         "paste-e0e2442850efef9b3668af82dd522d6b00735d90.jpg",
         "paste-e26dba5ae8ded8dd8da77576353a3a48dd2faecb.jpg",
+        "paste-e3818928a9aacb71ec3c2bf2726ca98b495c7969.jpg",
         "paste-e3e2228747b18747d291f49eff9b24c97f545256.jpg",
         "paste-e4ee92045b6c2c5267ea1f031151bc83246e99c0.jpg",
         "paste-e87f2d290398114b64a91247adf2baee01fd5c4d.jpg",
+        "paste-eafadaee8bc65baaa22ba4de9c18bfa1edfd0848.jpg",
+        "paste-ee982b2008ed1c22af2e8d2253ab50234f562d50.jpg",
         "paste-ef4155eb70beff91d5a2a159e9d78246c46a1257.jpg",
         "paste-f8f300330e7541209ad27ddf66c73d9fa72f123b.jpg",
         "tmp662mxaz0.jpg",
@@ -7278,18 +7288,6 @@
         {
             "__type__": "Note",
             "fields": [
-                "2 Approaches for making code modular:<div>- {{c1::Restricting access to data fields}}</div><div>- {{c2::Making shared data immutable}}</div>",
-                ""
-            ],
-            "guid": "wL$U].vhYS",
-            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
-            "tags": [
-                "eth::sem6::rse"
-            ]
-        },
-        {
-            "__type__": "Note",
-            "fields": [
                 "The&nbsp;{{c1::flyweight}} pattern maximizes {{c2::sharing of immutable objects}}",
                 ""
             ],
@@ -8523,18 +8521,6 @@
         {
             "__type__": "Note",
             "fields": [
-                "\\([\\![action]\\!]\\)captures the {{c1::abstract semantics of the language}}",
-                ""
-            ],
-            "guid": "qr.G8lnJS",
-            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
-            "tags": [
-                "eth::sem6::rse"
-            ]
-        },
-        {
-            "__type__": "Note",
-            "fields": [
                 "Mathematical Concept:<br>{{c2::Bottom&nbsp;\\((\\bot)\\)}}<br><br>Use in Static Analysis:<br>{{c1::Used for initialization of all but initial elements}}",
                 ""
             ],
@@ -9567,18 +9553,6 @@
         {
             "__type__": "Note",
             "fields": [
-                "The&nbsp;<b>logistic loss</b>&nbsp;is defined as&nbsp;\\(g_{log}(y\\hat{f}(x)) =\\){{c1::\\(\\log(1+e^{-y\\hat{f}(x)})\\)}}.",
-                ""
-            ],
-            "guid": "mL3UC,AJNu",
-            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
-            "tags": [
-                "eth::sem6::iml"
-            ]
-        },
-        {
-            "__type__": "Note",
-            "fields": [
                 "In&nbsp;<b>one-vs-rest</b>, we try to learn classes by {{c1::relabeling points from all classes except one as&nbsp;\\(-1\\) and the one from that class as&nbsp;\\(1\\).}}",
                 ""
             ],
@@ -9807,7 +9781,7 @@
         {
             "__type__": "Note",
             "fields": [
-                "Facts add&nbsp;{{c1::constraints that always hold}}",
+                "In Alloy, facts add&nbsp;{{c1::constraints that always hold}}",
                 "<img src=\"paste-e0e2442850efef9b3668af82dd522d6b00735d90.jpg\">"
             ],
             "guid": "Ae6=).x8!=",
@@ -10095,7 +10069,7 @@
         {
             "__type__": "Note",
             "fields": [
-                "<b>Priming&nbsp;</b>means that {{c1::we ask questions that already imply a certain answer}}.",
+                "In HCI,<b>&nbsp;priming&nbsp;</b>means that {{c1::we ask questions that already imply a certain answer}}.",
                 ""
             ],
             "guid": "rYI)(<NN92",
@@ -10204,7 +10178,7 @@
             "__type__": "Note",
             "fields": [
                 "An overriding method must {{c1::not require more specific}} parameter types than the method it overrides.",
-                "i.e. parameters are contravariant"
+                "i.e. parameters are contravariant. In Java, parameters are invariant"
             ],
             "guid": "J+A{d($|yq",
             "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
@@ -10246,6 +10220,1254 @@
             "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
             "tags": [
                 "eth::coop"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "An <b>object structure</b>&nbsp;is a {{c1::set of objects that are connected via references}}.",
+                ""
+            ],
+            "guid": "I`&-FSq:c/",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::coop"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "For a class&nbsp;<code>A extends B with C1 ... with Cn</code>, the linearization&nbsp;\\(L(C)\\)&nbsp;is&nbsp;{{c1::\\(A, L(C_n) \\bullet \\ldots\\bullet L(C_1) \\bullet L(B)\\)}}.",
+                ""
+            ],
+            "guid": "G/RPzH|w:=",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::coop"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "In Java bytecode, the register at index 0 contains the type of {{c1::the&nbsp;<code>this</code> object}}.",
+                ""
+            ],
+            "guid": "I^0*7i+GrW",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::coop"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "In bytecode&nbsp;<b>type checking</b>, type information is required at {{c1::the beginning of all basic blocks}}.",
+                ""
+            ],
+            "guid": "Cy>*$Krfl+",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::coop"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "In bytecode&nbsp;<b>type checking</b>, every instruction is considered {{c1::at most once (never if error before)::amount}}.",
+                ""
+            ],
+            "guid": "QJWQsk,2-K",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::coop"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "When using the bytecode&nbsp;<b>type inference</b>&nbsp;algorithm, all interfaces are {{c1::treated as Object}} because the {{c2::smallest common supertype (SCS) may not be well-defined}}.",
+                ""
+            ],
+            "guid": "o(:,f~oWZn",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::coop"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "In C#, when a variable is declared with the&nbsp;<code>dynamic</code> keyword, {{c1::no static type checking is performed (all at runtime)::what type checking happens?}}.",
+                ""
+            ],
+            "guid": "In*!a#,t!(",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::coop"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "In Scala, if a generic type is annotated with +, it is made&nbsp;{{c1::covariant}}.",
+                ""
+            ],
+            "guid": "MB/8CKp7Y;",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::coop"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The covariance annotation for generics is useful (and usable) when the type variable only occurs as {{c1::a result type or a type of an immutable field}}.",
+                ""
+            ],
+            "guid": "g@v&8C;`.",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::coop"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The contravariance annotation for generics is useful (and usable) if the type variable only occurs in {{c1::a parameter type}}.",
+                ""
+            ],
+            "guid": "B=m{`3PndC",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::coop"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "A user-centered approach is characterized by<br><ul><li>{{c1::early focus on users and tasks}}</li><li>{{c2::empirical measurement}}</li><li>{{c3::iterative design}}</li></ul>",
+                ""
+            ],
+            "guid": "tV.(UrY.k6",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Formative methods help us understand {{c1::the problem and our users to inform our design}}",
+                ""
+            ],
+            "guid": "NM@~>;8ytR",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Evaluative methods help us understand {{c1::how well our design works}}",
+                ""
+            ],
+            "guid": "tG6p#xCT>(",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Five important needfinding methods are<br><ul><li>{{c1::Interview}}</li><li>{{c2::Diary Study}}</li><li>{{c3::Retrospective Survey}}</li><li>{{c4::Artifact Analysis}}</li><li>{{c5::Contextual Inquiry}}</li></ul>",
+                ""
+            ],
+            "guid": "d0-YsU245N",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The Design Thinking Process has five steps:<br><ol><li>{{c1::Empathize}}</li><li>{{c2::Define}}</li><li>{{c3::Ideate}}</li><li>{{c4::Prototype}}</li><li>{{c5::Test}}</li></ol>",
+                ""
+            ],
+            "guid": "P8Q,|1V+fv",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "In a diary study, we ask users to {{c1::record events when they happen}}.",
+                ""
+            ],
+            "guid": "IP.n2]!_$h",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Diary studies are useful for cases where<br><ul><li>{{c1::events are rare}}</li><li>{{c2::events are easily forgotten}}</li><li>{{c3::the frequency of the event is important}}</li></ul>",
+                ""
+            ],
+            "guid": "FV6eW:bdqM",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The disadvantage of diary studies is that {{c1::people change their behavior when they track themselves}}.",
+                ""
+            ],
+            "guid": "yY5UgiQ#w]",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "In a Retrospective Survey, we ask a user about {{c1::an event that happened in the past}}.",
+                ""
+            ],
+            "guid": "nf}Wo=@RHw",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Retrospective Surveys are a good fit for<br><ul><li>{{c1::rare but important events}}</li><li>{{c2::recent events}}</li><li>{{c3::memorable events}}</li></ul>",
+                ""
+            ],
+            "guid": "j*|JA3u)h/",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Retrospective Surveys don't work well for {{c1::non-memorable events}}.",
+                ""
+            ],
+            "guid": "LvK9-y>-5=",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "In Artifact Analysis, we look at {{c1::artifacts users have created, e.g. documents or posts}}.",
+                ""
+            ],
+            "guid": "u*@6LRbw,^",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The disavantages of Artifact Analysis are that {{c1::it requires artifacts to be produced and it can be time-consuming}}.",
+                ""
+            ],
+            "guid": "nW~hHFh&Yy",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "In Contextual Enquiry, we {{c1::combine elements of the other needfinding methods and use them in the task environment::do what?}}.",
+                ""
+            ],
+            "guid": "H^}G}bJ&;~",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Contextual Enquiry looks at what users {{c1::do}}.",
+                ""
+            ],
+            "guid": "nP8r5QdpVL",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Contextual Enquiry is more {{c1::objective}} than other methods of needfinding.",
+                ""
+            ],
+            "guid": "N=]u2D!UUJ",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "A <i>vertical</i> prototype implements {{c1::the critical path of one or few features}}.",
+                ""
+            ],
+            "guid": "4t-/~s97V",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "A&nbsp;<i>horizontal</i>&nbsp;prototype implements {{c1::an overview with little to no functionality}}.",
+                ""
+            ],
+            "guid": "w(kplMgX{j",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Examples of&nbsp;<i>analytical</i>&nbsp;methods are&nbsp;<br><ul><li>{{c1::usability/UX inspection methods}}</li><li>{{c2::design walkthroughs}}</li><li>{{c3::heuristic evaluations}}</li></ul>",
+                ""
+            ],
+            "guid": "LuHw-N/N_`",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Examples of&nbsp;<i>empirical&nbsp;</i>methods are<br><ul><li>{{c1::Usability/UX tests}}</li><li>{{c2::Controlled experiments}}</li><li>{{c3::Case studies}}</li></ul>",
+                ""
+            ],
+            "guid": "AZWr-$:RLV",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "In formative evaluation, mainly {{c1::qualitative}} data is collected.",
+                "(some quantitative data, e.g. user opinion in questionnaire)"
+            ],
+            "guid": "eyX`rp]!,e",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Formative evaluation focuses mostly on what parts of the design are {{c1::not working}}.",
+                ""
+            ],
+            "guid": "Iwad`YOz`e",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Summative evaluations focus on what parts of the design are {{c1::working}}.",
+                ""
+            ],
+            "guid": "g4z!niMGhq",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Usability is a part of {{c1::User Experience}}.",
+                ""
+            ],
+            "guid": "spg;#t1L?P",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Analytical investigation is performed by {{c1::usability and domain experts}}.",
+                ""
+            ],
+            "guid": "Mw])?~UZqk",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The difference between UI inspections and cognitive walkthroughs is that in UI inspections we focus on {{c1::one aspect / element of a design}}.",
+                ""
+            ],
+            "guid": "oVip<cE1~T",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The advantages of heuristic evaluations are that they are {{c1::cheap, fast and easy to use (even for inexperienced practitioners)}}.",
+                ""
+            ],
+            "guid": "D0YL#zb-~1",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The limitations of heuristic evaluation are that {{c1::it does not take a comprehensive view and experts might be held back by heuristics}}.",
+                ""
+            ],
+            "guid": "r*L.yJ^mpE",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "GOMS (model) stands for {{c1::Goals, Operators, Methods, Selection rules}}.",
+                ""
+            ],
+            "guid": "F)|.1V/~W4",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The <i>Operators</i>&nbsp;in the GOMS model are {{c1::the cognitive processes and physical actions needed to reach the goals}}.",
+                "e.g. click the mouse, press key"
+            ],
+            "guid": "j*YTWrNB(|",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The three primary usability metrics are {{c1::effectiveness, efficiency and satisfaction}}.",
+                ""
+            ],
+            "guid": "wgXC?lw7Tz",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "A Latin Square helps us {{c1::reduce the number of experimental orderings}}.",
+                ""
+            ],
+            "guid": "lE.o:mdC@o",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "A p-value of 0.05 means that {{c1::assuming&nbsp;\\(H_0\\)&nbsp;is true, there is a 5% chance to obtain <i>at least as extreme</i> results we have obtained}}.",
+                ""
+            ],
+            "guid": "nw?_ME_zR$",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The&nbsp;<b>Type I error</b>&nbsp;is {{c1::the rejection of a true null hypothesis (false positive)}}.",
+                "defined by the&nbsp;\\(\\alpha\\)-level"
+            ],
+            "guid": "t*oH6u3Od-",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The&nbsp;<b>Type II error</b>&nbsp;is {{c1::the failure to reject a false null hypothesis (false negative)}}.",
+                "defined by the&nbsp;\\(\\beta\\)-level"
+            ],
+            "guid": "zh_<|aPh*x",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "In an experiment, having <b>independent samples</b> means that {{c1::one subject was exposed to one condition (between-subject design)}}.",
+                ""
+            ],
+            "guid": "i@R69TzRYW",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "In an experiment, having&nbsp;<b>dependent samples</b>&nbsp;means that {{c1::one subject was exposed to all conditions (within-subject design)}}.",
+                ""
+            ],
+            "guid": "z61M?O9iE]",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Non-parametric tests do&nbsp;{{c1::not assume a specific distribution, only equal spread of group samples::assume what?}}.",
+                ""
+            ],
+            "guid": "oU&lTjH`>/",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The disadvantage of non-parametric tests compared to parametric tests is that {{c1::they have less statistical power (higher chance of Type II errors)}}.",
+                ""
+            ],
+            "guid": "FoLCouVmUE",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "An example of a non-parametric test for two dependent measures is the {{c1::Wilcoxon signed-rank test}}.",
+                ""
+            ],
+            "guid": "dO%dGRk{KV",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "An example of a non-parametric test for categorical data is the {{c1::Chi-Square test}}.",
+                ""
+            ],
+            "guid": "y0TuA;lqAq",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Parametric tests assume&nbsp;{{c1::Gaussian distribution and homoscedasticity (similar variances in groups)}}.",
+                ""
+            ],
+            "guid": "fWn&91YR+>",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "An example of a parametric test for one or two measures is the&nbsp;{{c1::t-test}}.",
+                ""
+            ],
+            "guid": "IKXtTv;/GF",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "An example for a parametric test for multiple measures is the {{c1::ANOVA analysis}}.",
+                ""
+            ],
+            "guid": "Rf5V[>NMZb",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "To test if data is normally distributed, we can use the {{c1::Shapiro-Wilk test}}.",
+                ""
+            ],
+            "guid": "CTkIJ<[Jc7",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "To test for homoscedasticity (similar variances), we can use the {{c1::Levene's test}}.",
+                ""
+            ],
+            "guid": "c]Yq;*f5{6",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The Model Human Processor consists of three processors: {{c1::Perceptual, Cognitive and Motor}}.",
+                ""
+            ],
+            "guid": "pAE~9I!HHV",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Bloch's law states that for&nbsp;\\(t &lt; 100 \\text{ms}\\), {{c1::the response&nbsp;\\(R = I \\cdot t\\)&nbsp;to a visual stimulus is constant}}.",
+                ""
+            ],
+            "guid": "D7>pnmpBtB",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Fitt's law says that movement time equals&nbsp;{{c1::\\(a + b * \\log_2(\\frac{2D}{W})\\), where&nbsp;\\(a,b\\)&nbsp;are device-/environment-specific constants,&nbsp;\\(D\\)&nbsp;is the distance and&nbsp;\\(W\\)&nbsp;is the target width}}.",
+                ""
+            ],
+            "guid": "l_djlEn|nc",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The index of performance&nbsp;\\(\\text{IP}\\)&nbsp;is defined as&nbsp;{{c1::\\(\\frac{\\text{ID} }{\\text{MT} }\\), where&nbsp;\\(\\text{ID} = \\log_2\\frac{2D}{W}\\)&nbsp;is the index of difficulty and&nbsp;\\(\\text{MT}\\)&nbsp;is movement time}}.",
+                ""
+            ],
+            "guid": "n#$&40a9s6",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The four key&nbsp;<b>Gestalt principles</b>&nbsp;are<br><ul><li>{{c1::Emergence (brain derives meaning from chaos)}}</li><li>{{c2::Multistability (brain sees multiple interpretations)}}</li><li>{{c3::Reification (brain fills in the gaps)}}</li><li>{{c4::Invariance (brain is not confused by variations)}}</li></ul>",
+                ""
+            ],
+            "guid": "E;D4~}W/~C",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "In Gestalt principles, the law of Closure states that {{c1::humans prefer to see complete figures and will perceive incomplete figures as whole}}.",
+                ""
+            ],
+            "guid": "p)m?rEC,]j",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<b>Feature Integration Theory&nbsp;</b>is a theory of {{c1::attention}}.",
+                ""
+            ],
+            "guid": "G`7T#i6ORp",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<b>Feature Integration Theory</b>&nbsp;proposes two stages for processing stimuli: {{c1::the preattentive stage and the focused attention stage}}.",
+                ""
+            ],
+            "guid": "Dp@!;uQQhZ",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "In the first, preattentive stage of <b>Feature Integration Theory</b>,&nbsp;{{c1::we automatically create feature maps (color, orientation, intensity) of stimuli::what happens?}}.",
+                ""
+            ],
+            "guid": "u*qi@?u_PZ",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "In the second, focused attention stage of <b>Feature Integration Theory</b>,&nbsp;{{c1::we combine the feature maps to objects, which requires attention::what happens?}}.",
+                ""
+            ],
+            "guid": "vEcSOES%pF",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<b>Perceptual Load Theory</b>&nbsp;suggests a potential resolution to the {{c1::early/late selection debate}}.",
+                ""
+            ],
+            "guid": "K*4_F>#Xwr",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "These eight factors determine input device effectiveness:<br><ul><li>{{c1::Pointing speed}}</li><li>{{c2::Pointing precision}}</li><li>{{c3::Errors}}</li><li>{{c4::Time to learn}}</li><li>{{c5::Time to grasp}}</li><li>{{c6::User preference}}</li><li>{{c7::Desk footprint}}</li><li>{{c8::Cost}}</li></ul>",
+                ""
+            ],
+            "guid": "wEuziC:h+<",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "An input device can be represented as a six-tuple:&nbsp;\\((M, \\text{In}, S, R, \\text{Out}, W)\\):<br><ul><li>{{c2::\\(M\\)&nbsp;- Manipulation operator}}<br></li><li>{{c3::\\(\\text{In}\\)&nbsp;- Input domain}}<br></li><li>{{c4::\\(S\\)&nbsp;- Current state of device}}<br></li><li>{{c5::\\(R\\)&nbsp;- (Resolution) mapping from input to output domain}}<br></li><li>{{c6::\\(\\text{Out}\\)&nbsp;- Output domain}}<br></li><li>\\(W\\)&nbsp;- Additional aspects (not relevant)<br></li></ul>",
+                ""
+            ],
+            "guid": "kP@v;,!3xI",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "An&nbsp;<i>isotonic<b>&nbsp;</b></i>input device is {{c1::movable (e.g. mouse)}}.",
+                "a trackpad is also isotonic because the finger is input device"
+            ],
+            "guid": "OSzLz5)Tz?",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "An&nbsp;<i>elastic</i>&nbsp;input device is {{c1::movable, but goes back to a neutral position (e.g. joystick)}}.",
+                ""
+            ],
+            "guid": "f@IllUh/ag",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "An&nbsp;<i>isometric</i>&nbsp;input device is {{c1::immovable (e.g. Thinkpad nipple)}}.",
+                ""
+            ],
+            "guid": "DqV):^lP!T",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "For touch devices, we can significantly increase touch accuracy if we {{c1::know the user and the position of the device (3DOF)}}.",
+                ""
+            ],
+            "guid": "b/4rY,F1mE",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The idea of&nbsp;<b>beam pruning</b>&nbsp;is to {{c1::select the&nbsp;\\(n\\)&nbsp;most likely tokens and restrict the search space to tokens with these prefixes}}.",
+                "\\(n\\)&nbsp;is called&nbsp;<i>beam size</i>"
+            ],
+            "guid": "DUa!UIxPD|",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "A&nbsp;<b>bigram</b>&nbsp;is {{c1::a sequence of two tokens, usually characters}}.",
+                ""
+            ],
+            "guid": "enz3Pq!}M^",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Haptics is the {{c1::study of touch, force and tactile feedback in HCI}}.",
+                ""
+            ],
+            "guid": "dh>y=vZ[L.",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Haptics can be divided into two categories: {{c1::Tactile}} and {{c2::Kinesthetic}}.",
+                ""
+            ],
+            "guid": "Oav1WF`3OL",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The limitations of vibrotactile limitations are:<br><ul><li>{{c1::broad localization of the sensation}}</li><li>{{c2::superficial feedback}}</li><li>{{c3::the perception of the strength of vibration can vary}}</li></ul>",
+                ""
+            ],
+            "guid": "QozxmR7h4!",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Tactile feedback is about {{c2::vibrations / textures}} while kinesthetic feedback is about {{c1::forces/proprioception}}.",
+                ""
+            ],
+            "guid": "b|9{KXRUt]",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Current limitation 1 of Haptics: {{c1::Kinesthetic haptic feedback}} is not common in user electronics.",
+                ""
+            ],
+            "guid": "dsz^!p]L!:",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Current limitation 2 in haptics: the {{c1::human state}} is not taken into account.",
+                ""
+            ],
+            "guid": "r`X_3*)w4}",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Current limitation 3 in haptics: current systems only react to {{c1::system states}}.",
+                ""
+            ],
+            "guid": "FQDR2Y,;IP",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Current limitation 4 in haptics: we are limited to {{c1::vibrotactile feedback}}.",
+                ""
+            ],
+            "guid": "w<h}E4f_RI",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "To overcome the current limitations of haptics, we need to enable sensing of {{c1::human state}}, and use that to {{c2::control the device intelligently}}.",
+                ""
+            ],
+            "guid": "xqTC8KK&{c",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Computational Rationality is {{c1::the study of computational principles of intelligence in living and artificial beings}}.",
+                ""
+            ],
+            "guid": "teN)oy<~Qv",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "One reason that we want user models is that they {{c2::test if we understand interaction}}, which helps us {{c1::create and validate new HCI theories}}.",
+                ""
+            ],
+            "guid": "K&PgR+_vM>",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The Model Human Processor does not:<br><ul><li>{{c4::learn}}</li><li>{{c3::adapt}}</li><li>{{c2::generalize}}</li><li>{{c1::model tradeoffs}}</li></ul>",
+                ""
+            ],
+            "guid": "m[n)[PiV4n",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Computational Rationality consists of two things: {{c1::Finding an optimal policy}} and {{c2::bound it to something human-like (Bounded Rationality)}}.",
+                ""
+            ],
+            "guid": "f>i9Gm1zZ|",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "In reinforcement learning, when the agent takes an action&nbsp;\\(A_t\\), then the environment responds with {{c1::a state&nbsp;\\(S_{t+1}\\)and a reward&nbsp;\\(R_{t+1}\\)}}.",
+                ""
+            ],
+            "guid": "g:96Lv{M=0",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Reinforcement learning is different from other ML paradigms because<br><ul><li>{{c1::There is no supervisor, only a reward signal}}</li><li>{{c2::Feedback is delayed}}</li><li>{{c3::Time matters (sequential, non-i.i.d. data)}}</li><li>{{c4::Actions affect subsequent data that is received}}</li></ul>",
+                ""
+            ],
+            "guid": "OE7obUH:s>",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The Markov Decision Process is a five-tuple&nbsp;\\((S,A,T,R,\\gamma)\\):<br><ul><li>{{c1::\\(S\\): finite set of states (e.g. letters typed so far)}}<br></li><li>{{c2::\\(A\\): finite set of actions (e.g. what letter do I type next)}}<br></li><li>{{c3::\\(T\\): transition matrix containing&nbsp;\\(p(s',a,s)\\)&nbsp;- given a state and action, what is the probability of the next state&nbsp;\\(s'\\)}}<br></li><li>{{c4::\\(R(s',a,s)\\): reward of taking the action&nbsp;\\(a\\)&nbsp;in the state&nbsp;\\(s\\)}}<br></li><li>{{c5::\\(y \\in[0,1)\\): discount factor}}<br></li></ul>",
+                ""
+            ],
+            "guid": "PtE1C!p%5r",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Markov Decision Process: A policy is {{c1::a mapping from state to action to maximize an expected cumulative reward}}.",
+                ""
+            ],
+            "guid": "nFbxH2&,mU",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "A cognitive walkthrough is a {{c1::design walkthrough with a focus on ease-of-learning}}.",
+                ""
+            ],
+            "guid": "IuP?IU</m0",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<b>Nielsen Heuristics - 1</b>:&nbsp;{{c1::Visibility of System Status - keep users informed about what is going on.}}&nbsp;<br><img src=\"heuristic-example-1-rbg-73.png\">",
+                ""
+            ],
+            "guid": "g5oIAsBzbl",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<b>Nielsen Heuristics - 2:</b>&nbsp;{{c1::Match between system and the real world - Use familiar words and concepts, follow real-world conventions.}}<br><img src=\"heuristic-example-74.png\">",
+                ""
+            ],
+            "guid": "gNgv+Ax`o5",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<b>Nielsen Heuristics - 3:&nbsp;</b>{{c1::User control and freedom - provide option to leave undesirable state (e.g. undo, cancel, return to home)}}.<br><img src=\"paste-a1a71b055b490cb8010dcb22d4f3df6add579e4c.jpg\">",
+                ""
+            ],
+            "guid": "M}]w`j^h=0",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<b>Nielsen Heuristics - 4:</b>&nbsp;{{c1::Consistency and Standards - follow platform conventions, be consistent with words and concepts}}.<br><img src=\"paste-4d67941934ceb67f56fed41b8ebce86a75177654.jpg\">",
+                ""
+            ],
+            "guid": "A@$aB98=0e",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<b>Nielsen Heuristics - 5:</b>&nbsp;{{c1::Error Prevention - Eliminate error-prone conditions, warn users with e.g. confirmation dialogs}}.<br><img src=\"paste-4929fb767cde9eb10f341d82c26eadffa96dc234.jpg\">",
+                ""
+            ],
+            "guid": "L[~m@$D<oB",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<b>Nielsen Heuristics - 6:</b>&nbsp;{{c1::Recognition rather than recall - Make objects, actions, options visible. User should not have to remember information across dialogues}}.<br><img src=\"paste-ee982b2008ed1c22af2e8d2253ab50234f562d50.jpg\">",
+                ""
+            ],
+            "guid": "y4hs}t*0JD",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<b>Nielsen Heuristics - 7:&nbsp;</b>{{c1::Flexibility and efficiency of use - Offer accelerators (e.g. shortcuts) for experts, allow customizing frequent actions}}.<br><img src=\"paste-b06f97cb8fbf51fafc628585ff803682a1775ddc.jpg\">",
+                ""
+            ],
+            "guid": "Jv|RCa*R=f",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<b>Nielsen Heuristics - 8:</b>&nbsp;{{c1::Aesthetic and minimalist design - do not show irrelevant or rarely needed information}}.<br><img src=\"paste-eafadaee8bc65baaa22ba4de9c18bfa1edfd0848.jpg\">",
+                ""
+            ],
+            "guid": "mn_0atb&oy",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<b>Nielsen Heuristics - 9:&nbsp;</b>{{c1::Help users recognize, diagnose and recover from errors - error messages should be in plain language, indicate the problem and suggest a solution}}.<br><img src=\"paste-5d75a92e45bc74d5752235efab88e31ac3660367.jpg\">",
+                ""
+            ],
+            "guid": "wa|D5,M7)D",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<b>Nielsen Heuristics - 10:</b>&nbsp;{{c1::Help and documentation - best is no documentation, but if necessary it should be easy to search, focused on the task and list concrete steps to do}}.<br><img src=\"paste-e3818928a9aacb71ec3c2bf2726ca98b495c7969.jpg\">",
+                ""
+            ],
+            "guid": "v?klK`M4z?",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "In the GOMS model we focus on {{c2::the steps / processes involved when users do a task}}, whereas in KLM we want to {{c1::provide actual time predictions of how long doing the task will take}}.",
+                ""
+            ],
+            "guid": "l|kmc`{pRY",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem5::hci"
             ]
         }
     ],

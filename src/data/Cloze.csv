@@ -122,7 +122,7 @@ f`O~3D1cVu,Symbolic execution is the&nbsp;{{c1::over- &amp; under}}-approximatio
 t5uBTdj0cI,"Core idea of symbolic execution is to {{c1::compute the symbolic constraints per path, and then solve these constraints to have inputs that explore all paths}}",,eth::sem6::rse
 Ho^?o[b1e&,Path conditions&nbsp;\(\pi\)&nbsp;are the {{c1::conditions under which a path is taken}},"<img src=""paste-895ace1b661f4db5c33b8ca798be3c89f5e8e0de.jpg"">",eth::sem6::rse
 Q_$@!|w>Q|,We have a symbolic state per&nbsp;{{c1::program point}},"<img src=""paste-895ace1b661f4db5c33b8ca798be3c89f5e8e0de.jpg"">",eth::sem6::rse
-Ae6=).x8!=,Facts add&nbsp;{{c1::constraints that always hold}},"<img src=""paste-e0e2442850efef9b3668af82dd522d6b00735d90.jpg"">",eth::sem6::rse
+Ae6=).x8!=,"In Alloy, facts add&nbsp;{{c1::constraints that always hold}}","<img src=""paste-e0e2442850efef9b3668af82dd522d6b00735d90.jpg"">",eth::sem6::rse
 f*Sez^$9eb,"The Alloy Analyzer is <b>decidable</b>, because&nbsp;{{c1::it searches for structures <b>up to a given size</b> making the problem become <b>finite</b>}}",,eth::sem6::rse
 Ch}Kuqg|/N,In linear temporal logic the&nbsp;\(\phi\)&nbsp;symbol denotes&nbsp;{{c1::what holds now}},,eth::sem6::rse
 e.eq(T@u/6,In linear temporal logic&nbsp;\(X\phi\)&nbsp;or&nbsp;\(\circ\phi\)&nbsp;denotes&nbsp;{{c1::that&nbsp;\(\phi\)&nbsp;holds in the next step}},,eth::sem6::rse
@@ -506,7 +506,7 @@ c!YxySw+r),"With the&nbsp;<b>empirical</b>&nbsp;method, we look at {{c1::how a d
 eRvt6)zVlf,There are five principal components to Usability:<br><ul><li>{{c1::Learnability}}</li><li>{{c1::Efficiency}}</li><li>{{c1::Memorability}}</li><li>{{c1::Errors}}</li><li>{{c1::Satisfaction}}</li></ul>,,eth::sem5::hci
 oIA6UabC=c,An&nbsp;<b>affordance</b>&nbsp;is an {{c1::action that the design of an object suggests to a user}}.,A button&nbsp;<i>affords</i>&nbsp;pushing.,eth::sem5::hci
 D[%5/M72xV,<b>KLM</b>&nbsp;stands for {{c1::Keystroke Level Model}}.,,eth::sem5::hci
-rYI)(<NN92,<b>Priming&nbsp;</b>means that {{c1::we ask questions that already imply a certain answer}}.,,eth::sem5::hci
+rYI)(<NN92,"In HCI,<b>&nbsp;priming&nbsp;</b>means that {{c1::we ask questions that already imply a certain answer}}.",,eth::sem5::hci
 t]QH{.^=tP,The&nbsp;<b>Karatsuba</b>&nbsp;algorithm provides an asymptotically faster way to {{c1::multiply numbers}}.,,eth::sem1::and
 ge[wn7-Qb.,<b>Kadane's</b>&nbsp;<b>algorithm</b>&nbsp;solves the {{c1::Maximum Subarray Sum (MSS)}} problem in {{c2::linear (\(\mathcal{O}(n)\))}} time.,This is the optimal solution for MSS.,eth::sem1::and
 ph8S[}`Eh],<b>Insertion Sort</b>&nbsp;is used in practice for {{c1::sorting small arrays}}.,"Example: In gcc, for (sub)arrays with length&nbsp;\(\le 16\), insertion sort is used, because it is faster.",eth::sem1::and
@@ -515,7 +515,111 @@ y$P^lc2?l?,"In graph theory, a {{c2::circuit or tour (<i>kantendisjunkter Zyklus
 C1$vvwFoR0,"In graph theory, an {{c2::Eulerian circuit (misleadingly also called Eulerian cycle)}} is an {{c1::Eulerian trail that ends at the start vertex}}.",,eth::sem1::and
 w~N~H+#Z!d,"Subtypes may {{c1::add, but not remove}} methods and fields.",,eth::coop
 N5Trjz5oUD,An overriding method must {{c1::not be less accessible::accessibility}} than the method it overrides.,,eth::coop
-J+A{d($|yq,An overriding method must {{c1::not require more specific}} parameter types than the method it overrides.,i.e. parameters are contravariant,eth::coop
+J+A{d($|yq,An overriding method must {{c1::not require more specific}} parameter types than the method it overrides.,"i.e. parameters are contravariant. In Java, parameters are invariant",eth::coop
 m(:M)ZozO4,An overriding method must {{c1::not have a more general}} result type than the method it overrides.,i.e. results are covariant,eth::coop
 KSS+ZWiNYb,Subtypes must not {{c1::change the types}} of fields.,(since fields are bound statically),eth::coop
 "u6E,dcMHRH",The disadvantage of arrays being covariant in Java and C# is that {{c1::each array write requires a run-time type check}}.,,eth::coop
+I`&-FSq:c/,An <b>object structure</b>&nbsp;is a {{c1::set of objects that are connected via references}}.,,eth::coop
+G/RPzH|w:=,"For a class&nbsp;<code>A extends B with C1 ... with Cn</code>, the linearization&nbsp;\(L(C)\)&nbsp;is&nbsp;{{c1::\(A, L(C_n) \bullet \ldots\bullet L(C_1) \bullet L(B)\)}}.",,eth::coop
+I^0*7i+GrW,"In Java bytecode, the register at index 0 contains the type of {{c1::the&nbsp;<code>this</code> object}}.",,eth::coop
+Cy>*$Krfl+,"In bytecode&nbsp;<b>type checking</b>, type information is required at {{c1::the beginning of all basic blocks}}.",,eth::coop
+"QJWQsk,2-K","In bytecode&nbsp;<b>type checking</b>, every instruction is considered {{c1::at most once (never if error before)::amount}}.",,eth::coop
+"o(:,f~oWZn","When using the bytecode&nbsp;<b>type inference</b>&nbsp;algorithm, all interfaces are {{c1::treated as Object}} because the {{c2::smallest common supertype (SCS) may not be well-defined}}.",,eth::coop
+"In*!a#,t!(","In C#, when a variable is declared with the&nbsp;<code>dynamic</code> keyword, {{c1::no static type checking is performed (all at runtime)::what type checking happens?}}.",,eth::coop
+MB/8CKp7Y;,"In Scala, if a generic type is annotated with +, it is made&nbsp;{{c1::covariant}}.",,eth::coop
+g@v&8C;`.,The covariance annotation for generics is useful (and usable) when the type variable only occurs as {{c1::a result type or a type of an immutable field}}.,,eth::coop
+B=m{`3PndC,The contravariance annotation for generics is useful (and usable) if the type variable only occurs in {{c1::a parameter type}}.,,eth::coop
+tV.(UrY.k6,A user-centered approach is characterized by<br><ul><li>{{c1::early focus on users and tasks}}</li><li>{{c2::empirical measurement}}</li><li>{{c3::iterative design}}</li></ul>,,eth::sem5::hci
+NM@~>;8ytR,Formative methods help us understand {{c1::the problem and our users to inform our design}},,eth::sem5::hci
+tG6p#xCT>(,Evaluative methods help us understand {{c1::how well our design works}},,eth::sem5::hci
+d0-YsU245N,Five important needfinding methods are<br><ul><li>{{c1::Interview}}</li><li>{{c2::Diary Study}}</li><li>{{c3::Retrospective Survey}}</li><li>{{c4::Artifact Analysis}}</li><li>{{c5::Contextual Inquiry}}</li></ul>,,eth::sem5::hci
+"P8Q,|1V+fv",The Design Thinking Process has five steps:<br><ol><li>{{c1::Empathize}}</li><li>{{c2::Define}}</li><li>{{c3::Ideate}}</li><li>{{c4::Prototype}}</li><li>{{c5::Test}}</li></ol>,,eth::sem5::hci
+IP.n2]!_$h,"In a diary study, we ask users to {{c1::record events when they happen}}.",,eth::sem5::hci
+FV6eW:bdqM,Diary studies are useful for cases where<br><ul><li>{{c1::events are rare}}</li><li>{{c2::events are easily forgotten}}</li><li>{{c3::the frequency of the event is important}}</li></ul>,,eth::sem5::hci
+yY5UgiQ#w],The disadvantage of diary studies is that {{c1::people change their behavior when they track themselves}}.,,eth::sem5::hci
+nf}Wo=@RHw,"In a Retrospective Survey, we ask a user about {{c1::an event that happened in the past}}.",,eth::sem5::hci
+j*|JA3u)h/,Retrospective Surveys are a good fit for<br><ul><li>{{c1::rare but important events}}</li><li>{{c2::recent events}}</li><li>{{c3::memorable events}}</li></ul>,,eth::sem5::hci
+LvK9-y>-5=,Retrospective Surveys don't work well for {{c1::non-memorable events}}.,,eth::sem5::hci
+"u*@6LRbw,^","In Artifact Analysis, we look at {{c1::artifacts users have created, e.g. documents or posts}}.",,eth::sem5::hci
+nW~hHFh&Yy,The disavantages of Artifact Analysis are that {{c1::it requires artifacts to be produced and it can be time-consuming}}.,,eth::sem5::hci
+H^}G}bJ&;~,"In Contextual Enquiry, we {{c1::combine elements of the other needfinding methods and use them in the task environment::do what?}}.",,eth::sem5::hci
+nP8r5QdpVL,Contextual Enquiry looks at what users {{c1::do}}.,,eth::sem5::hci
+N=]u2D!UUJ,Contextual Enquiry is more {{c1::objective}} than other methods of needfinding.,,eth::sem5::hci
+4t-/~s97V,A <i>vertical</i> prototype implements {{c1::the critical path of one or few features}}.,,eth::sem5::hci
+w(kplMgX{j,A&nbsp;<i>horizontal</i>&nbsp;prototype implements {{c1::an overview with little to no functionality}}.,,eth::sem5::hci
+LuHw-N/N_`,Examples of&nbsp;<i>analytical</i>&nbsp;methods are&nbsp;<br><ul><li>{{c1::usability/UX inspection methods}}</li><li>{{c2::design walkthroughs}}</li><li>{{c3::heuristic evaluations}}</li></ul>,,eth::sem5::hci
+AZWr-$:RLV,Examples of&nbsp;<i>empirical&nbsp;</i>methods are<br><ul><li>{{c1::Usability/UX tests}}</li><li>{{c2::Controlled experiments}}</li><li>{{c3::Case studies}}</li></ul>,,eth::sem5::hci
+"eyX`rp]!,e","In formative evaluation, mainly {{c1::qualitative}} data is collected.","(some quantitative data, e.g. user opinion in questionnaire)",eth::sem5::hci
+Iwad`YOz`e,Formative evaluation focuses mostly on what parts of the design are {{c1::not working}}.,,eth::sem5::hci
+g4z!niMGhq,Summative evaluations focus on what parts of the design are {{c1::working}}.,,eth::sem5::hci
+spg;#t1L?P,Usability is a part of {{c1::User Experience}}.,,eth::sem5::hci
+Mw])?~UZqk,Analytical investigation is performed by {{c1::usability and domain experts}}.,,eth::sem5::hci
+oVip<cE1~T,The difference between UI inspections and cognitive walkthroughs is that in UI inspections we focus on {{c1::one aspect / element of a design}}.,,eth::sem5::hci
+D0YL#zb-~1,"The advantages of heuristic evaluations are that they are {{c1::cheap, fast and easy to use (even for inexperienced practitioners)}}.",,eth::sem5::hci
+r*L.yJ^mpE,The limitations of heuristic evaluation are that {{c1::it does not take a comprehensive view and experts might be held back by heuristics}}.,,eth::sem5::hci
+F)|.1V/~W4,"GOMS (model) stands for {{c1::Goals, Operators, Methods, Selection rules}}.",,eth::sem5::hci
+j*YTWrNB(|,The <i>Operators</i>&nbsp;in the GOMS model are {{c1::the cognitive processes and physical actions needed to reach the goals}}.,"e.g. click the mouse, press key",eth::sem5::hci
+wgXC?lw7Tz,"The three primary usability metrics are {{c1::effectiveness, efficiency and satisfaction}}.",,eth::sem5::hci
+lE.o:mdC@o,A Latin Square helps us {{c1::reduce the number of experimental orderings}}.,,eth::sem5::hci
+nw?_ME_zR$,"A p-value of 0.05 means that {{c1::assuming&nbsp;\(H_0\)&nbsp;is true, there is a 5% chance to obtain <i>at least as extreme</i> results we have obtained}}.",,eth::sem5::hci
+t*oH6u3Od-,The&nbsp;<b>Type I error</b>&nbsp;is {{c1::the rejection of a true null hypothesis (false positive)}}.,defined by the&nbsp;\(\alpha\)-level,eth::sem5::hci
+zh_<|aPh*x,The&nbsp;<b>Type II error</b>&nbsp;is {{c1::the failure to reject a false null hypothesis (false negative)}}.,defined by the&nbsp;\(\beta\)-level,eth::sem5::hci
+i@R69TzRYW,"In an experiment, having <b>independent samples</b> means that {{c1::one subject was exposed to one condition (between-subject design)}}.",,eth::sem5::hci
+z61M?O9iE],"In an experiment, having&nbsp;<b>dependent samples</b>&nbsp;means that {{c1::one subject was exposed to all conditions (within-subject design)}}.",,eth::sem5::hci
+oU&lTjH`>/,"Non-parametric tests do&nbsp;{{c1::not assume a specific distribution, only equal spread of group samples::assume what?}}.",,eth::sem5::hci
+FoLCouVmUE,The disadvantage of non-parametric tests compared to parametric tests is that {{c1::they have less statistical power (higher chance of Type II errors)}}.,,eth::sem5::hci
+dO%dGRk{KV,An example of a non-parametric test for two dependent measures is the {{c1::Wilcoxon signed-rank test}}.,,eth::sem5::hci
+y0TuA;lqAq,An example of a non-parametric test for categorical data is the {{c1::Chi-Square test}}.,,eth::sem5::hci
+fWn&91YR+>,Parametric tests assume&nbsp;{{c1::Gaussian distribution and homoscedasticity (similar variances in groups)}}.,,eth::sem5::hci
+IKXtTv;/GF,An example of a parametric test for one or two measures is the&nbsp;{{c1::t-test}}.,,eth::sem5::hci
+Rf5V[>NMZb,An example for a parametric test for multiple measures is the {{c1::ANOVA analysis}}.,,eth::sem5::hci
+CTkIJ<[Jc7,"To test if data is normally distributed, we can use the {{c1::Shapiro-Wilk test}}.",,eth::sem5::hci
+c]Yq;*f5{6,"To test for homoscedasticity (similar variances), we can use the {{c1::Levene's test}}.",,eth::sem5::hci
+pAE~9I!HHV,"The Model Human Processor consists of three processors: {{c1::Perceptual, Cognitive and Motor}}.",,eth::sem5::hci
+D7>pnmpBtB,"Bloch's law states that for&nbsp;\(t &lt; 100 \text{ms}\), {{c1::the response&nbsp;\(R = I \cdot t\)&nbsp;to a visual stimulus is constant}}.",,eth::sem5::hci
+l_djlEn|nc,"Fitt's law says that movement time equals&nbsp;{{c1::\(a + b * \log_2(\frac{2D}{W})\), where&nbsp;\(a,b\)&nbsp;are device-/environment-specific constants,&nbsp;\(D\)&nbsp;is the distance and&nbsp;\(W\)&nbsp;is the target width}}.",,eth::sem5::hci
+n#$&40a9s6,"The index of performance&nbsp;\(\text{IP}\)&nbsp;is defined as&nbsp;{{c1::\(\frac{\text{ID} }{\text{MT} }\), where&nbsp;\(\text{ID} = \log_2\frac{2D}{W}\)&nbsp;is the index of difficulty and&nbsp;\(\text{MT}\)&nbsp;is movement time}}.",,eth::sem5::hci
+E;D4~}W/~C,The four key&nbsp;<b>Gestalt principles</b>&nbsp;are<br><ul><li>{{c1::Emergence (brain derives meaning from chaos)}}</li><li>{{c2::Multistability (brain sees multiple interpretations)}}</li><li>{{c3::Reification (brain fills in the gaps)}}</li><li>{{c4::Invariance (brain is not confused by variations)}}</li></ul>,,eth::sem5::hci
+"p)m?rEC,]j","In Gestalt principles, the law of Closure states that {{c1::humans prefer to see complete figures and will perceive incomplete figures as whole}}.",,eth::sem5::hci
+G`7T#i6ORp,<b>Feature Integration Theory&nbsp;</b>is a theory of {{c1::attention}}.,,eth::sem5::hci
+Dp@!;uQQhZ,<b>Feature Integration Theory</b>&nbsp;proposes two stages for processing stimuli: {{c1::the preattentive stage and the focused attention stage}}.,,eth::sem5::hci
+u*qi@?u_PZ,"In the first, preattentive stage of <b>Feature Integration Theory</b>,&nbsp;{{c1::we automatically create feature maps (color, orientation, intensity) of stimuli::what happens?}}.",,eth::sem5::hci
+vEcSOES%pF,"In the second, focused attention stage of <b>Feature Integration Theory</b>,&nbsp;{{c1::we combine the feature maps to objects, which requires attention::what happens?}}.",,eth::sem5::hci
+K*4_F>#Xwr,<b>Perceptual Load Theory</b>&nbsp;suggests a potential resolution to the {{c1::early/late selection debate}}.,,eth::sem5::hci
+wEuziC:h+<,These eight factors determine input device effectiveness:<br><ul><li>{{c1::Pointing speed}}</li><li>{{c2::Pointing precision}}</li><li>{{c3::Errors}}</li><li>{{c4::Time to learn}}</li><li>{{c5::Time to grasp}}</li><li>{{c6::User preference}}</li><li>{{c7::Desk footprint}}</li><li>{{c8::Cost}}</li></ul>,,eth::sem5::hci
+"kP@v;,!3xI","An input device can be represented as a six-tuple:&nbsp;\((M, \text{In}, S, R, \text{Out}, W)\):<br><ul><li>{{c2::\(M\)&nbsp;- Manipulation operator}}<br></li><li>{{c3::\(\text{In}\)&nbsp;- Input domain}}<br></li><li>{{c4::\(S\)&nbsp;- Current state of device}}<br></li><li>{{c5::\(R\)&nbsp;- (Resolution) mapping from input to output domain}}<br></li><li>{{c6::\(\text{Out}\)&nbsp;- Output domain}}<br></li><li>\(W\)&nbsp;- Additional aspects (not relevant)<br></li></ul>",,eth::sem5::hci
+OSzLz5)Tz?,An&nbsp;<i>isotonic<b>&nbsp;</b></i>input device is {{c1::movable (e.g. mouse)}}.,a trackpad is also isotonic because the finger is input device,eth::sem5::hci
+f@IllUh/ag,"An&nbsp;<i>elastic</i>&nbsp;input device is {{c1::movable, but goes back to a neutral position (e.g. joystick)}}.",,eth::sem5::hci
+DqV):^lP!T,An&nbsp;<i>isometric</i>&nbsp;input device is {{c1::immovable (e.g. Thinkpad nipple)}}.,,eth::sem5::hci
+"b/4rY,F1mE","For touch devices, we can significantly increase touch accuracy if we {{c1::know the user and the position of the device (3DOF)}}.",,eth::sem5::hci
+DUa!UIxPD|,The idea of&nbsp;<b>beam pruning</b>&nbsp;is to {{c1::select the&nbsp;\(n\)&nbsp;most likely tokens and restrict the search space to tokens with these prefixes}}.,\(n\)&nbsp;is called&nbsp;<i>beam size</i>,eth::sem5::hci
+enz3Pq!}M^,"A&nbsp;<b>bigram</b>&nbsp;is {{c1::a sequence of two tokens, usually characters}}.",,eth::sem5::hci
+dh>y=vZ[L.,"Haptics is the {{c1::study of touch, force and tactile feedback in HCI}}.",,eth::sem5::hci
+Oav1WF`3OL,Haptics can be divided into two categories: {{c1::Tactile}} and {{c2::Kinesthetic}}.,,eth::sem5::hci
+QozxmR7h4!,The limitations of vibrotactile limitations are:<br><ul><li>{{c1::broad localization of the sensation}}</li><li>{{c2::superficial feedback}}</li><li>{{c3::the perception of the strength of vibration can vary}}</li></ul>,,eth::sem5::hci
+b|9{KXRUt],Tactile feedback is about {{c2::vibrations / textures}} while kinesthetic feedback is about {{c1::forces/proprioception}}.,,eth::sem5::hci
+dsz^!p]L!:,Current limitation 1 of Haptics: {{c1::Kinesthetic haptic feedback}} is not common in user electronics.,,eth::sem5::hci
+r`X_3*)w4},Current limitation 2 in haptics: the {{c1::human state}} is not taken into account.,,eth::sem5::hci
+"FQDR2Y,;IP",Current limitation 3 in haptics: current systems only react to {{c1::system states}}.,,eth::sem5::hci
+w<h}E4f_RI,Current limitation 4 in haptics: we are limited to {{c1::vibrotactile feedback}}.,,eth::sem5::hci
+xqTC8KK&{c,"To overcome the current limitations of haptics, we need to enable sensing of {{c1::human state}}, and use that to {{c2::control the device intelligently}}.",,eth::sem5::hci
+teN)oy<~Qv,Computational Rationality is {{c1::the study of computational principles of intelligence in living and artificial beings}}.,,eth::sem5::hci
+K&PgR+_vM>,"One reason that we want user models is that they {{c2::test if we understand interaction}}, which helps us {{c1::create and validate new HCI theories}}.",,eth::sem5::hci
+m[n)[PiV4n,The Model Human Processor does not:<br><ul><li>{{c4::learn}}</li><li>{{c3::adapt}}</li><li>{{c2::generalize}}</li><li>{{c1::model tradeoffs}}</li></ul>,,eth::sem5::hci
+f>i9Gm1zZ|,Computational Rationality consists of two things: {{c1::Finding an optimal policy}} and {{c2::bound it to something human-like (Bounded Rationality)}}.,,eth::sem5::hci
+g:96Lv{M=0,"In reinforcement learning, when the agent takes an action&nbsp;\(A_t\), then the environment responds with {{c1::a state&nbsp;\(S_{t+1}\)and a reward&nbsp;\(R_{t+1}\)}}.",,eth::sem5::hci
+OE7obUH:s>,"Reinforcement learning is different from other ML paradigms because<br><ul><li>{{c1::There is no supervisor, only a reward signal}}</li><li>{{c2::Feedback is delayed}}</li><li>{{c3::Time matters (sequential, non-i.i.d. data)}}</li><li>{{c4::Actions affect subsequent data that is received}}</li></ul>",,eth::sem5::hci
+PtE1C!p%5r,"The Markov Decision Process is a five-tuple&nbsp;\((S,A,T,R,\gamma)\):<br><ul><li>{{c1::\(S\): finite set of states (e.g. letters typed so far)}}<br></li><li>{{c2::\(A\): finite set of actions (e.g. what letter do I type next)}}<br></li><li>{{c3::\(T\): transition matrix containing&nbsp;\(p(s',a,s)\)&nbsp;- given a state and action, what is the probability of the next state&nbsp;\(s'\)}}<br></li><li>{{c4::\(R(s',a,s)\): reward of taking the action&nbsp;\(a\)&nbsp;in the state&nbsp;\(s\)}}<br></li><li>{{c5::\(y \in[0,1)\): discount factor}}<br></li></ul>",,eth::sem5::hci
+"nFbxH2&,mU",Markov Decision Process: A policy is {{c1::a mapping from state to action to maximize an expected cumulative reward}}.,,eth::sem5::hci
+IuP?IU</m0,A cognitive walkthrough is a {{c1::design walkthrough with a focus on ease-of-learning}}.,,eth::sem5::hci
+g5oIAsBzbl,"<b>Nielsen Heuristics - 1</b>:&nbsp;{{c1::Visibility of System Status - keep users informed about what is going on.}}&nbsp;<br><img src=""heuristic-example-1-rbg-73.png"">",,eth::sem5::hci
+gNgv+Ax`o5,"<b>Nielsen Heuristics - 2:</b>&nbsp;{{c1::Match between system and the real world - Use familiar words and concepts, follow real-world conventions.}}<br><img src=""heuristic-example-74.png"">",,eth::sem5::hci
+M}]w`j^h=0,"<b>Nielsen Heuristics - 3:&nbsp;</b>{{c1::User control and freedom - provide option to leave undesirable state (e.g. undo, cancel, return to home)}}.<br><img src=""paste-a1a71b055b490cb8010dcb22d4f3df6add579e4c.jpg"">",,eth::sem5::hci
+A@$aB98=0e,"<b>Nielsen Heuristics - 4:</b>&nbsp;{{c1::Consistency and Standards - follow platform conventions, be consistent with words and concepts}}.<br><img src=""paste-4d67941934ceb67f56fed41b8ebce86a75177654.jpg"">",,eth::sem5::hci
+L[~m@$D<oB,"<b>Nielsen Heuristics - 5:</b>&nbsp;{{c1::Error Prevention - Eliminate error-prone conditions, warn users with e.g. confirmation dialogs}}.<br><img src=""paste-4929fb767cde9eb10f341d82c26eadffa96dc234.jpg"">",,eth::sem5::hci
+y4hs}t*0JD,"<b>Nielsen Heuristics - 6:</b>&nbsp;{{c1::Recognition rather than recall - Make objects, actions, options visible. User should not have to remember information across dialogues}}.<br><img src=""paste-ee982b2008ed1c22af2e8d2253ab50234f562d50.jpg"">",,eth::sem5::hci
+Jv|RCa*R=f,"<b>Nielsen Heuristics - 7:&nbsp;</b>{{c1::Flexibility and efficiency of use - Offer accelerators (e.g. shortcuts) for experts, allow customizing frequent actions}}.<br><img src=""paste-b06f97cb8fbf51fafc628585ff803682a1775ddc.jpg"">",,eth::sem5::hci
+mn_0atb&oy,"<b>Nielsen Heuristics - 8:</b>&nbsp;{{c1::Aesthetic and minimalist design - do not show irrelevant or rarely needed information}}.<br><img src=""paste-eafadaee8bc65baaa22ba4de9c18bfa1edfd0848.jpg"">",,eth::sem5::hci
+"wa|D5,M7)D","<b>Nielsen Heuristics - 9:&nbsp;</b>{{c1::Help users recognize, diagnose and recover from errors - error messages should be in plain language, indicate the problem and suggest a solution}}.<br><img src=""paste-5d75a92e45bc74d5752235efab88e31ac3660367.jpg"">",,eth::sem5::hci
+v?klK`M4z?,"<b>Nielsen Heuristics - 10:</b>&nbsp;{{c1::Help and documentation - best is no documentation, but if necessary it should be easy to search, focused on the task and list concrete steps to do}}.<br><img src=""paste-e3818928a9aacb71ec3c2bf2726ca98b495c7969.jpg"">",,eth::sem5::hci
+l|kmc`{pRY,"In the GOMS model we focus on {{c2::the steps / processes involved when users do a task}}, whereas in KLM we want to {{c1::provide actual time predictions of how long doing the task will take}}.",,eth::sem5::hci
