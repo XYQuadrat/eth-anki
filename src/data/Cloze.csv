@@ -23,7 +23,7 @@ L[1$v]wr$I,{{c1::Functional}} testing&nbsp;tests units by&nbsp;{{c2::using requi
 ht%}>4U?im,What is a limitation of functional testing?<br>-&nbsp;{{c1::Does not reveal errors in the specification (missing cases)}},,eth::sem6::rse
 gK>:g@46}n,"{{c1::Structural}} testing&nbsp;uses&nbsp;{{c2::design knowledge about the system structure, algorithms}} to&nbsp;{{c3::derive test cases that exercise a large portion of the code}}","<img src=""paste-e87f2d290398114b64a91247adf2baee01fd5c4d.jpg"">",eth::sem6::rse
 DYp*ax]L{4,What is a limitation for structural testing?<br>-&nbsp;{{c1::It requires design knowledge of the algorithm.}},,eth::sem6::rse
-qKi6AEUtUh,In&nbsp;{{c1::partition}} testing inputs are divided into&nbsp;{{c2::equivalence classes}}.,"<img src=""paste-5fe060e70f819572e68ca9ef0f78d2d5bccf4c89.jpg"">",eth::sem6::rse
+qKi6AEUtUh,In&nbsp;{{c1::<b>partition</b>}} <b>testing</b> inputs are divided into&nbsp;{{c2::equivalence classes}}.,"<img src=""paste-5fe060e70f819572e68ca9ef0f78d2d5bccf4c89.jpg"">",eth::sem6::rse
 eoK{q9uGmh,In&nbsp;{{c1::combinatorial}} testing we combine {{c2::equivalence classes}} and&nbsp;{{c3::boundary testing}},,eth::sem6::rse
 duva[q!ps:,CI stands for&nbsp;{{c1::continuous integration}},,eth::sem6::rse
 OXs57+IG3>,CFG stands for&nbsp;{{c1::Control Flow Graph}},,eth::sem6::rse
@@ -53,7 +53,7 @@ O?cQ(E8U5},"{{c1::Tarski}}'s theorem tells us that a fixed point exists, but {{c
 q(^eHmv!UM,\(f^{{{c2::n+1}}}(a)=f({{c1::f^n(a)}})\),,eth::sem6::rse
 Mm[`BkomRg,"Given a poset of {{c1::finite height}}, a {{c1::least element}}&nbsp;\(\bot\), a {{c1::<span style=""color: rgb(255, 0, 0);"">monotone</span>}}&nbsp;\(f\).<br><br>Then the iterates&nbsp;\(f^0(\bot), f^1(\bot), f^2(\bot), \ldots\)&nbsp;eventually stabilize for some&nbsp;\(n\in N\), that is:<br>\(f^{{{c2::n}} }(\bot)=f^{{{c2::n+1}}}(\bot)\)&nbsp;and:<br>\({{c3::lfp^\sqsubseteq f}}={{c4::f^n(\bot)}}\)",,eth::sem6::rse
 KS3h[c3}0`,{{c2::\([\![P]\!]\)}} is the&nbsp;{{c1::set of reachable states of a program&nbsp;\(P\)}},,eth::sem6::rse
-q?{}!t5>f6,Given functions:<br>\(F:C\to C\)<br>\(F^\#:A\to A\)<br>what does it mean for&nbsp;\(F^\#\)&nbsp;to approximate&nbsp;\(F\)?<br>\(\forall x\in C: {{c1::F(x)\sqsubseteq_C F^\#(x)}}\),,eth::sem6::rse
+q?{}!t5>f6,"Given the functions&nbsp;\(F:C\to C\)&nbsp;and&nbsp;\(F^\#:A\to A\), what does it mean for&nbsp;\(F^\#\)&nbsp;to approximate&nbsp;\(F\)?<br>\(\forall x\in C: {{c1::F(x)\sqsubseteq_C F^\#(x)}}\)",,eth::sem6::rse
 C8T_Os`?hA,How to approximate a function given:<br>\(F:X\to X\)<br>\(F^\#:Y\to Y\)<br>{{c2::\(Y\)}}&nbsp;is the {{c1::abstract}} and&nbsp;{{c2::\(X\)}}&nbsp;is the {{c1::concrete}},,eth::sem6::rse
 unkEEcc=h2,How to approximate a function given:<br>\(F:C\to C\)<br>\(F^\#:A\to A\)<br>We need to connect the {{c1::concrete&nbsp;\(C\)}}&nbsp;and the {{c1::abstract&nbsp;\(A\)}},,eth::sem6::rse
 NIxXv;mXHM,"How to approximate a function given:<br>\(F:C\to C\)<br>\(F^\#:A\to A\)<br><br>{{c2::\(\alpha:C\to A\)}}&nbsp;is called the {{c1::<span style=""color: rgb(255, 0, 0);"">abstraction</span>}} function<br>{{c2:: \(\gamma:A\to C\)}}&nbsp;is called the {{c1::<span style=""color: rgb(255, 0, 0);"">concretization</span>}} function","<img src=""paste-375d775a9b1bc0b9c8fe04f548f5deb82eb83ed3.jpg"">",eth::sem6::rse
@@ -75,7 +75,7 @@ J}g-qJ6cXQ,"The <span style=""color: rgb(255, 0, 0);"">fixed point</span> is the
 l{ym$xRM:t,"We select/define an abstract domain based on the&nbsp;{{c1::type of <span style=""color: rgb(255, 0, 0);"">properties</span> we want to prove}}",,eth::sem6::rse
 mE~kfAC@ES,"Interval Domain:<br>\([a,b]\sqsubseteq_i [c,d]\)&nbsp;if&nbsp;{{c1::\(a\geq c, b \leq d\)}}",,eth::sem6::rse
 w0Wq[iANd},"Interval Domain:<br>\([a,b]\sqcup_i [c,d] = {{c1::[\min(\{a,c\}), \;\max(\{b,d\})] }}\)",,eth::sem6::rse
-x)|a{GHY$Z,"{{c2::\(\text{wdi}(a,b)\)}} is the&nbsp;{{c1::well-defined interval}}",,eth::sem6::rse
+x)|a{GHY$Z,"The&nbsp;{{c1::well-defined interval between&nbsp;\(a\)&nbsp;and&nbsp;\(b\)}} is written as {{c2::\(\text{wdi}(a,b)\)}}.",,eth::sem6::rse
 "D(+~q,c=ca",\(L^i\)&nbsp;domain defines&nbsp;{{c1::intervals}},"<img src=""paste-d3c832516e4c6fba578d627a1673fd102c9299b0.jpg"">",eth::sem6::rse
 bd]yVrl02u,\(\text{Var}\)&nbsp;defines the&nbsp;{{c1::variables}} in a program,,eth::sem6::rse
 dlv_A71uGN,"\(\text{Lab} \to (\text{Var} \to \text{L}^i)\)&nbsp;means that&nbsp;{{c1::at each label}} and {{c1::for each variable}}, we will {{c2::keep the interval for that variable}}",,eth::sem6::rse
@@ -101,7 +101,7 @@ F`yV^x4}P},"Two pointers a and b&nbsp;<span style=""color: rgb(255, 0, 0);"">may
 GfOk&$7JJe,"A function <span style=""color: rgb(255, 0, 0);"">points-to (p)</span> returns the {{c1::set of all abstract objects that a pointer <span style=""color: rgb(255, 0, 0);"">p</span> can point to}}",,eth::sem6::rse
 "w~|,vKL,bq",Sources of <b>unboundedness</b>:<br><ul><li>Unbounded {{c1::heap}}</li><li>Unbounded&nbsp;{{c1::range of array indices}}</li><li>Unbounded {{c1::number of threads}}<br></li></ul>,,eth::sem6::rse
 m.:^HgFKSQ,ALoc stands for&nbsp;{{c1::abstract location}},,eth::sem6::rse
-m$D[=6VH^2,Widening (\(\triangledown\)) operator jumps&nbsp;{{c1::upwards (above least fixedpoint)}},,eth::sem6::rse
+m$D[=6VH^2,The widening (\(\triangledown\)) operator jumps&nbsp;{{c1::upwards (above least fixedpoint)}},,eth::sem6::rse
 q?g$1kQ@qF,Widening (\(\triangledown\)) ensures&nbsp;{{c1::termination}},,eth::sem6::rse
 b#.C0Pz!tW,Widening (\(\triangledown\)) operator&nbsp;{{c1::costs/reduces}} precision,,eth::sem6::rse
 fAL#ZC-rWK,Narrowing (\(\triangle\)) operator jumps&nbsp;{{c1::downwards (but stays above least fixedpoint)}},,eth::sem6::rse
@@ -110,7 +110,7 @@ Eu%leaUU!u,{{c2::Forwards}} analysis overapproximates {{c1::output}} state from 
 C!KCSMuXQN,{{c2::Backwards}} analysis overapproximates {{c1::input}} state from {{c1::output}} state,,eth::sem6::rse
 h8}A$xdmmb,{{c1::Forwards}} analysis computes {{c2::postcondition <b>from</b> given precondition}},,eth::sem6::rse
 #Iv3!tdQn,"{{c1::Backwards}} analysis computes {{c2::precondition <span style=""color: rgb(255, 0, 0);"">avoiding</span> given postcondition}}",,eth::sem6::rse
-g!=g4+ya1B,"<span style=""color: rgb(0, 0, 0);"">How do we combine facts in m</span><span style=""color: rgb(0, 170, 0);"">ay-analysis</span> vs <span style=""color: rgb(0, 170, 255);"">must-analysis?</span><br><ul><li>May:&nbsp;{{c1::overapprox. via join}}</li><li>Must:&nbsp;{{c1::underapprox. via meet}}</li></ul>","<img src=""paste-8d4dfc8b0c60ef1b6d3de1425ecc33fe18cf8c53.jpg"">",eth::sem6::rse
+g!=g4+ya1B,"How do we combine facts in <span style=""color: rgb(0, 170, 0);"">may-analysis</span> vs <span style=""color: rgb(0, 170, 255);"">must-analysis?</span><br><ul><li>May:&nbsp;{{c1::overapprox. via join}}</li><li>Must:&nbsp;{{c1::underapprox. via meet}}</li></ul>","<img src=""paste-8d4dfc8b0c60ef1b6d3de1425ecc33fe18cf8c53.jpg"">",eth::sem6::rse
 "l&n,&Ex1tA",What are the main limitations of SMT solvers?<br><ul><li>{{c1::Many theories aren't decidable (e.g. non-linear integers)}}<br></li><li>{{c1::Constraint solving may take too long}}<br></li></ul>,,eth::sem6::rse
 G[k^:-*-Z|,"{{c2::<span style=""color: rgb(255, 0, 0);"">Concolic execution</span>}} combines {{c1::<span style=""color: rgb(255, 0, 0);"">conc</span>rete}} and {{c1::symb<span style=""color: rgb(255, 0, 0);"">olic</span>}} execution",,eth::sem6::rse
 ua$dS|W73K,The high-level idea in the concolic execution is that the {{c1::concrete execution drives the symbolic one}},"<img src=""paste-711b5f5b921db7220d3afec3e49602b616bd0c1f.jpg"">",eth::sem6::rse
@@ -142,7 +142,7 @@ Oc<qX9GKUZ,"Gilt für zwei Matrizen&nbsp;\( \mathbf{A}\) und&nbsp;\( \mathbf{B}\
 xn@gm`7I_o,"Eine {{c1::Linearkombination (LK)}} der Vektoren&nbsp;\( a_1, \ldots, a_n\) ist {{c2::ein Ausdruck der Form&nbsp;\( \alpha_1 a_1 + \cdots + \alpha_n a_n\) wobei&nbsp;\( \alpha_1, \ldots, \alpha_n \in \mathbb{R}\)}}",,eth::sem1::linalg
 uo#Gn+y8bD,"Für alle Vektorpaare&nbsp;\( \mathbf{x,y} \in \mathbb{E}^n \) gilt die Schwarzsche Ungleichung:&nbsp;{{c1::\( | \langle \mathbf{x, y} \rangle | \le ||\mathbf{x}|| \ ||\mathbf{y}||\)}}",(auch Cauchy-Schwarz-Ungleichung genannt),eth::sem1::linalg
 v#FTBh.m{S,"Ein LGS heisst {{c1::homogen}}, wenn {{c2::die rechte Seite Null ist}}.",Besitzt immer triviale Lösung (alles 0).,eth::sem1::linalg
-y`5($Q$d37,{{c1::Eine Gruppe}} ist eine Menge {{c1::G mit Operation&nbsp;\( * \)}} mit folgenden Eigenschaften:<div>{{c2::<div>- Assoziotivität:&nbsp;\((a * b) * c = a * (b*c)\)</div><div>- Neutrales Element existiert:&nbsp;\( a * e = e * a = e \)</div><div>- Inverse existiert:&nbsp;\( a * a^{-1} = a^{-1} * a = e\)</div>}}<br></div>,,"eth::sem1::diskmat, eth::sem1::linalg"
+y`5($Q$d37,{{c1::Eine Gruppe}} ist eine {{c1::Menge \(G\) mit Operation&nbsp;\( * \)}} mit folgenden Eigenschaften:<ul>{{c2::<li> Assoziativität:&nbsp;\((a * b) * c = a * (b*c)\)</li><li>Neutrales Element existiert:&nbsp;\( a * e = e * a = a \)</li><li>Jedes Element \(a\in G\) hat eine Inverse:&nbsp;\( a * a^{-1} = a^{-1} * a = e\)</li>}}<br></ul>,,"eth::sem1::diskmat, eth::sem1::linalg"
 EuJL{:A/EO,"Eine Gruppe&nbsp;\( (G, *) \) heisst {{c1::abelsch (auch: kommutativ)}}, falls&nbsp;\( * \) ausserdem&nbsp;{{c2::\(a * b = b * a\), also das Kommutativitätgesetz erfüllt}}.","Beispiel:&nbsp;\( (\mathbb{K}^{m\times n}, + ) \)",eth::sem1::linalg
 "BG+yKyLb,^","{{c1::Ein Körper}} ist eine Menge&nbsp;{{c1::\( \mathbb{K}\) mit Operationen&nbsp;\(+ , *\)}} mit folgenden Eigenschaften:<div>{{c2::<div>-&nbsp;\( (\mathbb{K}, +)\) ist eine abelsche Gruppe</div><div>-&nbsp;\( (\mathbb{K} \backslash \{0\}, *)\) ist eine abelsche Gruppe</div><div>- Distributivität:&nbsp;\( a * (b+c) = a*b + a*c\)</div>}}<br></div>","Beispiel:&nbsp;\( \mathbb{Q}, \mathbb{R}\)","eth::sem1::diskmat, eth::sem1::linalg"
 BK[{yp^]zj,"{{c1::Ein Vektorraum}} ist eine Menge \( \mathbb{V}\) über \( \mathbb{K}\), auf der {{c2::eine Addition und eine Skalarmultiplikation definiert ist.}}","Beispiele:&nbsp;\(\mathbb{R}^n, \mathbb{K}^{m\times n}, P_d(\mathbb{K})\) (Polynome von Grad&nbsp;\( \le d\))",eth::sem1::linalg
@@ -169,17 +169,17 @@ udpmH`a[=Y,The {{c2::subset&nbsp;\(f(A)\) of&nbsp;\(B\)}} is called the {{c1::<b
 E6{tZ_2cBJ,"For a subset&nbsp;\(T\) of&nbsp;\(B\), the {{c1::<b>preimage </b>(in Linalg: Urbild) of&nbsp;\(T\), denoted&nbsp;\(f^{-1}(T)\)}}, is {{c2::the set of values in&nbsp;\(A\) that map into&nbsp;\(T\).}}","Example:&nbsp;\(f(x) = x^2\), the preimage of&nbsp;\([4,9]\) is&nbsp;\([-3,-2] \cup [2,3]\)",eth::sem1::diskmat
 Lfk_~v/e2Q,"Two sets&nbsp;\(A, B\) are {{c1::<b>equinumerous </b>(denoted&nbsp;\(A \sim B\))}}&nbsp;if {{c2::there exists a bijection&nbsp;\(A \rightarrow B\).}}",Example:&nbsp;\(f: \mathbb{N} \rightarrow \mathbb{Z} = (-1)^n \lceil n/2 \rceil\),eth::sem1::diskmat
 IhW:&11Iid,The set&nbsp;\(B\) {{c1::<b>dominates</b> (denoted&nbsp;\(A \preceq B\))}} if {{c2::there exists an injective function&nbsp;\(A \rightarrow B\).}},Example:&nbsp;\(f(x): \mathbb{N} \rightarrow \mathbb{R} = x\),eth::sem1::diskmat
-"L,+=h7*qew","A set&nbsp;\(A\) is called <b>countable </b>if {{c1::\(A \preceq \mathbb{N}\)}}, and <b>uncountable</b> otherwise.",,eth::sem1::diskmat
+"L,+=h7*qew","A set&nbsp;\(A\) is called <b>countable </b>if and only if {{c1::it is finite or\(A \sim \mathbb{N}\)}}, and <b>uncountable</b> otherwise.",,eth::sem1::diskmat
 Am`UxH.Oyx,"\(a \mid b\) means that {{c1::\(a\) divides \(b\), that is, there exists a&nbsp;\(c \in \mathbb{Z}\) such that&nbsp;\(b = ac\)}}<br>",\(\forall a \ne 0 \rightarrow a \mid 0\) and&nbsp;\(\forall a \quad 1 \mid a \land -1 \mid a\)<br>,eth::sem1::diskmat
 AFt:;I:*/e,{{c1::\(a \mod m\)}} is the same as&nbsp;{{c2::\(R_m(a)\)}}<br>,,eth::sem1::diskmat
 K4Ll=rR|5+,\(a&nbsp; \equiv_m b \stackrel{\text{def}}{\iff}\)&nbsp;{{c1::\(m \mid (a-b)\)}}<br>,,eth::sem1::diskmat
-Fh4R-ccO%^,"The equation&nbsp;\(ax \equiv_m 1\) has a unique solution&nbsp;\(x \in \mathbb{Z}_m\) if and only if&nbsp;{{c1::\(\gcd(a,m) = 1\).}} This \(x\) is then called the multiplicative inverse of&nbsp;\(a \mod m\).",,eth::sem1::diskmat
+Fh4R-ccO%^,"The equation&nbsp;\(ax \equiv_m 1\) has a unique solution&nbsp;\(x \in \mathbb{Z}_m\) if and only if&nbsp;{{c1::\(\gcd(a,m) = 1\).}} This \(x\) is then called the {{c2::multiplicative inverse of&nbsp;\(a \mod m\)}}.",,eth::sem1::diskmat
 gyJPNg>H@A,"The direct product of&nbsp;\(n\) groups&nbsp;\(\langle G_1; *_1 \rangle, \ldots, \langle G_n; *_n \rangle\) is {{c1::the algebra&nbsp;\(\langle G_1 \times \cdots \times G_n; \star\rangle\)}}. The operation&nbsp;\(\star\) is component-wise.",,eth::sem1::diskmat
 vt:Wqzxx@@,A subgroup \(H\) of a group&nbsp;\(G\) is {{c1::a subset&nbsp;\(H \subseteq G\) which is a group in itself (closed with respect to all operations).}},"Trivial subgroups:&nbsp;\(\{e\}, G\)",eth::sem1::diskmat
 l]y7c-.I]L,"The order of an element&nbsp;\(a\) in a group (denoted&nbsp;\(\text{ord}(a)\)) is {{c1::the smallest&nbsp;\(m \ge 1\) such that&nbsp;\(a^m = e\). If such an&nbsp;\(m\) does not exist,&nbsp;\(\text{ord}(a) = \infty\)}}",\(\text{ord}(e) = 1\) in any group<br>,eth::sem1::diskmat
 o1a(R_.1]i,"For a finite group&nbsp;\(G\), we call&nbsp;\(|G|\) the {{c1::order of&nbsp;\(G\)}}.",,eth::sem1::diskmat
 LFnfauD_]7,"A group&nbsp;\(G = \langle g \rangle\) generated by an element&nbsp;\(g \in G\) is called {{c1::cyclic}}, and&nbsp;\(g\) is called {{c1::a <b>generator</b> of&nbsp;\(G\)}}.",,eth::sem1::diskmat
-PLw>#T/cN`,"If&nbsp;\(G\) is a finite group and&nbsp;\(H\) is a subgroup, then {{c1::the order of&nbsp;\(H\) divides the order of&nbsp;\(G\), i.e.&nbsp;\(|H|\) divides&nbsp;\(|G|\).}}",,eth::sem1::diskmat
+PLw>#T/cN`,"Lagrange's theorem: If&nbsp;\(G\) is a finite group and&nbsp;\(H\) is a subgroup, then {{c1::the order of&nbsp;\(H\) divides the order of&nbsp;\(G\), i.e.&nbsp;\(|H|\) divides&nbsp;\(|G|\).}}",,eth::sem1::diskmat
 j5a}0B}`Qc,"The group&nbsp;\(\mathbb{Z}^*_m\) contains all numbers&nbsp;\(a \in \mathbb{Z}_m\) that are {{c1::coprime to&nbsp;\(m\), that is,&nbsp;\(\gcd(a,m) = 1\).}}",,eth::sem1::diskmat
 hU:-C(Wl{v,The Euler function&nbsp;\(\varphi: \mathbb{Z}^+ \rightarrow \mathbb{Z}^+\) is defined as {{c1::the cardinality of&nbsp;\(\mathbb{Z}^*_m\).}},"Example:&nbsp;\(\mathbb{Z}_{18}^* = \{1,5,7,11,13,17\}\), so&nbsp;\(\varphi(18) = 6\)",eth::sem1::diskmat
 mBd+!cdp:/,"In graph theory, a {{c1::walk (<i>Weg</i>)}} is a {{c2::series of connected vertices}}.",,eth::sem1::and
@@ -188,7 +188,7 @@ oSKGiZq$<Q,"In graph theory, a {{c2::closed walk (<i>Zyklus</i>)}} is a {{c1::wa
 rzX#2=8CU?,"In graph theory, a {{c2::cycle (<i>Kreis</i>)}} is a {{c1::closed walk without repeated vertices}}.",,eth::sem1::and
 mhrX@w|*.`,"In graph theory, an {{c2::Eulerian trail (misleadingly also called Eulerian path)}} is a {{c1::walk that visits each edge of the graph once}}.",,eth::sem1::and
 Gt4c53(i;/,"In graph theory, a {{c2::Hamilton path}} is a {{c1::path that visits each vertex of the graph once}}.",,eth::sem1::and
-s[Y-0E4#sz,"{{c1::A ring&nbsp;\(\langle R, +, -, 0, \cdot, 1 \rangle\)}} is an algebra with the properties that<br>{{c2::* \(\langle R, +, -, 0 \rangle\) is a commutative group}}<div>{{c3::*&nbsp;\(\langle R, \cdot, 1 \rangle\) is a monoid}}<div>{{c4::*&nbsp;\( a(b+c) = (ab) + (ac), (b+c)a = (ba) + (ca)\) (left and right distributive laws)}}</div></div>","Examples:&nbsp;\(\mathbb{Z}, \mathbb{R}\)",eth::sem1::diskmat
+s[Y-0E4#sz,"{{c1::A ring&nbsp;\(\langle R, +, -, 0, \cdot, 1 \rangle\)}} is an algebra with the properties that<br><ul><li>{{c2::\(\langle R, +, -, 0 \rangle\)&nbsp;is a commutative group}}<br></li><li>{{c3::\(\langle R, \cdot, 1 \rangle\)&nbsp;is a monoid}}</li><li>{{c5::\( a(b+c) = (ab) + (ac), (b+c)a = (ba) + (ca)\)&nbsp;(left and right distributive laws)}}</li></ul>","Examples:&nbsp;\(\mathbb{Z}, \mathbb{R}\)",eth::sem1::diskmat
 Pq[u}J3gBK,A ring is called {{c1::commutative}} if&nbsp;{{c2::\(ab = ba\).}},,eth::sem1::diskmat
 QS$4YdV.SM,"An element \(u\) of a ring is called a {{c1::unit}} if&nbsp;\(u\) {{c2::is invertible, so&nbsp;\(uu^{-1} = u^{-1}u = 1\).}}","Example: Units of&nbsp;\(\mathbb{Z}\) are&nbsp;\(-1, 1\)",eth::sem1::diskmat
 H+<9!8uj.@,The set of units of \(R\) is denoted by&nbsp;{{c1::\(R^*\)}},,eth::sem1::diskmat
@@ -294,12 +294,12 @@ Gj]cE,A&nbsp;<b>context</b>&nbsp;is a {{c1::set of bindings}}. Also known as {{c
 gMD>H,"A <b>naming network&nbsp;</b>is a {{c1::directed graph where nodes are either contexts or objects, and the edges are bindings}}.",,eth::sem5::compsys
 9CO?E,A <b>pathname&nbsp;</b>is a {{c1::ordered list of names (called&nbsp;<i>path components</i>)&nbsp;that specify a path in a naming network}}.,A UNIX filename is&nbsp;a pathname.,eth::sem5::compsys
 rR1E|Rtd{i,The central nervous system (CNS) is made up of {{c1::the brain and the spinal cord.}},,eth::electives::neuroinf
-5lzrcfSCS,The cerebral cortex is the {{c1::superficial gray matter of the brain hemispheres.}},,eth::electives::neuroinf
+5lzrcfSCS,The cerebral cortex is the {{c1::outer layer of gray matter of the brain hemispheres.}},,eth::electives::neuroinf
 P?oxC{*aqn,The <i>corpus callosum&nbsp;</i>is {{c1::the large midline fiber bundle connecting the two brain hemispheres.}},In German sometimes: <i>Balken</i>,eth::electives::neuroinf
 he%>mSIN1U,"<i>Gray matter</i>&nbsp;is a term describing {{c1::regions of the CNS with many neuronal cell bodies, dendrites and synapses.}}","It's gray because there isn't much myelin in the gray matter, and the myelin is white.",eth::electives::neuroinf
 j67EjJ[Ps6,The&nbsp;<i>gyrus</i>&nbsp;are {{c1::the ridges of the infolded cerebral cortex.}},,eth::electives::neuroinf
 ET#5&q4pOP,The <i>limbic system&nbsp;</i>is {{c1::the part of the brain concerned with emotions.}},e.g. hippocampus and amygdala,eth::electives::neuroinf
-IvNXmK(`|=,The&nbsp;<i>neocortex</i>&nbsp;is the {{c1::six-layered cortex that makes up about 90% of the&nbsp;<i>cerebral cortex</i>.}},The other 10% is&nbsp;<i>allocortex</i>.,eth::electives::neuroinf
+IvNXmK(`|=,The&nbsp;<i>neocortex</i>&nbsp;is the {{c1::six-layered}} cortex that makes up about {{c1::90%::how much?}} of the {{c1::<i>cerebral cortex</i>.}},The other 10% is&nbsp;<i>allocortex</i>.,eth::electives::neuroinf
 H`/#Ge6^rC,The&nbsp;<i>peripheral nervous system (PNS)</i>&nbsp;includes {{c1::all nerves and neurons outside the brain &amp; spinal cord.}},,eth::electives::neuroinf
 AM8Z[6%a%S,The&nbsp;<i>soma</i>&nbsp;is {{c1::the cell body of a neuron.}},,eth::electives::neuroinf
 K|11=(4kV3,"In scheduling, <i>priority inversion</i>&nbsp;is {{c1::a problem where a low-priority task holds a lock that a high-priority task needs. Then a middle-priority task gets scheduled instead, and the high-priority task is unable to run.}}",This happened on the Mars Pathfinder rover.,eth::sem5::compsys
@@ -343,7 +343,7 @@ i){xWs32PO,A&nbsp;<b>system library</b>&nbsp;is {{c1::a convenient interface to 
 Qqh<YKX71n,<b>Homonyms</b>&nbsp;are {{c1::the same name being bound to different objects}}.&nbsp;,,eth::sem5::compsys
 l3u2Q*]s1Y,"While the interrupt handler runs, interrupts {{c1::are turned off}}.",Useful for implementing atomic operations,eth::sem5::compsys
 M?Z7<gsL1f,A&nbsp;<b>process</b>&nbsp;is {{c1::the execution of a program with restricted rights}}.,,eth::sem5::compsys
-"l,T%K.3/Vx",A&nbsp;<b>thread</b>&nbsp;is {{c1::a sequence of instructions within a process}}.,,eth::sem5::compsys
+"l,T%K.3/Vx",A&nbsp;<b>thread</b>&nbsp;is {{c1::a sequence of instructions plus context that can be executed/scheduled independently}}.,,eth::sem5::compsys
 "F:-OGW,!D{",The name of a process is {{c1::its PID}}.,,eth::sem5::compsys
 L^/Vqd~l3P,The Process Control Block (PCB) is a {{c1::data structure holding information about a process}}.,,eth::sem5::compsys
 JC@Kw3[u0$,There are two main approaches for creating a process:&nbsp;{{c1::spawn}} and&nbsp;{{c2::fork/exec}}.,,eth::sem5::compsys
@@ -363,7 +363,7 @@ ECA36ueMh5,The&nbsp;<b>wait time</b>&nbsp;of a job is {{c1::the total time it ta
 IVW>~8oRKC,The&nbsp;<b>arrival time&nbsp;</b>(or&nbsp;<b>release time</b>) of a job is {{c1::the time where it arrives at the scheduler}}.&nbsp;,,eth::sem5::compsys
 v{)Jt{3I9X,"In scheduling, <b>First Come First Served</b> (FCFS) works by always dispatching the job&nbsp;{{c1::with the earliest arrival time.}}&nbsp;",,eth::sem5::compsys
 "j1,7?fguK=","The <b>convoy phenomenon</b>&nbsp;is a problem in scheduling where {{c1::many short jobs are stalled because of a long-running job, which inflates mean wait times}}.",,eth::sem5::compsys
-ra7X;b:QSF,<b>Multi-level feedback queues</b>&nbsp;is a class of scheduling algorithms that {{c1::penalize CPU-bound tasks in favor of I/O-bound tasks}}.,,eth::sem5::compsys
+ra7X;b:QSF,<b>Multi-level feedback queues</b>&nbsp;is a class of scheduling algorithms that {{c1::penalize CPU-bound tasks in favor of I/O-bound tasks::do what?}}.,,eth::sem5::compsys
 C$y3%bGS<E,The aim of <b>multi-level feedback queue&nbsp;</b>algorithms is to {{c1::get good response times for interactive jobs and good throughput for background jobs}}.,,eth::sem5::compsys
 o9V/e-c~vk,"In scheduling,&nbsp;<b>Earliest Deadline First</b>&nbsp;works by dispatching the job that {{c1::has the earliest deadline}}.",Would be implemented with a Priority Queue to work in&nbsp;\(\mathcal{O}(\log n)\),eth::sem5::compsys
 k?8h]~A9$U,<b>Reservation-based scheduling&nbsp;</b>guarantees {{c1::a minimum amount of CPU time to each job.}},,eth::sem5::compsys
@@ -397,7 +397,7 @@ h3olXpK^6Y,The&nbsp;<b>thalamus</b>&nbsp;is a {{c1::large mass of gray matter th
 BIlN1.JV2>,The&nbsp;<b>hypothalamus</b>&nbsp;is {{c1::a part of the brain that connects the nervous system to the hormone system}}.,,eth::electives::neuroinf
 kt&]kaMV%t,"The&nbsp;<b>cerebellum&nbsp;</b>(""little brain"") is a {{c1::part of the brain that is important for motor control}}.",,eth::electives::neuroinf
 bJiAU2H)~j,Camillo Golgi discovered a {{c1::technique to stain neurons in nervous tissue}}.,,eth::electives::neuroinf
-kX)cVyJuw+,Hodgkin and Huxley were able to {{c1::describe how ionic currents caused the action potential}}.,,eth::electives::neuroinf
+kX)cVyJuw+,Hodgkin and Huxley were able to describe {{c1::how ionic currents caused the action potential::what?}}.,,eth::electives::neuroinf
 F9]ZUtLJ~&,"When neurotransmitter vesicles undergo&nbsp;<b>priming</b>, {{c2::they become ready to be released}}. This corresponds to {{c1::the assembly of the SNARE complex}}.",,eth::electives::neuroinf
 tBu|bk=f;>,SNARE complexes are {{c1::protein structures which help with vesicle priming &amp; fusion}}.&nbsp;,,eth::electives::neuroinf
 NJ*dyw++I?,"<b>Hebb's law</b>&nbsp;says that {{c1::neurons that fire together, wire together}}.",,eth::electives::neuroinf
@@ -460,7 +460,7 @@ s~L^mS%.Jj,An advantage of holding out less data (smaller test set) is that we a
 Ph$)qEq~M],An advantage of holding out more data (larger test set) is that we are {{c1::able to better estimate the generalization error}}.,,eth::sem6::iml
 ct!1<E>7Ok,The training set is used to {{c1::find the best parameters of a given method}}.,,eth::sem6::iml
 deEOh9$*%),The validation set is used to {{c1::find the best method}}.,,eth::sem6::iml
-P^c[xpcuo-,The test set is used to {{c1::check how good our model performs}}.,,eth::sem6::iml
+P^c[xpcuo-,"In machine learning, the test set is used to {{c1::check how good our model performs}}.",,eth::sem6::iml
 w@Gz>T$yfx,Underfitting is driven by the {{c1::bias}}.,,eth::sem6::iml
 EDF!D_MATb,Overfitting is driven by the {{c1::variance}}.,,eth::sem6::iml
 EN=(HA};&h,Lasso regression limits the&nbsp;{{c1::\(l_1\)-norm}}.,,eth::sem6::iml
@@ -623,3 +623,33 @@ mn_0atb&oy,"<b>Nielsen Heuristics - 8:</b>&nbsp;{{c1::Aesthetic and minimalist d
 "wa|D5,M7)D","<b>Nielsen Heuristics - 9:&nbsp;</b>{{c1::Help users recognize, diagnose and recover from errors - error messages should be in plain language, indicate the problem and suggest a solution}}.<br><img src=""paste-5d75a92e45bc74d5752235efab88e31ac3660367.jpg"">",,eth::sem5::hci
 v?klK`M4z?,"<b>Nielsen Heuristics - 10:</b>&nbsp;{{c1::Help and documentation - best is no documentation, but if necessary it should be easy to search, focused on the task and list concrete steps to do}}.<br><img src=""paste-e3818928a9aacb71ec3c2bf2726ca98b495c7969.jpg"">",,eth::sem5::hci
 l|kmc`{pRY,"In the GOMS model we focus on {{c2::the steps / processes involved when users do a task}}, whereas in KLM we want to {{c1::provide actual time predictions of how long doing the task will take}}.",,eth::sem5::hci
+Ho{|wl$$tb,A <i>mathematical statement</i>&nbsp;(also&nbsp;<i>proposition</i>) is {{c1::a statement that is true or false in a mathematical sense}}.,Example: 5 is a prime number.,eth::sem1::diskmat
+yIRK71/G/r,"A mathematical statement not known, but believed, to be true or false is called&nbsp;{{c1::<i>conjecture</i>}}.",Example: Collatz conjecture.,eth::sem1::diskmat
+G.~PQ_U#Td,An <i>axiom</i> or <i>postulate</i> is {{c1::a statement that is taken to be true}}.,Example: All right angles are equal to each other.,eth::sem1::diskmat
+ul?W)H}T|L,"An {{c2::expression using the propositional symbols&nbsp;\(A, B, C, \dots\)&nbsp;and logical operators&nbsp;\(\land, \lor, \lnot, \ldots\)}}&nbsp;is called a {{c1::<i>formula</i>&nbsp;(of propositional logic)}}.",,eth::sem1::diskmat
+N2+?o9|%9:,"In&nbsp;<b>propositional logic</b>, a formula&nbsp;\(G\)&nbsp;is a&nbsp;<i>logical consequence</i>&nbsp;of a formula&nbsp;\(F\)&nbsp;{{c1::if for all truth assignments to the propositional symbols appearing in&nbsp;\(F\)&nbsp;or&nbsp;\(G\), the truth value of&nbsp;\(G\)&nbsp;is&nbsp;\(1\)&nbsp;if the truth value of&nbsp;\(F\)&nbsp;is&nbsp;\(1\)}}. This is denoted with&nbsp;\(F \models G\).",Example:&nbsp;\(A \land B \models A \lor B\),eth::sem1::diskmat
+FBp54}[I*C,\(\models F\)&nbsp;means that&nbsp;\(F\)&nbsp;is a {{c1::tautology}}.,,eth::sem1::diskmat
+z8F6Pa3U/=,"A&nbsp;\(k\)-ary&nbsp;<i>predicate</i>&nbsp;\(P\)&nbsp;on&nbsp;\(U\)&nbsp;is a {{c1::function&nbsp;\(U^k \to \{0, 1\}\)}}.",Example:&nbsp;\(\text{prime}(x)=\begin{cases}1 &amp; \text{if } x \text{ is prime}\\0 &amp; \text{else}\end{cases}\),eth::sem1::diskmat
+qScQPkEg%q,"A logical formula is generally <i>not</i> a mathematical statement, because {{c1::the truth value depends on the interpretation of the symbols}}.",(so we can't prove/disprove it),eth::sem1::diskmat
+IAwcb*<lU1,"A proof of&nbsp;\(S\)&nbsp;by <i>case distinction</i> has three steps:<br><ol><li>{{c1::Find a finite list&nbsp;\(R_1,\ldots,R_k\)&nbsp;of mathematical statements, the cases.}}<br></li><li>{{c2::Prove that at least one of the&nbsp;\(R_i\)&nbsp;is true (at least one case occurs).}}<br></li><li>{{c3::Prove&nbsp;\(R_i \implies S\)&nbsp;for&nbsp;\(i = 1,\ldots,k\).}}<br></li></ol>",,eth::sem1::diskmat
+Ni(5U1m?zz,Russell's Paradox proposes the (problematic) set&nbsp;\(R=\)&nbsp;{{c1::\(\{ A \mid A \notin A\}\)}}.,,eth::sem1::diskmat
+cAOL5`!9R2,"\(2^A\)&nbsp;is an alternatively used notation that denotes {{c1::the power set of&nbsp;\(A\), so&nbsp;\(\mathcal{P}(A))\)}}.",,eth::sem1::diskmat
+lU;|P?yhpq,"The&nbsp;<b>Cartesian product&nbsp;</b>\(A \times B\)&nbsp;of sets&nbsp;\(A, B\)&nbsp;is {{c1::the set of all ordered pairs with the first component from&nbsp;\(A\)&nbsp;and the second component from&nbsp;\(B\):&nbsp;\(A\times B = \{(a,b)\mid a\in A \land b \in B\}\)}}.",,eth::sem1::diskmat
+"K,;}YIg:-h","A&nbsp;<b>relation&nbsp;</b>\(\rho\)&nbsp;from a set&nbsp;\(A\)&nbsp;to a set&nbsp;\(B\)&nbsp;(also called an&nbsp;\((A,B)\)-relation) is {{c1::a subset of&nbsp;\(A\times B\).}}&nbsp;If&nbsp;\(A = B\), then&nbsp;\(\rho\)&nbsp;is called {{c1::a <i>relation on</i>&nbsp;\(A\).}}",,eth::sem1::diskmat
+"hnJOhm[6,3","The&nbsp;<b>transitive closure&nbsp;</b>of a relation&nbsp;\(\rho\)&nbsp;on a set&nbsp;\(A\), denoted&nbsp;\(\rho^*\), is defined as {{c1::\(\rho^* = \bigcup_{n\in\mathbb{N}\setminus \{0\} } \rho^n\)}}.",,eth::sem1::diskmat
+Amp7wwZ8FK,"For a poset&nbsp;\((A;\preceq)\), two elements&nbsp;\(a,b\)&nbsp;are&nbsp;<b>comparable</b>&nbsp;if {{c1::\(a \preceq b\)&nbsp;or&nbsp;\(b \preceq a\),}} otherwise they are <b>incomparable</b>.&nbsp;",,eth::sem1::diskmat
+iYX;e6S}74,The&nbsp;<i>Hasse diagram</i>&nbsp;of a poset&nbsp;\((A; \preceq)\)&nbsp;is {{c1::the directed graph whose vertices are the elements of&nbsp;\(A\)&nbsp;and where there is an edge from&nbsp;\(a\)&nbsp;to&nbsp;\(b\)&nbsp;if and only if&nbsp;\(b\)&nbsp;covers&nbsp;\(a\).}},,eth::sem1::diskmat
+i!L>3&eKRo,"A&nbsp;<b>function</b>&nbsp;\(f: A\to B\)&nbsp;from a&nbsp;<i>domain</i>&nbsp;\(A\)&nbsp;to a <i>codomain</i>&nbsp;\(B\)&nbsp;is {{c1::a relation from&nbsp;\(A\)&nbsp;to&nbsp;\(B\)}}&nbsp;with the special properties:<br>{{c1::1. (totally defined)&nbsp;\(\forall a\in A \; \exists b \in B \quad a \mathop{f} b\)<br>2. (well-defined)&nbsp;\(\forall a\in A \; \forall b, b' \in B \quad (a \mathop{f} b \land a\mathop{f}b' \to b = b')\)}}",,eth::sem1::diskmat
+"IMA[MEvc,-",The set of all functions&nbsp;\(A\to B\)&nbsp;is denoted as {{c1::\(B^A\).}},,eth::sem1::diskmat
+Byvb`08=9%,"A&nbsp;<b>partial function&nbsp;</b>\(A \to B\)&nbsp;is a relation from&nbsp;\(A\)&nbsp;to&nbsp;\(B\)&nbsp;such that{{c1::\(\forall a \in A \; \forall b,b' \in B \; (a \mathop{f} b \land a\mathop{f} b' \to b = b')\)&nbsp;(well-defined).}}",,eth::sem1::diskmat
+"H?B<eq,3^d","A function&nbsp;\(f:\mathbb{N}\to\{0,1\}\)&nbsp;is called&nbsp;<b>computable</b>&nbsp;if {{c1::there is a computer program that, for every&nbsp;\(n\in\mathbb{N}\), when given&nbsp;\(n\)&nbsp;as input, outputs&nbsp;\(f(n)\).}}",,eth::sem1::diskmat
+gZmXpTb$!?,"There are <i>uncomputable functions</i>&nbsp;\(\mathbb{N} \to \{0, 1\}\)&nbsp;because {{c1::the set of functions&nbsp;\(\mathbb{N} \to \{0, 1\}\)&nbsp;is uncountable (<i>Cantor's diagonalization argument</i>), but the set of programs&nbsp;\(\{0, 1\}^*\)&nbsp;computing them is countable.}}",,eth::sem1::diskmat
+q%i_)pDyvo,A prominent example for an uncomputable function is {{c1::the&nbsp;<i>Halting problem</i>}}<i>.</i>,,eth::sem1::diskmat
+INFuk<;]fv,An integer greater than&nbsp;\(1\)&nbsp;that is not a prime is called {{c1::composite}}.,,eth::sem1::diskmat
+Pz>]O?kRm),"It follow from the respective definitions that&nbsp;\(\gcd(a,b) \times \text{lcm}(a,b) =\)&nbsp;{{c1::&nbsp;\(ab\)}}.",,eth::sem1::diskmat
+s&thqL60qD,"For&nbsp;\(a,b,m\in\mathbb{Z}\)&nbsp;with&nbsp;\(m\ge1\), we say that&nbsp;\(a\)&nbsp;is&nbsp;<i>congruent to&nbsp;</i>\(b\)&nbsp;<i>modulo&nbsp;</i>\(m\)&nbsp;if {{c1::&nbsp;\(m\)&nbsp;divides&nbsp;\(a-b\)}}. Written as an expression:{{c1::&nbsp;\(a\equiv_mb \iff m \mid (a-b)\).}}",,eth::sem1::diskmat
+K.T&n8s7:q,"A group or monoid \(\langle G;* \rangle\) is called <i>commutative</i> or <i>abelian</i> if {{c1::\(a * b = b * a\) for all \(a,b \in G\)}}.",,
+Od*A$z}#*`,"For two groups&nbsp;\(\langle G;*;\widehat{};e\rangle\)and&nbsp;\(\langle H;\star;\sim;e'\rangle\), a function&nbsp;\(\psi: G\to H\)&nbsp;is called a <i>group homomorphism</i>&nbsp;if for all&nbsp;\(a\)&nbsp;and&nbsp;\(b\):<br>{{c1::\(\psi(a*b) = \psi(a)\star\psi(b)\)}}.<br>If&nbsp;\(\psi\)&nbsp;is {{c2::a bijection from&nbsp;\(G\)&nbsp;to&nbsp;\(H\)}}, then it is called an <i>isomorphism</i>.",,eth::sem1::diskmat
+Ot[i#kJ>s<,"If for two groups&nbsp;\(G\)&nbsp;and&nbsp;\(H\)&nbsp;there is a function&nbsp;\(\psi: G\to H\)&nbsp;which is an isomorphism, then we say that {{c1::\(G\)&nbsp;and&nbsp;\(H\)&nbsp;are&nbsp;<i>isomorphic</i>}}&nbsp;and we write this as {{c1::\(G \simeq H\)}}.",,eth::sem1::diskmat
+Do3{r5T{`.,Diffie-Hellman is used to {{c1::create a shared secret between two parties over a public channel::do what?}}.,,eth::sem1::diskmat
+OR;0HVwMqM,Both RSA and Diffie-Hellman use {{c1::modular exponentiation}} for their main operation.,,eth::sem1::diskmat

@@ -4,7 +4,7 @@ sn(YVPAp|;,AIMD,"additive increase, multiplicative decrease",algorithm used by c
 vUI3=bE7tN,AP,access point,device to provide WiFi connectivity,eth::sem4::cn
 Fx+)=.T_@],API,application programming interface,interface that defines the interactions between different applications,eth::sem4::cn
 ikOi!tXsrX,ARP,Address Resolution Protocol,translates between IP and MAC addresses,eth::sem4::cn
-vQ#fYfZiv$,ARQ,automatic repeat request,strategy to handle errors in data transmission,eth::sem4::cn
+vQ#fYfZiv$,ARQ,Automatic Repeat reQuest,strategy to handle errors in data transmission by sending acknowledgements and using timeouts,eth::sem4::cn
 DVM!A*Q%4,AS,autonomous system,independent network that interconnects with others to form the Internet,eth::sem4::cn
 L(R7:@ekm.,BCP,best current practice,rules and recommendations for the application of protocols,eth::sem4::cn
 M.a/<o+#yA,BEB,binary exponential backoff,approach to double waiting time after each consecutive collision,eth::sem4::cn
