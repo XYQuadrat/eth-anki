@@ -164,6 +164,7 @@
         "paste-1793e63e5d1784d095cd692abf42ffcb9452a2b2.jpg",
         "paste-3715dace1d8462a21e74b3b7c524a70adfc6cb15.jpg",
         "paste-375d775a9b1bc0b9c8fe04f548f5deb82eb83ed3.jpg",
+        "paste-39931b24c512906843c903f461b7c1cc9f5a6685.jpg",
         "paste-411e9def31aa702646c15e88ced7211c4c369a8f.jpg",
         "paste-428c02a526438244adf3e2e04adb2bd973e8619a.jpg",
         "paste-4929fb767cde9eb10f341d82c26eadffa96dc234.jpg",
@@ -332,7 +333,7 @@
                 ]
             ],
             "sortf": 0,
-            "tags": "Q4.L@4842342",
+            "tags": "com.ichi2.libanki.Tags@638a409",
             "tmpls": [
                 {
                     "afmt": "{{cloze:Text}}<br>\n{{Back Extra}}",
@@ -1497,7 +1498,7 @@
             "__type__": "Note",
             "fields": [
                 "Was ist eine <b>symmetrische</b> Matrix?",
-                "Eine symmetrische Matrix hat eine \"Spiegelachse\" an der Hauptdiagonale. Hauptdiagonale selber unwichtig!<div>Beispiel:</div><div>\\( \\begin{pmatrix} 0 &amp; 5 &amp; 1 \\\\ 5 &amp; 2 &amp; 4 \\\\ 1 &amp; 4 &amp; 0 \\end{pmatrix} \\)<br></div>"
+                "Eine symmetrische Matrix erfüllt&nbsp;\\(A^\\top = A\\)&nbsp;(d.h. eine \"Spiegelachse\" an der Hauptdiagonale). Hauptdiagonale selber unwichtig!<div>Beispiel:</div><div>\\( \\begin{pmatrix} 0 &amp; 5 &amp; 1 \\\\ 5 &amp; 2 &amp; 4 \\\\ 1 &amp; 4 &amp; 0 \\end{pmatrix} \\)<br></div>"
             ],
             "guid": "w;_;AaM4pf",
             "note_model_uuid": "2ae32340-7e39-11ee-bdad-3d2d00994e04",
@@ -1556,7 +1557,7 @@
         {
             "__type__": "Note",
             "fields": [
-                "Wann ist eine Matrix <b>Hermitesch</b>?",
+                "Wann ist eine Matrix <b>hermitesch</b>?",
                 "Falls&nbsp;\\( \\mathbf{A}^H = A\\)"
             ],
             "guid": "g[av;3n%%l",
@@ -1641,22 +1642,10 @@
             "__type__": "Note",
             "fields": [
                 "Was ist eine <b>reguläre</b> Matrix?",
-                "Eine Matrix \\( A \\) mit Rang&nbsp;\\(A = n\\).&nbsp;<div>regulär&nbsp;\\( \\iff \\) invertierbar</div>"
+                "Eine Matrix \\( A \\) mit&nbsp;\\(\\text{Rang}(A) = n\\).&nbsp;<div>regulär&nbsp;\\( \\iff \\) invertierbar</div>"
             ],
             "guid": "KW-&%*&l;g",
             "note_model_uuid": "2ae32340-7e39-11ee-bdad-3d2d00994e04",
-            "tags": [
-                "eth::sem1::linalg"
-            ]
-        },
-        {
-            "__type__": "Note",
-            "fields": [
-                "{{c1:: Inverse eines Produkts: \\((\\mathbf{AB})^{-1}\\)}} = {{c2::\\(\\mathbf{B}^{-1} \\mathbf{A}^{-1}\\)}}&nbsp;<br>",
-                ""
-            ],
-            "guid": "u65pI6|_4#",
-            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
             "tags": [
                 "eth::sem1::linalg"
             ]
@@ -1772,8 +1761,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "Für alle Vektorpaare&nbsp;\\( \\mathbf{x,y} \\in \\mathbb{E}^n \\) gilt die Schwarzsche Ungleichung:&nbsp;{{c1::\\( | \\langle \\mathbf{x, y} \\rangle | \\le ||\\mathbf{x}|| \\ ||\\mathbf{y}||\\)}}",
-                "(auch Cauchy-Schwarz-Ungleichung genannt)"
+                "Für alle Vektorpaare&nbsp;\\( \\mathbf{x,y} \\in \\mathbb{E}^n \\) gilt die Cauchy-Schwarz-Ungleichung:&nbsp;{{c1::\\( | \\langle \\mathbf{x, y} \\rangle | \\le ||\\mathbf{x}|| \\ ||\\mathbf{y}||\\)}}",
+                ""
             ],
             "guid": "uo#Gn+y8bD",
             "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
@@ -1809,18 +1798,6 @@
         {
             "__type__": "Note",
             "fields": [
-                "Eine Gruppe&nbsp;\\( (G, *) \\) heisst {{c1::abelsch (auch: kommutativ)}}, falls&nbsp;\\( * \\) ausserdem&nbsp;{{c2::\\(a * b = b * a\\), also das Kommutativitätgesetz erfüllt}}.",
-                "Beispiel:&nbsp;\\( (\\mathbb{K}^{m\\times n}, + ) \\)"
-            ],
-            "guid": "EuJL{:A/EO",
-            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
-            "tags": [
-                "eth::sem1::linalg"
-            ]
-        },
-        {
-            "__type__": "Note",
-            "fields": [
                 "{{c1::Ein Körper}} ist eine Menge&nbsp;{{c1::\\( \\mathbb{K}\\) mit Operationen&nbsp;\\(+ , *\\)}} mit folgenden Eigenschaften:<div>{{c2::<div>-&nbsp;\\( (\\mathbb{K}, +)\\) ist eine abelsche Gruppe</div><div>-&nbsp;\\( (\\mathbb{K} \\backslash \\{0\\}, *)\\) ist eine abelsche Gruppe</div><div>- Distributivität:&nbsp;\\( a * (b+c) = a*b + a*c\\)</div>}}<br></div>",
                 "Beispiel:&nbsp;\\( \\mathbb{Q}, \\mathbb{R}\\)"
             ],
@@ -1828,18 +1805,6 @@
             "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
             "tags": [
                 "eth::sem1::diskmat",
-                "eth::sem1::linalg"
-            ]
-        },
-        {
-            "__type__": "Note",
-            "fields": [
-                "{{c1::Ein Vektorraum}} ist eine Menge \\( \\mathbb{V}\\) über \\( \\mathbb{K}\\), auf der {{c2::eine Addition und eine Skalarmultiplikation definiert ist.}}",
-                "Beispiele:&nbsp;\\(\\mathbb{R}^n, \\mathbb{K}^{m\\times n}, P_d(\\mathbb{K})\\) (Polynome von Grad&nbsp;\\( \\le d\\))"
-            ],
-            "guid": "BK[{yp^]zj",
-            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
-            "tags": [
                 "eth::sem1::linalg"
             ]
         },
@@ -2051,7 +2016,7 @@
             "__type__": "Note",
             "fields": [
                 "A poset&nbsp;\\((A;\\preceq)\\) is <b>well-ordered </b>if {{c1::it is totally ordered and every non-empty subset has a least element.}}",
-                "Every totally ordered finite poset&nbsp;\\(\\rightarrow\\) well-ordered<div>Infinite example: \\((N; \\le)\\)<br>Infinite counterexample&nbsp;\\((\\mathbb{Z}; \\le)\\)</div>"
+                "Every totally ordered finite poset&nbsp;\\(\\rightarrow\\) well-ordered<div>Infinite example: \\((\\mathbb{N}; \\le)\\)<br>Infinite counterexample&nbsp;\\((\\mathbb{Z}; \\le)\\)</div>"
             ],
             "guid": "B/hV<WXGve",
             "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
@@ -2279,7 +2244,7 @@
             "__type__": "Note",
             "fields": [
                 "A group&nbsp;\\(G = \\langle g \\rangle\\) generated by an element&nbsp;\\(g \\in G\\) is called {{c1::cyclic}}, and&nbsp;\\(g\\) is called {{c1::a <b>generator</b> of&nbsp;\\(G\\)}}.",
-                ""
+                "Examples:<br>\\(\\langle \\mathbb{Z}_n;\\oplus\\rangle\\)&nbsp;(cyclic for every&nbsp;\\(n\\), 1 is a generator)<br>\\(\\langle\\mathbb{Z}_n; +,-,0\\rangle\\)(infinite cyclic group with generators 1 and -1)"
             ],
             "guid": "LFnfauD_]7",
             "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
@@ -2314,7 +2279,7 @@
         {
             "__type__": "Note",
             "fields": [
-                "The Euler function&nbsp;\\(\\varphi: \\mathbb{Z}^+ \\rightarrow \\mathbb{Z}^+\\) is defined as {{c1::the cardinality of&nbsp;\\(\\mathbb{Z}^*_m\\).}}",
+                "The Euler function&nbsp;\\(\\varphi: \\mathbb{Z}^+ \\rightarrow \\mathbb{Z}^+\\)&nbsp;(also called Euler's totient function) is defined as {{c1::the cardinality of&nbsp;\\(\\mathbb{Z}^*_m\\).}}",
                 "Example:&nbsp;\\(\\mathbb{Z}_{18}^* = \\{1,5,7,11,13,17\\}\\), so&nbsp;\\(\\varphi(18) = 6\\)"
             ],
             "guid": "hU:-C(Wl{v",
@@ -2398,7 +2363,7 @@
         {
             "__type__": "Note",
             "fields": [
-                "{{c1::A ring&nbsp;\\(\\langle R, +, -, 0, \\cdot, 1 \\rangle\\)}} is an algebra with the properties that<br><ul><li>{{c2::\\(\\langle R, +, -, 0 \\rangle\\)&nbsp;is a commutative group}}<br></li><li>{{c3::\\(\\langle R, \\cdot, 1 \\rangle\\)&nbsp;is a monoid}}</li><li>{{c5::\\( a(b+c) = (ab) + (ac), (b+c)a = (ba) + (ca)\\)&nbsp;(left and right distributive laws)}}</li></ul>",
+                "{{c1::A ring&nbsp;\\(\\langle R, +, -, 0, \\cdot, 1 \\rangle\\)}} is an algebra with the properties that<br><ul><li>{{c2::\\(\\langle R, +, -, 0 \\rangle\\)&nbsp;is a commutative group}}<br></li><li>{{c3::\\(\\langle R, \\cdot, 1 \\rangle\\)&nbsp;is a monoid}}</li><li>{{c4::\\( a(b+c) = (ab) + (ac), (b+c)a = (ba) + (ca)\\)&nbsp;(left and right distributive laws)}}</li></ul>",
                 "Examples:&nbsp;\\(\\mathbb{Z}, \\mathbb{R}\\)"
             ],
             "guid": "s[Y-0E4#sz",
@@ -10873,18 +10838,6 @@
         {
             "__type__": "Note",
             "fields": [
-                "The four key&nbsp;<b>Gestalt principles</b>&nbsp;are<br><ul><li>{{c1::Emergence (brain derives meaning from chaos)}}</li><li>{{c2::Multistability (brain sees multiple interpretations)}}</li><li>{{c3::Reification (brain fills in the gaps)}}</li><li>{{c4::Invariance (brain is not confused by variations)}}</li></ul>",
-                ""
-            ],
-            "guid": "E;D4~}W/~C",
-            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
-            "tags": [
-                "eth::sem5::hci"
-            ]
-        },
-        {
-            "__type__": "Note",
-            "fields": [
                 "In Gestalt principles, the law of Closure states that {{c1::humans prefer to see complete figures and will perceive incomplete figures as whole}}.",
                 ""
             ],
@@ -11759,7 +11712,7 @@
         {
             "__type__": "Note",
             "fields": [
-                "Diffie-Hellman is used to {{c1::create a shared secret between two parties over a public channel::do what?}}.",
+                "Diffie-Hellman is used to {{c1::securely create a shared secret between two parties over a public channel::do what?}}.",
                 ""
             ],
             "guid": "Do3{r5T{`.",
@@ -11778,6 +11731,278 @@
             "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
             "tags": [
                 "eth::sem1::diskmat"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The <b>dot product</b> is often also called the {{c1::scalar product}} or {{c1::inner product}}.",
+                ""
+            ],
+            "guid": "m5;lfWq}sd",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Linear algebra is the branch of mathematics dealing with {{c1::linear equations, e.g. \\(a_1 x_1+\\dots a_n x_n = b\\)}}.",
+                ""
+            ],
+            "guid": "o#WcxQ+B/3",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Explain the mechanical analog of the Diffie-Hellman protocol.",
+                "<img src=\"paste-39931b24c512906843c903f461b7c1cc9f5a6685.jpg\">"
+            ],
+            "guid": "uCGhOduc{_",
+            "note_model_uuid": "2ae32340-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem1::diskmat"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "An&nbsp;<i>operation</i>&nbsp;on a set&nbsp;\\(S\\)&nbsp;is {{c1::a function&nbsp;\\(S^n \\to S\\), where&nbsp;\\(n \\ge 0\\)&nbsp;is called the <i>arity</i> of the operation::what (include arity)?}}.",
+                ""
+            ],
+            "guid": "NfXydu*6p1",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem1::diskmat"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "&nbsp;A cyclic group of order&nbsp;\\(n\\)&nbsp;{{c1::is isomorphic to&nbsp;\\(\\langle \\mathbb{Z}_n,\\oplus)\\), and hence commutative::has which useful property?}}.",
+                ""
+            ],
+            "guid": "vpgCC{U)O3",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem1::diskmat"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "\\(\\mathbb{Z}_m^* \\stackrel{\\text{def}}{=}\\)&nbsp;&nbsp;{{c1::\\(\\{a\\in \\mathbb{Z}_m \\mid \\gcd(a,m) = 1\\}\\)}}",
+                ""
+            ],
+            "guid": "zjw2>4!xI",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem1::diskmat"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "\\(\\mathbb{Z}_m^*\\)&nbsp;is useful compared to&nbsp;\\(\\mathbb{Z}_m\\)because {{c1::\\(\\mathbb{Z}_m\\)is not a group with respect to multiplication modulo&nbsp;\\(m\\), but we would like to have this for building RSA}}.",
+                ""
+            ],
+            "guid": "sQoa!PVGy1",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem1::diskmat"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The Fermat-Euler theorem states that for all&nbsp;\\(m\\ge 2\\)&nbsp;and all&nbsp;\\(a\\)&nbsp;with&nbsp;\\(\\gcd(a,m) = 1\\),{{c1::&nbsp;\\[a^{\\varphi(m)} \\equiv_m 1\\]and so in particular, for every prime&nbsp;\\(p\\)&nbsp;and every&nbsp;\\(a\\)&nbsp;not divisible by&nbsp;\\(p\\):&nbsp;\\(a^{p-1} \\equiv_p 1\\).}}",
+                "This theorem is used for RSA."
+            ],
+            "guid": "i!A>I-](&",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem1::diskmat"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The RSA public-key cryptosystem was invented in 1977 by&nbsp;{{c1::Rivest, Shamir and Adleman}}.",
+                ""
+            ],
+            "guid": "f+%e8wswL=",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem1::diskmat"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "For any prime&nbsp;\\(p\\), the Euler totient function&nbsp;\\(\\varphi(p)\\)&nbsp;is equal to {{c1::\\(p-1\\)}}.",
+                ""
+            ],
+            "guid": "wxOSFQju/Y",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem1::diskmat"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "RSA was the first public cryptographic system to offer {{c1::a digital signature scheme}}.",
+                ""
+            ],
+            "guid": "OYOcHCLP{!",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem1::diskmat"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "A&nbsp;\\(m\\times 1\\)&nbsp;matrix is called a {{c1::column vector}}.",
+                ""
+            ],
+            "guid": "eb|cwXEzx`",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem1::linalg"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "A&nbsp;\\(1\\times n\\)&nbsp;matrix is called {{c1::row vector}} or, in other contexts, {{c1::tuple}}.",
+                ""
+            ],
+            "guid": "xBE,c~;Xop",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem1::linalg"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Wenn&nbsp;\\(A,B\\)&nbsp;invertierbar sind, dann ist es {{c1::\\((AB)^{-1}=B^{-1}A^{-1}\\)}}&nbsp;auch.",
+                ""
+            ],
+            "guid": "JG.Pzp,r%b",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem1::linalg"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "\\(\\det A^{-1} =\\)&nbsp;{{c1::\\((\\det A)^{-1}\\)}}&nbsp;",
+                ""
+            ],
+            "guid": "xs#S^-Mehy",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem1::linalg"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The LU ({{c1::Lower-Upper}}, also sometimes called {{c1::LR}}) decomposition factors a matrix&nbsp;\\(A\\)&nbsp;as {{c2::the product of a lower triangular matrix&nbsp;\\(L\\)&nbsp;and an upper triangular matrix&nbsp;\\(U\\)}}.",
+                "(so&nbsp;\\(A = LU\\))"
+            ],
+            "guid": "mqSXu9R3oO",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem1::linalg"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The LU decomposition is useful because (among other things) {{c1::it is computationally more efficient when solving multiple&nbsp;\\(Ax = b\\)&nbsp;having the same&nbsp;\\(A\\)&nbsp;and different&nbsp;\\(b\\)&nbsp;}}.&nbsp;",
+                ""
+            ],
+            "guid": "yIi4+D4X>;",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem1::linalg"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The <i>characteristic</i>&nbsp;of a ring is&nbsp;{{c1::the order of&nbsp;\\(1\\)&nbsp;in the additive group if it is finite, and 0 if it is infinite.}}",
+                "Example: the characteristic of&nbsp;\\(\\langle \\mathbb{Z}_m;\\oplus,\\ominus,0,\\odot,1\\rangle\\)is&nbsp;\\(m\\)."
+            ],
+            "guid": "p1NkGJ>_F5",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem1::diskmat"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "An element&nbsp;\\(a\\ne0\\)&nbsp;of a commutative ring&nbsp;\\(R\\)&nbsp;is called a&nbsp;<i>zerodivisor</i>&nbsp;if {{c1::&nbsp;\\(ab=0\\)&nbsp;for some&nbsp;\\(b\\ne0\\)&nbsp;in&nbsp;\\(R\\)}}.",
+                ""
+            ],
+            "guid": "grl{%W],MK",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem1::diskmat"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The degree of the polynomial&nbsp;\\(0\\)&nbsp;can be defined as&nbsp;{{c1::undefined,&nbsp;\\(-1\\)&nbsp;or&nbsp;\\(-\\infty\\)}}.&nbsp;&nbsp;",
+                ""
+            ],
+            "guid": "z`P{~ta];p",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem1::diskmat"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "A matrix decomposition is {{c1::a factorization of a single matrix into a product of ones with useful properties}}.",
+                "Example: LU decomposition (\\(A=LU\\))"
+            ],
+            "guid": "tR&oOKzisO",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem1::linalg"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "&nbsp;A&nbsp;<i>vector space</i>&nbsp;\\(V\\)&nbsp;over a field&nbsp;\\(F\\)&nbsp;is {{c1::a set with vector addition (\\(V \\times V \\mapsto V)\\)&nbsp;and scalar multiplication (\\(F \\times V \\mapsto V\\)) being defined}}. The elements of&nbsp;\\(V\\)&nbsp;are then usually called {{c1::vectors}}&nbsp;and the elements of&nbsp;\\(F\\)&nbsp;{{c1::scalars}}<i>.</i>",
+                "Example:&nbsp;\\(\\mathbb{R}^2\\)&nbsp;with the usual definitions of&nbsp;\\(+, \\cdot\\)&nbsp;(cartesian vectors)"
+            ],
+            "guid": "A[sn#o|@++",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem1::linalg"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "An important difference between a field&nbsp;\\(F\\)&nbsp;and a vector space&nbsp;\\(V\\)&nbsp;is that {{c1::multiplication in the field is&nbsp;\\(F\\times F\\mapsto F\\), whereas it is&nbsp;\\(F\\times V\\mapsto V\\)&nbsp;in the vector space}}.",
+                ""
+            ],
+            "guid": "oXvW^EH?&l",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem1::linalg"
             ]
         }
     ],
