@@ -1341,7 +1341,7 @@
         {
             "__type__": "Note",
             "fields": [
-                "Komplexer Kehrwert: {{c1::\\( \\frac{1}{z} \\)}}&nbsp;\\( = \\)&nbsp;{{c2::\\( \\frac{x - iy}{x^2 + y^2}\\)}}<br>",
+                "Inverse of a complex number: {{c1::\\( \\frac{1}{z} \\)}}&nbsp;\\( = \\)&nbsp;{{c2::\\( \\frac{x - iy}{x^2 + y^2}\\)}}<br>",
                 ""
             ],
             "guid": "PK*1xpYhw8",
@@ -1413,8 +1413,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "Was ist der Rang eines LGS?",
-                "Die Anzahl Pivotelemente bzw. die Anzahl Zeilen, welche nicht Nullzeilen sind."
+                "What is the&nbsp;<b>rank&nbsp;</b>of a matrix (\\(\\text{rank}(A)\\))?&nbsp;",
+                "The dimension of the vector space spanned by the columns, or the rows. This is equal to the number of linearly independent columns or rows in the matrix."
             ],
             "guid": "lG3L]2Sq+d",
             "note_model_uuid": "2ae32340-7e39-11ee-bdad-3d2d00994e04",
@@ -1425,8 +1425,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "Was ist der volle Rang eines LGS der Form&nbsp;\\(m \\times n\\)?",
-                "\\( r \\le m, r \\le n\\), also ist der volle / maximale Rang \\( r = \\text{min}(m,n)\\)<br>"
+                "What is the <b>full rank</b>&nbsp;of a&nbsp;\\(m \\times n\\)-matrix?",
+                "The full rank is&nbsp;\\( r = \\text{min}(m,n)\\)."
             ],
             "guid": "h8vM!D=]5*",
             "note_model_uuid": "2ae32340-7e39-11ee-bdad-3d2d00994e04",
@@ -1497,8 +1497,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "Was ist eine <b>symmetrische</b> Matrix?",
-                "Eine symmetrische Matrix erfüllt&nbsp;\\(A^\\top = A\\)&nbsp;(d.h. eine \"Spiegelachse\" an der Hauptdiagonale). Hauptdiagonale selber unwichtig!<div>Beispiel:</div><div>\\( \\begin{pmatrix} 0 &amp; 5 &amp; 1 \\\\ 5 &amp; 2 &amp; 4 \\\\ 1 &amp; 4 &amp; 0 \\end{pmatrix} \\)<br></div>"
+                "What is the definition of a&nbsp;<b>symmetric</b>&nbsp;matrix?",
+                "A symmetric matrix is equal to its transpose:&nbsp;\\(A = A^\\top\\).<div>Example:</div><div>\\( \\begin{pmatrix} 0 &amp; 5 &amp; 1 \\\\ 5 &amp; 2 &amp; 4 \\\\ 1 &amp; 4 &amp; 0 \\end{pmatrix} \\)<br></div>"
             ],
             "guid": "w;_;AaM4pf",
             "note_model_uuid": "2ae32340-7e39-11ee-bdad-3d2d00994e04",
@@ -1521,8 +1521,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "Was ist eine <b>transponierte</b> Matrix?",
-                "Entlang der Hauptdiagonale gespiegelte Matrix \\(\\mathbf{A}^\\top\\), d.h.&nbsp;\\( (\\mathbf{A}^\\top)_{ij} = (\\mathbf{A})_{ji} \\)"
+                "What is the&nbsp;<b>transpose</b>&nbsp;of a matrix&nbsp;\\(\\mathbf{A}\\)?",
+                "The transpose&nbsp;\\(\\mathbf{A}^\\top\\)&nbsp;is the matrix&nbsp;\\(\\mathbf{A}\\)&nbsp;flipped over its diagonal, so&nbsp;\\( (\\mathbf{A}^\\top)_{ij} = (\\mathbf{A})_{ji} \\)."
             ],
             "guid": "p6e6T6[HIy",
             "note_model_uuid": "2ae32340-7e39-11ee-bdad-3d2d00994e04",
@@ -1533,8 +1533,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "Was ist eine <b>konjugiert-komplexe </b>Matrix?",
-                "Wenn&nbsp;\\(\\mathbf{A}\\) eine komplexe Matrix ist, dann ist&nbsp;\\(\\overline{\\mathbf{A}}\\) mit&nbsp;\\( (\\overline{\\mathbf{A}})_{ij} = \\overline{(\\mathbf{A})_{ij}}\\) die konjugiert-komplexe Matrix."
+                "What is the&nbsp;<b>conjugate transpose&nbsp;</b>(also Hermitian transpose) of a matrix&nbsp;\\(\\mathbf{A}\\)?",
+                "The conjugate transpose&nbsp;&nbsp;\\(\\mathbf{A}^\\text{H}\\)&nbsp;is the transpose&nbsp;\\(\\mathbf{A}^\\top\\)&nbsp;with every entry being conjugated:&nbsp;\\( (\\mathbf{A}^\\text{H})_{ij} = \\overline{\\mathbf{A}_{ji}}\\)&nbsp;."
             ],
             "guid": "vlkuMD-Ica",
             "note_model_uuid": "2ae32340-7e39-11ee-bdad-3d2d00994e04",
@@ -1545,20 +1545,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "Was ist eine <b>konjugiert-transponierte</b> (auch: Hermitesch-transponierte) Matrix?",
-                "\\( \\mathbf{A}^H = (\\overline{\\mathbf{A}})^\\top = \\overline{\\mathbf{A}^\\top}\\)<br>"
-            ],
-            "guid": "gC,90MH_~p",
-            "note_model_uuid": "2ae32340-7e39-11ee-bdad-3d2d00994e04",
-            "tags": [
-                "eth::sem1::linalg"
-            ]
-        },
-        {
-            "__type__": "Note",
-            "fields": [
-                "Wann ist eine Matrix <b>hermitesch</b>?",
-                "Falls&nbsp;\\( \\mathbf{A}^H = A\\)"
+                "When is a matrix&nbsp;\\(\\mathbf{A}\\)&nbsp;<i>hermitian</i>?",
+                "If&nbsp;\\( \\mathbf{A} = \\mathbf{A}^\\text{H}\\), which is equivalent to&nbsp;\\(\\mathbf{A} = \\overline{\\mathbf{A}^\\top}\\)."
             ],
             "guid": "g[av;3n%%l",
             "note_model_uuid": "2ae32340-7e39-11ee-bdad-3d2d00994e04",
@@ -1569,8 +1557,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "Wann ist eine Matrix <b>schiefsymmetrisch</b>?",
-                "Falls&nbsp;\\( \\mathbf{A}^\\top = -\\mathbf{A}\\)<div><br></div><div>Beispiel:</div><div>\\( \\begin{pmatrix} 0 &amp; -3 &amp; 5 \\\\ 3 &amp; 0 &amp; -4 \\\\ -5 &amp; 4 &amp; 0 \\end{pmatrix}\\)<br></div>"
+                "When is a matrix&nbsp;\\(\\mathbf{A}\\)&nbsp;<b>skew-symmetric</b>?",
+                "If&nbsp;\\( \\mathbf{A}^\\top = -\\mathbf{A}\\)<div><br></div><div>Example:</div><div>\\( \\begin{pmatrix} 0 &amp; -3 &amp; 5 \\\\ 3 &amp; 0 &amp; -4 \\\\ -5 &amp; 4 &amp; 0 \\end{pmatrix}\\)<br></div>"
             ],
             "guid": "OB6+3`~vyx",
             "note_model_uuid": "2ae32340-7e39-11ee-bdad-3d2d00994e04",
@@ -1629,22 +1617,10 @@
         {
             "__type__": "Note",
             "fields": [
-                "Wann ist eine Matrix <b>invertierbar</b>?",
-                "Falls eine Matrix&nbsp;\\( \\mathbf{X} \\) existiert, so dass&nbsp;\\( \\mathbf{AX} = \\mathbf{XA} = \\mathbf{I_n}\\)<div><br></div><div>Beispiel:&nbsp;\\( \\begin{pmatrix} 1 &amp; 2 \\\\ 0 &amp; 3 \\end{pmatrix} * \\begin{pmatrix} 1 &amp; -\\frac{2}{3} \\\\ 0 &amp; \\frac{1}{3} \\end{pmatrix} = \\mathbf{I_2}\\)&nbsp;</div>"
+                "What is the definition of an&nbsp;<b>invertible</b>&nbsp;(also <i>nonsingular </i>or <i>nondegenerate</i>) matrix&nbsp;\\(\\mathbf{A}\\)?",
+                "There exists a matrix&nbsp;\\( \\mathbf{X} \\)&nbsp;such that&nbsp;\\( \\mathbf{AX} = \\mathbf{XA} = \\mathbf{I_n}\\).<div><br></div><div>Example:&nbsp;\\( \\begin{pmatrix} 1 &amp; 2 \\\\ 0 &amp; 3 \\end{pmatrix} * \\begin{pmatrix} 1 &amp; -\\frac{2}{3} \\\\ 0 &amp; \\frac{1}{3} \\end{pmatrix} = \\mathbf{I_2}\\)&nbsp;</div>"
             ],
             "guid": "v`BTz<1Q{~",
-            "note_model_uuid": "2ae32340-7e39-11ee-bdad-3d2d00994e04",
-            "tags": [
-                "eth::sem1::linalg"
-            ]
-        },
-        {
-            "__type__": "Note",
-            "fields": [
-                "Was ist eine <b>reguläre</b> Matrix?",
-                "Eine Matrix \\( A \\) mit&nbsp;\\(\\text{Rang}(A) = n\\).&nbsp;<div>regulär&nbsp;\\( \\iff \\) invertierbar</div>"
-            ],
-            "guid": "KW-&%*&l;g",
             "note_model_uuid": "2ae32340-7e39-11ee-bdad-3d2d00994e04",
             "tags": [
                 "eth::sem1::linalg"
@@ -1713,8 +1689,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "Was ist eine <b>orthogonale</b> Matrix?",
-                "Für eine orthogonale Matrix gilt&nbsp;\\( \\mathbf{A^\\top A = I}_n\\), d.h. die Inverse von A ist A transponiert. Orthogonal = reell, quadratisch, regulär"
+                "When is a matrix&nbsp;\\(\\mathbf{A}\\)&nbsp;<b>orthogonal</b>?",
+                "If&nbsp;\\( \\mathbf{A^\\top A = I}_n\\), which means that the inverse of&nbsp;\\(\\mathbf{A}\\)&nbsp;is&nbsp;\\(\\mathbf{A}^\\top\\)."
             ],
             "guid": "eGgKwc!Y>B",
             "note_model_uuid": "2ae32340-7e39-11ee-bdad-3d2d00994e04",
@@ -1725,8 +1701,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "Was ist eine <b>unitäre</b> Matrix?",
-                "Für eine unitäre Matrix gilt&nbsp;\\( \\mathbf{A^H A = I}_n\\), d.h. die komplex-transponierte von A ist die Inverse von A.&nbsp;<div>Unitär = regulär &amp; quadratisch&nbsp;</div>"
+                "When is a matrix&nbsp;\\(\\mathbf{A}\\)&nbsp;<b>unitary</b>?",
+                "If&nbsp;\\( \\mathbf{A}^\\text{H} \\mathbf{A} = \\mathbf{I}_n\\), so the inverse of&nbsp;\\(\\mathbf{A}\\)&nbsp;is&nbsp;\\(\\mathbf{A}^\\text{H}\\)."
             ],
             "guid": "J,}qfri4M=",
             "note_model_uuid": "2ae32340-7e39-11ee-bdad-3d2d00994e04",
@@ -1737,7 +1713,7 @@
         {
             "__type__": "Note",
             "fields": [
-                "Gilt für zwei Matrizen&nbsp;\\( \\mathbf{A}\\) und&nbsp;\\( \\mathbf{B}\\), dass&nbsp;{{c2::\\( \\mathbf{AB} = \\mathbf{BA}\\)}}, dann {{c1::kommutieren}} diese Matrizen.&nbsp;",
+                "If it holds for two matrices&nbsp;\\( \\mathbf{A}\\)&nbsp;and&nbsp;\\( \\mathbf{B}\\)&nbsp;that&nbsp;{{c2::\\( \\mathbf{AB} = \\mathbf{BA}\\)}}, then these matrices {{c1::commute}}.&nbsp;",
                 ""
             ],
             "guid": "Oc<qX9GKUZ",
@@ -1749,7 +1725,7 @@
         {
             "__type__": "Note",
             "fields": [
-                "Eine {{c1::Linearkombination (LK)}} der Vektoren&nbsp;\\( a_1, \\ldots, a_n\\) ist {{c2::ein Ausdruck der Form&nbsp;\\( \\alpha_1 a_1 + \\cdots + \\alpha_n a_n\\) wobei&nbsp;\\( \\alpha_1, \\ldots, \\alpha_n \\in \\mathbb{R}\\)}}",
+                "A {{c1::linear combination}} of the vectors&nbsp;\\( a_1, \\ldots, a_n\\) is {{c2::an expression of the form&nbsp;\\( \\alpha_1 a_1 + \\cdots + \\alpha_n a_n\\) with&nbsp;\\( \\alpha_1, \\ldots, \\alpha_n\\)&nbsp;being scalars.}}",
                 ""
             ],
             "guid": "xn@gm`7I_o",
@@ -1761,7 +1737,7 @@
         {
             "__type__": "Note",
             "fields": [
-                "Für alle Vektorpaare&nbsp;\\( \\mathbf{x,y} \\in \\mathbb{E}^n \\) gilt die Cauchy-Schwarz-Ungleichung:&nbsp;{{c1::\\( | \\langle \\mathbf{x, y} \\rangle | \\le ||\\mathbf{x}|| \\ ||\\mathbf{y}||\\)}}",
+                "For all pairs of vectors&nbsp;\\( \\mathbf{u,v} \\in \\mathbb{V}^n \\) gilt die Cauchy-Schwarz-Ungleichung:&nbsp;{{c1::\\( | \\langle \\mathbf{u, v} \\rangle | \\le ||\\mathbf{u}|| \\ ||\\mathbf{v}||\\)}}.",
                 ""
             ],
             "guid": "uo#Gn+y8bD",
@@ -1773,8 +1749,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "Ein LGS heisst {{c1::homogen}}, wenn {{c2::die rechte Seite Null ist}}.",
-                "Besitzt immer triviale Lösung (alles 0)."
+                "A system of linear equations is {{c1::homogeneous}}, if {{c2::the right hand side is zero}}.",
+                ""
             ],
             "guid": "v#FTBh.m{S",
             "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
@@ -1785,7 +1761,7 @@
         {
             "__type__": "Note",
             "fields": [
-                "{{c1::Eine Gruppe}} ist eine {{c1::Menge \\(G\\) mit Operation&nbsp;\\( * \\)}} mit folgenden Eigenschaften:<ul>{{c2::<li> Assoziativität:&nbsp;\\((a * b) * c = a * (b*c)\\)</li><li>Neutrales Element existiert:&nbsp;\\( a * e = e * a = a \\)</li><li>Jedes Element \\(a\\in G\\) hat eine Inverse:&nbsp;\\( a * a^{-1} = a^{-1} * a = e\\)</li>}}<br></ul>",
+                "{{c1::A group}} is a {{c1::set&nbsp;\\(G\\) with an operation&nbsp;\\( * \\)}} with the following properties:<ul>{{c2::<li>Associativity:&nbsp;\\((a * b) * c = a * (b*c)\\)</li><li>There exists a neutral element:&nbsp;\\( a * e = e * a = a \\)</li><li>Every element&nbsp;\\(a\\in G\\) has an inverse:&nbsp;\\( a * a^{-1} = a^{-1} * a = e\\)</li>}}<br></ul>",
                 ""
             ],
             "guid": "y`5($Q$d37",
@@ -1798,21 +1774,8 @@
         {
             "__type__": "Note",
             "fields": [
-                "{{c1::Ein Körper}} ist eine Menge&nbsp;{{c1::\\( \\mathbb{K}\\) mit Operationen&nbsp;\\(+ , *\\)}} mit folgenden Eigenschaften:<div>{{c2::<div>-&nbsp;\\( (\\mathbb{K}, +)\\) ist eine abelsche Gruppe</div><div>-&nbsp;\\( (\\mathbb{K} \\backslash \\{0\\}, *)\\) ist eine abelsche Gruppe</div><div>- Distributivität:&nbsp;\\( a * (b+c) = a*b + a*c\\)</div>}}<br></div>",
-                "Beispiel:&nbsp;\\( \\mathbb{Q}, \\mathbb{R}\\)"
-            ],
-            "guid": "BG+yKyLb,^",
-            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
-            "tags": [
-                "eth::sem1::diskmat",
-                "eth::sem1::linalg"
-            ]
-        },
-        {
-            "__type__": "Note",
-            "fields": [
-                "Was ist ein Unterraum?",
-                "Ein Unterraum ist eine Teilmenge&nbsp;\\( U \\subseteq \\mathbb{V}\\) falls&nbsp;\\( U \\) auch die Eigenschaften eines Vektorraums hat (d.h. abgeschlossen bezüglich Vektoraddition &amp; Skalarmultiplikation). Beispiel: Ebene in&nbsp;\\(\\mathbb{R}^3\\)"
+                "What is a subspace?",
+                "A subspace is a subset&nbsp;\\( U \\subseteq \\mathbb{V}\\) that also fulfills the properties of a vector space&nbsp;(so it is closed with respect to vector addition and scalar multiplication). <br><br>Example: a plane in&nbsp;&nbsp;\\(\\mathbb{R}^3\\)"
             ],
             "guid": "M`sU@`yo=O",
             "note_model_uuid": "2ae32340-7e39-11ee-bdad-3d2d00994e04",
@@ -3664,7 +3627,9 @@
             ],
             "guid": "rb>u/2<`S]",
             "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
-            "tags": []
+            "tags": [
+                "eth::sem3::ti"
+            ]
         },
         {
             "__type__": "Note",
@@ -3722,7 +3687,9 @@
             ],
             "guid": "dX|8rH#t|C",
             "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
-            "tags": []
+            "tags": [
+                "eth::sem3::ti"
+            ]
         },
         {
             "__type__": "Note",
@@ -3732,7 +3699,9 @@
             ],
             "guid": "AmB39:CR8:",
             "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
-            "tags": []
+            "tags": [
+                "eth::sem3::ti"
+            ]
         },
         {
             "__type__": "Note",
@@ -4903,7 +4872,9 @@
             ],
             "guid": "u^R$XY$~W?",
             "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
-            "tags": []
+            "tags": [
+                "eth"
+            ]
         },
         {
             "__type__": "Note",
@@ -4913,7 +4884,9 @@
             ],
             "guid": "F2[du1bMu;",
             "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
-            "tags": []
+            "tags": [
+                "eth"
+            ]
         },
         {
             "__type__": "Note",
@@ -5472,7 +5445,9 @@
             ],
             "guid": "nEd$&|E5Cc",
             "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
-            "tags": []
+            "tags": [
+                "eth"
+            ]
         },
         {
             "__type__": "Note",
@@ -6556,7 +6531,9 @@
             ],
             "guid": "oL82K.iqM}",
             "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
-            "tags": []
+            "tags": [
+                "eth"
+            ]
         },
         {
             "__type__": "Note",
@@ -6566,7 +6543,9 @@
             ],
             "guid": "D%n:xT4NsA",
             "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
-            "tags": []
+            "tags": [
+                "eth"
+            ]
         },
         {
             "__type__": "Note",
@@ -7128,7 +7107,9 @@
             ],
             "guid": "z4LU850Knr",
             "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
-            "tags": []
+            "tags": [
+                "eth::coop"
+            ]
         },
         {
             "__type__": "Note",
@@ -11683,7 +11664,9 @@
             ],
             "guid": "K.T&n8s7:q",
             "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
-            "tags": []
+            "tags": [
+                "eth::sem1::diskmat"
+            ]
         },
         {
             "__type__": "Note",
@@ -11741,7 +11724,9 @@
             ],
             "guid": "m5;lfWq}sd",
             "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
-            "tags": []
+            "tags": [
+                "eth::sem1::linalg"
+            ]
         },
         {
             "__type__": "Note",
@@ -11751,7 +11736,9 @@
             ],
             "guid": "o#WcxQ+B/3",
             "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
-            "tags": []
+            "tags": [
+                "eth::sem1::linalg"
+            ]
         },
         {
             "__type__": "Note",
@@ -11948,7 +11935,7 @@
         {
             "__type__": "Note",
             "fields": [
-                "An element&nbsp;\\(a\\ne0\\)&nbsp;of a commutative ring&nbsp;\\(R\\)&nbsp;is called a&nbsp;<i>zerodivisor</i>&nbsp;if {{c1::&nbsp;\\(ab=0\\)&nbsp;for some&nbsp;\\(b\\ne0\\)&nbsp;in&nbsp;\\(R\\)}}.",
+                "An element&nbsp;\\(a\\)&nbsp;of a commutative ring&nbsp;\\(R\\)&nbsp;is called a&nbsp;<i>zerodivisor</i>&nbsp;if {{c1::&nbsp;\\(ab=0\\)&nbsp;for some&nbsp;\\(b\\ne0\\)&nbsp;in&nbsp;\\(R\\)}}.",
                 ""
             ],
             "guid": "grl{%W],MK",
@@ -12000,6 +11987,30 @@
                 ""
             ],
             "guid": "oXvW^EH?&l",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem1::linalg"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The vectors&nbsp;\\(v_1,\\dotsc,v_n\\)&nbsp;are <i>linearly independent</i> if {{c1::there does not exist a nontrivial linear combination of the vectors that equals the zero vector}}.",
+                ""
+            ],
+            "guid": "n`{BXl11pJ",
+            "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
+            "tags": [
+                "eth::sem1::linalg"
+            ]
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "The <b>rank</b> of a matrix can easily be found when the matrix is in row echelon form, in which case the rank is {{c1::equal to the number of pivots, or (equivalently) the number of non-zero rows}}.",
+                ""
+            ],
+            "guid": "iTAn]6sz(.",
             "note_model_uuid": "2ae318a0-7e39-11ee-bdad-3d2d00994e04",
             "tags": [
                 "eth::sem1::linalg"

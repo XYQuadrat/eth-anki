@@ -131,18 +131,18 @@ NA%+S9sSi],In linear temporal logic&nbsp;\(F\phi\)&nbsp;or&nbsp;\(\diamond\phi\)
 "k{D:|@W,PW",In linear temporal logic&nbsp;\(G\phi\)&nbsp;or&nbsp;\(\square\phi\)&nbsp;denotes&nbsp;{{c1::that&nbsp;\(\phi\)&nbsp;always&nbsp;holds}},(G = globally),eth::sem6::rse
 kfsN#[8n@),{{c1::\( \neg (A \land B) \)}} \( \equiv \)&nbsp;{{c2::\( \neg A \lor \neg B \)}}<br>,de Morgan rules,eth::sem1::diskmat
 %-v5b-!x=,{{c1::\( \neg (A \lor B) \)&nbsp;}} \( \equiv \)&nbsp;{{c2::\( \neg A \land \neg B\)}}<br>,De Morgan rules,eth::sem1::diskmat
-PK*1xpYhw8,Komplexer Kehrwert: {{c1::\( \frac{1}{z} \)}}&nbsp;\( = \)&nbsp;{{c2::\( \frac{x - iy}{x^2 + y^2}\)}}<br>,,eth::sem1::linalg
+PK*1xpYhw8,Inverse of a complex number: {{c1::\( \frac{1}{z} \)}}&nbsp;\( = \)&nbsp;{{c2::\( \frac{x - iy}{x^2 + y^2}\)}}<br>,,eth::sem1::linalg
 u65pI6|_4#,{{c1:: Inverse eines Produkts: \((\mathbf{AB})^{-1}\)}} = {{c2::\(\mathbf{B}^{-1} \mathbf{A}^{-1}\)}}&nbsp;<br>,,eth::sem1::linalg
 f?mV5JRdT{,"A relation&nbsp;ρ on a set A is called {{c1::reflexive}} if&nbsp;{{c2::\( a \ \rho \ a\) is true for all&nbsp;\( a \in A\), i.e. if&nbsp;\( \text{id} \subseteq \rho\).}}","Example:&nbsp;\( \ge, \le \) are reflexive, while&nbsp;\( &lt;, &gt; \) are not.",eth::sem1::diskmat
 yJ}kX&Y9Od,"A relation&nbsp;ρ on a set A is called {{c1::symmetric}} if&nbsp;{{c2::\( a \ \rho \ b \iff b \ \rho \ a\) is true, i.e. if&nbsp;\( \rho = \hat{\rho}\)}}","Examples:&nbsp;\( \equiv_m\), marriage",eth::sem1::diskmat
 s[dJ]w<?0N,"A relation&nbsp;ρ on a set A is called {{c2::antisymmetric}} if&nbsp;{{c1::\( a \ \rho \ b \wedge b \ \rho \ a \implies a = b\) is true, i.e. if&nbsp;\( \rho \cap \hat{\rho} \subseteq \text{id}\)}}","Example:&nbsp;\( \le, \ge\) and the division relation:&nbsp;\( a \mid b \wedge b \mid a \implies a = b\)",eth::sem1::diskmat
 H!j|tU4T~6,A relation is {{c1::transitive}} if&nbsp;{{c2::\((a \ \rho \ b \wedge b \ \rho \ c) \implies a \ \rho \ c \) is true.}},"Examples:&nbsp;\( \le, \ge, &lt;, |, \equiv_m\)",eth::sem1::diskmat
 C;65zxNGcG,The {{c2::inverse relation}} is&nbsp;{{c1::\( a \ \rho \ b \iff b \ \hat{\rho} \ a\)}}.,Example: Inverse of parent relation is childhood relation. Also written as&nbsp;\( \rho^{-1}\),eth::sem1::diskmat
-Oc<qX9GKUZ,"Gilt für zwei Matrizen&nbsp;\( \mathbf{A}\) und&nbsp;\( \mathbf{B}\), dass&nbsp;{{c2::\( \mathbf{AB} = \mathbf{BA}\)}}, dann {{c1::kommutieren}} diese Matrizen.&nbsp;",,eth::sem1::linalg
-xn@gm`7I_o,"Eine {{c1::Linearkombination (LK)}} der Vektoren&nbsp;\( a_1, \ldots, a_n\) ist {{c2::ein Ausdruck der Form&nbsp;\( \alpha_1 a_1 + \cdots + \alpha_n a_n\) wobei&nbsp;\( \alpha_1, \ldots, \alpha_n \in \mathbb{R}\)}}",,eth::sem1::linalg
-uo#Gn+y8bD,"Für alle Vektorpaare&nbsp;\( \mathbf{x,y} \in \mathbb{E}^n \) gilt die Cauchy-Schwarz-Ungleichung:&nbsp;{{c1::\( | \langle \mathbf{x, y} \rangle | \le ||\mathbf{x}|| \ ||\mathbf{y}||\)}}",,eth::sem1::linalg
-v#FTBh.m{S,"Ein LGS heisst {{c1::homogen}}, wenn {{c2::die rechte Seite Null ist}}.",Besitzt immer triviale Lösung (alles 0).,eth::sem1::linalg
-y`5($Q$d37,{{c1::Eine Gruppe}} ist eine {{c1::Menge \(G\) mit Operation&nbsp;\( * \)}} mit folgenden Eigenschaften:<ul>{{c2::<li> Assoziativität:&nbsp;\((a * b) * c = a * (b*c)\)</li><li>Neutrales Element existiert:&nbsp;\( a * e = e * a = a \)</li><li>Jedes Element \(a\in G\) hat eine Inverse:&nbsp;\( a * a^{-1} = a^{-1} * a = e\)</li>}}<br></ul>,,"eth::sem1::diskmat, eth::sem1::linalg"
+Oc<qX9GKUZ,"If it holds for two matrices&nbsp;\( \mathbf{A}\)&nbsp;and&nbsp;\( \mathbf{B}\)&nbsp;that&nbsp;{{c2::\( \mathbf{AB} = \mathbf{BA}\)}}, then these matrices {{c1::commute}}.&nbsp;",,eth::sem1::linalg
+xn@gm`7I_o,"A {{c1::linear combination}} of the vectors&nbsp;\( a_1, \ldots, a_n\) is {{c2::an expression of the form&nbsp;\( \alpha_1 a_1 + \cdots + \alpha_n a_n\) with&nbsp;\( \alpha_1, \ldots, \alpha_n\)&nbsp;being scalars.}}",,eth::sem1::linalg
+uo#Gn+y8bD,"For all pairs of vectors&nbsp;\( \mathbf{u,v} \in \mathbb{V}^n \) gilt die Cauchy-Schwarz-Ungleichung:&nbsp;{{c1::\( | \langle \mathbf{u, v} \rangle | \le ||\mathbf{u}|| \ ||\mathbf{v}||\)}}.",,eth::sem1::linalg
+v#FTBh.m{S,"A system of linear equations is {{c1::homogeneous}}, if {{c2::the right hand side is zero}}.",,eth::sem1::linalg
+y`5($Q$d37,{{c1::A group}} is a {{c1::set&nbsp;\(G\) with an operation&nbsp;\( * \)}} with the following properties:<ul>{{c2::<li>Associativity:&nbsp;\((a * b) * c = a * (b*c)\)</li><li>There exists a neutral element:&nbsp;\( a * e = e * a = a \)</li><li>Every element&nbsp;\(a\in G\) has an inverse:&nbsp;\( a * a^{-1} = a^{-1} * a = e\)</li>}}<br></ul>,,"eth::sem1::diskmat, eth::sem1::linalg"
 EuJL{:A/EO,"Eine Gruppe&nbsp;\( (G, *) \) heisst {{c1::abelsch (auch: kommutativ)}}, falls&nbsp;\( * \) ausserdem&nbsp;{{c2::\(a * b = b * a\), also das Kommutativitätgesetz erfüllt}}.","Beispiel:&nbsp;\( (\mathbb{K}^{m\times n}, + ) \)",eth::sem1::linalg
 "BG+yKyLb,^","{{c1::Ein Körper}} ist eine Menge&nbsp;{{c1::\( \mathbb{K}\) mit Operationen&nbsp;\(+ , *\)}} mit folgenden Eigenschaften:<div>{{c2::<div>-&nbsp;\( (\mathbb{K}, +)\) ist eine abelsche Gruppe</div><div>-&nbsp;\( (\mathbb{K} \backslash \{0\}, *)\) ist eine abelsche Gruppe</div><div>- Distributivität:&nbsp;\( a * (b+c) = a*b + a*c\)</div>}}<br></div>","Beispiel:&nbsp;\( \mathbb{Q}, \mathbb{R}\)","eth::sem1::diskmat, eth::sem1::linalg"
 BK[{yp^]zj,"{{c1::Ein Vektorraum}} ist eine Menge \( \mathbb{V}\) über \( \mathbb{K}\), auf der {{c2::eine Addition und eine Skalarmultiplikation definiert ist.}}","Beispiele:&nbsp;\(\mathbb{R}^n, \mathbb{K}^{m\times n}, P_d(\mathbb{K})\) (Polynome von Grad&nbsp;\( \le d\))",eth::sem1::linalg
@@ -259,13 +259,13 @@ E7o[D?o[Rp,"\(L_H = \) {{c1::\(\{\text{Kod}(M)\# x \mid x \in \{0,1\}^*\)&nbsp; 
 nw`V)k:X;(,\(L_{\text{empty}} =\) {{c1::\(\{\text{Kod}(M) \mid L(M) = \varnothing \}\)}},,eth::sem3::ti
 Gy&l~&[T$h,\(L_{EQ} =\)&nbsp;{{c1::\(\{\text{Kod}(M)\#\text{Kod}(\bar{M}) \mid L(M) = L(\bar{M})\}\)}},,eth::sem3::ti
 x@yx*7fr{},"\(L_{H,\lambda} =\)&nbsp;{{c1::\(\{\text{Kod}(M) \mid M \text{ hält auf } \lambda \}\)}}",,eth::sem3::ti
-rb>u/2<`S],"Der Satz von Cook besagt, dass {{c1::SAT NP-vollständig ist.}}",,
+rb>u/2<`S],"Der Satz von Cook besagt, dass {{c1::SAT NP-vollständig ist.}}",,eth::sem3::ti
 "sY00nMVq,]","Eine Grammatik ist eine Typ-3-Grammatik (<b>regulär</b>), falls {{c1::\(\forall (\alpha,\beta) \in P: \alpha \in \Sigma_N, \beta \in \Sigma_T^* \times \Sigma_N \cup \Sigma_T^*\).}}",d.h. nur ein Nichtterminal und Terminale nur als Prefix,eth::sem3::ti
 t/ki)fCFZ`,"Eine Grammatik ist eine Typ-2-Grammatik (<b>kontextfrei</b>), falls&nbsp;{{c1::\(\forall (\alpha, \beta) \in P: \alpha \in \Sigma_N, \beta \in (\Sigma_N \cup \Sigma_T)^*\).}}",,eth::sem3::ti
 st8gpJ{6.5,"Eine Grammatik ist eine Typ-1-Grammatik (<b>kontextsensitiv</b>), falls&nbsp;{{c1::\(\forall (\alpha, \beta) \in P: |\alpha| \le |\beta|\).}}","d.h. kann nicht ""schrumpfen""",eth::sem3::ti
 F<DaUVTC>X,"Der Satz von Rice besagt, dass {{c1::jedes semantisch nichttriviale Entscheidungsproblem über Turingmaschinen unentscheidbar ist.}}",semantisch: unabhängig von Struktur der TM<br>nichttrivial: mindestens 1 aber nicht alle TM sind in der Sprache,eth::sem3::ti
-dX|8rH#t|C,"Eine Sprache&nbsp;\(L\) ist NP-schwer, wenn {{c1::alle Sprachen in NP in polynomieller Zeit&nbsp;auf&nbsp;\(L\) reduziert werden können.}}",,
-AmB39:CR8:,"Eine Sprache&nbsp;\(L\) ist NP-vollständig, falls&nbsp;{{c1::\(L \in\) NP und&nbsp;\(L\) NP-schwer ist.}}",z.B. SAT,
+dX|8rH#t|C,"Eine Sprache&nbsp;\(L\) ist NP-schwer, wenn {{c1::alle Sprachen in NP in polynomieller Zeit&nbsp;auf&nbsp;\(L\) reduziert werden können.}}",,eth::sem3::ti
+AmB39:CR8:,"Eine Sprache&nbsp;\(L\) ist NP-vollständig, falls&nbsp;{{c1::\(L \in\) NP und&nbsp;\(L\) NP-schwer ist.}}",z.B. SAT,eth::sem3::ti
 Oot<diX(:.,A compilation unit in C is roughly {{c1::a source file plus all of its includes.}},,eth::sem3::spca
 k(/Gu0354D,<i>Referential transparency </i>means that {{c1::an expression always evaluates to the same value in every context}}.,,eth::sem4::fmfp
 C[BU|b<B5v,A Candidate Key is {{c1::the minimal set of fields that identifies each tuple in a relation uniquely.}},,eth::sem4::dmdb
@@ -283,8 +283,8 @@ L3C~r!;%H#,The loopback address in IPv6 is {{c1::⠶1/128.}},,eth::sem4::cn
 FC?_@*D~T3,"""Happy Eyeballs"" is a networking algorithm that says that {{c1::clients should try both IPv4 and IPv6, but prefer an IPv6 connection to a server if available.}}",,eth::sem4::cn
 n&?@7Mh9T>,The 4 goals of reliable transfer are:<br><ul><li>{{c1::Correctness}}</li><li>{{c2::Timeliness}}</li><li>{{c3::Efficiency}}</li><li>{{c4::Fairness}}</li></ul>,,eth::sem4::cn
 de5mYAM@HC,A reliable transport design is correct if&nbsp;{{c1::a packet is always resent if the previous packet was lost/corrupted.}},,eth::sem4::cn
-u^R$XY$~W?,"To download a file with curl, use {{c1::<pre>curl -O</pre>}}",,
-F2[du1bMu;,"In an OS, a trampoline is a {{c1::part of the memory that is at the same address in both the user and kernel page tables.}}",,
+u^R$XY$~W?,"To download a file with curl, use {{c1::<pre>curl -O</pre>}}",,eth
+F2[du1bMu;,"In an OS, a trampoline is a {{c1::part of the memory that is at the same address in both the user and kernel page tables.}}",,eth
 AReK9,The Operating System is defined as the body of software that<br><ul><li>{{c1::Multiplexes hardware resources}}</li><li>{{c2::Abstracts the hardware away}}</li><li>{{c3::Protects programs from each other}}</li></ul>,,eth::sem5::compsys
 EsKaK,The three roles of an OS are to be {{c1::<ul><li>Referee</li><li>Illusionist</li><li>Glue</li>}}<br></ul>,,eth::sem5::compsys
 l6y93,A<b> name&nbsp;</b>is an {{c1::identifier for an object in a system}}.,,eth::sem5::compsys
@@ -322,7 +322,7 @@ NKH]x`l+`D,"On success, <tt>fork()</tt> returns&nbsp;{{c1::the child PID}} to th
 Kvf>{OSF=r,"On failure, <tt>fork()</tt> returns&nbsp;{{c1::-1}} to the parent and the child {{c1::is not created}}.",,eth::sem5::compsys
 Hje6w~wY=U,The drift&nbsp;\(\delta\)&nbsp;is {{c1::the predictable clock error}}.,,eth::sem5::compsys
 h2#T5DY.KD,TAI is a {{c1::time standard without leap seconds}}.,,eth::sem5::compsys
-nEd$&|E5Cc,"Caller-save registers are {{c1::""volatile"" across a call - the caller must save them}}. In constrast, callee-save registers are {{c1::""non-volatile"" across a call - the called function must restore them}}.",,
+nEd$&|E5Cc,"Caller-save registers are {{c1::""volatile"" across a call - the caller must save them}}. In constrast, callee-save registers are {{c1::""non-volatile"" across a call - the called function must restore them}}.",,eth
 HO>.af]C*u,A <b>naming hierarchy</b>&nbsp;is a {{c1::naming network that is a tree}}.,,eth::sem5::compsys
 sfQf2o.KJK,An&nbsp;<b>indirect entry</b>&nbsp;is a {{c1::name bound to another path name}}.,The other path name is resolved in the same context as the indirect entry.,eth::sem5::compsys
 N#Em7vCe!k,A&nbsp;<b>pure name</b>&nbsp;tells us {{c1::nothing useful about the object it refers to}}.,,eth::sem5::compsys
@@ -410,8 +410,8 @@ Itnn>r2wqH,A <b>Hopfield network</b>&nbsp;consists of {{c1::multiple McCulloch-P
 M++ZgS-YUk,The receptor {{c1::NMDA}} is critically involved in Long-Term Potentiation.,,eth::electives::neuroinf
 LLxTD2CGz6,<b>Population codes</b> are {{c1::neural representations at the level of groups of cells}}.,,eth::electives::neuroinf
 vq^:lBS9xZ,The&nbsp;<b>association cortex</b>&nbsp;is the part of the cerebral cortex that is {{c1::not involved in sensory / motor processing}}.,,eth::electives::neuroinf
-oL82K.iqM},Potassium is a chemical element called {{c1::Kalium}} in German.,,
-D%n:xT4NsA,Sodium is a chemical element called {{c1::Natrium}} in German.,,
+oL82K.iqM},Potassium is a chemical element called {{c1::Kalium}} in German.,,eth
+D%n:xT4NsA,Sodium is a chemical element called {{c1::Natrium}} in German.,,eth
 "s?,>Bm1om[","In an asynchronous environment, a message will {{c1::arrive in a finite but unbounded time}}.",,eth::sem5::compsys
 hb*O9R!dzI,Any-Input validity says that {{c1::the decision value must be the input of <b>any</b> node}}.,,eth::sem5::compsys
 Bs#TY+1BK,"All-Same Validity says that {{c1::if&nbsp;<b>all</b>&nbsp;nodes start with the same input, that must be the decision value}}.",,eth::sem5::compsys
@@ -451,7 +451,7 @@ gmL3-FGTW$,The diameter of a graph is the {{c1::longest shortest path}}.,,eth::s
 H3<#NN+ZEG,The&nbsp;<i>p</i>-norm of a vector&nbsp;\(x \in \mathbb{R}^n\)&nbsp;is defined as&nbsp;{{c1::\(||x||_p=\left(\sum_{i=1}^n |x_i|^p\right)^{1/p}\)}}.,,eth::sem1::linalg
 hIZBW%wW@-,"The&nbsp;<i>loss function</i>&nbsp;\(l(f(x),y)\)&nbsp;tells us {{c1::how good the predicted value&nbsp;\(f(x)\)&nbsp;is compared to the true value&nbsp;\(y\)}}.",e.g. squared loss,eth::sem6::iml
 d4:]NJ>Tt4,The&nbsp;<i>training loss&nbsp;</i>\(L(f)\)&nbsp;is {{c1::the average loss over the training set for a predictor&nbsp;\(f\).}},,eth::sem6::iml
-z4LU850Knr,The&nbsp;<i>flyweight pattern&nbsp;</i>{{c1::minimizes memory usage and coupling}} by {{c2::sharing data of (often immutable) objects.}},,
+z4LU850Knr,The&nbsp;<i>flyweight pattern&nbsp;</i>{{c1::minimizes memory usage and coupling}} by {{c2::sharing data of (often immutable) objects.}},,eth::coop
 Ci>!E>7&JJ,"In the&nbsp;<b>Observer Pattern</b>, the&nbsp;<i>subject</i>&nbsp;has {{c1::a list of dependents (observers) and notifies them of state changes through calling a method.}}",,eth::sem6::rse
 k1fk*C<rL0,"In the <b>Model-View-Controller</b>&nbsp;architecture,&nbsp;<br><ul><li>the model {{c1::contains core functionality &amp; data}}</li><li>the views {{c2::display information to the user}}</li><li>the controllers {{c3::handle user input}}</li></ul>",,eth::sem6::rse
 !ZrKZ;Af;,"A disadvantage of event-based architectures is that we {{c1::lose control (who responds, in what order, etc.)}}.",,eth::sem6::rse
@@ -648,13 +648,13 @@ q%i_)pDyvo,A prominent example for an uncomputable function is {{c1::the&nbsp;<i
 INFuk<;]fv,An integer greater than&nbsp;\(1\)&nbsp;that is not a prime is called {{c1::composite}}.,,eth::sem1::diskmat
 Pz>]O?kRm),"It follow from the respective definitions that&nbsp;\(\gcd(a,b) \times \text{lcm}(a,b) =\)&nbsp;{{c1::&nbsp;\(ab\)}}.",,eth::sem1::diskmat
 s&thqL60qD,"For&nbsp;\(a,b,m\in\mathbb{Z}\)&nbsp;with&nbsp;\(m\ge1\), we say that&nbsp;\(a\)&nbsp;is&nbsp;<i>congruent to&nbsp;</i>\(b\)&nbsp;<i>modulo&nbsp;</i>\(m\)&nbsp;if {{c1::&nbsp;\(m\)&nbsp;divides&nbsp;\(a-b\)}}. Written as an expression:{{c1::&nbsp;\(a\equiv_mb \iff m \mid (a-b)\).}}",,eth::sem1::diskmat
-K.T&n8s7:q,"A group or monoid \(\langle G;* \rangle\) is called <i>commutative</i> or <i>abelian</i> if {{c1::\(a * b = b * a\) for all \(a,b \in G\)}}.",,
+K.T&n8s7:q,"A group or monoid \(\langle G;* \rangle\) is called <i>commutative</i> or <i>abelian</i> if {{c1::\(a * b = b * a\) for all \(a,b \in G\)}}.",,eth::sem1::diskmat
 Od*A$z}#*`,"For two groups&nbsp;\(\langle G;*;\widehat{};e\rangle\)and&nbsp;\(\langle H;\star;\sim;e'\rangle\), a function&nbsp;\(\psi: G\to H\)&nbsp;is called a <i>group homomorphism</i>&nbsp;if for all&nbsp;\(a\)&nbsp;and&nbsp;\(b\):<br>{{c1::\(\psi(a*b) = \psi(a)\star\psi(b)\)}}.<br>If&nbsp;\(\psi\)&nbsp;is {{c2::a bijection from&nbsp;\(G\)&nbsp;to&nbsp;\(H\)}}, then it is called an <i>isomorphism</i>.",,eth::sem1::diskmat
 Ot[i#kJ>s<,"If for two groups&nbsp;\(G\)&nbsp;and&nbsp;\(H\)&nbsp;there is a function&nbsp;\(\psi: G\to H\)&nbsp;which is an isomorphism, then we say that {{c1::\(G\)&nbsp;and&nbsp;\(H\)&nbsp;are&nbsp;<i>isomorphic</i>}}&nbsp;and we write this as {{c1::\(G \simeq H\)}}.",,eth::sem1::diskmat
 Do3{r5T{`.,Diffie-Hellman is used to {{c1::securely create a shared secret between two parties over a public channel::do what?}}.,,eth::sem1::diskmat
 OR;0HVwMqM,Both RSA and Diffie-Hellman use {{c1::modular exponentiation}} for their main operation.,,eth::sem1::diskmat
-m5;lfWq}sd,The <b>dot product</b> is often also called the {{c1::scalar product}} or {{c1::inner product}}.,,
-o#WcxQ+B/3,"Linear algebra is the branch of mathematics dealing with {{c1::linear equations, e.g. \(a_1 x_1+\dots a_n x_n = b\)}}.",,
+m5;lfWq}sd,The <b>dot product</b> is often also called the {{c1::scalar product}} or {{c1::inner product}}.,,eth::sem1::linalg
+o#WcxQ+B/3,"Linear algebra is the branch of mathematics dealing with {{c1::linear equations, e.g. \(a_1 x_1+\dots a_n x_n = b\)}}.",,eth::sem1::linalg
 NfXydu*6p1,"An&nbsp;<i>operation</i>&nbsp;on a set&nbsp;\(S\)&nbsp;is {{c1::a function&nbsp;\(S^n \to S\), where&nbsp;\(n \ge 0\)&nbsp;is called the <i>arity</i> of the operation::what (include arity)?}}.",,eth::sem1::diskmat
 vpgCC{U)O3,"&nbsp;A cyclic group of order&nbsp;\(n\)&nbsp;{{c1::is isomorphic to&nbsp;\(\langle \mathbb{Z}_n,\oplus)\), and hence commutative::has which useful property?}}.",,eth::sem1::diskmat
 zjw2>4!xI,"\(\mathbb{Z}_m^* \stackrel{\text{def}}{=}\)&nbsp;&nbsp;{{c1::\(\{a\in \mathbb{Z}_m \mid \gcd(a,m) = 1\}\)}}",,eth::sem1::diskmat
@@ -670,8 +670,10 @@ xs#S^-Mehy,\(\det A^{-1} =\)&nbsp;{{c1::\((\det A)^{-1}\)}}&nbsp;,,eth::sem1::li
 mqSXu9R3oO,"The LU ({{c1::Lower-Upper}}, also sometimes called {{c1::LR}}) decomposition factors a matrix&nbsp;\(A\)&nbsp;as {{c2::the product of a lower triangular matrix&nbsp;\(L\)&nbsp;and an upper triangular matrix&nbsp;\(U\)}}.",(so&nbsp;\(A = LU\)),eth::sem1::linalg
 yIi4+D4X>;,The LU decomposition is useful because (among other things) {{c1::it is computationally more efficient when solving multiple&nbsp;\(Ax = b\)&nbsp;having the same&nbsp;\(A\)&nbsp;and different&nbsp;\(b\)&nbsp;}}.&nbsp;,,eth::sem1::linalg
 p1NkGJ>_F5,"The <i>characteristic</i>&nbsp;of a ring is&nbsp;{{c1::the order of&nbsp;\(1\)&nbsp;in the additive group if it is finite, and 0 if it is infinite.}}","Example: the characteristic of&nbsp;\(\langle \mathbb{Z}_m;\oplus,\ominus,0,\odot,1\rangle\)is&nbsp;\(m\).",eth::sem1::diskmat
-"grl{%W],MK",An element&nbsp;\(a\ne0\)&nbsp;of a commutative ring&nbsp;\(R\)&nbsp;is called a&nbsp;<i>zerodivisor</i>&nbsp;if {{c1::&nbsp;\(ab=0\)&nbsp;for some&nbsp;\(b\ne0\)&nbsp;in&nbsp;\(R\)}}.,,eth::sem1::diskmat
+"grl{%W],MK",An element&nbsp;\(a\)&nbsp;of a commutative ring&nbsp;\(R\)&nbsp;is called a&nbsp;<i>zerodivisor</i>&nbsp;if {{c1::&nbsp;\(ab=0\)&nbsp;for some&nbsp;\(b\ne0\)&nbsp;in&nbsp;\(R\)}}.,,eth::sem1::diskmat
 z`P{~ta];p,"The degree of the polynomial&nbsp;\(0\)&nbsp;can be defined as&nbsp;{{c1::undefined,&nbsp;\(-1\)&nbsp;or&nbsp;\(-\infty\)}}.&nbsp;&nbsp;",,eth::sem1::diskmat
 tR&oOKzisO,A matrix decomposition is {{c1::a factorization of a single matrix into a product of ones with useful properties}}.,Example: LU decomposition (\(A=LU\)),eth::sem1::linalg
 A[sn#o|@++,&nbsp;A&nbsp;<i>vector space</i>&nbsp;\(V\)&nbsp;over a field&nbsp;\(F\)&nbsp;is {{c1::a set with vector addition (\(V \times V \mapsto V)\)&nbsp;and scalar multiplication (\(F \times V \mapsto V\)) being defined}}. The elements of&nbsp;\(V\)&nbsp;are then usually called {{c1::vectors}}&nbsp;and the elements of&nbsp;\(F\)&nbsp;{{c1::scalars}}<i>.</i>,"Example:&nbsp;\(\mathbb{R}^2\)&nbsp;with the usual definitions of&nbsp;\(+, \cdot\)&nbsp;(cartesian vectors)",eth::sem1::linalg
 oXvW^EH?&l,"An important difference between a field&nbsp;\(F\)&nbsp;and a vector space&nbsp;\(V\)&nbsp;is that {{c1::multiplication in the field is&nbsp;\(F\times F\mapsto F\), whereas it is&nbsp;\(F\times V\mapsto V\)&nbsp;in the vector space}}.",,eth::sem1::linalg
+n`{BXl11pJ,"The vectors&nbsp;\(v_1,\dotsc,v_n\)&nbsp;are <i>linearly independent</i> if {{c1::there does not exist a nontrivial linear combination of the vectors that equals the zero vector}}.",,eth::sem1::linalg
+iTAn]6sz(.,"The <b>rank</b> of a matrix can easily be found when the matrix is in row echelon form, in which case the rank is {{c1::equal to the number of pivots, or (equivalently) the number of non-zero rows}}.",,eth::sem1::linalg
